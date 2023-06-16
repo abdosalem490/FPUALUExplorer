@@ -1,0 +1,36 @@
+Report Physical info: 
+------------------------+-------------+-----------+------------
+                        |             |Area (squm)|Leakage (uW)
+------------------------+-------------+-----------+------------
+Design Name             |FPU_CSelA    |           |            
+  Total Instances       |         1147|       1339|      31.454
+    Macros              |            0|          0|       0.000
+    Pads                |            0|          0|       0.000
+    Phys                |            0|          0|       0.000
+    Blackboxes          |            0|          0|       0.000
+    Cells               |         1147|       1339|      31.454
+      Buffers           |            0|          0|       0.000
+      Inverters         |          259|        138|       3.717
+      Clock-Gates       |            0|          0|       0.000
+      Combinational     |          888|       1202|      27.737
+      Latches           |            0|          0|       0.000
+      FlipFlops         |            0|          0|       0.000
+       Single-Bit FF    |            0|          0|       0.000
+       Multi-Bit FF     |            0|          0|       0.000
+       Clock-Gated      |            0|           |            
+       Bits             |            0|          0|       0.000
+         Load-Enabled   |            0|           |            
+         Clock-Gated    |            0|           |            
+  Tristate Pin Count    |            0|           |            
+Physical Info           |Placed       |           |            
+  Chip Size (mm x mm)   |0.107 x 0.107|      11501|            
+  Fixed Cell Area       |             |          0|            
+    Phys Only           |            0|          0|            
+  Placeable Area        |             |       2177|            
+  Movable Cell Area     |             |       1339|            
+  Utilization (%)       |           61|           |            
+  Chip Utilization (%)  |           61|           |            
+  Total Wire Length (mm)|        5.324|           |            
+  Longest Wire (mm)     |        0.058|           |            
+  Average Wire (mm)     |        0.055|           |            
+------------------------+-------------+-----------+------------

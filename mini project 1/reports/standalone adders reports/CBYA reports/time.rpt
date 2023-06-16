@@ -1,0 +1,41 @@
+Report for group default
+Report for group I2R
+Report for group I2O
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: A[28]
+    (Clocked by rtDefaultClock R)
+Endpoint: OVF
+    (Clocked by vsysclk R)
+Path Group: I2O
+Data required time: 19500.0
+    (Clock shift: 20000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data arrival time: 1481.9
+Slack: 18018.1
+Logic depth: 10
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+A[28]                    {set_input_delay}        f   1000.0   1000.0   1000.0                        5.2     13.3      2     0,   40                       
+genblk1_7_rippleAdder/genblk1_0_FullAdder/i_0_0/A->Z
+                         XOR2_X2                 ff   1096.0     95.5     95.5      0.0    100.0      1.4      8.5      2    38,   38  /PD_TOP        (1.10)
+genblk1_7_rippleAdder/genblk1_0_FullAdder/i_0_2/B1->ZN
+                         AOI22_X4                fr   1168.1     72.1     72.1      0.0     14.8      0.7     26.2      1    38,   38  /PD_TOP        (1.10)
+genblk1_7_rippleAdder/genblk1_0_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1176.7      8.6      8.6      0.0     50.8      1.4      8.9      2    38,   38  /PD_TOP        (1.10)
+genblk1_7_rippleAdder/genblk1_1_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1248.7     72.0     72.0      0.0      4.0      0.7     26.2      1    38,   38  /PD_TOP        (1.10)
+genblk1_7_rippleAdder/genblk1_1_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1257.3      8.6      8.6      0.0     50.8      1.4      8.9      2    38,   38  /PD_TOP        (1.10)
+genblk1_7_rippleAdder/genblk1_2_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1329.3     72.0     72.0      0.0      4.0      0.7     26.2      1    38,   38  /PD_TOP        (1.10)
+genblk1_7_rippleAdder/genblk1_2_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1337.9      8.6      8.6      0.0     50.8      1.4      8.9      2    38,   38  /PD_TOP        (1.10)
+genblk1_7_rippleAdder/genblk1_3_FullAdder/i_0_1/B->Z
+                         XOR2_X2                 fr   1411.9     74.0     74.0      0.0      4.0      0.6     19.9      2    38,   38  /PD_TOP        (1.10)
+i_0_0_0/A2->ZN           NAND2_X4                rf   1431.7     19.8     19.8      0.0     62.6      0.6      4.3      1    38,   38  /PD_TOP        (1.10)
+i_0_0_2/B->ZN            XNOR2_X2                ff   1481.4     49.7     49.7      0.0      7.0      5.2     15.2      1    38,   38  /PD_TOP        (1.10)
+OVF                                               f   1481.9      0.5               0.5     20.9                             76,   39                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group R2O

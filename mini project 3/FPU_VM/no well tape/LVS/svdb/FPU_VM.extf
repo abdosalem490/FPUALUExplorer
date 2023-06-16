@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1672767552 1672767554
+lvs_ExtOutFile RUNDIR /home/vlsi/mini-project31_nitro/work/LVS
+lvs_ExtOutFile RULES_FILE /home/vlsi/mini-project31_nitro/work/LVS/_calibre-lvs.rule_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/vlsi/mini-project31_nitro/work/LVS/FPU_VM.sp
+lvs_ExtOutFile EXTRACTION_REPORT FPU_VM.lvs.report.ext

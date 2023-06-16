@@ -1,0 +1,425 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vaddIntermedaiteWires
+Z0 !s110 1671273981
+!i10b 1
+!s100 <MRV8ZTZY2eU8jmm4PlPD2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ImL:`R<1amOcz=^QMIV;OF1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/modelsim_work
+Z4 w1671221960
+Z5 8..\verilog codes\multiplierTree.v
+Z6 F..\verilog codes\multiplierTree.v
+!i122 1059
+L0 105 131
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1671273981.000000
+!s107 ..\verilog codes\boothAlgo.v|..\verilog codes\boothAlogR4.v|..\verilog codes\FA.v|..\verilog codes\squentialMultiplier.v|..\verilog codes\multiplierTree.v|..\verilog codes\VM.v|../verilog codes/testbench.v|
+Z9 !s90 -reportprogress|300|../verilog codes/testbench.v|
+!i113 1
+Z10 tCvgOpt 0
+nadd@intermedaite@wires
+vaddResWithCarry
+R0
+!i10b 1
+!s100 DzN46GoIlCdUb<^M6RcK@2
+R1
+I9c_b;Y8ThHIUTOk6_M=Zl3
+R2
+R3
+R4
+R5
+R6
+!i122 1059
+L0 267 12
+R7
+r1
+!s85 0
+31
+R8
+Z11 !s107 ..\verilog codes\boothAlgo.v|..\verilog codes\boothAlogR4.v|..\verilog codes\FA.v|..\verilog codes\squentialMultiplier.v|..\verilog codes\multiplierTree.v|..\verilog codes\VM.v|../verilog codes/testbench.v|
+R9
+!i113 1
+R10
+nadd@res@with@carry
+vboothAlgo
+R0
+!i10b 1
+!s100 <kdG2eHZ:_<OR>LknlXl12
+R1
+IYmM<hDN=`0=L<dD8czl:H2
+R2
+R3
+w1671118661
+8..\verilog codes\boothAlgo.v
+F..\verilog codes\boothAlgo.v
+!i122 1059
+L0 5 132
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+nbooth@algo
+vboothAlgoR4
+R0
+!i10b 1
+!s100 7V:L9do7HO4ie_3]j<lJ<1
+R1
+IIo?`57oTCXXD[C:cd;aD60
+R2
+R3
+w1671130305
+8..\verilog codes\boothAlogR4.v
+F..\verilog codes\boothAlogR4.v
+!i122 1059
+L0 6 145
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+nbooth@algo@r4
+vCSAlike
+R0
+!i10b 1
+!s100 JI?3Y3:[MXL4`SKABkFf`1
+R1
+IaQm`C3L[E>eEljkeQ0V_30
+R2
+R3
+R4
+R5
+R6
+!i122 1059
+L0 240 22
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@c@s@alike
+vFA
+R0
+!i10b 1
+!s100 o4jl;G[76R1TmFKN:X?m73
+R1
+IXBm0Z4k`RH`<CI7e3VWla0
+R2
+R3
+w1666897918
+8..\verilog codes\FA.v
+F..\verilog codes\FA.v
+!i122 1059
+L0 1 19
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@f@a
+vFPU_boothAlgo
+Z12 !s110 1671228380
+!i10b 1
+!s100 JCANkWXi9Faol^[[DdTIK1
+R1
+I^h1V^1XdX[ZN98kD`kKjY2
+R2
+R3
+w1670880820
+8..\verilog codes\FPU_boothAlgo.v
+F..\verilog codes\FPU_boothAlgo.v
+!i122 1057
+Z13 L0 7 95
+R7
+r1
+!s85 0
+31
+Z14 !s108 1671228380.000000
+Z15 !s107 ..\verilog codes\boothAlgo.v|..\verilog codes\FPU_boothAlgo.v|..\verilog codes\boothAlogR4.v|..\verilog codes\FPU_boothAlogR4.v|..\verilog codes\FA.v|..\verilog codes\squentialMultiplier.v|..\verilog codes\FPU_squentialMultiplier.v|..\verilog codes\multiplierTree.v|..\verilog codes\FPU_multiplierTree.v|..\verilog codes\VM.v|..\verilog codes\FPU_VM.v|../verilog codes/FPU_testbench.v|
+Z16 !s90 -reportprogress|300|../verilog codes/FPU_testbench.v|
+!i113 1
+R10
+n@f@p@u_booth@algo
+vFPU_boothAlgoR4
+R12
+!i10b 1
+!s100 9UV0EHHmn^>Ck155lQi?L0
+R1
+I:3AQ4_S0HXz0Kmd@PC5fl3
+R2
+R3
+w1670880839
+8..\verilog codes\FPU_boothAlogR4.v
+F..\verilog codes\FPU_boothAlogR4.v
+!i122 1057
+R13
+R7
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R10
+n@f@p@u_booth@algo@r4
+vFPU_multiplierTree
+R12
+!i10b 1
+!s100 :9W`Xi>YNIQSDnFoW2::72
+R1
+I:hPLZC0ej?ba;8RFdXzW_3
+R2
+R3
+w1670880872
+8..\verilog codes\FPU_multiplierTree.v
+F..\verilog codes\FPU_multiplierTree.v
+!i122 1057
+R13
+R7
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R10
+n@f@p@u_multiplier@tree
+vFPU_sequentialMultiplier
+R12
+!i10b 1
+!s100 J_`eD2GNW:ZXD8EY4KG>03
+R1
+I@nQScfS4dTiYeKS6hlag;1
+R2
+R3
+w1671118691
+8..\verilog codes\FPU_squentialMultiplier.v
+F..\verilog codes\FPU_squentialMultiplier.v
+!i122 1057
+L0 7 94
+R7
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R10
+n@f@p@u_sequential@multiplier
+vFPU_testbench
+R12
+!i10b 1
+!s100 ZRkE@DgFJhibYFW>@H]7I1
+R1
+IOUdG:4cFaE2=T]z6Nf<7a0
+R2
+R3
+w1670881053
+8../verilog codes/FPU_testbench.v
+F../verilog codes/FPU_testbench.v
+!i122 1057
+L0 7 1185
+R7
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R10
+n@f@p@u_testbench
+vFPU_VM
+R12
+!i10b 1
+!s100 GVAKlb_WKUiE47@FF;MF_0
+R1
+I^I[Rce6b5=3QJi<>g;[MD2
+R2
+R3
+w1670880527
+8..\verilog codes\FPU_VM.v
+F..\verilog codes\FPU_VM.v
+!i122 1057
+R13
+R7
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R10
+n@f@p@u_@v@m
+vHA
+!s110 1671221489
+!i10b 1
+!s100 XWlcWXH`VAWK^h@nS:L<Y3
+R1
+IODVR1?nIQGm?GT6K4a=hV3
+R2
+R3
+w1666991614
+8D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/HA.v
+FD:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/HA.v
+!i122 1041
+L0 1 13
+R7
+r1
+!s85 0
+31
+!s108 1671221489.000000
+!s107 D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/HA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/HA.v|
+!i113 1
+o-work work
+R10
+n@h@a
+vmultiplierTree
+R0
+!i10b 1
+!s100 Y69VfW;Wi=oi52F]eJj_c1
+R1
+IzT<_T838[dOhbN>mzWRCa1
+R2
+R3
+R4
+R5
+R6
+!i122 1059
+L0 5 65
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+nmultiplier@tree
+vmultiplyAllBits
+R0
+!i10b 1
+!s100 5?Lz8WF3`1Uh@GKHnzNN;3
+R1
+IY`@M;Piedz20B_JhJNQkT2
+R2
+R3
+R4
+R5
+R6
+!i122 1059
+L0 74 27
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+nmultiply@all@bits
+vsequentialMultiplier
+R0
+!i10b 1
+!s100 b0R<N6>P3`C3PCUB6HIi31
+R1
+Ibz^cBAoZoInl2:0TVS?G=3
+R2
+R3
+w1671273974
+8..\verilog codes\squentialMultiplier.v
+F..\verilog codes\squentialMultiplier.v
+!i122 1059
+L0 9 89
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+nsequential@multiplier
+vtestbench
+R0
+!i10b 1
+!s100 HhM48LTLDPZH06BDcQRzU3
+R1
+IUREDD6Ia8dSh[=XZ21mhV2
+R2
+R3
+w1671126904
+8../verilog codes/testbench.v
+F../verilog codes/testbench.v
+!i122 1059
+L0 7 819
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vVM
+R0
+!i10b 1
+!s100 g>ObX]F=NX62O=mT2MEzH3
+R1
+I7dNeElZSaZkDhiA_oi4dA3
+R2
+R3
+w1671107277
+8..\verilog codes\VM.v
+F..\verilog codes\VM.v
+!i122 1059
+L0 1 58
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@v@m

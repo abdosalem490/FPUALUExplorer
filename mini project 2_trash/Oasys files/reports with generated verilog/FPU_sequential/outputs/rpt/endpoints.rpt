@@ -1,0 +1,28 @@
+Report End Points: 
+-----+-------+------+-------+------+-----+-----+-----+--------------------------------+-------------
+     |Group  |Launch|Capture|Shift |Delay|Depth|Slack|Begin Point                     |End Point    
+-----+-------+------+-------+------+-----+-----+-----+--------------------------------+-------------
+1    |default|sysclk|sysclk |1000.0|623.8|   11|207.9|multiplier/accumulator_reg[15]/Q|Res_reg[30]/D
+2    |default|sysclk|sysclk |1000.0|611.5|   10|220.2|multiplier/accumulator_reg[15]/Q|Res_reg[29]/D
+3    |default|sysclk|sysclk |1000.0|537.3|    9|294.4|multiplier/accumulator_reg[15]/Q|Res_reg[28]/D
+-----+-------+------+-------+------+-----+-----+-----+--------------------------------+-------------
+Report End Points: 
+-----+-----+--------------+-------+------+-----+-----+-----+-----------+--------------------------------
+     |Group|Launch        |Capture|Shift |Delay|Depth|Slack|Begin Point|End Point                       
+-----+-----+--------------+-------+------+-----+-----+-----+-----------+--------------------------------
+1    |I2R  |rtDefaultClock|sysclk |1000.0|  0.8|    5|742.6|enable     |multiplier/accumulator_reg[31]/D
+2    |I2R  |rtDefaultClock|sysclk |1000.0|  0.8|    5|742.6|enable     |multiplier/accumulator_reg[30]/D
+3    |I2R  |rtDefaultClock|sysclk |1000.0|  0.8|    5|742.6|enable     |multiplier/accumulator_reg[29]/D
+-----+-----+--------------+-------+------+-----+-----+-----+-----------+--------------------------------
+Report End Points: 
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+     |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+1    |I2O  |      |       |     |     |     |     |           |         
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+Report End Points: 
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+     |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+1    |R2O  |      |       |     |     |     |     |           |         
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------

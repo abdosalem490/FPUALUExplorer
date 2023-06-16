@@ -1,0 +1,1043 @@
+ Timing Path to i_0_1_316/B1 
+  
+ Path Start Point : enable 
+ Path End Point   : i_0_1_316 (AOI21_X1) 
+                       (falling gating latch clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : **clock_gating** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+| Pin                   Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------|
+|    enable                       Rise  0.2000 0.0000 0.1000 2.15235  0.699202 2.85155           1       75.3599  c             | 
+|    CLOCK_slh__c3966/A CLKBUF_X1 Rise  0.2000 0.0000 0.1000          0.77983                                                   | 
+|    CLOCK_slh__c3966/Z CLKBUF_X1 Rise  0.2480 0.0480 0.0100 0.170352 0.699202 0.869554          1       71.7941                | 
+|    CLOCK_slh__c3970/A CLKBUF_X1 Rise  0.2480 0.0000 0.0100          0.77983                                                   | 
+|    CLOCK_slh__c3970/Z CLKBUF_X1 Rise  0.2890 0.0410 0.0170 5.24308  0.699202 5.94228           1       71.7941                | 
+|    CLOCK_slh__c3971/A CLKBUF_X1 Rise  0.2890 0.0000 0.0170          0.77983                                                   | 
+|    CLOCK_slh__c3971/Z CLKBUF_X1 Rise  0.3330 0.0440 0.0170 5.24647  0.699202 5.94567           1       74.6289                | 
+|    CLOCK_slh__c3972/A CLKBUF_X1 Rise  0.3330 0.0000 0.0170          0.77983                                                   | 
+|    CLOCK_slh__c3972/Z CLKBUF_X1 Rise  0.3630 0.0300 0.0060 0.170352 0.699202 0.869554          1       71.7941                | 
+|    CLOCK_slh__c3980/A CLKBUF_X1 Rise  0.3630 0.0000 0.0060          0.77983                                                   | 
+|    CLOCK_slh__c3980/Z CLKBUF_X1 Rise  0.4020 0.0390 0.0170 5.42367  0.699202 6.12287           1       71.7941                | 
+|    CLOCK_slh__c3981/A CLKBUF_X1 Rise  0.4020 0.0000 0.0170          0.77983                                                   | 
+|    CLOCK_slh__c3981/Z CLKBUF_X1 Rise  0.4460 0.0440 0.0170 5.41768  0.699202 6.11688           1       74.6289                | 
+|    CLOCK_slh__c3982/A CLKBUF_X1 Rise  0.4460 0.0000 0.0170          0.77983                                                   | 
+|    CLOCK_slh__c3982/Z CLKBUF_X1 Rise  0.4920 0.0460 0.0190 6.16901  0.699202 6.86821           1       71.7941                | 
+|    CLOCK_slh__c3990/A CLKBUF_X1 Rise  0.4920 0.0000 0.0190          0.77983                                                   | 
+|    CLOCK_slh__c3990/Z CLKBUF_X1 Rise  0.5220 0.0300 0.0070 0.170352 0.699202 0.869554          1       63.7305                | 
+|    CLOCK_slh__c3991/A CLKBUF_X1 Rise  0.5220 0.0000 0.0070          0.77983                                                   | 
+|    CLOCK_slh__c3991/Z CLKBUF_X1 Rise  0.5630 0.0410 0.0180 5.94706  0.699202 6.64627           1       63.7305                | 
+|    CLOCK_slh__c3992/A CLKBUF_X1 Rise  0.5630 0.0000 0.0180          0.77983                                                   | 
+|    CLOCK_slh__c3992/Z CLKBUF_X1 Rise  0.5950 0.0320 0.0070 0.631006 0.699202 1.33021           1       71.7941                | 
+|    CLOCK_slh__c4000/A CLKBUF_X1 Rise  0.5950 0.0000 0.0070          0.77983                                                   | 
+|    CLOCK_slh__c4000/Z CLKBUF_X1 Rise  0.6340 0.0390 0.0170 5.11381  0.699202 5.81302           1       71.7941                | 
+|    CLOCK_slh__c4001/A CLKBUF_X1 Rise  0.6340 0.0000 0.0170          0.77983                                                   | 
+|    CLOCK_slh__c4001/Z CLKBUF_X1 Rise  0.6790 0.0450 0.0180 5.59581  0.699202 6.29501           1       63.7305                | 
+|    CLOCK_slh__c4002/A CLKBUF_X1 Rise  0.6790 0.0000 0.0180          0.77983                                                   | 
+|    CLOCK_slh__c4002/Z CLKBUF_X1 Rise  0.7090 0.0300 0.0060 0.170352 0.699202 0.869554          1       71.7941                | 
+|    CLOCK_slh__c4006/A CLKBUF_X1 Rise  0.7090 0.0000 0.0060          0.77983                                                   | 
+|    CLOCK_slh__c4006/Z CLKBUF_X1 Rise  0.7480 0.0390 0.0170 5.32994  0.699202 6.02914           1       71.7941                | 
+|    CLOCK_slh__c4007/A CLKBUF_X1 Rise  0.7480 0.0000 0.0170          0.77983                                                   | 
+|    CLOCK_slh__c4007/Z CLKBUF_X1 Rise  0.7920 0.0440 0.0170 5.43085  0.699202 6.13005           1       63.7305                | 
+|    CLOCK_slh__c4008/A CLKBUF_X1 Rise  0.7920 0.0000 0.0170          0.77983                                                   | 
+|    CLOCK_slh__c4008/Z CLKBUF_X1 Rise  0.8220 0.0300 0.0060 0.170352 0.699202 0.869554          1       71.7941                | 
+|    CLOCK_slh__c4012/A CLKBUF_X1 Rise  0.8220 0.0000 0.0060          0.77983                                                   | 
+|    CLOCK_slh__c4012/Z CLKBUF_X1 Rise  0.8620 0.0400 0.0180 5.62653  0.699202 6.32573           1       71.7941                | 
+|    CLOCK_slh__c4013/A CLKBUF_X1 Rise  0.8620 0.0000 0.0180          0.77983                                                   | 
+|    CLOCK_slh__c4013/Z CLKBUF_X1 Rise  0.9060 0.0440 0.0170 5.26891  0.699202 5.96811           1       63.7305                | 
+|    CLOCK_slh__c4014/A CLKBUF_X1 Rise  0.9060 0.0000 0.0170          0.77983                                                   | 
+|    CLOCK_slh__c4014/Z CLKBUF_X1 Rise  0.9360 0.0300 0.0060 0.170352 0.699202 0.869554          1       71.7941                | 
+|    CLOCK_slh__c4018/A CLKBUF_X1 Rise  0.9360 0.0000 0.0060          0.77983                                                   | 
+|    CLOCK_slh__c4018/Z CLKBUF_X1 Rise  0.9610 0.0250 0.0060 0.170352 0.699202 0.869554          1       71.7941                | 
+|    CLOCK_slh__c4019/A CLKBUF_X1 Rise  0.9610 0.0000 0.0060          0.77983                                                   | 
+|    CLOCK_slh__c4019/Z CLKBUF_X1 Rise  0.9870 0.0260 0.0070 0.462891 0.699202 1.16209           1       71.7941                | 
+|    CLOCK_slh__c4020/A CLKBUF_X1 Rise  0.9870 0.0000 0.0070          0.77983                                                   | 
+|    CLOCK_slh__c4020/Z CLKBUF_X1 Rise  1.0120 0.0250 0.0060 0.170352 0.699202 0.869554          1       71.7941                | 
+|    CLOCK_slh__c4024/A CLKBUF_X1 Rise  1.0120 0.0000 0.0060          0.77983                                                   | 
+|    CLOCK_slh__c4024/Z CLKBUF_X1 Rise  1.0370 0.0250 0.0060 0.170352 0.699202 0.869554          1       71.7941                | 
+|    CLOCK_slh__c4025/A CLKBUF_X1 Rise  1.0370 0.0000 0.0060          0.77983                                                   | 
+|    CLOCK_slh__c4025/Z CLKBUF_X1 Rise  1.0630 0.0260 0.0070 0.634292 0.699202 1.33349           1       71.7941                | 
+|    CLOCK_slh__c4026/A CLKBUF_X1 Rise  1.0630 0.0000 0.0070          0.77983                                                   | 
+|    CLOCK_slh__c4026/Z CLKBUF_X1 Rise  1.0960 0.0330 0.0110 1.97513  1.44682  3.42195           1       71.7941                | 
+|    i_0_1_316/B1       AOI21_X1  Rise  1.0960 0.0000 0.0110          1.647                                       F             | 
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to i_0_1_316/B2 
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+| Pin                     Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------|
+|    clk                            Fall  1.0000 1.0000 0.1000 0.24664  1.42116 1.6678            1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A CLKBUF_X3 Fall  1.0000 0.0000 0.1000          1.24879                                    mF            | 
+|    CTS_L1_c_tid0_2005/Z CLKBUF_X3 Fall  1.0800 0.0800 0.0230 15.4532  7.63182 23.085            2       75.3599  mF   K/M      | 
+|    i_0_1_316/B2         AOI21_X1  Fall  1.0810 0.0010 0.0230          1.40993                                    mF            | 
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  1.0000 1.0000 | 
+| target clock cycle shift                 |  0.0000 1.0000 | 
+| target clock propagated network latency  |  0.0810 1.0810 | 
+| data required time                       |  1.0810        | 
+|                                          |                | 
+| data arrival time                        |  1.0960        | 
+| data required time                       | -1.0810        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0150        | 
+-------------------------------------------------------------
+
+
+ Timing Path to Res_reg[0]/D 
+  
+ Path Start Point : A_in_reg[0] (DLH_X2) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode) 
+ Path End Point   : Res_reg[0] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                              Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                     Rise  0.0000 0.0000 0.1000 0.24664  1.24879  1.49543           1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A          CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z          CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.10795  22.5611           2       75.3599  mF   K/M      | 
+|    i_0_1_316/B2                  AOI21_X1  Rise  0.0720 0.0010 0.0230          1.67685                                     mF            | 
+|    i_0_1_316/ZN                  AOI21_X1  Fall  0.0990 0.0270 0.0140 0.125049 5.70005  5.8251            1       75.3599  mF   K/M      | 
+|    CTS_L3_remove_c1990/A         INV_X4    Fall  0.0990 0.0000 0.0140          5.70005                                     mF            | 
+|    CTS_L3_remove_c1990/ZN        INV_X4    Rise  0.1750 0.0760 0.0730 56.6215  57.1385  113.76            64      75.3599  mF   K/M      | 
+| Data Path:                                                                                                                               | 
+|    A_in_reg[0]/G                 DLH_X2    Rise  0.1820 0.0070 0.0730          0.987008                                    MmF           | 
+|    A_in_reg[0]/Q                 DLH_X2    Rise  0.2650 0.0830 0.0200 2.90978  10.1726  13.0823           3       74.6289  MF            | 
+|    firstStage/A[0]                         Rise  0.2650 0.0000                                                                           | 
+|    firstStage/i_0_21/A           INV_X2    Rise  0.2650 0.0000 0.0200          3.25089                                                   | 
+|    firstStage/i_0_21/ZN          INV_X2    Fall  0.3250 0.0600 0.0440 30.4017  49.8923  80.294            32      74.6289                | 
+|    firstStage/i_0_2/A2           NOR2_X1   Fall  0.3330 0.0080 0.0450          1.56385                                                   | 
+|    firstStage/i_0_2/ZN           NOR2_X1   Rise  0.3970 0.0640 0.0370 0.737369 5.3145   6.05187           4       66.2584                | 
+|    firstStage/normalizedWires[0]           Rise  0.3970 0.0000                                                                           | 
+|    i_0_1_0/A2                    AND2_X1   Rise  0.3970 0.0000 0.0370          0.97463                                                   | 
+|    i_0_1_0/ZN                    AND2_X1   Rise  0.4350 0.0380 0.0090 0.798438 0.869621 1.66806           1       58.9031                | 
+|    Res_reg[0]/D                  DLH_X1    Rise  0.4350 0.0000 0.0090          0.914139                                    MF            | 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to Res_reg[0]/G 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+| Pin                     Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------|
+|    clk                            Rise  0.0000 0.0000 0.1000 0.24664  1.42116  1.6678            1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.63182  23.085            2       75.3599  mF   K/M      | 
+|    i_0_1_318/A1         NAND2_X4  Rise  0.0720 0.0010 0.0230          5.95497                                     mF            | 
+|    i_0_1_318/ZN         NAND2_X4  Fall  0.1390 0.0670 0.0600 48.2399  63.0749  111.315           64      58.9031  mF   K/M      | 
+|    Res_reg[0]/G         DLH_X1    Fall  0.1450 0.0060 0.0600          0.894119                                    MmF           | 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.1450 0.1450 | 
+| library hold check                       |  0.0320 0.1770 | 
+| data required time                       |  0.1770        | 
+|                                          |                | 
+| data arrival time                        |  0.4350        | 
+| data required time                       | -0.1770        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.2580        | 
+-------------------------------------------------------------
+
+
+ Timing Path to Res_reg[1]/D 
+  
+ Path Start Point : A_in_reg[0] (DLH_X2) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode) 
+ Path End Point   : Res_reg[1] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                         Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                                Rise  0.0000 0.0000 0.1000 0.24664  1.24879  1.49543           1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A                                     CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z                                     CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.10795  22.5611           2       75.3599  mF   K/M      | 
+|    i_0_1_316/B2                                             AOI21_X1  Rise  0.0720 0.0010 0.0230          1.67685                                     mF            | 
+|    i_0_1_316/ZN                                             AOI21_X1  Fall  0.0990 0.0270 0.0140 0.125049 5.70005  5.8251            1       75.3599  mF   K/M      | 
+|    CTS_L3_remove_c1990/A                                    INV_X4    Fall  0.0990 0.0000 0.0140          5.70005                                     mF            | 
+|    CTS_L3_remove_c1990/ZN                                   INV_X4    Rise  0.1750 0.0760 0.0730 56.6215  57.1385  113.76            64      75.3599  mF   K/M      | 
+| Data Path:                                                                                                                                                          | 
+|    A_in_reg[0]/G                                            DLH_X2    Rise  0.1820 0.0070 0.0730          0.987008                                    MmF           | 
+|    A_in_reg[0]/Q                                            DLH_X2    Rise  0.2650 0.0830 0.0200 2.90978  10.1726  13.0823           3       74.6289  MF            | 
+|    firstStage/A[0]                                                    Rise  0.2650 0.0000                                                                           | 
+|    firstStage/i_0_21/A                                      INV_X2    Rise  0.2650 0.0000 0.0200          3.25089                                                   | 
+|    firstStage/i_0_21/ZN                                     INV_X2    Fall  0.3250 0.0600 0.0440 30.4017  49.8923  80.294            32      74.6289                | 
+|    firstStage/i_0_64/A2                                     NOR2_X1   Fall  0.3330 0.0080 0.0450          1.56385                                                   | 
+|    firstStage/i_0_64/ZN                                     NOR2_X1   Rise  0.3860 0.0530 0.0260 0.696058 3.23838  3.93444           2       63.0887                | 
+|    firstStage/normalizedWires[65]                                     Rise  0.3860 0.0000                                                                           | 
+|    secondStage/normalizedWires[65]                                    Rise  0.3860 0.0000                                                                           | 
+|    secondStage/genblk2_0_parallelAdderStage1/B[1]                     Rise  0.3860 0.0000                                                             A             | 
+|    secondStage/genblk2_0_parallelAdderStage1/genblk1_1_fa/B           Rise  0.3860 0.0000                                                                           | 
+|    secondStage/genblk2_0_parallelAdderStage1/genblk1_1_fa/  XOR2_X1   Rise  0.3860 0.0000 0.0260          2.36355                                                   | 
+| i_0_0/B                                                                                                                                                             | 
+|    secondStage/genblk2_0_parallelAdderStage1/genblk1_1_fa/  XOR2_X1   Fall  0.4220 0.0360 0.0190 3.57671  5.85588  9.4326            4       64.037                 | 
+| i_0_0/Z                                                                                                                                                             | 
+|    secondStage/genblk2_0_parallelAdderStage1/genblk1_1_fa/            Fall  0.4220 0.0000                                                                           | 
+| SUM                                                                                                                                                                 | 
+|    secondStage/genblk2_0_parallelAdderStage1/result[1]                Fall  0.4220 0.0000                                                             A             | 
+|    secondStage/Res[1]                                                 Fall  0.4220 0.0000                                                                           | 
+|    i_0_1_6/A                                                INV_X1    Fall  0.4220 0.0000 0.0190          1.54936                                                   | 
+|    i_0_1_6/ZN                                               INV_X1    Rise  0.4390 0.0170 0.0090 0.202293 1.56451  1.7668            1       58.9031                | 
+|    i_0_1_4/A2                                               OAI22_X1  Rise  0.4390 0.0000 0.0090          1.58424                                                   | 
+|    i_0_1_4/ZN                                               OAI22_X1  Fall  0.4510 0.0120 0.0060 0.344289 0.869621 1.21391           1       58.9031                | 
+|    Res_reg[1]/D                                             DLH_X1    Fall  0.4510 0.0000 0.0060          0.869621                                    MF            | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to Res_reg[1]/G 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+| Pin                     Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------|
+|    clk                            Rise  0.0000 0.0000 0.1000 0.24664  1.42116  1.6678            1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.63182  23.085            2       75.3599  mF   K/M      | 
+|    i_0_1_318/A1         NAND2_X4  Rise  0.0720 0.0010 0.0230          5.95497                                     mF            | 
+|    i_0_1_318/ZN         NAND2_X4  Fall  0.1390 0.0670 0.0600 48.2399  63.0749  111.315           64      58.9031  mF   K/M      | 
+|    Res_reg[1]/G         DLH_X1    Fall  0.1480 0.0090 0.0600          0.894119                                    MmF           | 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.1480 0.1480 | 
+| library hold check                       |  0.0360 0.1840 | 
+| data required time                       |  0.1840        | 
+|                                          |                | 
+| data arrival time                        |  0.4510        | 
+| data required time                       | -0.1840        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.2670        | 
+-------------------------------------------------------------
+
+
+ Timing Path to Res_reg[50]/D 
+  
+ Path Start Point : A_in_reg[31] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode) 
+ Path End Point   : Res_reg[50] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+| Pin                       Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-----------------------------------------------------------------------------------------------------------------------------------|
+|    clk                              Rise  0.0000 0.0000 0.1000 0.24664  1.24879  1.49543           1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A   CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z   CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.10795  22.5611           2       75.3599  mF   K/M      | 
+|    i_0_1_316/B2           AOI21_X1  Rise  0.0720 0.0010 0.0230          1.67685                                     mF            | 
+|    i_0_1_316/ZN           AOI21_X1  Fall  0.0990 0.0270 0.0140 0.125049 5.70005  5.8251            1       75.3599  mF   K/M      | 
+|    CTS_L3_remove_c1990/A  INV_X4    Fall  0.0990 0.0000 0.0140          5.70005                                     mF            | 
+|    CTS_L3_remove_c1990/ZN INV_X4    Rise  0.1750 0.0760 0.0730 56.6215  57.1385  113.76            64      75.3599  mF   K/M      | 
+| Data Path:                                                                                                                        | 
+|    A_in_reg[31]/G         DLH_X1    Rise  0.1820 0.0070 0.0730          0.985498                                    MmF           | 
+|    A_in_reg[31]/Q         DLH_X1    Fall  0.2900 0.1080 0.0320 0.386333 23.5725  23.9589           1       71.7941  MF            | 
+|    drc_ipo_c26/A          BUF_X32   Fall  0.2900 0.0000 0.0320          23.5725                                                   | 
+|    drc_ipo_c26/Z          BUF_X32   Fall  0.3320 0.0420 0.0100 39.4008  123.765  163.166           45      71.7941                | 
+|    i_0_1_242/A            XNOR2_X2  Fall  0.3370 0.0050 0.0100          3.80206                                                   | 
+|    i_0_1_242/ZN           XNOR2_X2  Rise  0.3760 0.0390 0.0170 2.15167  5.61308  7.76475           4       75.2846                | 
+|    slo__c1065/A2          OR3_X1    Rise  0.3760 0.0000 0.0170          0.940092                                                  | 
+|    slo__c1065/ZN          OR3_X1    Rise  0.4120 0.0360 0.0130 1.10322  3.17833  4.28155           1       58.9477                | 
+|    sgo__sro_c39/A2        NOR2_X2   Rise  0.4120 0.0000 0.0130          3.34692                                                   | 
+|    sgo__sro_c39/ZN        NOR2_X2   Fall  0.4230 0.0110 0.0040 0.675427 2.93833  3.61376           1       75.4436                | 
+|    sgo__sro_c40/A         AOI21_X2  Fall  0.4230 0.0000 0.0040          2.93833                                                   | 
+|    sgo__sro_c40/ZN        AOI21_X2  Rise  0.4480 0.0250 0.0140 1.14504  1.54936  2.6944            1       75.4436                | 
+|    i_0_1_264/A            INV_X1    Rise  0.4480 0.0000 0.0140          1.70023                                                   | 
+|    i_0_1_264/ZN           INV_X1    Fall  0.4560 0.0080 0.0050 0.458962 0.869621 1.32858           1       73.0676                | 
+|    Res_reg[50]/D          DLH_X1    Fall  0.4560 0.0000 0.0050          0.869621                                    MF            | 
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to Res_reg[50]/G 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+| Pin                     Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------|
+|    clk                            Rise  0.0000 0.0000 0.1000 0.24664  1.42116  1.6678            1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.63182  23.085            2       75.3599  mF   K/M      | 
+|    i_0_1_318/A1         NAND2_X4  Rise  0.0720 0.0010 0.0230          5.95497                                     mF            | 
+|    i_0_1_318/ZN         NAND2_X4  Fall  0.1390 0.0670 0.0600 48.2399  63.0749  111.315           64      58.9031  mF   K/M      | 
+|    Res_reg[50]/G        DLH_X1    Fall  0.1520 0.0130 0.0590          0.894119                                    MmF           | 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.1520 0.1520 | 
+| library hold check                       |  0.0340 0.1860 | 
+| data required time                       |  0.1860        | 
+|                                          |                | 
+| data arrival time                        |  0.4560        | 
+| data required time                       | -0.1860        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.2700        | 
+-------------------------------------------------------------
+
+
+ Timing Path to Res_reg[55]/D 
+  
+ Path Start Point : A_in_reg[31] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode) 
+ Path End Point   : Res_reg[55] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                        Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Rise  0.0000 0.0000 0.1000 0.24664  1.24879  1.49543           1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A    CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z    CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.10795  22.5611           2       75.3599  mF   K/M      | 
+|    i_0_1_316/B2            AOI21_X1  Rise  0.0720 0.0010 0.0230          1.67685                                     mF            | 
+|    i_0_1_316/ZN            AOI21_X1  Fall  0.0990 0.0270 0.0140 0.125049 5.70005  5.8251            1       75.3599  mF   K/M      | 
+|    CTS_L3_remove_c1990/A   INV_X4    Fall  0.0990 0.0000 0.0140          5.70005                                     mF            | 
+|    CTS_L3_remove_c1990/ZN  INV_X4    Rise  0.1750 0.0760 0.0730 56.6215  57.1385  113.76            64      75.3599  mF   K/M      | 
+| Data Path:                                                                                                                         | 
+|    A_in_reg[31]/G          DLH_X1    Rise  0.1820 0.0070 0.0730          0.985498                                    MmF           | 
+|    A_in_reg[31]/Q          DLH_X1    Fall  0.2900 0.1080 0.0320 0.386333 23.5725  23.9589           1       71.7941  MF            | 
+|    drc_ipo_c26/A           BUF_X32   Fall  0.2900 0.0000 0.0320          23.5725                                                   | 
+|    drc_ipo_c26/Z           BUF_X32   Fall  0.3320 0.0420 0.0100 39.4008  123.765  163.166           45      71.7941                | 
+|    i_0_1_242/A             XNOR2_X2  Fall  0.3370 0.0050 0.0100          3.80206                                                   | 
+|    i_0_1_242/ZN            XNOR2_X2  Rise  0.3760 0.0390 0.0170 2.15167  5.61308  7.76475           4       75.2846                | 
+|    CLOCK_slo__sro_c3035/A1 OR2_X1    Rise  0.3760 0.0000 0.0170          0.946814                                                  | 
+|    CLOCK_slo__sro_c3035/ZN OR2_X1    Rise  0.4060 0.0300 0.0110 0.170352 3.22572  3.39608           1       73.0676                | 
+|    CLOCK_slo__sro_c3036/A2 OR2_X4    Rise  0.4060 0.0000 0.0110          3.45466                                                   | 
+|    CLOCK_slo__sro_c3036/ZN OR2_X4    Rise  0.4340 0.0280 0.0100 0.974961 11.5102  12.4851           2       73.0676                | 
+|    slo__xsl_c417/A         INV_X4    Rise  0.4340 0.0000 0.0100          6.25843                                                   | 
+|    slo__xsl_c417/ZN        INV_X4    Fall  0.4480 0.0140 0.0080 4.27661  19.7217  23.9983           7       73.0676                | 
+|    i_0_1_15/A2             AOI22_X4  Fall  0.4490 0.0010 0.0080          5.7637                                                    | 
+|    i_0_1_15/ZN             AOI22_X4  Rise  0.4680 0.0190 0.0100 0.357435 1.54936  1.9068            1       75.4436                | 
+|    opt_ipo_c1804/A         INV_X1    Rise  0.4680 0.0000 0.0100          1.70023                                                   | 
+|    opt_ipo_c1804/ZN        INV_X1    Fall  0.4750 0.0070 0.0040 0.67264  0.869621 1.54226           1       75.4436                | 
+|    Res_reg[55]/D           DLH_X1    Fall  0.4750 0.0000 0.0040          0.869621                                    MF            | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to Res_reg[55]/G 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+| Pin                     Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------|
+|    clk                            Rise  0.0000 0.0000 0.1000 0.24664  1.42116  1.6678            1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.63182  23.085            2       75.3599  mF   K/M      | 
+|    i_0_1_318/A1         NAND2_X4  Rise  0.0720 0.0010 0.0230          5.95497                                     mF            | 
+|    i_0_1_318/ZN         NAND2_X4  Fall  0.1390 0.0670 0.0600 48.2399  63.0749  111.315           64      58.9031  mF   K/M      | 
+|    Res_reg[55]/G        DLH_X1    Fall  0.1520 0.0130 0.0590          0.894119                                    MmF           | 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.1520 0.1520 | 
+| library hold check                       |  0.0340 0.1860 | 
+| data required time                       |  0.1860        | 
+|                                          |                | 
+| data arrival time                        |  0.4750        | 
+| data required time                       | -0.1860        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.2890        | 
+-------------------------------------------------------------
+
+
+ Timing Path to Res_reg[3]/D 
+  
+ Path Start Point : B_in_reg[31] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode) 
+ Path End Point   : Res_reg[3] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                        Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Rise  0.0000 0.0000 0.1000 0.24664  1.24879  1.49543           1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A    CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z    CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.10795  22.5611           2       75.3599  mF   K/M      | 
+|    i_0_1_316/B2            AOI21_X1  Rise  0.0720 0.0010 0.0230          1.67685                                     mF            | 
+|    i_0_1_316/ZN            AOI21_X1  Fall  0.0990 0.0270 0.0140 0.125049 5.70005  5.8251            1       75.3599  mF   K/M      | 
+|    CTS_L3_remove_c1990/A   INV_X4    Fall  0.0990 0.0000 0.0140          5.70005                                     mF            | 
+|    CTS_L3_remove_c1990/ZN  INV_X4    Rise  0.1750 0.0760 0.0730 56.6215  57.1385  113.76            64      75.3599  mF   K/M      | 
+| Data Path:                                                                                                                         | 
+|    B_in_reg[31]/G          DLH_X1    Rise  0.1800 0.0050 0.0730          0.985498                                    MmF           | 
+|    B_in_reg[31]/Q          DLH_X1    Rise  0.2720 0.0920 0.0300 0.462368 10.9969  11.4593           1       75.3599  MF            | 
+|    drc_ipo_c27/A           BUF_X16   Rise  0.2720 0.0000 0.0300          12.4108                                                   | 
+|    drc_ipo_c27/Z           BUF_X16   Rise  0.3170 0.0450 0.0230 44.139   94.5787  138.718           44      75.3599                | 
+|    i_0_1_242/B             XNOR2_X2  Rise  0.3420 0.0250 0.0230          4.83694                                                   | 
+|    i_0_1_242/ZN            XNOR2_X2  Fall  0.3680 0.0260 0.0120 2.15167  5.61308  7.76475           4       75.2846                | 
+|    slo__c1173/A2           NOR2_X2   Fall  0.3680 0.0000 0.0120          3.17833                                                   | 
+|    slo__c1173/ZN           NOR2_X2   Rise  0.3970 0.0290 0.0150 0.435446 2.94332  3.37876           1       75.2846                | 
+|    opt_ipo_c1909/A         INV_X2    Rise  0.3970 0.0000 0.0150          3.25089                                                   | 
+|    opt_ipo_c1909/ZN        INV_X2    Fall  0.4090 0.0120 0.0070 1.04751  5.69802  6.74553           1       75.2846                | 
+|    CLOCK_slo__sro_c2788/A1 NAND2_X4  Fall  0.4090 0.0000 0.0070          5.69802                                                   | 
+|    CLOCK_slo__sro_c2788/ZN NAND2_X4  Rise  0.4250 0.0160 0.0100 0.357435 10.8     11.1574           1       75.2846                | 
+|    CLOCK_slo__sro_c2789/A  INV_X8    Rise  0.4250 0.0000 0.0100          11.8107                                                   | 
+|    CLOCK_slo__sro_c2789/ZN INV_X8    Fall  0.4370 0.0120 0.0060 0.689316 28.7141  29.4035           2       75.2846                | 
+|    CLOCK_slo__c2764/A      INV_X4    Fall  0.4370 0.0000 0.0060          5.70005                                                   | 
+|    CLOCK_slo__c2764/ZN     INV_X4    Rise  0.4570 0.0200 0.0140 6.80572  13.8074  20.6132           3       75.2846                | 
+|    i_0_1_10/A1             OAI22_X1  Rise  0.4570 0.0000 0.0140          1.67104                                                   | 
+|    i_0_1_10/ZN             OAI22_X1  Fall  0.4700 0.0130 0.0060 0.756148 0.869621 1.62577           1       58.9031                | 
+|    Res_reg[3]/D            DLH_X1    Fall  0.4700 0.0000 0.0060          0.869621                                    MF            | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to Res_reg[3]/G 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+| Pin                     Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------|
+|    clk                            Rise  0.0000 0.0000 0.1000 0.24664  1.42116  1.6678            1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.63182  23.085            2       75.3599  mF   K/M      | 
+|    i_0_1_318/A1         NAND2_X4  Rise  0.0720 0.0010 0.0230          5.95497                                     mF            | 
+|    i_0_1_318/ZN         NAND2_X4  Fall  0.1390 0.0670 0.0600 48.2399  63.0749  111.315           64      58.9031  mF   K/M      | 
+|    Res_reg[3]/G         DLH_X1    Fall  0.1430 0.0040 0.0600          0.894119                                    MmF           | 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.1430 0.1430 | 
+| library hold check                       |  0.0360 0.1790 | 
+| data required time                       |  0.1790        | 
+|                                          |                | 
+| data arrival time                        |  0.4700        | 
+| data required time                       | -0.1790        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.2910        | 
+-------------------------------------------------------------
+
+
+ Timing Path to Res_reg[43]/D 
+  
+ Path Start Point : B_in_reg[31] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode) 
+ Path End Point   : Res_reg[43] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                        Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Rise  0.0000 0.0000 0.1000 0.24664  1.24879  1.49543           1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A    CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z    CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.10795  22.5611           2       75.3599  mF   K/M      | 
+|    i_0_1_316/B2            AOI21_X1  Rise  0.0720 0.0010 0.0230          1.67685                                     mF            | 
+|    i_0_1_316/ZN            AOI21_X1  Fall  0.0990 0.0270 0.0140 0.125049 5.70005  5.8251            1       75.3599  mF   K/M      | 
+|    CTS_L3_remove_c1990/A   INV_X4    Fall  0.0990 0.0000 0.0140          5.70005                                     mF            | 
+|    CTS_L3_remove_c1990/ZN  INV_X4    Rise  0.1750 0.0760 0.0730 56.6215  57.1385  113.76            64      75.3599  mF   K/M      | 
+| Data Path:                                                                                                                         | 
+|    B_in_reg[31]/G          DLH_X1    Rise  0.1800 0.0050 0.0730          0.985498                                    MmF           | 
+|    B_in_reg[31]/Q          DLH_X1    Rise  0.2720 0.0920 0.0300 0.462368 10.9969  11.4593           1       75.3599  MF            | 
+|    drc_ipo_c27/A           BUF_X16   Rise  0.2720 0.0000 0.0300          12.4108                                                   | 
+|    drc_ipo_c27/Z           BUF_X16   Rise  0.3170 0.0450 0.0230 44.139   94.5787  138.718           44      75.3599                | 
+|    i_0_1_242/B             XNOR2_X2  Rise  0.3420 0.0250 0.0230          4.83694                                                   | 
+|    i_0_1_242/ZN            XNOR2_X2  Fall  0.3680 0.0260 0.0120 2.15167  5.61308  7.76475           4       75.2846                | 
+|    slo__c1173/A2           NOR2_X2   Fall  0.3680 0.0000 0.0120          3.17833                                                   | 
+|    slo__c1173/ZN           NOR2_X2   Rise  0.3970 0.0290 0.0150 0.435446 2.94332  3.37876           1       75.2846                | 
+|    opt_ipo_c1909/A         INV_X2    Rise  0.3970 0.0000 0.0150          3.25089                                                   | 
+|    opt_ipo_c1909/ZN        INV_X2    Fall  0.4090 0.0120 0.0070 1.04751  5.69802  6.74553           1       75.2846                | 
+|    CLOCK_slo__sro_c2788/A1 NAND2_X4  Fall  0.4090 0.0000 0.0070          5.69802                                                   | 
+|    CLOCK_slo__sro_c2788/ZN NAND2_X4  Rise  0.4250 0.0160 0.0100 0.357435 10.8     11.1574           1       75.2846                | 
+|    CLOCK_slo__sro_c2789/A  INV_X8    Rise  0.4250 0.0000 0.0100          11.8107                                                   | 
+|    CLOCK_slo__sro_c2789/ZN INV_X8    Fall  0.4370 0.0120 0.0060 0.689316 28.7141  29.4035           2       75.2846                | 
+|    CLOCK_sgo__c2073/A      INV_X16   Fall  0.4370 0.0000 0.0060          23.0141                                                   | 
+|    CLOCK_sgo__c2073/ZN     INV_X16   Rise  0.4610 0.0240 0.0180 19.7031  85.4624  105.165           46      75.2846                | 
+|    i_0_1_129/A1            OAI22_X1  Rise  0.4650 0.0040 0.0180          1.67104                                                   | 
+|    i_0_1_129/ZN            OAI22_X1  Fall  0.4780 0.0130 0.0070 0.336653 0.869621 1.20627           1       58.9477                | 
+|    Res_reg[43]/D           DLH_X1    Fall  0.4780 0.0000 0.0070          0.869621                                    MF            | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to Res_reg[43]/G 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+| Pin                     Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------|
+|    clk                            Rise  0.0000 0.0000 0.1000 0.24664  1.42116  1.6678            1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.63182  23.085            2       75.3599  mF   K/M      | 
+|    i_0_1_318/A1         NAND2_X4  Rise  0.0720 0.0010 0.0230          5.95497                                     mF            | 
+|    i_0_1_318/ZN         NAND2_X4  Fall  0.1390 0.0670 0.0600 48.2399  63.0749  111.315           64      58.9031  mF   K/M      | 
+|    Res_reg[43]/G        DLH_X1    Fall  0.1520 0.0130 0.0590          0.894119                                    MmF           | 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.1520 0.1520 | 
+| library hold check                       |  0.0350 0.1870 | 
+| data required time                       |  0.1870        | 
+|                                          |                | 
+| data arrival time                        |  0.4780        | 
+| data required time                       | -0.1870        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.2910        | 
+-------------------------------------------------------------
+
+
+ Timing Path to Res_reg[47]/D 
+  
+ Path Start Point : B_in_reg[31] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode) 
+ Path End Point   : Res_reg[47] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                        Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Rise  0.0000 0.0000 0.1000 0.24664  1.24879  1.49543           1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A    CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z    CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.10795  22.5611           2       75.3599  mF   K/M      | 
+|    i_0_1_316/B2            AOI21_X1  Rise  0.0720 0.0010 0.0230          1.67685                                     mF            | 
+|    i_0_1_316/ZN            AOI21_X1  Fall  0.0990 0.0270 0.0140 0.125049 5.70005  5.8251            1       75.3599  mF   K/M      | 
+|    CTS_L3_remove_c1990/A   INV_X4    Fall  0.0990 0.0000 0.0140          5.70005                                     mF            | 
+|    CTS_L3_remove_c1990/ZN  INV_X4    Rise  0.1750 0.0760 0.0730 56.6215  57.1385  113.76            64      75.3599  mF   K/M      | 
+| Data Path:                                                                                                                         | 
+|    B_in_reg[31]/G          DLH_X1    Rise  0.1800 0.0050 0.0730          0.985498                                    MmF           | 
+|    B_in_reg[31]/Q          DLH_X1    Rise  0.2720 0.0920 0.0300 0.462368 10.9969  11.4593           1       75.3599  MF            | 
+|    drc_ipo_c27/A           BUF_X16   Rise  0.2720 0.0000 0.0300          12.4108                                                   | 
+|    drc_ipo_c27/Z           BUF_X16   Rise  0.3170 0.0450 0.0230 44.139   94.5787  138.718           44      75.3599                | 
+|    i_0_1_242/B             XNOR2_X2  Rise  0.3420 0.0250 0.0230          4.83694                                                   | 
+|    i_0_1_242/ZN            XNOR2_X2  Fall  0.3680 0.0260 0.0120 2.15167  5.61308  7.76475           4       75.2846                | 
+|    slo__c1173/A2           NOR2_X2   Fall  0.3680 0.0000 0.0120          3.17833                                                   | 
+|    slo__c1173/ZN           NOR2_X2   Rise  0.3970 0.0290 0.0150 0.435446 2.94332  3.37876           1       75.2846                | 
+|    opt_ipo_c1909/A         INV_X2    Rise  0.3970 0.0000 0.0150          3.25089                                                   | 
+|    opt_ipo_c1909/ZN        INV_X2    Fall  0.4090 0.0120 0.0070 1.04751  5.69802  6.74553           1       75.2846                | 
+|    CLOCK_slo__sro_c2788/A1 NAND2_X4  Fall  0.4090 0.0000 0.0070          5.69802                                                   | 
+|    CLOCK_slo__sro_c2788/ZN NAND2_X4  Rise  0.4250 0.0160 0.0100 0.357435 10.8     11.1574           1       75.2846                | 
+|    CLOCK_slo__sro_c2789/A  INV_X8    Rise  0.4250 0.0000 0.0100          11.8107                                                   | 
+|    CLOCK_slo__sro_c2789/ZN INV_X8    Fall  0.4370 0.0120 0.0060 0.689316 28.7141  29.4035           2       75.2846                | 
+|    CLOCK_sgo__c2073/A      INV_X16   Fall  0.4370 0.0000 0.0060          23.0141                                                   | 
+|    CLOCK_sgo__c2073/ZN     INV_X16   Rise  0.4610 0.0240 0.0180 19.7031  85.4624  105.165           46      75.2846                | 
+|    i_0_1_141/A1            OAI22_X1  Rise  0.4660 0.0050 0.0180          1.67104                                                   | 
+|    i_0_1_141/ZN            OAI22_X1  Fall  0.4790 0.0130 0.0070 0.354031 0.869621 1.22365           1       73.0676                | 
+|    Res_reg[47]/D           DLH_X1    Fall  0.4790 0.0000 0.0070          0.869621                                    MF            | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to Res_reg[47]/G 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+| Pin                     Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------|
+|    clk                            Rise  0.0000 0.0000 0.1000 0.24664  1.42116  1.6678            1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.63182  23.085            2       75.3599  mF   K/M      | 
+|    i_0_1_318/A1         NAND2_X4  Rise  0.0720 0.0010 0.0230          5.95497                                     mF            | 
+|    i_0_1_318/ZN         NAND2_X4  Fall  0.1390 0.0670 0.0600 48.2399  63.0749  111.315           64      58.9031  mF   K/M      | 
+|    Res_reg[47]/G        DLH_X1    Fall  0.1530 0.0140 0.0590          0.894119                                    MmF           | 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.1530 0.1530 | 
+| library hold check                       |  0.0350 0.1880 | 
+| data required time                       |  0.1880        | 
+|                                          |                | 
+| data arrival time                        |  0.4790        | 
+| data required time                       | -0.1880        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.2910        | 
+-------------------------------------------------------------
+
+
+ Timing Path to Res_reg[48]/D 
+  
+ Path Start Point : B_in_reg[31] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode) 
+ Path End Point   : Res_reg[48] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                        Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Rise  0.0000 0.0000 0.1000 0.24664  1.24879  1.49543           1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A    CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z    CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.10795  22.5611           2       75.3599  mF   K/M      | 
+|    i_0_1_316/B2            AOI21_X1  Rise  0.0720 0.0010 0.0230          1.67685                                     mF            | 
+|    i_0_1_316/ZN            AOI21_X1  Fall  0.0990 0.0270 0.0140 0.125049 5.70005  5.8251            1       75.3599  mF   K/M      | 
+|    CTS_L3_remove_c1990/A   INV_X4    Fall  0.0990 0.0000 0.0140          5.70005                                     mF            | 
+|    CTS_L3_remove_c1990/ZN  INV_X4    Rise  0.1750 0.0760 0.0730 56.6215  57.1385  113.76            64      75.3599  mF   K/M      | 
+| Data Path:                                                                                                                         | 
+|    B_in_reg[31]/G          DLH_X1    Rise  0.1800 0.0050 0.0730          0.985498                                    MmF           | 
+|    B_in_reg[31]/Q          DLH_X1    Rise  0.2720 0.0920 0.0300 0.462368 10.9969  11.4593           1       75.3599  MF            | 
+|    drc_ipo_c27/A           BUF_X16   Rise  0.2720 0.0000 0.0300          12.4108                                                   | 
+|    drc_ipo_c27/Z           BUF_X16   Rise  0.3170 0.0450 0.0230 44.139   94.5787  138.718           44      75.3599                | 
+|    i_0_1_242/B             XNOR2_X2  Rise  0.3420 0.0250 0.0230          4.83694                                                   | 
+|    i_0_1_242/ZN            XNOR2_X2  Fall  0.3680 0.0260 0.0120 2.15167  5.61308  7.76475           4       75.2846                | 
+|    slo__c1173/A2           NOR2_X2   Fall  0.3680 0.0000 0.0120          3.17833                                                   | 
+|    slo__c1173/ZN           NOR2_X2   Rise  0.3970 0.0290 0.0150 0.435446 2.94332  3.37876           1       75.2846                | 
+|    opt_ipo_c1909/A         INV_X2    Rise  0.3970 0.0000 0.0150          3.25089                                                   | 
+|    opt_ipo_c1909/ZN        INV_X2    Fall  0.4090 0.0120 0.0070 1.04751  5.69802  6.74553           1       75.2846                | 
+|    CLOCK_slo__sro_c2788/A1 NAND2_X4  Fall  0.4090 0.0000 0.0070          5.69802                                                   | 
+|    CLOCK_slo__sro_c2788/ZN NAND2_X4  Rise  0.4250 0.0160 0.0100 0.357435 10.8     11.1574           1       75.2846                | 
+|    CLOCK_slo__sro_c2789/A  INV_X8    Rise  0.4250 0.0000 0.0100          11.8107                                                   | 
+|    CLOCK_slo__sro_c2789/ZN INV_X8    Fall  0.4370 0.0120 0.0060 0.689316 28.7141  29.4035           2       75.2846                | 
+|    CLOCK_sgo__c2073/A      INV_X16   Fall  0.4370 0.0000 0.0060          23.0141                                                   | 
+|    CLOCK_sgo__c2073/ZN     INV_X16   Rise  0.4610 0.0240 0.0180 19.7031  85.4624  105.165           46      75.2846                | 
+|    i_0_1_300/A1            OAI22_X1  Rise  0.4660 0.0050 0.0180          1.67104                                                   | 
+|    i_0_1_300/ZN            OAI22_X1  Fall  0.4790 0.0130 0.0070 0.354031 0.869621 1.22365           1       73.0676                | 
+|    Res_reg[48]/D           DLH_X1    Fall  0.4790 0.0000 0.0070          0.869621                                    MF            | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to Res_reg[48]/G 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+| Pin                     Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------|
+|    clk                            Rise  0.0000 0.0000 0.1000 0.24664  1.42116  1.6678            1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.63182  23.085            2       75.3599  mF   K/M      | 
+|    i_0_1_318/A1         NAND2_X4  Rise  0.0720 0.0010 0.0230          5.95497                                     mF            | 
+|    i_0_1_318/ZN         NAND2_X4  Fall  0.1390 0.0670 0.0600 48.2399  63.0749  111.315           64      58.9031  mF   K/M      | 
+|    Res_reg[48]/G        DLH_X1    Fall  0.1530 0.0140 0.0590          0.894119                                    MmF           | 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.1530 0.1530 | 
+| library hold check                       |  0.0350 0.1880 | 
+| data required time                       |  0.1880        | 
+|                                          |                | 
+| data arrival time                        |  0.4790        | 
+| data required time                       | -0.1880        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.2910        | 
+-------------------------------------------------------------
+
+
+ Timing Path to Res_reg[52]/D 
+  
+ Path Start Point : B_in_reg[31] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode) 
+ Path End Point   : Res_reg[52] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                        Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Rise  0.0000 0.0000 0.1000 0.24664  1.24879  1.49543           1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A    CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z    CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.10795  22.5611           2       75.3599  mF   K/M      | 
+|    i_0_1_316/B2            AOI21_X1  Rise  0.0720 0.0010 0.0230          1.67685                                     mF            | 
+|    i_0_1_316/ZN            AOI21_X1  Fall  0.0990 0.0270 0.0140 0.125049 5.70005  5.8251            1       75.3599  mF   K/M      | 
+|    CTS_L3_remove_c1990/A   INV_X4    Fall  0.0990 0.0000 0.0140          5.70005                                     mF            | 
+|    CTS_L3_remove_c1990/ZN  INV_X4    Rise  0.1750 0.0760 0.0730 56.6215  57.1385  113.76            64      75.3599  mF   K/M      | 
+| Data Path:                                                                                                                         | 
+|    B_in_reg[31]/G          DLH_X1    Rise  0.1800 0.0050 0.0730          0.985498                                    MmF           | 
+|    B_in_reg[31]/Q          DLH_X1    Rise  0.2720 0.0920 0.0300 0.462368 10.9969  11.4593           1       75.3599  MF            | 
+|    drc_ipo_c27/A           BUF_X16   Rise  0.2720 0.0000 0.0300          12.4108                                                   | 
+|    drc_ipo_c27/Z           BUF_X16   Rise  0.3170 0.0450 0.0230 44.139   94.5787  138.718           44      75.3599                | 
+|    i_0_1_242/B             XNOR2_X2  Rise  0.3420 0.0250 0.0230          4.83694                                                   | 
+|    i_0_1_242/ZN            XNOR2_X2  Fall  0.3680 0.0260 0.0120 2.15167  5.61308  7.76475           4       75.2846                | 
+|    slo__c1173/A2           NOR2_X2   Fall  0.3680 0.0000 0.0120          3.17833                                                   | 
+|    slo__c1173/ZN           NOR2_X2   Rise  0.3970 0.0290 0.0150 0.435446 2.94332  3.37876           1       75.2846                | 
+|    opt_ipo_c1909/A         INV_X2    Rise  0.3970 0.0000 0.0150          3.25089                                                   | 
+|    opt_ipo_c1909/ZN        INV_X2    Fall  0.4090 0.0120 0.0070 1.04751  5.69802  6.74553           1       75.2846                | 
+|    CLOCK_slo__sro_c2788/A1 NAND2_X4  Fall  0.4090 0.0000 0.0070          5.69802                                                   | 
+|    CLOCK_slo__sro_c2788/ZN NAND2_X4  Rise  0.4250 0.0160 0.0100 0.357435 10.8     11.1574           1       75.2846                | 
+|    CLOCK_slo__sro_c2789/A  INV_X8    Rise  0.4250 0.0000 0.0100          11.8107                                                   | 
+|    CLOCK_slo__sro_c2789/ZN INV_X8    Fall  0.4370 0.0120 0.0060 0.689316 28.7141  29.4035           2       75.2846                | 
+|    CLOCK_sgo__c2073/A      INV_X16   Fall  0.4370 0.0000 0.0060          23.0141                                                   | 
+|    CLOCK_sgo__c2073/ZN     INV_X16   Rise  0.4610 0.0240 0.0180 19.7031  85.4624  105.165           46      75.2846                | 
+|    i_0_1_303/A1            OAI22_X1  Rise  0.4660 0.0050 0.0180          1.67104                                                   | 
+|    i_0_1_303/ZN            OAI22_X1  Fall  0.4790 0.0130 0.0070 0.354031 0.869621 1.22365           1       73.0676                | 
+|    Res_reg[52]/D           DLH_X1    Fall  0.4790 0.0000 0.0070          0.869621                                    MF            | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to Res_reg[52]/G 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+| Pin                     Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------|
+|    clk                            Rise  0.0000 0.0000 0.1000 0.24664  1.42116  1.6678            1       75.3599  c    K/M      | 
+|    CTS_L1_c_tid0_2005/A CLKBUF_X3 Rise  0.0000 0.0000 0.1000          1.42116                                     mF            | 
+|    CTS_L1_c_tid0_2005/Z CLKBUF_X3 Rise  0.0710 0.0710 0.0230 15.4532  7.63182  23.085            2       75.3599  mF   K/M      | 
+|    i_0_1_318/A1         NAND2_X4  Rise  0.0720 0.0010 0.0230          5.95497                                     mF            | 
+|    i_0_1_318/ZN         NAND2_X4  Fall  0.1390 0.0670 0.0600 48.2399  63.0749  111.315           64      58.9031  mF   K/M      | 
+|    Res_reg[52]/G        DLH_X1    Fall  0.1530 0.0140 0.0590          0.894119                                    MmF           | 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  0.0000 0.0000 | 
+| target clock propagated network latency  |  0.1530 0.1530 | 
+| library hold check                       |  0.0350 0.1880 | 
+| data required time                       |  0.1880        | 
+|                                          |                | 
+| data arrival time                        |  0.4790        | 
+| data required time                       | -0.1880        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.2910        | 
+-------------------------------------------------------------
+
+
+info UI33: performed report_timing for 0 sec (CPU time: 0 sec; MEM: RSS - 550M, CVMEM - 2232M, PVMEM - 2513M)

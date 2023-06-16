@@ -1,0 +1,17 @@
+*lvsRulesFile: /home/vlsi/mini-project31_nitro/calibre/calibre-lvs.rule
+*lvsRunDir: /home/vlsi/mini-project31_nitro/work/LVS
+*lvsLayoutPaths: /home/vlsi/mini-project31_nitro/work/FPU_VM.gds
+*lvsLayoutPrimary: FPU_VM
+*lvsSourcePath: /home/vlsi/mini-project31_nitro/calibre/NangateOpenCellLibrary.spi
+*lvsVlogSourcePath: /home/vlsi/mini-project31_nitro/work/multiplier.route.v
+*lvsSourceSystem: MIXED
+*lvsSourcePrimary: FPU_VM
+*lvsSpiceFile: FPU_VM.sp
+*lvsPowerNames: VDD
+*lvsGroundNames: VSS
+*lvsERCDatabase: FPU_VM.erc.results
+*lvsERCSummaryFile: FPU_VM.erc.summary
+*lvsReportFile: FPU_VM.lvs.report
+*cmnShowOptions: 1
+*cmnV2LVS_LastTranslation: 1672767551
+*cmnFDIDEFLayoutPath: FPU_VM.def

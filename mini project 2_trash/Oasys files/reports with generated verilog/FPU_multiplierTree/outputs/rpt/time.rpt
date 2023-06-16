@@ -1,0 +1,123 @@
+Report for group default
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: multiplier/A_in_reg[10]/Q
+    (Clocked by sysclk R)
+Endpoint: multiplier/Res_reg[47]/D
+    (Clocked by sysclk R)
+Path Group: default
+Data required time: 1941.6
+    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 58.4)
+Data arrival time: 1910.2
+Slack: 31.4
+Logic depth: 37
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0      4    96,    0                       
+multiplier/i_0_0_49/B1->ZN
+                         AOI21_X1                rf      0.0      0.0      0.0      0.0      0.0      0.0      0.0      1    50,   53  /PD_TOP        (1.10)
+multiplier/i_0_0_48/A->ZN
+                         INV_X1                  fr      0.0      0.0      0.0      0.0      0.0      0.0      0.0     47    50,   53  /PD_TOP        (1.10)
+multiplier/A_in_reg[10]/G->Q
+                         DLH_X2                  rr     83.9     83.9     83.9      0.0      0.0      0.6     26.0      1    50,   53  /PD_TOP        (1.10)
+multiplier/firstStage/i_0_21/A->ZN
+                         INV_X32                 rf    101.1     17.2     17.2      0.0     34.0     14.4    114.5     24    50,   53  /PD_TOP        (1.10)
+multiplier/firstStage/i_0_22/A2->ZN
+                         NOR2_X4                 fr    143.5     42.4     42.0      0.4      6.9      8.6     15.9      2    50,   53  /PD_TOP        (1.10)
+multiplier/secondStage/genblk2_0_parallelAdderStage1/genblk1_10_fa/i_0_0/A->Z
+                         XOR2_X2                 rr    212.1     67.5     67.5      0.0     28.8      1.4      8.5      2    71,   94  /PD_TOP        (1.10)
+multiplier/secondStage/genblk2_0_parallelAdderStage1/genblk1_10_fa/i_0_1/A->Z
+                         XOR2_X2                 rr    291.8     79.7     79.7      0.0     36.2      5.5     12.8      2    71,   94  /PD_TOP        (1.10)
+multiplier/secondStage/genblk3_0_parallelAdderStage2/genblk1_10_fa/i_0_0/A->Z
+                         XOR2_X2                 rr    362.1     69.9     69.9      0.0     46.3      1.4      8.5      2   101,  100  /PD_TOP        (1.10)
+multiplier/secondStage/genblk3_0_parallelAdderStage2/genblk1_10_fa/i_0_1/A->Z
+                         XOR2_X2                 rr    439.3     77.2     77.2      0.0     36.2      4.5     11.9      2   101,  100  /PD_TOP        (1.10)
+multiplier/secondStage/genblk4_0_parallelAdderStage3/genblk1_10_fa/i_0_0/A->Z
+                         XOR2_X2                 rr    509.4     69.8     69.8      0.0     44.0      1.4      8.5      2   103,   73  /PD_TOP        (1.10)
+multiplier/secondStage/genblk4_0_parallelAdderStage3/genblk1_10_fa/i_0_1/A->Z
+                         XOR2_X2                 rr    588.6     79.2     79.2      0.0     36.2      5.3     12.7      2   103,   73  /PD_TOP        (1.10)
+multiplier/secondStage/genblk5_0_parallelAdderStage4/genblk1_10_fa/i_0_0/A->Z
+                         XOR2_X2                 rr    658.9     69.9     69.9      0.0     45.9      1.4      8.5      2    91,   50  /PD_TOP        (1.10)
+multiplier/secondStage/genblk5_0_parallelAdderStage4/genblk1_10_fa/i_0_1/A->Z
+                         XOR2_X2                 rr    728.2     69.3     69.3      0.0     36.2      1.4      8.7      2    91,   50  /PD_TOP        (1.10)
+multiplier/secondStage/genblk6_0_parallelAdderStage5/genblk1_10_fa/i_0_0/A->Z
+                         XOR2_X2                 rr    797.0     68.8     68.8      0.0     36.7      1.4      8.5      2    91,   50  /PD_TOP        (1.10)
+multiplier/secondStage/genblk6_0_parallelAdderStage5/genblk1_10_fa/i_0_1/A->Z
+                         XOR2_X2                 rr    861.3     64.3     64.3      0.0     36.2      1.2      6.7      2    91,   50  /PD_TOP        (1.10)
+multiplier/secondStage/genblk7_0_parallelAdderStage6/genblk1_10_fa/i_0_0/A->Z
+                         XOR2_X2                 rr    924.9     63.6     63.6      0.0     32.1      1.2      6.7      2    91,   50  /PD_TOP        (1.10)
+multiplier/secondStage/genblk8_0_parallelAdderStage7/genblk1_10_fa/i_0_0/A->Z
+                         XOR2_X2                 rr    988.5     63.6     63.6      0.0     32.1      1.2      6.7      2    91,   50  /PD_TOP        (1.10)
+multiplier/secondStage/genblk9_0_finalStage/genblk1_10_fa/i_0_0/A->Z
+                         XOR2_X2                 rf   1022.1     33.6     33.6      0.0     32.1      5.7     13.1      2    91,   50  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_199/B2->ZN
+                         AOI22_X4                fr   1101.0     78.9     78.3      0.6     17.2      0.7     26.2      1    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_197/A->ZN
+                         INV_X8                  rf   1106.7      5.7      5.7      0.0     50.8      0.8      3.3      1    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_195/A->ZN
+                         OAI221_X4               fr   1168.1     61.4     61.4      0.0      3.3      0.8     26.2      1    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_192/A->ZN
+                         INV_X8                  rf   1174.9      6.8      6.8      0.0     18.4      0.8      3.3      1    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_185/A->ZN
+                         AOI221_X2               fr   1253.6     78.7     78.7      0.0      3.3      0.8      4.8      1    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_183/B1->ZN
+                         OAI21_X4                rf   1273.0     19.4     19.4      0.0     50.2      0.8      3.4      1    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_182/A->ZN
+                         OAI221_X2               fr   1298.4     25.4     25.4      0.0      9.1      0.8      5.0      1    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_180/B2->ZN
+                         AOI21_X4                rf   1318.4     20.0     20.0      0.0     42.5      0.8      3.4      1    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_179/A->ZN
+                         AOI221_X2               fr   1391.0     72.6     72.6      0.0      7.4      0.8      3.0      1    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_176/A3->ZN
+                         OR3_X4                  rr   1425.7     34.7     34.7      0.0     43.5      0.7      4.7      1    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_174/A->ZN
+                         OAI21_X4                rf   1455.1     29.4     29.4      0.0      7.2      0.6     26.1      1    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_173/A->ZN
+                         INV_X8                  fr   1471.0     15.9     15.9      0.0     18.8      1.4      9.2      2    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_160/A3->ZN
+                         NOR3_X4                 rf   1480.7      9.7      9.7      0.0      6.5      0.8      4.6      1    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_154/A4->ZN
+                         NOR4_X4*                fr   1630.2    149.5    149.5      0.0      6.7      2.8     39.6      4    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_159/A->ZN
+                         INV_X8                  rf   1637.3      7.1      7.0      0.1     15.3      0.6      4.7      1    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_95/B1->ZN
+                         AOI21_X4                fr   1673.1     35.8     35.8      0.0      3.5      2.1     13.3      3    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_89/A3->ZN
+                         NOR3_X4                 rf   1689.4     16.3     16.3      0.0     32.2      0.8      4.6      1    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_81/A4->ZN
+                         NOR4_X4                 fr   1782.2     92.8     92.8      0.0      6.7      1.5      8.9      2    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_80/B2->ZN
+                         OAI22_X4                rf   1817.0     34.8     34.8      0.0     53.8      1.5      8.8      2    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_79/B2->ZN
+                         AOI22_X4                fr   1864.4     47.4     47.4      0.0     12.9      0.7      3.9      1    50,   53  /PD_TOP        (1.10)
+multiplier/thirdStage/i_0/i_77/A->ZN
+                         XNOR2_X2                rf   1882.6     18.2     18.2      0.0     24.3      0.6      2.9      1    50,   53  /PD_TOP        (1.10)
+multiplier/i_0_0_24/A2->ZN
+                         AND2_X4                 ff   1910.2     27.6     27.6      0.0     10.0      0.6      1.6      1    50,   53  /PD_TOP        (1.10)
+multiplier/Res_reg[47]/D DLH_X2                   f   1910.2      0.0               0.0      4.9                             50,   53  /PD_TOP        (1.10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group I2R
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: A[30]
+    (Clocked by rtDefaultClock R)
+Endpoint: A_reg_reg[30]/D
+    (Clocked by sysclk R)
+Path Group: I2R
+Data required time: 1941.6
+    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 58.4)
+Data arrival time: 260.3
+Slack: 1681.3
+Logic depth: 1
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+A[30]                    {set_input_delay}        f    200.0    200.0    200.0                        7.4      9.7      1     0,   84                       
+i_0_1_157/A2->ZN         AND2_X4                 ff    260.3     60.3     59.3      1.0    100.0      0.6      1.6      1    45,   97  /PD_TOP        (1.10)
+A_reg_reg[30]/D          DLH_X2                   f    260.3      0.0               0.0      4.9                             45,   97  /PD_TOP        (1.10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group I2O
+Report for group R2O

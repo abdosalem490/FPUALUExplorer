@@ -1,0 +1,57 @@
+Report 'report_mcmm_variation': MCMM Variation
+Generated on Thu Dec 22 21:46:41 2022
+  
+---------------------------------------------------------------
+| MCMM variability report for design 'FPU_boothAlgoR4' (nano) |
+|-------------------------------------------------------------|
+| MODE CORNER WNS TNS #Endpts WHS THS #Endpts                 | 
+---------------------------------------------------------------
+
+
+info UI33: performed report_mcmm_variation for 0 sec (CPU time: 0 sec; MEM: RSS - 372M, CVMEM - 1745M, PVMEM - 2263M)
+Report 'report_path_group': Path Group
+Generated on Thu Dec 22 21:46:41 2022
+  
+-------------------------------------------------------------------------------------------
+|                               PATH GROUPS (SETUP) (nano)                                |
+|-----------------------------------------------------------------------------------------|
+| QOR Weight Margin TNS Range Endpoints Violating Endpoints Violating Endpoints % WNS TNS | 
+-------------------------------------------------------------------------------------------
+
+
+info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 372M, CVMEM - 1745M, PVMEM - 2263M)
+SLACK HISTOGRAM
+---------------
+Select : SELECT_LATE
+
+---------------------------------------------
+| Slack           # End Pts Total # End Pts | 
+|-------------------------------------------|
+| 0.0000 - 2.4990 201       201             | 
+---------------------------------------------
+
+
+info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 372M, CVMEM - 1745M, PVMEM - 2263M)
+Report 'report_path_group': Path Group
+Generated on Thu Dec 22 21:46:41 2022
+  
+-------------------------------------------------------------------------------------------
+|                                PATH GROUPS (HOLD) (nano)                                |
+|-----------------------------------------------------------------------------------------|
+| QOR Weight Margin TNS Range Endpoints Violating Endpoints Violating Endpoints % WNS TNS | 
+-------------------------------------------------------------------------------------------
+
+
+info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 372M, CVMEM - 1745M, PVMEM - 2263M)
+SLACK HISTOGRAM
+---------------
+Select : SELECT_EARLY
+
+---------------------------------------------
+| Slack           # End Pts Total # End Pts | 
+|-------------------------------------------|
+| 0.0000 - 0.4990 201       201             | 
+---------------------------------------------
+
+
+info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 372M, CVMEM - 1745M, PVMEM - 2263M)

@@ -1,0 +1,1834 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         FPU_VM.lvs.report
+LAYOUT NAME:              /home/vlsi/mini-project31_nitro/work/LVS/FPU_VM.sp ('FPU_VM')
+SOURCE NAME:              _source.net_ ('FPU_VM')
+RULE FILE:                /home/vlsi/mini-project31_nitro/work/LVS/_calibre-lvs.rule_
+RULE FILE TITLE:          LVS Rule File for FreePDK45
+CREATION TIME:            Tue Jan  3 19:39:14 2023
+CURRENT DIRECTORY:        /home/vlsi/mini-project31_nitro/work/LVS
+USER NAME:                vlsi
+CALIBRE VERSION:          v2020.1_25.14    Mon Feb 3 16:40:25 PST 2020
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets.
+  Error:    Different numbers of instances.
+  Error:    Connectivity errors.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  INCORRECT      FPU_VM                        FPU_VM
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   LVS COMPONENT TYPE PROPERTY            element
+   LVS COMPONENT SUBTYPE PROPERTY         model
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "VDD"
+   LVS GROUND NAME                        "VSS"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   // LVS HCELL REPORT
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   NO
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            YES
+   SOURCE CASE                            YES
+   LVS COMPARE CASE                       NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        32
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+   LVS PREFER PORT NETS                   NO
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  YES
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             YES
+   LVS REDUCE SPLIT GATES                 YES
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  mn(nmos_vtl)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vtl)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtl)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtl)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vth)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vth)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vth)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vth)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vtg)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vtg)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtg)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtg)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_thkox)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_thkox)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_thkox)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_thkox)  w w 4e-09 ABSOLUTE
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets (see below).
+  Error:    Different numbers of instances (see below).
+  Error:    Connectivity errors.
+
+LAYOUT CELL NAME:         FPU_VM
+SOURCE CELL NAME:         FPU_VM
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             99        99
+
+ Nets:           11825     15812    *
+
+ Instances:      11731     11731         MN (4 pins)
+                 11731     11731         MP (4 pins)
+                ------    ------
+ Total Inst:     23462     23462
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             99        99
+
+ Nets:            4742      8607    *
+
+ Instances:       3888        93    *    MN (4 pins)
+                  2875        50    *    MP (4 pins)
+                  1217         0    *    SMN2 (4 pins)
+                   497         0    *    SMN3 (5 pins)
+                     4         0    *    SMN4 (6 pins)
+                  1606         0    *    SMP2 (4 pins)
+                   499         0    *    SMP3 (5 pins)
+                    16         0    *    SMP4 (6 pins)
+                   532       532         SPMN_2_1 (5 pins)
+                     7         7         SPMN_2_1_1 (6 pins)
+                     9         9         SPMN_2_2 (6 pins)
+                     7         7         SPMN_2_2_1 (7 pins)
+                     3         3         SPMN_2_2_2 (8 pins)
+                   489       489         SPMN_3_1 (6 pins)
+                   580       580         SPMP_2_1 (5 pins)
+                     5         5         SPMP_2_1_1 (6 pins)
+                    31        31         SPMP_2_2 (6 pins)
+                     2         2         SPMP_2_2_1 (7 pins)
+                   489       489         SPMP_3_1 (6 pins)
+                     0      2297    *    _invv (4 pins)
+                     0         7    *    _invx2v (4 pins)
+                     0       230    *    _nand2v (5 pins)
+                     0         8    *    _nand3v (6 pins)
+                     0         4    *    _nand4v (7 pins)
+                     0       690    *    _nor2v (5 pins)
+                     0        10    *    _nor3v (6 pins)
+                     0        16    *    _nor4v (7 pins)
+                     0         5    *    _pmn2v (4 pins)
+                     0         7    *    _pmp2v (4 pins)
+                     0       987    *    _smn2v (4 pins)
+                     0       489    *    _smn3v (5 pins)
+                     0       916    *    _smp2v (4 pins)
+                     0       489    *    _smp3v (5 pins)
+                ------    ------
+ Total Inst:     12756      8452
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   INCORRECT NETS
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  1    Net Res[7]                                                Res[7]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       X17334/M9(1.360,80.080):d                                 ** missing connection **
+       X17334/M1(1.360,79.490):d                                 ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_invv):out
+                                                                   XRes_reg[7]/M_i_41_11:d
+                                                                   XRes_reg[7]/M_i_89_4:d
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  2    Net reset                                                 reset
+       --- 15 Connections On This Net ---                        --- 10 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMP4):input                                              ** missing connection **
+         X17933/M7(75.715,68.880):g
+       
+       
+       (SMP2):input                                              ** missing connection **
+         X16219/M3(73.930,70.320):g
+       
+       
+       (SMP2):input                                              ** missing connection **
+         M120(23.565,75.290):g
+       
+       
+       X17020/M1(79.325,67.520):g                                ** missing connection **
+       X17005/M1(42.375,71.680):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_pmn2v):in2
+                                                                   Xi_0_1_124/M_i_3:g
+       
+       
+       ** missing connection **                                  (_nor4v):in4
+                                                                   Xi_0_1_92/M_i_0:g
+                                                                   Xi_0_1_92/M_i_4:g
+       
+       
+       ** missing connection **                                  (_nor2v):in2
+                                                                   Xi_0_1_89/M_i_0:g
+                                                                   Xi_0_1_89/M_i_2:g
+       
+       
+       ** missing connection **                                  (_nor2v):in2
+                                                                   Xi_0_1_189/M_i_3:g
+                                                                   Xi_0_1_189/M_i_5:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xmultiplier/Xi_0_74/M_i_0:g
+                                                                   Xmultiplier/Xi_0_74/M_i_1:g
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   Xi_0_1_78/M_i_0:g
+                                                                   Xi_0_1_78/M_i_1:g
+       
+       
+       X17020/M0(79.325,68.110):g                                ** unmatched connection **
+       X17005/M0(42.375,71.090):g                                ** unmatched connection **
+       M51(23.565,76.095):g                                      ** unmatched connection **
+       X16219/M1(73.930,70.910):g                                ** unmatched connection **
+       X17933/M3(75.715,68.290):g                                ** unmatched connection **
+       X16635/M2(68.065,51.310):g                                ** unmatched connection **
+       X18711/M3(79.855,65.490):g                                ** unmatched connection **
+       
+       ** unmatched connection **                                Xmultiplier/Xi_0_49/M_i_2:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  3    Net B[21]                                                 B[21]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X18036/X1/M1(61.465,76.690):g
+       
+       
+       X18036/X1/M4(61.465,77.595):g                             ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_179/M_i_5:g
+                                                                   Xi_0_1_179/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  4    Net B[22]                                                 B[22]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X18036/X0/M1(62.135,76.690):g
+       
+       
+       X18036/X0/M4(62.135,77.595):g                             ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_180/M_i_5:g
+                                                                   Xi_0_1_180/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  5    Net B[23]                                                 B[23]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16527/M1(62.325,82.290):g
+       
+       
+       X16527/M4(62.325,83.195):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_181/M_i_5:g
+                                                                   Xi_0_1_181/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  6    Net B[19]                                                 B[19]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16529/M1(63.085,76.510):g
+       
+       
+       X16529/M4(63.085,75.605):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_177/M_i_5:g
+                                                                   Xi_0_1_177/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  7    Net A[17]                                                 A[17]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16531/M1(63.845,70.910):g
+       
+       
+       X16531/M4(63.845,70.005):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_144/M_i_5:g
+                                                                   Xi_0_1_144/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  8    Net A[19]                                                 A[19]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16532/M1(64.035,73.890):g
+       
+       
+       X16532/M4(64.035,74.795):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_146/M_i_5:g
+                                                                   Xi_0_1_146/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  9    Net Res[30]                                               Res[30]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       X18353/X1/M9(64.630,73.120):d                             ** missing connection **
+       X18353/X1/M1(64.630,73.710):d                             ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_invv):out
+                                                                   XRes_reg[30]/M_i_41_11:d
+                                                                   XRes_reg[30]/M_i_89_4:d
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 10    Net B[20]                                                 B[20]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16533/M1(65.555,76.510):g
+       
+       
+       X16533/M4(65.555,75.605):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_178/M_i_5:g
+                                                                   Xi_0_1_178/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 11    Net A[21]                                                 A[21]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16536/M1(66.785,71.090):g
+       
+       
+       X16536/M4(66.785,71.995):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_148/M_i_5:g
+                                                                   Xi_0_1_148/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 12    Net A[20]                                                 A[20]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16539/M1(68.595,71.090):g
+       
+       
+       X16539/M4(68.595,71.995):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_147/M_i_5:g
+                                                                   Xi_0_1_147/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 13    Net B[8]                                                  B[8]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16560/M1(74.955,45.890):g
+       
+       
+       X16560/M4(74.955,46.795):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_166/M_i_5:g
+                                                                   Xi_0_1_166/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 14    Net B[11]                                                 B[11]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16562/M1(75.625,45.890):g
+       
+       
+       X16562/M4(75.625,46.795):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_169/M_i_5:g
+                                                                   Xi_0_1_169/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 15    Net B[7]                                                  B[7]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16565/M1(76.955,48.510):g
+       
+       
+       X16565/M4(76.955,47.605):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_165/M_i_5:g
+                                                                   Xi_0_1_165/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 16    Net B[25]                                                 B[25]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16564/M1(76.855,82.290):g
+       
+       
+       X16564/M4(76.855,83.195):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_183/M_i_5:g
+                                                                   Xi_0_1_183/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 17    Net A[22]                                                 A[22]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16566/M1(77.335,65.490):g
+       
+       
+       X16566/M4(77.335,66.395):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_149/M_i_5:g
+                                                                   Xi_0_1_149/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 18    Net B[13]                                                 B[13]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16567/M1(77.715,48.510):g
+       
+       
+       X16567/M4(77.715,47.605):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_171/M_i_5:g
+                                                                   Xi_0_1_171/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 19    Net B[14]                                                 B[14]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16568/M1(78.185,43.090):g
+       
+       
+       X16568/M4(78.185,43.995):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_172/M_i_5:g
+                                                                   Xi_0_1_172/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 20    Net A[13]                                                 A[13]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16569/M1(78.665,62.690):g
+       
+       
+       X16569/M4(78.665,63.595):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_140/M_i_5:g
+                                                                   Xi_0_1_140/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 21    Net A[14]                                                 A[14]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16570/M1(78.665,65.310):g
+       
+       
+       X16570/M4(78.665,64.405):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_141/M_i_5:g
+                                                                   Xi_0_1_141/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 22    Net B[9]                                                  B[9]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16574/M1(79.615,48.510):g
+       
+       
+       X16574/M4(79.615,47.605):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_167/M_i_5:g
+                                                                   Xi_0_1_167/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 23    Net B[29]                                                 B[29]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16572/M1(79.515,71.090):g
+       
+       
+       X16572/M4(79.515,71.995):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_187/M_i_5:g
+                                                                   Xi_0_1_187/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 24    Net A[27]                                                 A[27]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16575/M1(79.705,73.890):g
+       
+       
+       X16575/M4(79.705,74.795):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_154/M_i_5:g
+                                                                   Xi_0_1_154/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 25    Net A[24]                                                 A[24]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16577/M1(79.995,76.690):g
+       
+       
+       X16577/M4(79.995,77.595):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_151/M_i_5:g
+                                                                   Xi_0_1_151/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 26    Net B[15]                                                 B[15]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16579/M1(80.185,54.290):g
+       
+       
+       X16579/M4(80.185,55.195):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_173/M_i_5:g
+                                                                   Xi_0_1_173/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 27    Net A[3]                                                  A[3]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16578/M1(80.275,42.910):g
+       
+       
+       X16578/M4(80.275,42.005):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_130/M_i_5:g
+                                                                   Xi_0_1_130/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 28    Net A[16]                                                 A[16]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16581/M1(80.375,59.710):g
+       
+       
+       X16581/M4(80.375,58.805):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_143/M_i_5:g
+                                                                   Xi_0_1_143/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 29    Net B[1]                                                  B[1]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16580/M1(80.465,45.710):g
+       
+       
+       X16580/M4(80.465,44.805):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_159/M_i_5:g
+                                                                   Xi_0_1_159/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 30    Net A[30]                                                 A[30]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16583/M1(80.945,68.290):g
+       
+       
+       X16583/M4(80.945,69.195):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_157/M_i_5:g
+                                                                   Xi_0_1_157/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 31    Net A[23]                                                 A[23]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16584/M1(80.945,73.890):g
+       
+       
+       X16584/M4(80.945,74.795):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_150/M_i_5:g
+                                                                   Xi_0_1_150/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 32    Net A[2]                                                  A[2]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16582/M1(81.035,43.090):g
+       
+       
+       X16582/M4(81.035,43.995):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_129/M_i_5:g
+                                                                   Xi_0_1_129/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 33    Net B[17]                                                 B[17]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16586/M1(81.325,54.110):g
+       
+       
+       X16586/M4(81.325,53.205):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_175/M_i_5:g
+                                                                   Xi_0_1_175/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 34    Net B[10]                                                 B[10]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X18042/X1/M1(81.415,45.890):g
+       
+       
+       X18042/X1/M4(81.415,46.795):g                             ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_168/M_i_5:g
+                                                                   Xi_0_1_168/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 35    Net B[12]                                                 B[12]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16585/M1(81.415,51.310):g
+       
+       
+       X16585/M4(81.415,50.405):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_170/M_i_5:g
+                                                                   Xi_0_1_170/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 36    Net A[11]                                                 A[11]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16590/M1(81.515,59.890):g
+       
+       
+       X16590/M4(81.515,60.795):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_138/M_i_5:g
+                                                                   Xi_0_1_138/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 37    Net A[12]                                                 A[12]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16587/M1(81.415,62.510):g
+       
+       
+       X16587/M4(81.415,61.605):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_139/M_i_5:g
+                                                                   Xi_0_1_139/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 38    Net B[26]                                                 B[26]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16588/M1(81.415,82.290):g
+       
+       
+       X16588/M4(81.415,83.195):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_184/M_i_5:g
+                                                                   Xi_0_1_184/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 39    Net A[15]                                                 A[15]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16589/M1(81.605,57.090):g
+       
+       
+       X16589/M4(81.605,57.995):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_142/M_i_5:g
+                                                                   Xi_0_1_142/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 40    Net B[4]                                                  B[4]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X18042/X0/M1(82.085,45.890):g
+       
+       
+       X18042/X0/M4(82.085,46.795):g                             ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_162/M_i_5:g
+                                                                   Xi_0_1_162/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 41    Net A[6]                                                  A[6]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16592/M1(82.175,48.690):g
+       
+       
+       X16592/M4(82.175,49.595):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_133/M_i_5:g
+                                                                   Xi_0_1_133/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 42    Net A[25]                                                 A[25]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16593/M1(82.175,82.110):g
+       
+       
+       X16593/M4(82.175,81.205):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_152/M_i_5:g
+                                                                   Xi_0_1_152/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 43    Net A[10]                                                 A[10]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16594/M1(82.365,65.310):g
+       
+       
+       X16594/M4(82.365,64.405):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_137/M_i_5:g
+                                                                   Xi_0_1_137/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 44    Net A[0]                                                  A[0]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16596/M1(82.745,48.510):g
+       
+       
+       X16596/M4(82.745,47.605):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_127/M_i_5:g
+                                                                   Xi_0_1_127/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 45    Net A[5]                                                  A[5]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16597/M1(82.745,56.910):g
+       
+       
+       X16597/M4(82.745,56.005):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_132/M_i_5:g
+                                                                   Xi_0_1_132/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 46    Net B[3]                                                  B[3]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16598/M1(82.935,43.090):g
+       
+       
+       X16598/M4(82.935,43.995):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_161/M_i_5:g
+                                                                   Xi_0_1_161/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 47    Net B[18]                                                 B[18]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16599/M1(82.935,54.290):g
+       
+       
+       X16599/M4(82.935,55.195):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_176/M_i_5:g
+                                                                   Xi_0_1_176/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 48    Net A[29]                                                 A[29]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16600/M1(82.935,68.110):g
+       
+       
+       X16600/M4(82.935,67.205):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_156/M_i_5:g
+                                                                   Xi_0_1_156/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 49    Net A[28]                                                 A[28]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16601/M1(82.935,73.890):g
+       
+       
+       X16601/M4(82.935,74.795):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_155/M_i_5:g
+                                                                   Xi_0_1_155/M_i_3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+ 50    Net B[30]                                                 B[30]
+       --- 3 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMN2):input                                              ** missing connection **
+         X16602/M1(83.505,73.710):g
+       
+       
+       X16602/M4(83.505,72.805):g                                ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nand2v):in2
+                                                                   Xi_0_1_188/M_i_5:g
+                                                                   Xi_0_1_188/M_i_3:g
+       
+
+
+**************************************************************************************************************
+                                 INCORRECT INSTANCES
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+ 51    X16635/M5(68.065,50.720)  MP(PMOS_VTL)                    Xmultiplier/Xi_0_49/M_i_5  MP(PMOS_VTL)
+         g: reset                                                  g: reset
+         b: 2649                                                   ** no similar net **
+         ** no similar net **                                      b: Xmultiplier/Xi_0_49/VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 52    X18711/M7(79.855,66.080)  MP(PMOS_VTL)                    Xi_0_1_124/M_i_7  MP(PMOS_VTL)
+         g: reset                                                  g: reset
+         b: 2674                                                   ** no similar net **
+         ** no similar net **                                      b: Xi_0_1_124/VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 53    (SMN2)                                                    ** missing gate **
+
+       Transistors:
+         M7(8.770,78.895)  MN(NMOS_VTL)
+         M10(8.960,78.895)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 54    (SMP3)                                                    ** missing gate **
+
+       Transistors:
+         M92(12.015,49.280)  MP(PMOS_VTL)
+         M94(12.205,49.280)  MP(PMOS_VTL)
+         M96(12.395,49.280)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 55    (SMP3)                                                    ** missing gate **
+
+       Transistors:
+         M115(16.535,60.795)  MP(PMOS_VTL)
+         M116(16.725,60.795)  MP(PMOS_VTL)
+         M117(16.915,60.795)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 56    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         M119(23.375,75.290)  MP(PMOS_VTL)
+         M120(23.565,75.290)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 57    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16012/M2(1.730,32.480)  MP(PMOS_VTL)
+         X16012/M3(1.920,32.480)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 58    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16013/M2(2.490,29.680)  MP(PMOS_VTL)
+         X16013/M3(2.680,29.680)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 59    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16014/M2(3.120,42.320)  MP(PMOS_VTL)
+         X16014/M3(2.930,42.320)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 60    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16015/M2(4.010,42.320)  MP(PMOS_VTL)
+         X16015/M3(4.200,42.320)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 61    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16016/M2(5.340,43.680)  MP(PMOS_VTL)
+         X16016/M3(5.530,43.680)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 62    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16017/M2(5.910,25.520)  MP(PMOS_VTL)
+         X16017/M3(6.100,25.520)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 63    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16018/M2(6.860,46.480)  MP(PMOS_VTL)
+         X16018/M3(7.050,46.480)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 64    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16019/M2(10.720,50.720)  MP(PMOS_VTL)
+         X16019/M3(10.530,50.720)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 65    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16020/M2(12.620,43.680)  MP(PMOS_VTL)
+         X16020/M3(12.430,43.680)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 66    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16021/M2(14.140,64.720)  MP(PMOS_VTL)
+         X16021/M3(13.950,64.720)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 67    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16022/M2(14.650,43.680)  MP(PMOS_VTL)
+         X16022/M3(14.840,43.680)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 68    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16023/M2(14.900,63.280)  MP(PMOS_VTL)
+         X16023/M3(14.710,63.280)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 69    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16024/M2(15.030,52.080)  MP(PMOS_VTL)
+         X16024/M3(15.220,52.080)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 70    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16025/M2(15.470,59.120)  MP(PMOS_VTL)
+         X16025/M3(15.280,59.120)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 71    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16026/M2(15.660,17.120)  MP(PMOS_VTL)
+         X16026/M3(15.470,17.120)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 72    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16027/M2(15.660,18.480)  MP(PMOS_VTL)
+         X16027/M3(15.470,18.480)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 73    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16028/M2(15.600,47.920)  MP(PMOS_VTL)
+         X16028/M3(15.790,47.920)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 74    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16029/M2(16.420,57.680)  MP(PMOS_VTL)
+         X16029/M3(16.230,57.680)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 75    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16030/M2(16.610,21.280)  MP(PMOS_VTL)
+         X16030/M3(16.420,21.280)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 76    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16031/M2(16.550,10.080)  MP(PMOS_VTL)
+         X16031/M3(16.740,10.080)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 77    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16032/M2(16.800,63.280)  MP(PMOS_VTL)
+         X16032/M3(16.610,63.280)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 78    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16033/M2(17.500,10.080)  MP(PMOS_VTL)
+         X16033/M3(17.690,10.080)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 79    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16034/M2(18.130,19.920)  MP(PMOS_VTL)
+         X16034/M3(17.940,19.920)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 80    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16035/M2(19.460,47.920)  MP(PMOS_VTL)
+         X16035/M3(19.270,47.920)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 81    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16036/M2(19.650,77.280)  MP(PMOS_VTL)
+         X16036/M3(19.460,77.280)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 82    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16037/M2(19.780,70.320)  MP(PMOS_VTL)
+         X16037/M3(19.970,70.320)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 83    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16038/M2(20.220,32.480)  MP(PMOS_VTL)
+         X16038/M3(20.030,32.480)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 84    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16039/M2(20.600,11.520)  MP(PMOS_VTL)
+         X16039/M3(20.410,11.520)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 85    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16040/M2(20.600,67.520)  MP(PMOS_VTL)
+         X16040/M3(20.410,67.520)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 86    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16041/M2(20.790,32.480)  MP(PMOS_VTL)
+         X16041/M3(20.600,32.480)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 87    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16042/M2(20.980,46.480)  MP(PMOS_VTL)
+         X16042/M3(20.790,46.480)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 88    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16043/M2(20.730,78.720)  MP(PMOS_VTL)
+         X16043/M3(20.920,78.720)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 89    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16044/M2(21.110,77.280)  MP(PMOS_VTL)
+         X16044/M3(21.300,77.280)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 90    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16045/M2(21.550,10.080)  MP(PMOS_VTL)
+         X16045/M3(21.360,10.080)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 91    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16046/M2(21.550,46.480)  MP(PMOS_VTL)
+         X16046/M3(21.360,46.480)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 92    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16047/M2(21.550,78.720)  MP(PMOS_VTL)
+         X16047/M3(21.360,78.720)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 93    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16048/M2(22.310,68.880)  MP(PMOS_VTL)
+         X16048/M3(22.120,68.880)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 94    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16049/M2(22.500,8.720)  MP(PMOS_VTL)
+         X16049/M3(22.310,8.720)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 95    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16050/M2(22.250,28.320)  MP(PMOS_VTL)
+         X16050/M3(22.440,28.320)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 96    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16051/M2(22.250,35.280)  MP(PMOS_VTL)
+         X16051/M3(22.440,35.280)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 97    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16052/M2(22.440,11.520)  MP(PMOS_VTL)
+         X16052/M3(22.630,11.520)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 98    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16053/M2(22.820,28.320)  MP(PMOS_VTL)
+         X16053/M3(23.010,28.320)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 99    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16054/M2(23.260,14.320)  MP(PMOS_VTL)
+         X16054/M3(23.070,14.320)  MP(PMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+100    (SMP2)                                                    ** missing gate **
+
+       Transistors:
+         X16055/M2(23.260,46.480)  MP(PMOS_VTL)
+         X16055/M3(23.070,46.480)  MP(PMOS_VTL)
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:              99         99            0            0
+
+   Nets:               99         99         4643         8508
+
+   Instances:           0          0         3888           93    MN(NMOS_VTL)
+                        0          0         2875           50    MP(PMOS_VTL)
+                        0          0         1217            0    SMN2
+                        0          0          497            0    SMN3
+                        0          0            4            0    SMN4
+                        0          0         1606            0    SMP2
+                        0          0          499            0    SMP3
+                        0          0           16            0    SMP4
+                        0          0          532          532    SPMN_2_1
+                        0          0            7            7    SPMN_2_1_1
+                        0          0            9            9    SPMN_2_2
+                        0          0            7            7    SPMN_2_2_1
+                        0          0            3            3    SPMN_2_2_2
+                        0          0          489          489    SPMN_3_1
+                        1          1          579          579    SPMP_2_1
+                        1          1            4            4    SPMP_2_1_1
+                        0          0           31           31    SPMP_2_2
+                        0          0            2            2    SPMP_2_2_1
+                        0          0          489          489    SPMP_3_1
+                        0          0            0         2297    _invv
+                        0          0            0            7    _invx2v
+                        0          0            0          230    _nand2v
+                        0          0            0            8    _nand3v
+                        0          0            0            4    _nand4v
+                        0          0            0          690    _nor2v
+                        0          0            0           10    _nor3v
+                        0          0            0           16    _nor4v
+                        0          0            0            5    _pmn2v
+                        0          0            0            7    _pmp2v
+                        0          0            0          987    _smn2v
+                        0          0            0          489    _smn3v
+                        0          0            0          916    _smp2v
+                        0          0            0          489    _smp3v
+                  -------    -------    ---------    ---------
+   Total Inst:          2          2        12754         8450
+
+
+o Statistics:
+
+   716 layout mos transistors were reduced to 250.  30 connecting nets were deleted.
+     406 mos transistors were deleted by parallel reduction.
+     60 mos transistors and 30 connecting nets were deleted by split-gate reduction.
+   716 source mos transistors were reduced to 250.  30 connecting nets were deleted.
+     406 mos transistors were deleted by parallel reduction.
+     60 mos transistors and 30 connecting nets were deleted by split-gate reduction.
+
+   115 source nets had all their pins removed and were deleted.
+
+
+o Initial Correspondence Points:
+
+   Ports:        Res[7] reset B[21] B[22] B[23] B[19] A[17] A[19] Res[30] B[20] A[21] A[20] B[8]
+                 B[11] B[7] B[25] A[22] B[13] B[14] A[13] A[14] B[9] B[29] A[27] A[24] B[15]
+                 A[3] A[16] B[1] A[30] A[23] A[2] B[17] B[10] B[12] A[11] A[12] B[26] A[15] B[4]
+                 A[6] A[25] A[10] A[0] A[5] B[3] B[18] A[29] A[28] B[30]
+
+
+
+**************************************************************************************************************
+                                  UNMATCHED OBJECTS
+       LAYOUT                                                    SOURCE
+**************************************************************************************************************
+
+       X19543/M1(10.875,57.090)  MN(NMOS_VTL)                    ** unmatched instance **
+       X19542/M1(8.985,26.110)  MN(NMOS_VTL)                     ** unmatched instance **
+       X19541/M1(2.715,43.090)  MN(NMOS_VTL)                     ** unmatched instance **
+       X19538/M7(16.215,70.910)  MN(NMOS_VTL)                    ** unmatched instance **
+       X19537/M7(9.375,59.710)  MN(NMOS_VTL)                     ** unmatched instance **
+       X19536/M7(5.005,48.510)  MN(NMOS_VTL)                     ** unmatched instance **
+       X19535/M7(1.965,45.890)  MN(NMOS_VTL)                     ** unmatched instance **
+       X19534/M7(2.505,34.690)  MN(NMOS_VTL)                     ** unmatched instance **
+       X19533/M10(19.230,66.080)  MP(PMOS_VTL)                   ** unmatched instance **
+       X19533/M11(19.425,66.080)  MP(PMOS_VTL)                   ** unmatched instance **
+       X19532/M10(11.440,4.480)  MP(PMOS_VTL)                    ** unmatched instance **
+       X19532/M11(11.635,4.480)  MP(PMOS_VTL)                    ** unmatched instance **
+       X19531/M2(20.040,71.090)  MN(NMOS_VTL)                    ** unmatched instance **
+       X19531/M3(19.850,71.090)  MN(NMOS_VTL)                    ** unmatched instance **
+       X19530/M2(6.470,3.890)  MN(NMOS_VTL)                      ** unmatched instance **
+       X19530/M3(6.660,3.890)  MN(NMOS_VTL)                      ** unmatched instance **
+       X19529/M2(20.040,73.710)  MN(NMOS_VTL)                    ** unmatched instance **
+       X19528/M2(17.000,76.690)  MN(NMOS_VTL)                    ** unmatched instance **
+       X19527/M2(17.000,68.290)  MN(NMOS_VTL)                    ** unmatched instance **
+       X19526/M2(17.000,68.110)  MN(NMOS_VTL)                    ** unmatched instance **
+       X19525/M2(15.860,76.510)  MN(NMOS_VTL)                    ** unmatched instance **
+       X19524/M2(15.020,79.490)  MN(NMOS_VTL)                    ** unmatched instance **
+       X19523/M2(15.020,65.490)  MN(NMOS_VTL)                    ** unmatched instance **
+       X19522/M2(11.110,62.690)  MN(NMOS_VTL)                    ** unmatched instance **
+       X19521/M2(9.970,57.090)  MN(NMOS_VTL)                     ** unmatched instance **
+       X19520/M2(7.230,51.310)  MN(NMOS_VTL)                     ** unmatched instance **
+       X19519/M2(1.530,45.710)  MN(NMOS_VTL)                     ** unmatched instance **
+       X19408/M7(68.860,73.120)  MP(PMOS_VTL)                    ** unmatched instance **
+       X19407/M7(68.420,74.480)  MP(PMOS_VTL)                    ** unmatched instance **
+       X19406/M7(57.210,77.280)  MP(PMOS_VTL)                    ** unmatched instance **
+       X19405/M7(23.640,81.520)  MP(PMOS_VTL)                    ** unmatched instance **
+       X19404/M7(22.310,78.720)  MP(PMOS_VTL)                    ** unmatched instance **
+       X19403/M7(18.320,78.720)  MP(PMOS_VTL)                    ** unmatched instance **
+       X19402/M7(11.420,64.720)  MP(PMOS_VTL)                    ** unmatched instance **
+       X19401/M7(9.330,53.520)  MP(PMOS_VTL)                     ** unmatched instance **
+       X19400/M7(7.870,47.920)  MP(PMOS_VTL)                     ** unmatched instance **
+       X19399/M7(5.590,49.280)  MP(PMOS_VTL)                     ** unmatched instance **
+       X19398/M7(3.310,35.280)  MP(PMOS_VTL)                     ** unmatched instance **
+       X19333/M6(71.675,70.320)  MP(PMOS_VTL)                    ** unmatched instance **
+       X19333/M7(71.865,70.320)  MP(PMOS_VTL)                    ** unmatched instance **
+       X19332/M6(67.505,1.680)  MP(PMOS_VTL)                     ** unmatched instance **
+       X19332/M7(67.315,1.680)  MP(PMOS_VTL)                     ** unmatched instance **
+       X19331/M6(65.595,1.680)  MP(PMOS_VTL)                     ** unmatched instance **
+       X19331/M7(65.785,1.680)  MP(PMOS_VTL)                     ** unmatched instance **
+       X19330/M6(51.545,4.480)  MP(PMOS_VTL)                     ** unmatched instance **
+       X19330/M7(51.355,4.480)  MP(PMOS_VTL)                     ** unmatched instance **
+       X19329/M6(20.375,74.480)  MP(PMOS_VTL)                    ** unmatched instance **
+       X19329/M7(20.565,74.480)  MP(PMOS_VTL)                    ** unmatched instance **
+       X18711/M2(80.045,65.490)  MN(NMOS_VTL)                    ** unmatched instance **
+       X18711/M3(79.855,65.490)  MN(NMOS_VTL)                    ** unmatched instance **
+
+       ** unmatched instance **                                  Xi_0_1_87/M_i_7  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_81/M_i_7  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_80/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_125/M_i_5_3  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_21/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_75/M_i_42  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_74/M_i_42  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_73/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_72/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_71/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_70/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_69/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_68/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_67/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_19/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_13/M_i_42  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_6/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_5/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_4/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_3/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_2/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_1/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_1_0/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_22/M_i_13  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_21/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_20/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_19/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_18/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_17/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_16/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_15/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_14/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_13/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_12/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_11/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_10/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_9/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_8/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_7/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_6/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_5/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_4/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_3/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_2/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_1/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0/Xi_0/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xmultiplier/Xi_0_49/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xmultiplier/Xi_4/Xi_1337/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xmultiplier/Xi_4/Xi_1334/M_i_7  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xmultiplier/Xi_4/Xi_1332/M_i_42  MP(PMOS_VTL)
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec

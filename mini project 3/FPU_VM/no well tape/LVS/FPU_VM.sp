@@ -1,0 +1,2935 @@
+* SPICE NETLIST
+***************************************
+
+.SUBCKT MGC_via1_1x2_VV_1
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via2_1x2_VV
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via1_1x2_VV
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via2_1x2_VV_1
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT via2_5
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via1_1x2_VV_0
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via2_2x1_HH_0
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via1_2x1_HH_0
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via2_2x1_HH
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via2_2x1_HH_1
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via2_1x2_VH_1
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via1_1x2_HV
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via2_2x1_VH_0
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_1
+** N=1 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via1_1x2_HV_1
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_2
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT via1_5
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT via2_7
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_3
+** N=1 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT FILLCELL_X2
+** N=4 EP=0 IP=0 FDC=0
+*.CALIBRE ISOLATED NETS: VSS VDD
+.ENDS
+***************************************
+.SUBCKT MGC_via2_1x2_VV_0
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_4
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via2_1x2_VH_0
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via1_1x2_HV_0
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via2_2x1_VH_1
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via1_2x1_VH
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT CLKBUF_X1 A VSS VDD Z 5 6
+** N=7 EP=6 IP=0 FDC=4
+M0 VSS A 7 5 NMOS_VTL L=5e-08 W=9.5e-08 AD=2.03e-14 AS=9.975e-15 PD=6.7e-07 PS=4e-07 $X=165 $Y=160 $D=1
+M1 Z 7 VSS 5 NMOS_VTL L=5e-08 W=1.95e-07 AD=2.0475e-14 AS=2.03e-14 PD=6e-07 PS=6.7e-07 $X=355 $Y=160 $D=1
+M2 VDD A 7 6 PMOS_VTL L=5e-08 W=3.15e-07 AD=6.615e-14 AS=3.3075e-14 PD=1.54e-06 PS=8.4e-07 $X=165 $Y=995 $D=0
+M3 Z 7 VDD 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=6.615e-14 PD=1.47e-06 PS=1.54e-06 $X=355 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT NOR2_X1 A2 VDD A1 ZN VSS 6 7
+** N=8 EP=7 IP=0 FDC=4
+M0 ZN A2 VSS 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=160 $Y=90 $D=1
+M1 VSS A1 ZN 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=350 $Y=90 $D=1
+M2 8 A2 VDD 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=160 $Y=680 $D=0
+M3 ZN A1 8 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=350 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT ICV_5
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_6
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_7
+** N=1 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_8
+** N=1 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_9
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT AND2_X1 A1 A2 VSS VDD ZN 6 7
+** N=9 EP=7 IP=0 FDC=6
+M0 9 A1 8 6 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.205e-14 PD=7e-07 PS=6.3e-07 $X=145 $Y=90 $D=1
+M1 VSS A2 9 6 NMOS_VTL L=5e-08 W=2.1e-07 AD=4.375e-14 AS=2.94e-14 PD=1.11e-06 PS=7e-07 $X=335 $Y=90 $D=1
+M2 ZN 8 VSS 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=4.375e-14 PD=1.04e-06 PS=1.11e-06 $X=525 $Y=90 $D=1
+M3 8 A1 VDD 7 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=3.3075e-14 PD=9.1e-07 PS=8.4e-07 $X=145 $Y=995 $D=0
+M4 VDD A2 8 7 PMOS_VTL L=5e-08 W=3.15e-07 AD=6.615e-14 AS=4.41e-14 PD=1.54e-06 PS=9.1e-07 $X=335 $Y=995 $D=0
+M5 ZN 8 VDD 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=6.615e-14 PD=1.47e-06 PS=1.54e-06 $X=525 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT AOI21_X1 B2 B1 ZN A VSS VDD 7 8
+** N=10 EP=8 IP=0 FDC=6
+M0 10 B2 VSS 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=185 $Y=90 $D=1
+M1 ZN B1 10 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=375 $Y=90 $D=1
+M2 VSS A ZN 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=565 $Y=90 $D=1
+M3 ZN B2 9 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=185 $Y=680 $D=0
+M4 9 B1 ZN 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=375 $Y=680 $D=0
+M5 VDD A 9 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=565 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT OAI21_X1 B2 B1 ZN A VSS VDD 7 8
+** N=10 EP=8 IP=0 FDC=6
+M0 ZN B2 9 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=170 $Y=90 $D=1
+M1 9 B1 ZN 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=360 $Y=90 $D=1
+M2 VSS A 9 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=550 $Y=90 $D=1
+M3 10 B2 VDD 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=170 $Y=680 $D=0
+M4 ZN B1 10 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=360 $Y=680 $D=0
+M5 VDD A ZN 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=550 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT ICV_10
+** N=1 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_11
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_12
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT AOI22_X1 B2 B1 VDD A1 ZN A2 VSS 8 9
+** N=12 EP=9 IP=0 FDC=8
+M0 11 B2 VSS 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=160 $Y=90 $D=1
+M1 ZN B1 11 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=350 $Y=90 $D=1
+M2 12 A1 ZN 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=540 $Y=90 $D=1
+M3 VSS A2 12 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=730 $Y=90 $D=1
+M4 VDD B2 10 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=160 $Y=680 $D=0
+M5 10 B1 VDD 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=350 $Y=680 $D=0
+M6 ZN A1 10 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=540 $Y=680 $D=0
+M7 10 A2 ZN 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=730 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT MGC_via1_2x1_HH_1
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_13
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_14 1 2 3 4 5 6 7 8
+** N=8 EP=8 IP=12 FDC=8
+X0 1 2 3 4 7 8 CLKBUF_X1 $T=0 0 0 0 $X=-115 $Y=-115
+X1 5 2 3 6 7 8 CLKBUF_X1 $T=1140 0 1 180 $X=455 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_15 1 2 3 4 5 6 7 8
+** N=8 EP=8 IP=12 FDC=8
+X0 1 2 3 4 7 8 CLKBUF_X1 $T=-570 0 0 0 $X=-685 $Y=-115
+X1 5 2 3 6 7 8 CLKBUF_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT INV_X1 A VSS VDD ZN 5 6
+** N=6 EP=6 IP=0 FDC=2
+M0 ZN A VSS 5 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=4.3575e-14 PD=1.04e-06 PS=1.04e-06 $X=145 $Y=90 $D=1
+M1 ZN A VDD 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=6.615e-14 PD=1.47e-06 PS=1.47e-06 $X=145 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT OAI221_X1 B2 B1 VSS A C2 VDD C1 ZN 9 10
+** N=14 EP=10 IP=0 FDC=10
+M0 VSS B2 11 9 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=145 $Y=90 $D=1
+M1 11 B1 VSS 9 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=335 $Y=90 $D=1
+M2 12 A 11 9 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=525 $Y=90 $D=1
+M3 ZN C2 12 9 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=715 $Y=90 $D=1
+M4 12 C1 ZN 9 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=905 $Y=90 $D=1
+M5 13 B2 VDD 10 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=145 $Y=680 $D=0
+M6 ZN B1 13 10 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=335 $Y=680 $D=0
+M7 VDD A ZN 10 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=525 $Y=680 $D=0
+M8 14 C2 VDD 10 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=715 $Y=680 $D=0
+M9 ZN C1 14 10 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=905 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT ICV_16
+** N=1 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_17
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT FILLCELL_X4
+** N=4 EP=0 IP=0 FDC=0
+*.CALIBRE ISOLATED NETS: VSS VDD
+.ENDS
+***************************************
+.SUBCKT ICV_18
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT FILLCELL_X8
+** N=4 EP=0 IP=0 FDC=0
+*.CALIBRE ISOLATED NETS: VSS VDD
+.ENDS
+***************************************
+.SUBCKT OAI222_X1 C2 C1 VSS B1 B2 A2 VDD A1 ZN 10 11
+** N=16 EP=11 IP=0 FDC=12
+M0 12 C2 VSS 10 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=155 $Y=90 $D=1
+M1 VSS C1 12 10 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=345 $Y=90 $D=1
+M2 12 B1 13 10 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=710 $Y=90 $D=1
+M3 13 B2 12 10 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=900 $Y=90 $D=1
+M4 ZN A2 13 10 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=1090 $Y=90 $D=1
+M5 13 A1 ZN 10 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=1280 $Y=90 $D=1
+M6 14 C2 VDD 11 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=155 $Y=680 $D=0
+M7 ZN C1 14 11 PMOS_VTL L=5e-08 W=6.3e-07 AD=1.9845e-13 AS=8.82e-14 PD=1.89e-06 PS=1.54e-06 $X=345 $Y=680 $D=0
+M8 15 B1 ZN 11 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=1.9845e-13 PD=1.54e-06 PS=1.89e-06 $X=710 $Y=680 $D=0
+M9 VDD B2 15 11 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=900 $Y=680 $D=0
+M10 16 A2 VDD 11 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=1090 $Y=680 $D=0
+M11 ZN A1 16 11 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=1280 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT ICV_19
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_20
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_21 1 2 3 4 5 6 7 8
+** N=8 EP=8 IP=12 FDC=8
+X0 1 2 3 4 7 8 CLKBUF_X1 $T=0 0 0 0 $X=-115 $Y=-115
+X1 5 2 3 6 7 8 CLKBUF_X1 $T=570 0 0 0 $X=455 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_22 1 2 3 4 5 6 7 8
+** N=8 EP=8 IP=12 FDC=8
+X0 1 2 3 4 7 8 CLKBUF_X1 $T=0 0 1 180 $X=-685 $Y=-115
+X1 5 2 3 6 7 8 CLKBUF_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_23
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_24
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT DLH_X1 G Q D VSS VDD 6 7
+** N=15 EP=7 IP=0 FDC=16
+M0 VSS G 8 6 NMOS_VTL L=5e-08 W=2.1e-07 AD=4.375e-14 AS=2.205e-14 PD=1.11e-06 PS=6.3e-07 $X=170 $Y=90 $D=1
+M1 Q 10 VSS 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=4.375e-14 PD=1.04e-06 PS=1.11e-06 $X=360 $Y=90 $D=1
+M2 VSS 8 9 6 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.205e-14 PD=7e-07 PS=6.3e-07 $X=755 $Y=215 $D=1
+M3 14 D VSS 6 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.94e-14 PD=7e-07 PS=7e-07 $X=945 $Y=215 $D=1
+M4 10 9 14 6 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.1e-14 AS=2.94e-14 PD=7e-07 PS=7e-07 $X=1135 $Y=215 $D=1
+M5 15 8 10 6 NMOS_VTL L=5e-08 W=9e-08 AD=1.26e-14 AS=2.1e-14 PD=4.6e-07 PS=7e-07 $X=1325 $Y=335 $D=1
+M6 VSS 11 15 6 NMOS_VTL L=5e-08 W=9e-08 AD=1.26e-14 AS=1.26e-14 PD=4.6e-07 PS=4.6e-07 $X=1515 $Y=335 $D=1
+M7 11 10 VSS 6 NMOS_VTL L=5e-08 W=9e-08 AD=9.45e-15 AS=1.26e-14 PD=3.9e-07 PS=4.6e-07 $X=1705 $Y=335 $D=1
+M8 VDD G 8 7 PMOS_VTL L=5e-08 W=3.15e-07 AD=6.615e-14 AS=3.3075e-14 PD=1.54e-06 PS=8.4e-07 $X=170 $Y=995 $D=0
+M9 Q 10 VDD 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=6.615e-14 PD=1.47e-06 PS=1.54e-06 $X=360 $Y=680 $D=0
+M10 VDD 8 9 7 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=3.3075e-14 PD=9.1e-07 PS=8.4e-07 $X=755 $Y=815 $D=0
+M11 12 D VDD 7 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=4.41e-14 PD=9.1e-07 PS=9.1e-07 $X=945 $Y=815 $D=0
+M12 10 8 12 7 PMOS_VTL L=5e-08 W=3.15e-07 AD=2.835e-14 AS=4.41e-14 PD=9.1e-07 PS=9.1e-07 $X=1135 $Y=815 $D=0
+M13 13 9 10 7 PMOS_VTL L=5e-08 W=9e-08 AD=1.26e-14 AS=2.835e-14 PD=4.6e-07 PS=9.1e-07 $X=1325 $Y=1040 $D=0
+M14 VDD 11 13 7 PMOS_VTL L=5e-08 W=9e-08 AD=1.26e-14 AS=1.26e-14 PD=4.6e-07 PS=4.6e-07 $X=1515 $Y=1040 $D=0
+M15 11 10 VDD 7 PMOS_VTL L=5e-08 W=9e-08 AD=9.45e-15 AS=1.26e-14 PD=3.9e-07 PS=4.6e-07 $X=1705 $Y=1040 $D=0
+.ENDS
+***************************************
+.SUBCKT ICV_25
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT HA_X1 S B A VSS VDD CO 7 8
+** N=14 EP=8 IP=0 FDC=16
+M0 13 B VSS 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=185 $Y=90 $D=1
+M1 S A 13 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=375 $Y=90 $D=1
+M2 VSS 10 S 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.48e-14 AS=5.81e-14 PD=1.12e-06 PS=1.11e-06 $X=565 $Y=90 $D=1
+M3 10 B VSS 7 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=4.48e-14 PD=7e-07 PS=1.12e-06 $X=760 $Y=90 $D=1
+M4 VSS A 10 7 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.205e-14 AS=2.94e-14 PD=6.3e-07 PS=7e-07 $X=950 $Y=90 $D=1
+M5 14 A 11 7 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.205e-14 PD=7e-07 PS=6.3e-07 $X=1320 $Y=90 $D=1
+M6 VSS B 14 7 NMOS_VTL L=5e-08 W=2.1e-07 AD=4.375e-14 AS=2.94e-14 PD=1.11e-06 PS=7e-07 $X=1510 $Y=90 $D=1
+M7 CO 11 VSS 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=4.375e-14 PD=1.04e-06 PS=1.11e-06 $X=1700 $Y=90 $D=1
+M8 S B 9 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=185 $Y=680 $D=0
+M9 9 A S 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=375 $Y=680 $D=0
+M10 VDD 10 9 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.7725e-14 AS=8.82e-14 PD=1.55e-06 PS=1.54e-06 $X=565 $Y=680 $D=0
+M11 12 B VDD 8 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=6.7725e-14 PD=9.1e-07 PS=1.55e-06 $X=760 $Y=870 $D=0
+M12 10 A 12 8 PMOS_VTL L=5e-08 W=3.15e-07 AD=3.3075e-14 AS=4.41e-14 PD=8.4e-07 PS=9.1e-07 $X=950 $Y=870 $D=0
+M13 11 A VDD 8 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=3.3075e-14 PD=9.1e-07 PS=8.4e-07 $X=1320 $Y=870 $D=0
+M14 VDD B 11 8 PMOS_VTL L=5e-08 W=3.15e-07 AD=6.615e-14 AS=4.41e-14 PD=1.54e-06 PS=9.1e-07 $X=1510 $Y=870 $D=0
+M15 CO 11 VDD 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=6.615e-14 PD=1.47e-06 PS=1.54e-06 $X=1700 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT ICV_26 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X0 1 2 3 4 5 6 7 NOR2_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_27 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X1 3 2 5 4 1 6 7 ICV_26 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_28 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X1 3 2 4 5 1 6 7 NOR2_X1 $T=760 0 1 180 $X=75 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_29
+** N=1 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_30
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_31
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_32
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_33
+** N=1 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_34
+** N=1 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT via1_7
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_35
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_36
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_37
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT NOR4_X1 A4 VDD A3 A2 A1 ZN VSS 8 9
+** N=12 EP=9 IP=0 FDC=8
+M0 ZN A4 VSS 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=145 $Y=90 $D=1
+M1 VSS A3 ZN 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=335 $Y=90 $D=1
+M2 ZN A2 VSS 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=525 $Y=90 $D=1
+M3 VSS A1 ZN 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=715 $Y=90 $D=1
+M4 10 A4 VDD 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=145 $Y=680 $D=0
+M5 11 A3 10 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=335 $Y=680 $D=0
+M6 12 A2 11 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=525 $Y=680 $D=0
+M7 ZN A1 12 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=715 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT INV_X4 A ZN VSS VDD 5 6
+** N=6 EP=6 IP=0 FDC=8
+M0 ZN A VSS 5 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=145 $Y=90 $D=1
+M1 VSS A ZN 5 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=335 $Y=90 $D=1
+M2 ZN A VSS 5 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=525 $Y=90 $D=1
+M3 VSS A ZN 5 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=715 $Y=90 $D=1
+M4 ZN A VDD 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=145 $Y=680 $D=0
+M5 VDD A ZN 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=335 $Y=680 $D=0
+M6 ZN A VDD 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=525 $Y=680 $D=0
+M7 VDD A ZN 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=715 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT INV_X2 A ZN VSS VDD 5 6
+** N=6 EP=6 IP=0 FDC=4
+M0 ZN A VSS 5 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=160 $Y=90 $D=1
+M1 VSS A ZN 5 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=350 $Y=90 $D=1
+M2 ZN A VDD 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=160 $Y=680 $D=0
+M3 VDD A ZN 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=350 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT ICV_38
+** N=1 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_39
+** N=1 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_40
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_41 1 2 3 4 5 6 7 8 9
+** N=9 EP=9 IP=14 FDC=12
+X0 1 2 3 4 5 8 9 AND2_X1 $T=0 0 1 180 $X=-875 $Y=-115
+X1 1 6 3 4 7 8 9 AND2_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT FA_X1 CO CI B A VDD VSS S 8 9
+** N=21 EP=9 IP=0 FDC=28
+M0 VSS 10 CO 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.375e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=170 $Y=90 $D=1
+M1 19 B VSS 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=4.375e-14 PD=7e-07 PS=1.11e-06 $X=360 $Y=215 $D=1
+M2 10 A 19 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.94e-14 PD=7e-07 PS=7e-07 $X=550 $Y=215 $D=1
+M3 11 CI 10 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=3.045e-14 AS=2.94e-14 PD=7.1e-07 PS=7e-07 $X=740 $Y=215 $D=1
+M4 VSS A 11 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=3.045e-14 PD=7e-07 PS=7.1e-07 $X=935 $Y=215 $D=1
+M5 11 B VSS 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.205e-14 AS=2.94e-14 PD=6.3e-07 PS=7e-07 $X=1125 $Y=215 $D=1
+M6 13 B VSS 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.205e-14 PD=7e-07 PS=6.3e-07 $X=1465 $Y=90 $D=1
+M7 VSS CI 13 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.94e-14 PD=7e-07 PS=7e-07 $X=1655 $Y=90 $D=1
+M8 13 A VSS 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.94e-14 PD=7e-07 PS=7e-07 $X=1845 $Y=90 $D=1
+M9 15 10 13 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=3.15e-14 AS=2.94e-14 PD=7.2e-07 PS=7e-07 $X=2035 $Y=90 $D=1
+M10 20 CI 15 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=3.15e-14 PD=7e-07 PS=7.2e-07 $X=2235 $Y=90 $D=1
+M11 21 B 20 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.94e-14 PD=7e-07 PS=7e-07 $X=2425 $Y=90 $D=1
+M12 VSS A 21 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=4.375e-14 AS=2.94e-14 PD=1.11e-06 PS=7e-07 $X=2615 $Y=90 $D=1
+M13 S 15 VSS 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=4.375e-14 PD=1.04e-06 PS=1.11e-06 $X=2805 $Y=90 $D=1
+M14 VDD 10 CO 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=170 $Y=680 $D=0
+M15 16 B VDD 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=6.615e-14 PD=9.1e-07 PS=1.54e-06 $X=360 $Y=870 $D=0
+M16 10 A 16 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=4.41e-14 PD=9.1e-07 PS=9.1e-07 $X=550 $Y=870 $D=0
+M17 12 CI 10 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.53e-14 AS=4.41e-14 PD=1.07e-06 PS=9.1e-07 $X=740 $Y=870 $D=0
+M18 VDD A 12 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=4.53e-14 PD=9.1e-07 PS=1.07e-06 $X=935 $Y=945 $D=0
+M19 12 B VDD 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=3.3075e-14 AS=4.41e-14 PD=8.4e-07 PS=9.1e-07 $X=1125 $Y=945 $D=0
+M20 14 B VDD 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=3.3075e-14 PD=9.1e-07 PS=8.4e-07 $X=1465 $Y=995 $D=0
+M21 VDD CI 14 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=4.41e-14 PD=9.1e-07 PS=9.1e-07 $X=1655 $Y=995 $D=0
+M22 14 A VDD 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=4.41e-14 PD=9.1e-07 PS=9.1e-07 $X=1845 $Y=995 $D=0
+M23 15 10 14 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.725e-14 AS=4.41e-14 PD=9.3e-07 PS=9.1e-07 $X=2035 $Y=995 $D=0
+M24 17 CI 15 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=4.725e-14 PD=9.1e-07 PS=9.3e-07 $X=2235 $Y=995 $D=0
+M25 18 B 17 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=4.41e-14 PD=9.1e-07 PS=9.1e-07 $X=2425 $Y=995 $D=0
+M26 VDD A 18 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=6.615e-14 AS=4.41e-14 PD=1.54e-06 PS=9.1e-07 $X=2615 $Y=995 $D=0
+M27 S 15 VDD 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=6.615e-14 PD=1.47e-06 PS=1.54e-06 $X=2805 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT ICV_42
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_43
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via2_1x2_HV
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_44 1 2 3 4 5 6 7 8 9
+** N=9 EP=9 IP=13 FDC=28
+X1 3 4 5 6 2 1 7 8 9 FA_X1 $T=190 0 0 0 $X=75 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_45 1 2 3 4 5 6 7 8 9
+** N=9 EP=9 IP=13 FDC=28
+X1 3 4 5 6 2 1 7 8 9 FA_X1 $T=380 0 0 0 $X=265 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_46
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_47 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X0 1 2 3 4 5 6 7 NOR2_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_48 1 2 3 4 5 6 7 8 9 10
+** N=10 EP=10 IP=14 FDC=32
+X0 1 2 3 4 5 9 10 DLH_X1 $T=0 0 0 0 $X=-115 $Y=-115
+X1 6 7 8 4 5 9 10 DLH_X1 $T=1900 0 0 0 $X=1785 $Y=-115
+.ENDS
+***************************************
+.SUBCKT FILLCELL_X16
+** N=4 EP=0 IP=0 FDC=0
+*.CALIBRE ISOLATED NETS: VSS VDD
+.ENDS
+***************************************
+.SUBCKT ICV_49
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_50
+** N=1 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via1_1x2_VH
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via1_2x1_VH_0
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via1_2x1_HH
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_51
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_52
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_53
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_54
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_55
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_56 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X0 1 2 3 4 5 6 7 NOR2_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT AOI211_X1 C2 C1 B VSS A ZN VDD 8 9
+** N=12 EP=9 IP=0 FDC=8
+M0 12 C2 VSS 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=185 $Y=90 $D=1
+M1 ZN C1 12 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=375 $Y=90 $D=1
+M2 VSS B ZN 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=565 $Y=90 $D=1
+M3 ZN A VSS 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=755 $Y=90 $D=1
+M4 ZN C2 10 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=185 $Y=680 $D=0
+M5 10 C1 ZN 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=375 $Y=680 $D=0
+M6 11 B 10 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=565 $Y=680 $D=0
+M7 VDD A 11 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=755 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT ICV_57 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=16
+X1 3 4 5 1 2 6 7 DLH_X1 $T=190 0 0 0 $X=75 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_58 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X1 3 2 4 5 1 6 7 NOR2_X1 $T=190 0 0 0 $X=75 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_59 1 2 3 4 5 6 7 8 9 10
+** N=10 EP=10 IP=14 FDC=8
+X0 1 2 3 4 5 9 10 NOR2_X1 $T=0 0 0 0 $X=-115 $Y=-115
+X1 6 2 7 8 5 9 10 NOR2_X1 $T=570 0 0 0 $X=455 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_60
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_61 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X0 1 2 3 4 5 6 7 NOR2_X1 $T=1710 0 0 0 $X=1595 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_62 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+** N=14 EP=14 IP=18 FDC=56
+X0 1 2 3 4 5 6 7 13 14 FA_X1 $T=0 0 0 0 $X=-115 $Y=-115
+X1 8 9 10 11 5 6 12 13 14 FA_X1 $T=3040 0 0 0 $X=2925 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_63 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X0 1 2 3 4 5 6 7 NOR2_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT MGC_via2_2x1_VH
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_64 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=16
+X1 3 4 5 1 2 6 7 DLH_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_65
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_66 1 2 3 4 5 6 7 8 9 10 11 12
+** N=12 EP=12 IP=16 FDC=32
+X0 1 2 3 4 5 11 12 NOR2_X1 $T=3610 0 1 180 $X=2925 $Y=-115
+X1 6 7 8 9 2 5 10 11 12 FA_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_67
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT OR4_X1 A1 A2 A3 A4 VSS VDD ZN 8 9
+** N=13 EP=9 IP=0 FDC=10
+M0 10 A1 VSS 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.205e-14 PD=7e-07 PS=6.3e-07 $X=145 $Y=90 $D=1
+M1 VSS A2 10 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.94e-14 PD=7e-07 PS=7e-07 $X=335 $Y=90 $D=1
+M2 10 A3 VSS 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.94e-14 PD=7e-07 PS=7e-07 $X=525 $Y=90 $D=1
+M3 VSS A4 10 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=4.375e-14 AS=2.94e-14 PD=1.11e-06 PS=7e-07 $X=715 $Y=90 $D=1
+M4 ZN 10 VSS 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=4.375e-14 PD=1.04e-06 PS=1.11e-06 $X=905 $Y=90 $D=1
+M5 11 A1 10 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=3.3075e-14 PD=9.1e-07 PS=8.4e-07 $X=145 $Y=995 $D=0
+M6 12 A2 11 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=4.41e-14 PD=9.1e-07 PS=9.1e-07 $X=335 $Y=995 $D=0
+M7 13 A3 12 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=4.41e-14 PD=9.1e-07 PS=9.1e-07 $X=525 $Y=995 $D=0
+M8 VDD A4 13 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=6.615e-14 AS=4.41e-14 PD=1.54e-06 PS=9.1e-07 $X=715 $Y=995 $D=0
+M9 ZN 10 VDD 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=6.615e-14 PD=1.47e-06 PS=1.54e-06 $X=905 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT CLKBUF_X3 A VSS VDD Z 5 6
+** N=7 EP=6 IP=0 FDC=8
+M0 VSS A 7 5 NMOS_VTL L=5e-08 W=1.95e-07 AD=2.73e-14 AS=2.0475e-14 PD=6.7e-07 PS=6e-07 $X=145 $Y=90 $D=1
+M1 Z 7 VSS 5 NMOS_VTL L=5e-08 W=1.95e-07 AD=2.73e-14 AS=2.73e-14 PD=6.7e-07 PS=6.7e-07 $X=335 $Y=90 $D=1
+M2 VSS 7 Z 5 NMOS_VTL L=5e-08 W=1.95e-07 AD=2.73e-14 AS=2.73e-14 PD=6.7e-07 PS=6.7e-07 $X=525 $Y=90 $D=1
+M3 Z 7 VSS 5 NMOS_VTL L=5e-08 W=1.95e-07 AD=2.0475e-14 AS=2.73e-14 PD=6e-07 PS=6.7e-07 $X=715 $Y=90 $D=1
+M4 VDD A 7 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=145 $Y=680 $D=0
+M5 Z 7 VDD 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=335 $Y=680 $D=0
+M6 VDD 7 Z 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=525 $Y=680 $D=0
+M7 Z 7 VDD 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=715 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT ICV_68 1 2 3 4 5 6 7 8 9
+** N=9 EP=9 IP=14 FDC=32
+X0 1 2 3 4 5 8 9 DLH_X1 $T=0 0 1 180 $X=-2015 $Y=-115
+X1 1 6 7 4 5 8 9 DLH_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_69
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via1_2x1_VH_1
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT AND4_X1 A1 A2 A3 A4 VSS VDD ZN 8 9
+** N=13 EP=9 IP=0 FDC=10
+M0 11 A1 10 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.205e-14 PD=7e-07 PS=6.3e-07 $X=145 $Y=90 $D=1
+M1 12 A2 11 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.94e-14 PD=7e-07 PS=7e-07 $X=335 $Y=90 $D=1
+M2 13 A3 12 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.94e-14 PD=7e-07 PS=7e-07 $X=525 $Y=90 $D=1
+M3 VSS A4 13 8 NMOS_VTL L=5e-08 W=2.1e-07 AD=4.375e-14 AS=2.94e-14 PD=1.11e-06 PS=7e-07 $X=715 $Y=90 $D=1
+M4 ZN 10 VSS 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=4.375e-14 PD=1.04e-06 PS=1.11e-06 $X=905 $Y=90 $D=1
+M5 10 A1 VDD 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=3.3075e-14 PD=9.1e-07 PS=8.4e-07 $X=145 $Y=995 $D=0
+M6 VDD A2 10 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=4.41e-14 PD=9.1e-07 PS=9.1e-07 $X=335 $Y=995 $D=0
+M7 10 A3 VDD 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=4.41e-14 PD=9.1e-07 PS=9.1e-07 $X=525 $Y=995 $D=0
+M8 VDD A4 10 9 PMOS_VTL L=5e-08 W=3.15e-07 AD=6.615e-14 AS=4.41e-14 PD=1.54e-06 PS=9.1e-07 $X=715 $Y=995 $D=0
+M9 ZN 10 VDD 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=6.615e-14 PD=1.47e-06 PS=1.54e-06 $X=905 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT OR2_X1 A1 A2 VSS VDD ZN 6 7
+** N=9 EP=7 IP=0 FDC=6
+M0 8 A1 VSS 6 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.205e-14 PD=7e-07 PS=6.3e-07 $X=145 $Y=90 $D=1
+M1 VSS A2 8 6 NMOS_VTL L=5e-08 W=2.1e-07 AD=4.375e-14 AS=2.94e-14 PD=1.11e-06 PS=7e-07 $X=335 $Y=90 $D=1
+M2 ZN 8 VSS 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=4.375e-14 PD=1.04e-06 PS=1.11e-06 $X=525 $Y=90 $D=1
+M3 9 A1 8 7 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=3.3075e-14 PD=9.1e-07 PS=8.4e-07 $X=145 $Y=995 $D=0
+M4 VDD A2 9 7 PMOS_VTL L=5e-08 W=3.15e-07 AD=6.615e-14 AS=4.41e-14 PD=1.54e-06 PS=9.1e-07 $X=335 $Y=995 $D=0
+M5 ZN 8 VDD 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=6.615e-14 PD=1.47e-06 PS=1.54e-06 $X=525 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT ICV_70
+** N=4 EP=0 IP=8 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_AUTO_NDR_MGC_CLK_NDR_1.0w2.0s_via2_single_MA_north
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT NAND3_X1 A3 VSS A2 A1 VDD ZN 7 8
+** N=10 EP=8 IP=0 FDC=6
+M0 9 A3 VSS 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=145 $Y=90 $D=1
+M1 10 A2 9 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=335 $Y=90 $D=1
+M2 ZN A1 10 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=525 $Y=90 $D=1
+M3 ZN A3 VDD 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=145 $Y=680 $D=0
+M4 VDD A2 ZN 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=335 $Y=680 $D=0
+M5 ZN A1 VDD 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=525 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT OAI22_X1 B2 B1 VSS ZN A1 A2 VDD 8 9
+** N=12 EP=9 IP=0 FDC=8
+M0 VSS B2 10 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=160 $Y=90 $D=1
+M1 10 B1 VSS 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=350 $Y=90 $D=1
+M2 ZN A1 10 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=540 $Y=90 $D=1
+M3 10 A2 ZN 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=730 $Y=90 $D=1
+M4 11 B2 VDD 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=160 $Y=680 $D=0
+M5 ZN B1 11 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=350 $Y=680 $D=0
+M6 12 A1 ZN 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=540 $Y=680 $D=0
+M7 VDD A2 12 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=730 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT NOR3_X1 A3 VDD A2 A1 VSS ZN 7 8
+** N=10 EP=8 IP=0 FDC=6
+M0 ZN A3 VSS 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=145 $Y=90 $D=1
+M1 VSS A2 ZN 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=335 $Y=90 $D=1
+M2 ZN A1 VSS 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=525 $Y=90 $D=1
+M3 9 A3 VDD 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=145 $Y=680 $D=0
+M4 10 A2 9 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=335 $Y=680 $D=0
+M5 ZN A1 10 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=525 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT AND3_X1 A1 A2 A3 VSS VDD ZN 7 8
+** N=11 EP=8 IP=0 FDC=8
+M0 10 A1 9 7 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.205e-14 PD=7e-07 PS=6.3e-07 $X=145 $Y=90 $D=1
+M1 11 A2 10 7 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.94e-14 PD=7e-07 PS=7e-07 $X=335 $Y=90 $D=1
+M2 VSS A3 11 7 NMOS_VTL L=5e-08 W=2.1e-07 AD=4.375e-14 AS=2.94e-14 PD=1.11e-06 PS=7e-07 $X=525 $Y=90 $D=1
+M3 ZN 9 VSS 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=4.375e-14 PD=1.04e-06 PS=1.11e-06 $X=715 $Y=90 $D=1
+M4 VDD A1 9 8 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=3.3075e-14 PD=9.1e-07 PS=8.4e-07 $X=145 $Y=995 $D=0
+M5 9 A2 VDD 8 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=4.41e-14 PD=9.1e-07 PS=9.1e-07 $X=335 $Y=995 $D=0
+M6 VDD A3 9 8 PMOS_VTL L=5e-08 W=3.15e-07 AD=6.615e-14 AS=4.41e-14 PD=1.54e-06 PS=9.1e-07 $X=525 $Y=995 $D=0
+M7 ZN 9 VDD 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=6.615e-14 PD=1.47e-06 PS=1.54e-06 $X=715 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT FILLCELL_X32
+** N=4 EP=0 IP=0 FDC=0
+*.CALIBRE ISOLATED NETS: VSS VDD
+.ENDS
+***************************************
+.SUBCKT ICV_71 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X0 1 2 3 4 5 6 7 NOR2_X1 $T=380 0 0 0 $X=265 $Y=-115
+.ENDS
+***************************************
+.SUBCKT INV_X8 A ZN VSS VDD 5 6
+** N=6 EP=6 IP=0 FDC=16
+M0 ZN A VSS 5 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=145 $Y=90 $D=1
+M1 VSS A ZN 5 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=335 $Y=90 $D=1
+M2 ZN A VSS 5 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=525 $Y=90 $D=1
+M3 VSS A ZN 5 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=715 $Y=90 $D=1
+M4 ZN A VSS 5 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=905 $Y=90 $D=1
+M5 VSS A ZN 5 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=1095 $Y=90 $D=1
+M6 ZN A VSS 5 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=1285 $Y=90 $D=1
+M7 VSS A ZN 5 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=1475 $Y=90 $D=1
+M8 ZN A VDD 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=145 $Y=680 $D=0
+M9 VDD A ZN 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=335 $Y=680 $D=0
+M10 ZN A VDD 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=525 $Y=680 $D=0
+M11 VDD A ZN 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=715 $Y=680 $D=0
+M12 ZN A VDD 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=905 $Y=680 $D=0
+M13 VDD A ZN 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=1095 $Y=680 $D=0
+M14 ZN A VDD 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=1285 $Y=680 $D=0
+M15 VDD A ZN 6 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=1475 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT ICV_72
+** N=1 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_73
+** N=1 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_74
+** N=1 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_75
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_76 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X1 1 2 3 4 5 6 7 ICV_58 $T=380 0 0 0 $X=265 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_77 1 2 3 4 5 6 7 8 9 10 11 12
+** N=12 EP=12 IP=16 FDC=32
+X0 1 2 3 4 5 11 12 NOR2_X1 $T=0 0 1 180 $X=-685 $Y=-115
+X1 6 7 8 9 2 5 10 11 12 FA_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_78 1 2 3 4 5 6 7 8 9
+** N=9 EP=9 IP=13 FDC=28
+X1 3 4 5 6 2 1 7 8 9 FA_X1 $T=3230 0 1 180 $X=75 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_79 1 2 3 4 5 6 7 8 9 10 11 12
+** N=12 EP=12 IP=16 FDC=32
+X0 1 2 3 4 5 11 12 NOR2_X1 $T=3040 0 0 0 $X=2925 $Y=-115
+X1 6 7 8 9 2 5 10 11 12 FA_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_80 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X0 1 2 3 4 5 6 7 NOR2_X1 $T=760 0 0 0 $X=645 $Y=-115
+.ENDS
+***************************************
+.SUBCKT NAND2_X1 A2 VSS A1 ZN VDD 6 7
+** N=8 EP=7 IP=0 FDC=4
+M0 8 A2 VSS 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=160 $Y=90 $D=1
+M1 ZN A1 8 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=350 $Y=90 $D=1
+M2 ZN A2 VDD 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=160 $Y=680 $D=0
+M3 VDD A1 ZN 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=350 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT OAI211_X1 C2 C1 A VDD B ZN VSS 8 9
+** N=12 EP=9 IP=0 FDC=8
+M0 ZN C2 10 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=185 $Y=90 $D=1
+M1 10 C1 ZN 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=375 $Y=90 $D=1
+M2 12 A 10 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=565 $Y=90 $D=1
+M3 VSS B 12 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=755 $Y=90 $D=1
+M4 11 C2 VDD 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=185 $Y=680 $D=0
+M5 ZN C1 11 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=375 $Y=680 $D=0
+M6 VDD A ZN 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=565 $Y=680 $D=0
+M7 ZN B VDD 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=755 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT ICV_81 1 2 3 4 5 6 7 8 9
+** N=9 EP=9 IP=13 FDC=28
+X0 1 2 3 4 5 6 7 8 9 FA_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_82 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X0 1 2 3 4 5 6 7 NOR2_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_83 1 2 3 4 5 6 7 8 9 10
+** N=10 EP=10 IP=14 FDC=8
+X0 1 2 3 4 5 9 10 NOR2_X1 $T=0 0 1 180 $X=-685 $Y=-115
+X1 6 2 7 8 5 9 10 NOR2_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT MGC_via1_2x1_HV_1
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT XNOR2_X1 VSS A ZN B VDD 6 7
+** N=11 EP=7 IP=0 FDC=10
+M0 11 A 8 6 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.205e-14 PD=7e-07 PS=6.3e-07 $X=155 $Y=90 $D=1
+M1 VSS B 11 6 NMOS_VTL L=5e-08 W=2.1e-07 AD=4.48e-14 AS=2.94e-14 PD=1.12e-06 PS=7e-07 $X=345 $Y=90 $D=1
+M2 9 8 VSS 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.48e-14 PD=1.11e-06 PS=1.12e-06 $X=540 $Y=90 $D=1
+M3 ZN A 9 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=730 $Y=90 $D=1
+M4 9 B ZN 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=920 $Y=90 $D=1
+M5 8 A VDD 7 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=3.3075e-14 PD=9.1e-07 PS=8.4e-07 $X=155 $Y=995 $D=0
+M6 VDD B 8 7 PMOS_VTL L=5e-08 W=3.15e-07 AD=6.7725e-14 AS=4.41e-14 PD=1.55e-06 PS=9.1e-07 $X=345 $Y=995 $D=0
+M7 ZN 8 VDD 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.7725e-14 PD=1.54e-06 PS=1.55e-06 $X=540 $Y=680 $D=0
+M8 10 A ZN 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=730 $Y=680 $D=0
+M9 VDD B 10 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=920 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT ICV_84 1 2 3 4 5 6 7 8 9 10 11 12
+** N=12 EP=12 IP=16 FDC=32
+X0 1 2 3 4 5 11 12 NOR2_X1 $T=0 0 0 0 $X=-115 $Y=-115
+X1 6 7 8 9 2 5 10 11 12 FA_X1 $T=570 0 0 0 $X=455 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_85 1 2 3 4 5 6 7 8 9
+** N=9 EP=9 IP=13 FDC=28
+X0 1 2 3 4 5 6 7 8 9 FA_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_86 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X0 1 2 3 4 5 6 7 NOR2_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_87 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=16
+X1 3 4 5 1 2 6 7 DLH_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_88
+** N=2 EP=0 IP=2 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_89 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+** N=19 EP=19 IP=23 FDC=84
+X0 1 2 3 4 5 6 7 18 19 FA_X1 $T=6080 0 0 0 $X=5965 $Y=-115
+X1 8 9 10 11 5 6 12 13 14 15 16 17 18 19 ICV_62 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_90 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X0 1 2 3 4 5 6 7 NOR2_X1 $T=1140 0 0 0 $X=1025 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_91 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X0 1 2 3 4 5 6 7 NOR2_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_92 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+** N=14 EP=14 IP=18 FDC=56
+X0 1 2 3 4 5 6 7 13 14 FA_X1 $T=0 0 1 180 $X=-3155 $Y=-115
+X1 8 9 10 11 5 6 12 13 14 FA_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT MGC_via1_1x2_VH_1
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT MGC_via1_1x2_VH_0
+** N=1 EP=0 IP=0 FDC=0
+.ENDS
+***************************************
+.SUBCKT ICV_93 1 2 3 4 5 6 7 8 9
+** N=9 EP=9 IP=13 FDC=28
+X1 3 4 5 6 2 1 7 8 9 FA_X1 $T=0 0 0 0 $X=-115 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_94 1 2 3 4 5 6 7 8 9 10 11 12
+** N=12 EP=12 IP=16 FDC=32
+X0 1 2 3 4 5 11 12 NOR2_X1 $T=0 0 0 0 $X=-115 $Y=-115
+X1 6 7 8 9 2 5 10 11 12 FA_X1 $T=0 0 1 180 $X=-3155 $Y=-115
+.ENDS
+***************************************
+.SUBCKT ICV_95 1 2 3 4 5 6 7
+** N=7 EP=7 IP=11 FDC=4
+X1 1 2 5 3 4 6 7 ICV_28 $T=380 0 0 0 $X=265 $Y=-115
+.ENDS
+***************************************
+.SUBCKT XOR2_X1 VDD A Z B VSS 6 7
+** N=11 EP=7 IP=0 FDC=10
+M0 8 A VSS 6 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.205e-14 PD=7e-07 PS=6.3e-07 $X=145 $Y=90 $D=1
+M1 VSS B 8 6 NMOS_VTL L=5e-08 W=2.1e-07 AD=4.48e-14 AS=2.94e-14 PD=1.12e-06 PS=7e-07 $X=335 $Y=90 $D=1
+M2 Z 8 VSS 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.48e-14 PD=1.11e-06 PS=1.12e-06 $X=530 $Y=90 $D=1
+M3 11 A Z 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=720 $Y=90 $D=1
+M4 VSS B 11 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=910 $Y=90 $D=1
+M5 10 A 8 7 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=3.3075e-14 PD=9.1e-07 PS=8.4e-07 $X=145 $Y=995 $D=0
+M6 VDD B 10 7 PMOS_VTL L=5e-08 W=3.15e-07 AD=6.7725e-14 AS=4.41e-14 PD=1.55e-06 PS=9.1e-07 $X=335 $Y=995 $D=0
+M7 9 8 VDD 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.7725e-14 PD=1.54e-06 PS=1.55e-06 $X=530 $Y=680 $D=0
+M8 Z A 9 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=720 $Y=680 $D=0
+M9 9 B Z 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=910 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT AOI211_X2 A VDD B C1 ZN C2 VSS 8 9
+** N=14 EP=9 IP=0 FDC=16
+M0 ZN B VSS 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=150 $Y=90 $D=1
+M1 VSS A ZN 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=340 $Y=90 $D=1
+M2 ZN A VSS 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=530 $Y=90 $D=1
+M3 VSS B ZN 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=7.2625e-14 AS=5.81e-14 PD=1.18e-06 PS=1.11e-06 $X=720 $Y=90 $D=1
+M4 13 C2 VSS 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=7.2625e-14 PD=1.11e-06 PS=1.18e-06 $X=945 $Y=90 $D=1
+M5 ZN C1 13 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=1135 $Y=90 $D=1
+M6 14 C1 ZN 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=1325 $Y=90 $D=1
+M7 VSS C2 14 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=1515 $Y=90 $D=1
+M8 11 B 10 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=150 $Y=680 $D=0
+M9 VDD A 11 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=340 $Y=680 $D=0
+M10 12 A VDD 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=530 $Y=680 $D=0
+M11 10 B 12 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=1.1025e-13 AS=8.82e-14 PD=1.61e-06 PS=1.54e-06 $X=720 $Y=680 $D=0
+M12 ZN C2 10 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=1.1025e-13 PD=1.54e-06 PS=1.61e-06 $X=945 $Y=680 $D=0
+M13 10 C1 ZN 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=1135 $Y=680 $D=0
+M14 ZN C1 10 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=1325 $Y=680 $D=0
+M15 10 C2 ZN 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=1515 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT OAI211_X2 B VSS A C1 ZN C2 VDD 8 9
+** N=14 EP=9 IP=0 FDC=16
+M0 13 A 10 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=180 $Y=90 $D=1
+M1 VSS B 13 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=370 $Y=90 $D=1
+M2 14 B VSS 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=6.0175e-14 AS=5.81e-14 PD=1.12e-06 PS=1.11e-06 $X=560 $Y=90 $D=1
+M3 10 A 14 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=6.0175e-14 PD=1.11e-06 PS=1.12e-06 $X=755 $Y=90 $D=1
+M4 ZN C2 10 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=945 $Y=90 $D=1
+M5 10 C1 ZN 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=1135 $Y=90 $D=1
+M6 ZN C1 10 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=1325 $Y=90 $D=1
+M7 10 C2 ZN 8 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=1515 $Y=90 $D=1
+M8 ZN A VDD 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=180 $Y=680 $D=0
+M9 VDD B ZN 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=370 $Y=680 $D=0
+M10 ZN B VDD 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=9.135e-14 AS=8.82e-14 PD=1.55e-06 PS=1.54e-06 $X=560 $Y=680 $D=0
+M11 VDD A ZN 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=9.135e-14 PD=1.54e-06 PS=1.55e-06 $X=755 $Y=680 $D=0
+M12 11 C2 VDD 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=945 $Y=680 $D=0
+M13 ZN C1 11 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=1135 $Y=680 $D=0
+M14 12 C1 ZN 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=1325 $Y=680 $D=0
+M15 VDD C2 12 9 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=1515 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT XOR2_X2 Z B A VSS VDD 6 7
+** N=12 EP=7 IP=0 FDC=16
+M0 9 A VSS 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=175 $Y=90 $D=1
+M1 VSS B 9 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=365 $Y=90 $D=1
+M2 Z 9 VSS 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=555 $Y=90 $D=1
+M3 11 A Z 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=745 $Y=90 $D=1
+M4 VSS B 11 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=935 $Y=90 $D=1
+M5 12 B VSS 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=1125 $Y=90 $D=1
+M6 Z A 12 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=1315 $Y=90 $D=1
+M7 VSS 9 Z 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=1505 $Y=90 $D=1
+M8 10 A 9 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=175 $Y=680 $D=0
+M9 VDD B 10 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=365 $Y=680 $D=0
+M10 8 9 VDD 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=555 $Y=680 $D=0
+M11 Z A 8 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=745 $Y=680 $D=0
+M12 8 B Z 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=935 $Y=680 $D=0
+M13 Z B 8 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=1125 $Y=680 $D=0
+M14 8 A Z 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=1315 $Y=680 $D=0
+M15 VDD 9 8 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=1505 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT NOR3_X4 A1 A2 A3 ZN VDD VSS 7 8
+** N=10 EP=8 IP=0 FDC=24
+M0 ZN A1 VSS 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=145 $Y=90 $D=1
+M1 VSS A1 ZN 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=335 $Y=90 $D=1
+M2 ZN A1 VSS 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=525 $Y=90 $D=1
+M3 VSS A1 ZN 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=715 $Y=90 $D=1
+M4 ZN A2 VSS 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=905 $Y=90 $D=1
+M5 VSS A2 ZN 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=1095 $Y=90 $D=1
+M6 ZN A2 VSS 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=1285 $Y=90 $D=1
+M7 VSS A2 ZN 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=1475 $Y=90 $D=1
+M8 ZN A3 VSS 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=1850 $Y=90 $D=1
+M9 VSS A3 ZN 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=2040 $Y=90 $D=1
+M10 ZN A3 VSS 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=2230 $Y=90 $D=1
+M11 VSS A3 ZN 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=2420 $Y=90 $D=1
+M12 ZN A1 9 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=145 $Y=680 $D=0
+M13 9 A1 ZN 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=335 $Y=680 $D=0
+M14 ZN A1 9 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=525 $Y=680 $D=0
+M15 9 A1 ZN 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=715 $Y=680 $D=0
+M16 10 A2 9 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=905 $Y=680 $D=0
+M17 9 A2 10 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=1095 $Y=680 $D=0
+M18 10 A2 9 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=1285 $Y=680 $D=0
+M19 9 A2 10 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=1475 $Y=680 $D=0
+M20 10 A3 VDD 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=1850 $Y=680 $D=0
+M21 VDD A3 10 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=2040 $Y=680 $D=0
+M22 10 A3 VDD 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=2230 $Y=680 $D=0
+M23 VDD A3 10 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=2420 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT AOI21_X2 A VDD B1 ZN B2 VSS 7 8
+** N=11 EP=8 IP=0 FDC=12
+M0 ZN A VSS 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=185 $Y=90 $D=1
+M1 VSS A ZN 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=375 $Y=90 $D=1
+M2 10 B2 VSS 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=565 $Y=90 $D=1
+M3 ZN B1 10 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=755 $Y=90 $D=1
+M4 11 B1 ZN 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=945 $Y=90 $D=1
+M5 VSS B2 11 7 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=1135 $Y=90 $D=1
+M6 VDD A 9 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=185 $Y=680 $D=0
+M7 9 A VDD 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=375 $Y=680 $D=0
+M8 ZN B2 9 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=565 $Y=680 $D=0
+M9 9 B1 ZN 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=755 $Y=680 $D=0
+M10 ZN B1 9 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=945 $Y=680 $D=0
+M11 9 B2 ZN 8 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=1135 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT NOR2_X2 A1 ZN A2 VSS VDD 6 7
+** N=9 EP=7 IP=0 FDC=8
+M0 ZN A2 VSS 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=185 $Y=90 $D=1
+M1 VSS A1 ZN 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=375 $Y=90 $D=1
+M2 ZN A1 VSS 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=565 $Y=90 $D=1
+M3 VSS A2 ZN 6 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=755 $Y=90 $D=1
+M4 8 A2 VDD 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=185 $Y=680 $D=0
+M5 ZN A1 8 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=375 $Y=680 $D=0
+M6 9 A1 ZN 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=565 $Y=680 $D=0
+M7 VDD A2 9 7 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=755 $Y=680 $D=0
+.ENDS
+***************************************
+.SUBCKT FPU_VM Res[7] reset B[21] B[22] B[23] B[19] A[17] A[19] Res[30] B[20] A[21] A[20] B[8] B[11] B[7] B[25] A[22] B[13] B[14] A[13]
++ A[14] B[9] B[29] A[27] A[24] B[15] A[3] A[16] B[1] A[30] A[23] A[2] B[17] B[10] B[12] A[11] A[12] B[26] A[15] B[4]
++ A[6] A[25] A[10] A[0] A[5] B[3] B[18] A[29] A[28] B[30] B[28] B[6] B[16] A[7] A[18] B[2] B[0] B[5] A[1] A[4]
++ A[8] B[31] A[31] B[27] A[26] Res[6] Res[17] Res[14] Res[21] Res[25] Res[29] Res[26] enable Res[11] Res[0] Res[2] Res[16] Res[15] Res[28] Res[27]
++ Res[31] Res[3] Res[8] Res[18] Res[4] Res[9] Res[19] Res[23] Res[24] clk Res[12] Res[13] B[24] A[9] Res[10] Res[5] Res[20] Res[22] Res[1]
+** N=2675 EP=99 IP=34757 FDC=23462
+M0 2604 958 948 2616 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=8205 $Y=6690 $D=1
+M1 2605 263 948 2618 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=8390 $Y=78895 $D=1
+M2 101 963 2604 2616 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=8395 $Y=6690 $D=1
+M3 2606 962 133 2617 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=8405 $Y=43090 $D=1
+M4 965 563 2605 2618 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=8580 $Y=78895 $D=1
+M5 2607 963 101 2616 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=8585 $Y=6690 $D=1
+M6 948 61 2606 2617 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=8595 $Y=43090 $D=1
+M7 2608 563 965 2618 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=8770 $Y=78895 $D=1
+M8 948 958 2607 2616 NMOS_VTL L=5e-08 W=4.15e-07 AD=6.225e-14 AS=5.81e-14 PD=1.13e-06 PS=1.11e-06 $X=8775 $Y=6690 $D=1
+M9 133 110 948 2617 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=8785 $Y=43090 $D=1
+M10 948 263 2608 2618 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=8960 $Y=78895 $D=1
+M11 101 125 948 2616 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=6.225e-14 PD=1.11e-06 PS=1.13e-06 $X=8975 $Y=6690 $D=1
+M12 2609 967 133 2617 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=8975 $Y=43090 $D=1
+M13 2610 142 101 2616 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=9165 $Y=6690 $D=1
+M14 948 149 2609 2617 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=9165 $Y=43090 $D=1
+M15 948 117 2610 2616 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=9355 $Y=6690 $D=1
+M16 2611 117 948 2616 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=9545 $Y=6690 $D=1
+M17 101 142 2611 2616 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=9735 $Y=6690 $D=1
+M18 948 125 101 2616 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=9925 $Y=6690 $D=1
+M19 973 976 948 2619 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=11635 $Y=48690 $D=1
+M20 980 155 981 2620 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=11635 $Y=54290 $D=1
+M21 948 976 973 2619 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=11825 $Y=48690 $D=1
+M22 981 974 980 2620 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=11825 $Y=54290 $D=1
+M23 976 154 948 2619 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=12015 $Y=48690 $D=1
+M24 980 974 981 2620 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=12015 $Y=54290 $D=1
+M25 948 155 976 2619 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=12205 $Y=48690 $D=1
+M26 981 155 980 2620 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=12205 $Y=54290 $D=1
+M27 976 137 948 2619 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=12395 $Y=48690 $D=1
+M28 975 973 981 2620 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=12395 $Y=54290 $D=1
+M29 948 978 975 2620 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=12585 $Y=54290 $D=1
+M30 975 160 948 2620 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=12775 $Y=54290 $D=1
+M31 213 979 948 2621 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=12940 $Y=57090 $D=1
+M32 948 160 975 2620 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=12965 $Y=54290 $D=1
+M33 948 979 213 2621 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=13130 $Y=57090 $D=1
+M34 975 978 948 2620 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=13155 $Y=54290 $D=1
+M35 213 979 948 2621 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=13320 $Y=57090 $D=1
+M36 981 973 975 2620 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=13345 $Y=54290 $D=1
+M37 948 979 213 2621 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=13510 $Y=57090 $D=1
+M38 2612 983 948 2621 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=13700 $Y=57090 $D=1
+M39 213 980 2612 2621 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=13890 $Y=57090 $D=1
+M40 2613 980 213 2621 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=14080 $Y=57090 $D=1
+M41 948 983 2613 2621 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=14270 $Y=57090 $D=1
+M42 2614 983 948 2621 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=14460 $Y=57090 $D=1
+M43 213 980 2614 2621 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=14650 $Y=57090 $D=1
+M44 2615 980 213 2621 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=14840 $Y=57090 $D=1
+M45 948 983 2615 2621 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=15030 $Y=57090 $D=1
+M46 948 989 990 2622 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.205e-14 PD=7e-07 PS=6.3e-07 $X=16535 $Y=59890 $D=1
+M47 990 199 948 2622 NMOS_VTL L=5e-08 W=2.1e-07 AD=2.94e-14 AS=2.94e-14 PD=7e-07 PS=7e-07 $X=16725 $Y=59890 $D=1
+M48 948 202 990 2622 NMOS_VTL L=5e-08 W=2.1e-07 AD=4.375e-14 AS=2.94e-14 PD=1.11e-06 PS=7e-07 $X=16915 $Y=59890 $D=1
+M49 991 990 948 2622 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=4.375e-14 PD=1.04e-06 PS=1.11e-06 $X=17105 $Y=59890 $D=1
+M50 1009 263 948 2623 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=23375 $Y=76095 $D=1
+M51 948 reset 1009 2623 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=23565 $Y=76095 $D=1
+M52 1013 1009 948 2623 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=23755 $Y=76095 $D=1
+M53 948 1009 1013 2623 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=23945 $Y=76095 $D=1
+M54 289 1104 948 2624 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=56435 $Y=62095 $D=1
+M55 948 1104 289 2624 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=56625 $Y=62095 $D=1
+M56 1104 546 948 2624 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=56815 $Y=62095 $D=1
+M57 948 1115 1119 2625 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=4.3575e-14 PD=1.11e-06 PS=1.04e-06 $X=62895 $Y=81695 $D=1
+M58 1119 1115 948 2625 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=63085 $Y=81695 $D=1
+M59 948 1115 1119 2625 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=63275 $Y=81695 $D=1
+M60 1119 1115 948 2625 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=63465 $Y=81695 $D=1
+M61 1124 626 1119 2625 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=63655 $Y=81695 $D=1
+M62 1119 1122 1124 2625 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=63845 $Y=81695 $D=1
+M63 1124 1122 1119 2625 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=64035 $Y=81695 $D=1
+M64 1119 626 1124 2625 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=64225 $Y=81695 $D=1
+M65 1124 626 1119 2625 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=64415 $Y=81695 $D=1
+M66 1119 1122 1124 2625 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=64605 $Y=81695 $D=1
+M67 1124 1122 1119 2625 NMOS_VTL L=5e-08 W=4.15e-07 AD=5.81e-14 AS=5.81e-14 PD=1.11e-06 PS=1.11e-06 $X=64795 $Y=81695 $D=1
+M68 1119 626 1124 2625 NMOS_VTL L=5e-08 W=4.15e-07 AD=4.3575e-14 AS=5.81e-14 PD=1.04e-06 PS=1.11e-06 $X=64985 $Y=81695 $D=1
+M69 101 958 970 2648 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=8205 $Y=7280 $D=0
+M70 965 263 949 2647 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=8390 $Y=78090 $D=0
+M71 970 963 101 2648 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=8395 $Y=7280 $D=0
+M72 133 962 964 2646 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=8405 $Y=43680 $D=0
+M73 949 563 965 2647 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=8580 $Y=78090 $D=0
+M74 101 963 970 2648 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=8585 $Y=7280 $D=0
+M75 964 61 133 2646 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=8595 $Y=43680 $D=0
+M76 965 563 949 2647 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=8770 $Y=78090 $D=0
+M77 970 958 101 2648 PMOS_VTL L=5e-08 W=6.3e-07 AD=9.45e-14 AS=8.82e-14 PD=1.56e-06 PS=1.54e-06 $X=8775 $Y=7280 $D=0
+M78 969 110 964 2646 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=8785 $Y=43680 $D=0
+M79 949 263 965 2647 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=8960 $Y=78090 $D=0
+M80 968 125 970 2648 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=9.45e-14 PD=1.54e-06 PS=1.56e-06 $X=8975 $Y=7280 $D=0
+M81 949 967 969 2646 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=8975 $Y=43680 $D=0
+M82 949 142 968 2648 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=9165 $Y=7280 $D=0
+M83 969 149 949 2646 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=9165 $Y=43680 $D=0
+M84 968 117 949 2648 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=9355 $Y=7280 $D=0
+M85 949 117 968 2648 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=9545 $Y=7280 $D=0
+M86 968 142 949 2648 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=9735 $Y=7280 $D=0
+M87 970 125 968 2648 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=9925 $Y=7280 $D=0
+M88 973 976 949 2649 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=11635 $Y=49280 $D=0
+M89 2591 155 949 2650 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=11635 $Y=54880 $D=0
+M90 949 976 973 2649 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=11825 $Y=49280 $D=0
+M91 980 974 2591 2650 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=11825 $Y=54880 $D=0
+M92 2592 154 949 2649 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=12015 $Y=49280 $D=0
+M93 2593 974 980 2650 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=12015 $Y=54880 $D=0
+M94 2594 155 2592 2649 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=12205 $Y=49280 $D=0
+M95 949 155 2593 2650 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=12205 $Y=54880 $D=0
+M96 976 137 2594 2649 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=12395 $Y=49280 $D=0
+M97 980 973 949 2650 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=12395 $Y=54880 $D=0
+M98 2595 978 980 2650 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=12585 $Y=54880 $D=0
+M99 949 160 2595 2650 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=12775 $Y=54880 $D=0
+M100 949 979 984 2651 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=12940 $Y=57680 $D=0
+M101 2596 160 949 2650 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=12965 $Y=54880 $D=0
+M102 984 979 949 2651 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=13130 $Y=57680 $D=0
+M103 980 978 2596 2650 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=13155 $Y=54880 $D=0
+M104 949 979 984 2651 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=13320 $Y=57680 $D=0
+M105 949 973 980 2650 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=13345 $Y=54880 $D=0
+M106 984 979 949 2651 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=13510 $Y=57680 $D=0
+M107 213 983 984 2651 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=13700 $Y=57680 $D=0
+M108 984 980 213 2651 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=13890 $Y=57680 $D=0
+M109 213 980 984 2651 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=14080 $Y=57680 $D=0
+M110 984 983 213 2651 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=14270 $Y=57680 $D=0
+M111 213 983 984 2651 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=14460 $Y=57680 $D=0
+M112 984 980 213 2651 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=14650 $Y=57680 $D=0
+M113 213 980 984 2651 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=14840 $Y=57680 $D=0
+M114 984 983 213 2651 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=15030 $Y=57680 $D=0
+M115 2597 989 990 2652 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=3.3075e-14 PD=9.1e-07 PS=8.4e-07 $X=16535 $Y=60795 $D=0
+M116 2598 199 2597 2652 PMOS_VTL L=5e-08 W=3.15e-07 AD=4.41e-14 AS=4.41e-14 PD=9.1e-07 PS=9.1e-07 $X=16725 $Y=60795 $D=0
+M117 949 202 2598 2652 PMOS_VTL L=5e-08 W=3.15e-07 AD=6.615e-14 AS=4.41e-14 PD=1.54e-06 PS=9.1e-07 $X=16915 $Y=60795 $D=0
+M118 991 990 949 2652 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=6.615e-14 PD=1.47e-06 PS=1.54e-06 $X=17105 $Y=60480 $D=0
+M119 2599 263 1009 2653 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=23375 $Y=75290 $D=0
+M120 949 reset 2599 2653 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=23565 $Y=75290 $D=0
+M121 1013 1009 949 2653 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=23755 $Y=75290 $D=0
+M122 949 1009 1013 2653 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=23945 $Y=75290 $D=0
+M123 289 1104 949 2652 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=56435 $Y=61290 $D=0
+M124 949 1104 289 2652 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=56625 $Y=61290 $D=0
+M125 1104 546 949 2652 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=56815 $Y=61290 $D=0
+M126 1124 1115 949 2654 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=6.615e-14 PD=1.54e-06 PS=1.47e-06 $X=62895 $Y=80890 $D=0
+M127 949 1115 1124 2654 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=63085 $Y=80890 $D=0
+M128 1124 1115 949 2654 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=63275 $Y=80890 $D=0
+M129 949 1115 1124 2654 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=63465 $Y=80890 $D=0
+M130 2600 626 949 2654 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=63655 $Y=80890 $D=0
+M131 1124 1122 2600 2654 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=63845 $Y=80890 $D=0
+M132 2601 1122 1124 2654 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=64035 $Y=80890 $D=0
+M133 949 626 2601 2654 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=64225 $Y=80890 $D=0
+M134 2602 626 949 2654 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=64415 $Y=80890 $D=0
+M135 1124 1122 2602 2654 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=64605 $Y=80890 $D=0
+M136 2603 1122 1124 2654 PMOS_VTL L=5e-08 W=6.3e-07 AD=8.82e-14 AS=8.82e-14 PD=1.54e-06 PS=1.54e-06 $X=64795 $Y=80890 $D=0
+M137 949 626 2603 2654 PMOS_VTL L=5e-08 W=6.3e-07 AD=6.615e-14 AS=8.82e-14 PD=1.47e-06 PS=1.54e-06 $X=64985 $Y=80890 $D=0
+X15932 clk 948 949 626 2625 2672 CLKBUF_X1 $T=8600 82200 0 0 $X=8485 $Y=82085
+X15933 1913 948 949 1908 2623 2653 CLKBUF_X1 $T=60280 76600 1 0 $X=60165 $Y=75085
+X15934 1908 948 949 596 2623 2647 CLKBUF_X1 $T=63130 76600 1 180 $X=62445 $Y=76485
+X15935 1533 948 949 628 2640 2658 CLKBUF_X1 $T=62940 71000 1 0 $X=62825 $Y=69485
+X15936 2248 948 949 649 2625 2672 CLKBUF_X1 $T=62940 82200 0 0 $X=62825 $Y=82085
+X15937 1527 948 949 2249 2623 2653 CLKBUF_X1 $T=63510 76600 1 0 $X=63395 $Y=75085
+X15938 1523 948 949 2248 2625 2672 CLKBUF_X1 $T=64080 82200 1 180 $X=63395 $Y=82085
+X15939 2517 948 949 1533 2628 2658 CLKBUF_X1 $T=64650 68200 1 180 $X=63965 $Y=68085
+X15940 2249 948 949 617 2623 2653 CLKBUF_X1 $T=64650 76600 0 180 $X=63965 $Y=75085
+X15941 2257 948 949 2258 2630 2669 CLKBUF_X1 $T=65980 40200 1 0 $X=65865 $Y=38685
+X15942 1546 948 949 1930 2623 2653 CLKBUF_X1 $T=65980 76600 1 0 $X=65865 $Y=75085
+X15943 651 948 949 2474 2627 2656 CLKBUF_X1 $T=66550 37400 1 0 $X=66435 $Y=35885
+X15944 1998 948 949 1549 2630 2669 CLKBUF_X1 $T=66550 40200 1 0 $X=66435 $Y=38685
+X15945 2447 948 949 2265 2627 2656 CLKBUF_X1 $T=67120 37400 1 0 $X=67005 $Y=35885
+X15946 1930 948 949 644 2623 2653 CLKBUF_X1 $T=67880 76600 0 180 $X=67195 $Y=75085
+X15947 1995 948 949 2447 2627 2669 CLKBUF_X1 $T=68830 37400 1 180 $X=68145 $Y=37285
+X15948 2462 948 949 818 2629 2646 CLKBUF_X1 $T=75290 45800 1 0 $X=75175 $Y=44285
+X15949 771 948 949 2299 2629 2657 CLKBUF_X1 $T=76050 45800 0 0 $X=75935 $Y=45685
+X15950 2464 948 949 746 2619 2657 CLKBUF_X1 $T=76620 48600 0 180 $X=75935 $Y=47085
+X15951 1971 948 949 1972 2625 2654 CLKBUF_X1 $T=76240 82200 1 0 $X=76125 $Y=80685
+X15952 2299 948 949 809 2629 2657 CLKBUF_X1 $T=76620 45800 0 0 $X=76505 $Y=45685
+X15953 2297 948 949 2464 2629 2657 CLKBUF_X1 $T=77760 45800 1 180 $X=77075 $Y=45685
+X15954 803 948 949 1115 2628 2658 CLKBUF_X1 $T=78140 68200 1 180 $X=77455 $Y=68085
+X15955 1976 948 949 758 2643 2673 CLKBUF_X1 $T=78330 65400 0 180 $X=77645 $Y=63885
+X15956 1600 948 949 1976 2643 2674 CLKBUF_X1 $T=77760 65400 0 0 $X=77645 $Y=65285
+X15957 1999 948 949 1980 2634 2663 CLKBUF_X1 $T=77950 51400 0 0 $X=77835 $Y=51285
+X15958 1619 948 949 757 2622 2652 CLKBUF_X1 $T=78520 59800 1 180 $X=77835 $Y=59685
+X15959 1973 948 949 1982 2619 2657 CLKBUF_X1 $T=78140 48600 1 0 $X=78025 $Y=47085
+X15960 1982 948 949 790 2619 2657 CLKBUF_X1 $T=79280 48600 0 180 $X=78595 $Y=47085
+X15961 1988 948 949 2305 2635 2653 CLKBUF_X1 $T=78710 73800 0 0 $X=78595 $Y=73685
+X15962 1978 948 949 797 2625 2654 CLKBUF_X1 $T=79280 82200 0 180 $X=78595 $Y=80685
+X15963 1993 948 949 799 2619 2649 CLKBUF_X1 $T=79470 48600 1 180 $X=78785 $Y=48485
+X15964 1991 948 949 747 2624 2673 CLKBUF_X1 $T=79660 62600 1 180 $X=78975 $Y=62485
+X15965 1985 948 949 1607 2643 2673 CLKBUF_X1 $T=79090 65400 1 0 $X=78975 $Y=63885
+X15966 1634 948 949 1990 2620 2650 CLKBUF_X1 $T=79280 54200 0 0 $X=79165 $Y=54085
+X15967 1628 948 949 2307 2618 2654 CLKBUF_X1 $T=79470 79400 0 0 $X=79355 $Y=79285
+X15968 830 948 949 1612 2624 2673 CLKBUF_X1 $T=79660 62600 0 0 $X=79545 $Y=62485
+X15969 2467 948 949 1993 2619 2657 CLKBUF_X1 $T=80610 48600 0 180 $X=79925 $Y=47085
+X15970 2012 948 949 1615 2635 2670 CLKBUF_X1 $T=80040 73800 1 0 $X=79925 $Y=72285
+X15971 2305 948 949 872 2635 2653 CLKBUF_X1 $T=80040 73800 0 0 $X=79925 $Y=73685
+X15972 1612 948 949 811 2624 2673 CLKBUF_X1 $T=80800 62600 1 180 $X=80115 $Y=62485
+X15973 1980 948 949 753 2634 2663 CLKBUF_X1 $T=80990 51400 1 180 $X=80305 $Y=51285
+X15974 2004 948 949 2310 2621 2651 CLKBUF_X1 $T=80420 57000 0 0 $X=80305 $Y=56885
+X15975 1994 948 949 1619 2622 2652 CLKBUF_X1 $T=80420 59800 0 0 $X=80305 $Y=59685
+X15976 2468 948 949 884 2623 2647 CLKBUF_X1 $T=80420 76600 0 0 $X=80305 $Y=76485
+X15977 2470 948 949 824 2619 2657 CLKBUF_X1 $T=81180 48600 0 180 $X=80495 $Y=47085
+X15978 1549 948 949 1995 2643 2674 CLKBUF_X1 $T=81180 65400 1 180 $X=80495 $Y=65285
+X15979 2000 948 949 1621 2625 2654 CLKBUF_X1 $T=80610 82200 1 0 $X=80495 $Y=80685
+X15980 2310 948 949 788 2622 2651 CLKBUF_X1 $T=81370 59800 0 180 $X=80685 $Y=58285
+X15981 857 948 949 1624 2634 2663 CLKBUF_X1 $T=80990 51400 0 0 $X=80875 $Y=51285
+X15982 2471 948 949 2006 2621 2650 CLKBUF_X1 $T=81180 57000 1 0 $X=81065 $Y=55485
+X15983 1625 948 949 2312 2643 2674 CLKBUF_X1 $T=81750 65400 1 180 $X=81065 $Y=65285
+X15984 1621 948 949 836 2625 2654 CLKBUF_X1 $T=81750 82200 0 180 $X=81065 $Y=80685
+X15985 874 948 949 770 2617 2646 CLKBUF_X1 $T=81940 43000 1 180 $X=81255 $Y=42885
+X15986 2013 948 949 1627 2628 2658 CLKBUF_X1 $T=81370 68200 0 0 $X=81255 $Y=68085
+X15987 2315 948 949 926 2621 2650 CLKBUF_X1 $T=81750 57000 1 0 $X=81635 $Y=55485
+X15988 892 948 949 793 2617 2646 CLKBUF_X1 $T=82510 43000 1 180 $X=81825 $Y=42885
+X15989 1610 948 949 905 2629 2646 CLKBUF_X1 $T=81940 45800 1 0 $X=81825 $Y=44285
+X15990 1633 948 949 869 2634 2649 CLKBUF_X1 $T=82510 51400 0 180 $X=81825 $Y=49885
+X15991 2008 948 949 827 2622 2652 CLKBUF_X1 $T=82510 59800 1 180 $X=81825 $Y=59685
+X15992 2011 948 949 780 2624 2673 CLKBUF_X1 $T=82510 62600 1 180 $X=81825 $Y=62485
+X15993 2476 948 949 1629 2628 2674 CLKBUF_X1 $T=82510 68200 0 180 $X=81825 $Y=66685
+X15994 2265 948 949 927 2628 2658 CLKBUF_X1 $T=81940 68200 0 0 $X=81825 $Y=68085
+X15995 2307 948 949 858 2618 2654 CLKBUF_X1 $T=82700 79400 1 180 $X=82015 $Y=79285
+X15996 1647 948 949 1633 2634 2649 CLKBUF_X1 $T=83080 51400 0 180 $X=82395 $Y=49885
+X15997 2031 948 949 2011 2624 2673 CLKBUF_X1 $T=83080 62600 1 180 $X=82395 $Y=62485
+X15998 2313 948 949 854 2635 2670 CLKBUF_X1 $T=83080 73800 0 180 $X=82395 $Y=72285
+X15999 2023 948 949 1641 2625 2654 CLKBUF_X1 $T=82510 82200 1 0 $X=82395 $Y=80685
+X16000 2479 948 949 831 2640 2658 CLKBUF_X1 $T=83270 71000 0 180 $X=82585 $Y=69485
+X16001 2020 948 949 860 2619 2657 CLKBUF_X1 $T=83650 48600 0 180 $X=82965 $Y=47085
+X16002 2010 948 949 825 2634 2649 CLKBUF_X1 $T=83650 51400 0 180 $X=82965 $Y=49885
+X16003 2030 948 949 2483 2621 2650 CLKBUF_X1 $T=83080 57000 1 0 $X=82965 $Y=55485
+X16004 1652 948 949 1642 2621 2651 CLKBUF_X1 $T=83650 57000 1 180 $X=82965 $Y=56885
+X16005 1542 948 949 2478 2624 2673 CLKBUF_X1 $T=83650 62600 1 180 $X=82965 $Y=62485
+X16006 1641 948 949 903 2625 2654 CLKBUF_X1 $T=83650 82200 0 180 $X=82965 $Y=80685
+X16007 1143 948 949 897 2634 2663 CLKBUF_X1 $T=84410 51400 1 180 $X=83725 $Y=51285
+X16008 enable 948 949 2024 2643 2673 CLKBUF_X1 $T=84410 65400 0 180 $X=83725 $Y=63885
+X16009 2317 948 949 920 2635 2670 CLKBUF_X1 $T=84410 73800 0 180 $X=83725 $Y=72285
+X16010 1146 948 949 922 2623 2647 CLKBUF_X1 $T=84410 76600 1 180 $X=83725 $Y=76485
+X16011 2316 948 949 817 2618 2654 CLKBUF_X1 $T=84410 79400 1 180 $X=83725 $Y=79285
+X16012 1153 949 1168 2036 948 2626 2655 NOR2_X1 $T=1570 31800 0 0 $X=1455 $Y=31685
+X16013 1663 949 1148 1173 948 2639 2660 NOR2_X1 $T=2330 29000 0 0 $X=2215 $Y=28885
+X16014 1158 949 29 2047 948 2617 2659 NOR2_X1 $T=3280 43000 0 180 $X=2595 $Y=41485
+X16015 47 949 1170 1157 948 2617 2659 NOR2_X1 $T=3850 43000 1 0 $X=3735 $Y=41485
+X16016 2047 949 2049 1180 948 2617 2646 NOR2_X1 $T=5180 43000 0 0 $X=5065 $Y=42885
+X16017 1181 949 1187 76 948 2631 2661 NOR2_X1 $T=5750 26200 1 0 $X=5635 $Y=24685
+X16018 61 949 1192 2488 948 2629 2657 NOR2_X1 $T=6700 45800 0 0 $X=6585 $Y=45685
+X16019 1722 949 120 2062 948 2634 2649 NOR2_X1 $T=10880 51400 0 180 $X=10195 $Y=49885
+X16020 967 949 149 1227 948 2617 2646 NOR2_X1 $T=12780 43000 1 180 $X=12095 $Y=42885
+X16021 2568 949 989 2063 948 2643 2673 NOR2_X1 $T=14300 65400 0 180 $X=13615 $Y=63885
+X16022 1041 949 986 177 948 2617 2646 NOR2_X1 $T=14490 43000 0 0 $X=14375 $Y=42885
+X16023 2067 949 1721 202 948 2624 2673 NOR2_X1 $T=15060 62600 1 180 $X=14375 $Y=62485
+X16024 1233 949 1235 155 948 2634 2663 NOR2_X1 $T=14870 51400 0 0 $X=14755 $Y=51285
+X16025 166 949 2072 199 948 2622 2651 NOR2_X1 $T=15630 59800 0 180 $X=14945 $Y=58285
+X16026 499 949 1018 1231 948 2637 2664 NOR2_X1 $T=15820 17800 0 180 $X=15135 $Y=16285
+X16027 988 949 1033 1724 948 2637 2666 NOR2_X1 $T=15820 17800 1 180 $X=15135 $Y=17685
+X16028 1242 949 185 1246 948 2619 2657 NOR2_X1 $T=15440 48600 1 0 $X=15325 $Y=47085
+X16029 991 949 2069 983 948 2621 2651 NOR2_X1 $T=16580 57000 1 180 $X=15895 $Y=56885
+X16030 499 949 1025 1248 948 2642 2665 NOR2_X1 $T=16770 20600 1 180 $X=16085 $Y=20485
+X16031 357 949 986 2075 948 2633 2662 NOR2_X1 $T=16390 9400 0 0 $X=16275 $Y=9285
+X16032 1260 949 1042 989 948 2624 2673 NOR2_X1 $T=16960 62600 1 180 $X=16275 $Y=62485
+X16033 357 949 188 1259 948 2633 2662 NOR2_X1 $T=17340 9400 0 0 $X=17225 $Y=9285
+X16034 1093 949 986 1733 948 2642 2666 NOR2_X1 $T=18290 20600 0 180 $X=17605 $Y=19085
+X16035 988 949 998 1270 948 2619 2657 NOR2_X1 $T=19620 48600 0 180 $X=18935 $Y=47085
+X16036 1293 949 1264 1276 948 2623 2647 NOR2_X1 $T=19810 76600 1 180 $X=19125 $Y=76485
+X16037 1275 949 1278 2358 948 2640 2658 NOR2_X1 $T=19620 71000 1 0 $X=19505 $Y=69485
+X16038 988 949 1057 1743 948 2626 2655 NOR2_X1 $T=20380 31800 1 180 $X=19695 $Y=31685
+X16039 1073 949 1033 2087 948 2644 2662 NOR2_X1 $T=20760 12200 0 180 $X=20075 $Y=10685
+X16040 242 949 1291 999 948 2628 2674 NOR2_X1 $T=20760 68200 0 180 $X=20075 $Y=66685
+X16041 357 949 998 2088 948 2626 2655 NOR2_X1 $T=20950 31800 1 180 $X=20265 $Y=31685
+X16042 357 949 548 2090 948 2629 2657 NOR2_X1 $T=21140 45800 1 180 $X=20455 $Y=45685
+X16043 1284 949 1289 2082 948 2618 2647 NOR2_X1 $T=20570 79400 1 0 $X=20455 $Y=77885
+X16044 1289 949 1293 995 948 2623 2647 NOR2_X1 $T=20950 76600 0 0 $X=20835 $Y=76485
+X16045 1073 949 1057 1285 948 2633 2662 NOR2_X1 $T=21710 9400 1 180 $X=21025 $Y=9285
+X16046 377 949 1000 218 948 2629 2657 NOR2_X1 $T=21710 45800 1 180 $X=21025 $Y=45685
+X16047 1296 949 1351 1293 948 2618 2647 NOR2_X1 $T=21710 79400 0 180 $X=21025 $Y=77885
+X16048 240 949 1824 1304 948 2628 2658 NOR2_X1 $T=22470 68200 1 180 $X=21785 $Y=68085
+X16049 499 949 1114 1301 948 2633 2648 NOR2_X1 $T=22660 9400 0 180 $X=21975 $Y=7885
+X16050 1037 949 1114 2098 948 2639 2668 NOR2_X1 $T=22090 29000 1 0 $X=21975 $Y=27485
+X16051 377 949 548 2569 948 2632 2656 NOR2_X1 $T=22090 34600 0 0 $X=21975 $Y=34485
+X16052 1003 949 548 249 948 2644 2662 NOR2_X1 $T=22280 12200 1 0 $X=22165 $Y=10685
+X16053 366 949 1006 1755 948 2639 2668 NOR2_X1 $T=22660 29000 1 0 $X=22545 $Y=27485
+X16054 1007 949 548 1302 948 2638 2667 NOR2_X1 $T=23420 15000 0 180 $X=22735 $Y=13485
+X16055 1001 949 1012 1300 948 2629 2657 NOR2_X1 $T=23420 45800 1 180 $X=22735 $Y=45685
+X16056 370 949 1012 2362 948 2642 2666 NOR2_X1 $T=23230 20600 1 0 $X=23115 $Y=19085
+X16057 1003 949 1012 239 948 2631 2661 NOR2_X1 $T=23800 26200 0 180 $X=23115 $Y=24685
+X16058 1007 949 1012 1014 948 2638 2664 NOR2_X1 $T=23420 15000 0 0 $X=23305 $Y=14885
+X16059 1003 949 1015 262 948 2617 2659 NOR2_X1 $T=24560 43000 0 180 $X=23875 $Y=41485
+X16060 370 949 1015 1766 948 2637 2664 NOR2_X1 $T=24180 17800 1 0 $X=24065 $Y=16285
+X16061 366 949 1114 251 948 2630 2669 NOR2_X1 $T=24750 40200 0 180 $X=24065 $Y=38685
+X16062 1064 949 430 2538 948 2632 2656 NOR2_X1 $T=25130 34600 1 180 $X=24445 $Y=34485
+X16063 275 949 1049 1281 948 2640 2670 NOR2_X1 $T=25130 71000 1 180 $X=24445 $Y=70885
+X16064 499 949 279 1313 948 2617 2646 NOR2_X1 $T=25320 43000 1 180 $X=24635 $Y=42885
+X16065 1007 949 279 1294 948 2627 2656 NOR2_X1 $T=24940 37400 1 0 $X=24825 $Y=35885
+X16066 295 949 286 1306 948 2635 2653 NOR2_X1 $T=25700 73800 1 180 $X=25015 $Y=73685
+X16067 1001 949 1006 1323 948 2642 2666 NOR2_X1 $T=25320 20600 1 0 $X=25205 $Y=19085
+X16068 420 949 279 1017 948 2642 2665 NOR2_X1 $T=25510 20600 0 0 $X=25395 $Y=20485
+X16069 1001 949 1015 1011 948 2622 2652 NOR2_X1 $T=26080 59800 1 180 $X=25395 $Y=59685
+X16070 366 949 1000 1329 948 2620 2663 NOR2_X1 $T=26080 54200 1 0 $X=25965 $Y=52685
+X16071 420 949 1015 1019 948 2638 2667 NOR2_X1 $T=27030 15000 0 180 $X=26345 $Y=13485
+X16072 1031 949 1006 1022 948 2626 2655 NOR2_X1 $T=26460 31800 0 0 $X=26345 $Y=31685
+X16073 798 949 1020 298 948 2631 2668 NOR2_X1 $T=27410 26200 1 180 $X=26725 $Y=26085
+X16074 2124 949 1346 1289 948 2623 2647 NOR2_X1 $T=26840 76600 0 0 $X=26725 $Y=76485
+X16075 988 949 1095 314 948 2619 2657 NOR2_X1 $T=27030 48600 1 0 $X=26915 $Y=47085
+X16076 1024 949 1090 2364 948 2629 2657 NOR2_X1 $T=27410 45800 0 0 $X=27295 $Y=45685
+X16077 1031 949 548 1023 948 2634 2649 NOR2_X1 $T=27980 51400 0 180 $X=27295 $Y=49885
+X16078 1093 949 1090 2125 948 2621 2651 NOR2_X1 $T=27790 57000 0 0 $X=27675 $Y=56885
+X16079 420 949 1012 316 948 2638 2667 NOR2_X1 $T=27980 15000 1 0 $X=27865 $Y=13485
+X16080 1030 949 1095 2370 948 2639 2660 NOR2_X1 $T=28930 29000 1 180 $X=28245 $Y=28885
+X16081 1066 949 1047 2123 948 2628 2658 NOR2_X1 $T=28930 68200 1 180 $X=28245 $Y=68085
+X16082 1057 949 289 258 948 2621 2650 NOR2_X1 $T=28550 57000 1 0 $X=28435 $Y=55485
+X16083 357 949 289 301 948 2620 2650 NOR2_X1 $T=29310 54200 1 180 $X=28625 $Y=54085
+X16084 998 949 1065 2132 948 2624 2652 NOR2_X1 $T=29120 62600 1 0 $X=29005 $Y=61085
+X16085 499 949 1033 1316 948 2617 2646 NOR2_X1 $T=29500 43000 0 0 $X=29385 $Y=42885
+X16086 1003 949 1057 309 948 2633 2662 NOR2_X1 $T=30260 9400 1 180 $X=29575 $Y=9285
+X16087 1047 949 1095 307 948 2640 2670 NOR2_X1 $T=30640 71000 1 180 $X=29955 $Y=70885
+X16088 357 949 1066 329 948 2619 2649 NOR2_X1 $T=30830 48600 1 180 $X=30145 $Y=48485
+X16089 548 949 1038 1352 948 2643 2673 NOR2_X1 $T=31020 65400 0 180 $X=30335 $Y=63885
+X16090 363 949 1078 1353 948 2642 2666 NOR2_X1 $T=31210 20600 0 180 $X=30525 $Y=19085
+X16091 1065 949 1078 306 948 2636 2661 NOR2_X1 $T=30640 23400 0 0 $X=30525 $Y=23285
+X16092 1037 949 1006 1341 948 2636 2665 NOR2_X1 $T=31400 23400 0 180 $X=30715 $Y=21885
+X16093 1065 949 1066 1343 948 2628 2658 NOR2_X1 $T=31400 68200 1 180 $X=30715 $Y=68085
+X16094 1001 949 986 2373 948 2630 2669 NOR2_X1 $T=31780 40200 1 0 $X=31665 $Y=38685
+X16095 499 949 1090 1036 948 2628 2674 NOR2_X1 $T=32350 68200 0 180 $X=31665 $Y=66685
+X16096 289 949 1020 2141 948 2640 2670 NOR2_X1 $T=31970 71000 0 0 $X=31855 $Y=70885
+X16097 1038 949 1095 320 948 2618 2647 NOR2_X1 $T=31970 79400 1 0 $X=31855 $Y=77885
+X16098 1001 949 1071 2382 948 2642 2666 NOR2_X1 $T=32160 20600 1 0 $X=32045 $Y=19085
+X16099 420 949 1066 2131 948 2626 2660 NOR2_X1 $T=32160 31800 1 0 $X=32045 $Y=30285
+X16100 1037 949 1025 1804 948 2630 2659 NOR2_X1 $T=32350 40200 0 0 $X=32235 $Y=40085
+X16101 1047 949 1090 2143 948 2640 2670 NOR2_X1 $T=32540 71000 0 0 $X=32425 $Y=70885
+X16102 988 949 1090 1363 948 2629 2657 NOR2_X1 $T=32730 45800 0 0 $X=32615 $Y=45685
+X16103 1093 949 1095 349 948 2622 2652 NOR2_X1 $T=33490 59800 1 180 $X=32805 $Y=59685
+X16104 499 949 1006 1355 948 2638 2667 NOR2_X1 $T=34060 15000 0 180 $X=33375 $Y=13485
+X16105 1047 949 1078 1356 948 2631 2661 NOR2_X1 $T=33490 26200 1 0 $X=33375 $Y=24685
+X16106 1003 949 279 353 948 2626 2660 NOR2_X1 $T=33680 31800 1 0 $X=33565 $Y=30285
+X16107 988 949 289 2146 948 2621 2651 NOR2_X1 $T=34250 57000 1 180 $X=33565 $Y=56885
+X16108 363 949 1006 2147 948 2639 2660 NOR2_X1 $T=33870 29000 0 0 $X=33755 $Y=28885
+X16109 1065 949 1033 1358 948 2620 2663 NOR2_X1 $T=33870 54200 1 0 $X=33755 $Y=52685
+X16110 1093 949 1114 1369 948 2638 2667 NOR2_X1 $T=34630 15000 0 180 $X=33945 $Y=13485
+X16111 1031 949 1043 2148 948 2637 2666 NOR2_X1 $T=34820 17800 1 180 $X=34135 $Y=17685
+X16112 1038 949 481 293 948 2639 2660 NOR2_X1 $T=34440 29000 0 0 $X=34325 $Y=28885
+X16113 1038 949 1057 2149 948 2634 2663 NOR2_X1 $T=35010 51400 1 180 $X=34325 $Y=51285
+X16114 1024 949 1066 1354 948 2621 2650 NOR2_X1 $T=34440 57000 1 0 $X=34325 $Y=55485
+X16115 357 949 1025 359 948 2633 2662 NOR2_X1 $T=34630 9400 0 0 $X=34515 $Y=9285
+X16116 289 949 363 1809 948 2623 2653 NOR2_X1 $T=35390 76600 0 180 $X=34705 $Y=75085
+X16117 1038 949 1066 1367 948 2623 2653 NOR2_X1 $T=35960 76600 0 180 $X=35275 $Y=75085
+X16118 1001 949 481 1376 948 2637 2664 NOR2_X1 $T=36150 17800 0 180 $X=35465 $Y=16285
+X16119 363 949 1043 1377 948 2636 2665 NOR2_X1 $T=36150 23400 0 180 $X=35465 $Y=21885
+X16120 1007 949 1020 2152 948 2639 2660 NOR2_X1 $T=36150 29000 1 180 $X=35465 $Y=28885
+X16121 188 949 546 351 948 2620 2663 NOR2_X1 $T=36530 54200 0 180 $X=35845 $Y=52685
+X16122 377 949 1025 1383 948 2633 2662 NOR2_X1 $T=37100 9400 1 180 $X=36415 $Y=9285
+X16123 1031 949 1071 2570 948 2636 2661 NOR2_X1 $T=36530 23400 0 0 $X=36415 $Y=23285
+X16124 1033 949 1047 2150 948 2620 2663 NOR2_X1 $T=37100 54200 0 180 $X=36415 $Y=52685
+X16125 1064 949 1015 1817 948 2627 2669 NOR2_X1 $T=37480 37400 1 180 $X=36795 $Y=37285
+X16126 1041 949 1012 2154 948 2617 2646 NOR2_X1 $T=37670 43000 1 180 $X=36985 $Y=42885
+X16127 1057 949 1065 361 948 2620 2663 NOR2_X1 $T=37670 54200 0 180 $X=36985 $Y=52685
+X16128 1031 949 998 371 948 2619 2657 NOR2_X1 $T=37290 48600 1 0 $X=37175 $Y=47085
+X16129 546 949 481 2158 948 2631 2661 NOR2_X1 $T=37860 26200 1 0 $X=37745 $Y=24685
+X16130 1033 949 289 2155 948 2620 2650 NOR2_X1 $T=38430 54200 0 0 $X=38315 $Y=54085
+X16131 1037 949 1000 1391 948 2629 2657 NOR2_X1 $T=39190 45800 1 180 $X=38505 $Y=45685
+X16132 363 949 1057 1394 948 2634 2663 NOR2_X1 $T=39380 51400 1 180 $X=38695 $Y=51285
+X16133 546 949 1043 2161 948 2631 2668 NOR2_X1 $T=39190 26200 0 0 $X=39075 $Y=26085
+X16134 988 949 1114 1399 948 2637 2666 NOR2_X1 $T=39570 17800 0 0 $X=39455 $Y=17685
+X16135 366 949 548 1062 948 2629 2657 NOR2_X1 $T=39950 45800 0 0 $X=39835 $Y=45685
+X16136 1038 949 1090 1402 948 2623 2653 NOR2_X1 $T=40520 76600 0 180 $X=39835 $Y=75085
+X16137 1037 949 986 1404 948 2642 2665 NOR2_X1 $T=40900 20600 1 180 $X=40215 $Y=20485
+X16138 1007 949 1057 1406 948 2638 2667 NOR2_X1 $T=40520 15000 1 0 $X=40405 $Y=13485
+X16139 798 949 548 1410 948 2644 2662 NOR2_X1 $T=42040 12200 1 0 $X=41925 $Y=10685
+X16140 420 949 1000 1415 948 2644 2662 NOR2_X1 $T=42610 12200 1 0 $X=42495 $Y=10685
+X16141 1093 949 1066 2171 948 2622 2652 NOR2_X1 $T=43180 59800 1 180 $X=42495 $Y=59685
+X16142 1093 949 1071 1419 948 2642 2666 NOR2_X1 $T=42800 20600 1 0 $X=42685 $Y=19085
+X16143 1030 949 430 1420 948 2644 2662 NOR2_X1 $T=43180 12200 1 0 $X=43065 $Y=10685
+X16144 289 949 1012 1425 948 2640 2670 NOR2_X1 $T=44510 71000 1 180 $X=43825 $Y=70885
+X16145 798 949 1066 2166 948 2626 2660 NOR2_X1 $T=44510 31800 1 0 $X=44395 $Y=30285
+X16146 430 949 289 442 948 2640 2658 NOR2_X1 $T=45840 71000 0 180 $X=45155 $Y=69485
+X16147 1031 949 1095 464 948 2625 2654 NOR2_X1 $T=45650 82200 1 0 $X=45535 $Y=80685
+X16148 1001 949 1020 1438 948 2624 2673 NOR2_X1 $T=45840 62600 0 0 $X=45725 $Y=62485
+X16149 548 949 1065 1435 948 2621 2651 NOR2_X1 $T=46790 57000 1 180 $X=46105 $Y=56885
+X16150 366 949 1015 1437 948 2624 2652 NOR2_X1 $T=46220 62600 1 0 $X=46105 $Y=61085
+X16151 988 949 1006 1081 948 2637 2666 NOR2_X1 $T=46410 17800 0 0 $X=46295 $Y=17685
+X16152 1041 949 1090 2406 948 2643 2674 NOR2_X1 $T=46410 65400 0 0 $X=46295 $Y=65285
+X16153 1065 949 1015 2188 948 2640 2658 NOR2_X1 $T=47550 71000 0 180 $X=46865 $Y=69485
+X16154 499 949 1043 2191 948 2638 2664 NOR2_X1 $T=47550 15000 0 0 $X=47435 $Y=14885
+X16155 1003 949 1020 1446 948 2632 2655 NOR2_X1 $T=47740 34600 1 0 $X=47625 $Y=33085
+X16156 1007 949 1090 1447 948 2632 2656 NOR2_X1 $T=47930 34600 0 0 $X=47815 $Y=34485
+X16157 1073 949 1066 2189 948 2619 2657 NOR2_X1 $T=48880 48600 0 180 $X=48195 $Y=47085
+X16158 548 949 289 2200 948 2624 2673 NOR2_X1 $T=49260 62600 1 180 $X=48575 $Y=62485
+X16159 1041 949 430 497 948 2622 2651 NOR2_X1 $T=48880 59800 1 0 $X=48765 $Y=58285
+X16160 1000 949 1065 1085 948 2624 2652 NOR2_X1 $T=49830 62600 1 0 $X=49715 $Y=61085
+X16161 1003 949 188 518 948 2644 2667 NOR2_X1 $T=50970 12200 1 180 $X=50285 $Y=12085
+X16162 1003 949 1095 2333 948 2626 2660 NOR2_X1 $T=50970 31800 0 180 $X=50285 $Y=30285
+X16163 798 949 546 498 948 2631 2668 NOR2_X1 $T=50590 26200 0 0 $X=50475 $Y=26085
+X16164 1095 949 366 500 948 2625 2654 NOR2_X1 $T=51160 82200 0 180 $X=50475 $Y=80685
+X16165 499 949 1012 1459 948 2622 2652 NOR2_X1 $T=50780 59800 0 0 $X=50665 $Y=59685
+X16166 1870 949 1413 2208 948 2645 2675 NOR2_X1 $T=50970 1000 0 0 $X=50855 $Y=885
+X16167 366 949 1020 2510 948 2640 2670 NOR2_X1 $T=50970 71000 0 0 $X=50855 $Y=70885
+X16168 1037 949 1090 1457 948 2635 2670 NOR2_X1 $T=51350 73800 1 0 $X=51235 $Y=72285
+X16169 1020 949 363 2210 948 2635 2653 NOR2_X1 $T=52490 73800 1 180 $X=51805 $Y=73685
+X16170 1001 949 1095 517 948 2628 2674 NOR2_X1 $T=52490 68200 1 0 $X=52375 $Y=66685
+X16171 430 949 1047 524 948 2640 2658 NOR2_X1 $T=53060 71000 1 0 $X=52945 $Y=69485
+X16172 1093 949 289 1881 948 2622 2652 NOR2_X1 $T=53440 59800 0 0 $X=53325 $Y=59685
+X16173 1064 949 1025 1876 948 2637 2666 NOR2_X1 $T=54390 17800 1 180 $X=53705 $Y=17685
+X16174 279 949 363 525 948 2623 2647 NOR2_X1 $T=54200 76600 0 0 $X=54085 $Y=76485
+X16175 370 949 546 1886 948 2626 2655 NOR2_X1 $T=54960 31800 1 180 $X=54275 $Y=31685
+X16176 1095 949 1037 527 948 2618 2647 NOR2_X1 $T=54390 79400 1 0 $X=54275 $Y=77885
+X16177 377 949 279 570 948 2626 2655 NOR2_X1 $T=54960 31800 0 0 $X=54845 $Y=31685
+X16178 1064 949 1095 540 948 2627 2656 NOR2_X1 $T=55150 37400 1 0 $X=55035 $Y=35885
+X16179 1064 949 1066 2226 948 2629 2646 NOR2_X1 $T=55720 45800 1 0 $X=55605 $Y=44285
+X16180 1041 949 1066 2224 948 2628 2658 NOR2_X1 $T=56480 68200 1 180 $X=55795 $Y=68085
+X16181 1001 949 1066 2229 948 2618 2647 NOR2_X1 $T=56100 79400 1 0 $X=55985 $Y=77885
+X16182 366 949 279 544 948 2624 2673 NOR2_X1 $T=57240 62600 1 180 $X=56555 $Y=62485
+X16183 988 949 430 579 948 2642 2665 NOR2_X1 $T=57050 20600 0 0 $X=56935 $Y=20485
+X16184 366 949 1090 1483 948 2623 2653 NOR2_X1 $T=57620 76600 0 180 $X=56935 $Y=75085
+X16185 357 949 1012 1897 948 2636 2661 NOR2_X1 $T=57240 23400 0 0 $X=57125 $Y=23285
+X16186 1007 949 986 1487 948 2644 2662 NOR2_X1 $T=57810 12200 1 0 $X=57695 $Y=10685
+X16187 377 949 1015 1488 948 2636 2661 NOR2_X1 $T=58380 23400 1 180 $X=57695 $Y=23285
+X16188 363 949 1012 1105 948 2628 2674 NOR2_X1 $T=58380 68200 0 180 $X=57695 $Y=66685
+X16189 798 949 1033 582 948 2644 2667 NOR2_X1 $T=58760 12200 0 0 $X=58645 $Y=12085
+X16190 1093 949 430 590 948 2619 2657 NOR2_X1 $T=58950 48600 1 0 $X=58835 $Y=47085
+X16191 1093 949 1012 1501 948 2620 2650 NOR2_X1 $T=58950 54200 0 0 $X=58835 $Y=54085
+X16192 1037 949 1020 1107 948 2624 2673 NOR2_X1 $T=59520 62600 1 180 $X=58835 $Y=62485
+X16193 377 949 1020 2235 948 2630 2659 NOR2_X1 $T=59140 40200 0 0 $X=59025 $Y=40085
+X16194 1024 949 1015 572 948 2621 2651 NOR2_X1 $T=60090 57000 1 180 $X=59405 $Y=56885
+X16195 1024 949 1043 598 948 2637 2666 NOR2_X1 $T=60470 17800 1 180 $X=59785 $Y=17685
+X16196 988 949 481 1514 948 2642 2666 NOR2_X1 $T=61420 20600 1 0 $X=61305 $Y=19085
+X16197 1064 949 1114 1515 948 2636 2661 NOR2_X1 $T=61610 23400 0 0 $X=61495 $Y=23285
+X16198 1064 949 1018 1517 948 2633 2662 NOR2_X1 $T=61990 9400 0 0 $X=61875 $Y=9285
+X16199 357 949 1071 1518 948 2642 2666 NOR2_X1 $T=61990 20600 1 0 $X=61875 $Y=19085
+X16200 1001 949 548 1519 948 2620 2663 NOR2_X1 $T=62560 54200 0 180 $X=61875 $Y=52685
+X16201 1041 949 1000 1525 948 2620 2663 NOR2_X1 $T=63130 54200 0 180 $X=62445 $Y=52685
+X16202 546 949 1114 2442 948 2630 2669 NOR2_X1 $T=63700 40200 1 0 $X=63585 $Y=38685
+X16203 420 949 1033 2518 948 2644 2667 NOR2_X1 $T=64650 12200 0 0 $X=64535 $Y=12085
+X16204 357 949 481 2338 948 2636 2661 NOR2_X1 $T=65600 23400 0 0 $X=65485 $Y=23285
+X16205 1037 949 1057 2448 948 2630 2659 NOR2_X1 $T=65790 40200 0 0 $X=65675 $Y=40085
+X16206 798 949 986 694 948 2637 2664 NOR2_X1 $T=67310 17800 1 0 $X=67195 $Y=16285
+X16207 1037 949 1033 2264 948 2632 2655 NOR2_X1 $T=67310 34600 1 0 $X=67195 $Y=33085
+X16208 988 949 1078 1555 948 2631 2668 NOR2_X1 $T=67690 26200 0 0 $X=67575 $Y=26085
+X16209 1038 949 1018 684 948 2627 2656 NOR2_X1 $T=67690 37400 1 0 $X=67575 $Y=35885
+X16210 1065 949 1018 2268 948 2627 2669 NOR2_X1 $T=68260 37400 1 180 $X=67575 $Y=37285
+X16211 357 949 1043 2451 948 2631 2668 NOR2_X1 $T=68260 26200 0 0 $X=68145 $Y=26085
+X16212 1038 949 986 1560 948 2629 2646 NOR2_X1 $T=68640 45800 1 0 $X=68525 $Y=44285
+X16213 1073 949 1071 2278 948 2637 2664 NOR2_X1 $T=70160 17800 0 180 $X=69475 $Y=16285
+X16214 1030 949 188 2459 948 2633 2662 NOR2_X1 $T=70540 9400 1 180 $X=69855 $Y=9285
+X16215 377 949 1078 751 948 2638 2667 NOR2_X1 $T=71110 15000 1 0 $X=70995 $Y=13485
+X16216 798 949 1025 696 948 2633 2662 NOR2_X1 $T=71490 9400 0 0 $X=71375 $Y=9285
+X16217 420 949 986 1571 948 2633 2662 NOR2_X1 $T=72060 9400 0 0 $X=71945 $Y=9285
+X16218 1030 949 1025 1954 948 2633 2662 NOR2_X1 $T=72630 9400 0 0 $X=72515 $Y=9285
+X16219 1580 949 reset 722 948 2640 2658 NOR2_X1 $T=73580 71000 1 0 $X=73465 $Y=69485
+X16220 1030 949 481 773 948 2631 2661 NOR2_X1 $T=74720 26200 1 0 $X=74605 $Y=24685
+X16221 1064 949 1078 1591 948 2638 2664 NOR2_X1 $T=75480 15000 0 0 $X=75365 $Y=14885
+X16222 1003 949 1078 815 948 2642 2666 NOR2_X1 $T=76430 20600 0 180 $X=75745 $Y=19085
+X16223 1007 949 1043 1617 948 2637 2664 NOR2_X1 $T=77190 17800 0 180 $X=76505 $Y=16285
+X16224 798 949 1043 879 948 2631 2661 NOR2_X1 $T=77760 26200 0 180 $X=77075 $Y=24685
+X16225 2016 949 842 1602 948 2628 2658 NOR2_X1 $T=78140 68200 0 0 $X=78025 $Y=68085
+X16226 798 949 481 880 948 2631 2668 NOR2_X1 $T=79470 26200 0 0 $X=79355 $Y=26085
+X16227 420 949 1006 1613 948 2638 2664 NOR2_X1 $T=81370 15000 1 180 $X=80685 $Y=14885
+X16228 1030 949 1006 1620 948 2639 2668 NOR2_X1 $T=80800 29000 1 0 $X=80685 $Y=27485
+X16229 1648 949 1651 1649 948 2637 2664 NOR2_X1 $T=83840 17800 1 0 $X=83725 $Y=16285
+X16495 563 30 948 949 15 2634 2649 AND2_X1 $T=2710 51400 0 180 $X=1835 $Y=49885
+X16496 563 33 948 949 14 2619 2657 AND2_X1 $T=2900 48600 0 180 $X=2025 $Y=47085
+X16497 563 53 948 949 42 2619 2649 AND2_X1 $T=4990 48600 1 180 $X=4115 $Y=48485
+X16498 563 54 948 949 43 2634 2663 AND2_X1 $T=4990 51400 1 180 $X=4115 $Y=51285
+X16499 563 82 948 949 85 2619 2657 AND2_X1 $T=6510 48600 1 0 $X=6395 $Y=47085
+X16500 563 88 948 949 67 2634 2663 AND2_X1 $T=7650 51400 1 180 $X=6775 $Y=51285
+X16501 563 90 948 949 74 2620 2650 AND2_X1 $T=7840 54200 1 180 $X=6965 $Y=54085
+X16502 1194 97 948 949 61 2617 2659 AND2_X1 $T=7840 43000 1 0 $X=7725 $Y=41485
+X16503 563 111 948 949 103 2622 2651 AND2_X1 $T=9170 59800 0 180 $X=8295 $Y=58285
+X16504 563 113 948 949 92 2621 2651 AND2_X1 $T=9360 57000 1 180 $X=8485 $Y=56885
+X16505 563 116 948 949 93 2624 2652 AND2_X1 $T=9550 62600 0 180 $X=8675 $Y=61085
+X16506 563 121 948 949 98 2620 2650 AND2_X1 $T=10120 54200 1 180 $X=9245 $Y=54085
+X16507 563 158 948 949 151 2643 2673 AND2_X1 $T=12780 65400 0 180 $X=11905 $Y=63885
+X16508 141 150 948 949 179 2622 2652 AND2_X1 $T=12210 59800 0 0 $X=12095 $Y=59685
+X16509 563 183 948 949 180 2623 2653 AND2_X1 $T=15250 76600 0 180 $X=14375 $Y=75085
+X16510 1242 185 948 949 129 2619 2657 AND2_X1 $T=15440 48600 0 180 $X=14565 $Y=47085
+X16511 563 186 948 949 157 2640 2658 AND2_X1 $T=15440 71000 0 180 $X=14565 $Y=69485
+X16512 563 190 948 949 161 2628 2658 AND2_X1 $T=16010 68200 1 180 $X=15135 $Y=68085
+X16513 563 191 948 949 159 2618 2647 AND2_X1 $T=15440 79400 1 0 $X=15325 $Y=77885
+X16514 563 192 948 949 173 2643 2674 AND2_X1 $T=15630 65400 0 0 $X=15515 $Y=65285
+X16515 563 193 948 949 203 2640 2670 AND2_X1 $T=15630 71000 0 0 $X=15515 $Y=70885
+X16516 563 215 948 949 200 2618 2654 AND2_X1 $T=18480 79400 1 180 $X=17605 $Y=79285
+X16517 563 225 948 949 204 2635 2670 AND2_X1 $T=19430 73800 0 180 $X=18555 $Y=72285
+X16518 563 243 948 949 233 2618 2654 AND2_X1 $T=21900 79400 1 180 $X=21025 $Y=79285
+X16519 563 246 948 949 226 2625 2672 AND2_X1 $T=22090 82200 1 180 $X=21215 $Y=82085
+X16520 1049 275 948 949 248 2640 2670 AND2_X1 $T=24560 71000 1 180 $X=23685 $Y=70885
+X16521 563 290 948 949 261 2625 2672 AND2_X1 $T=25700 82200 1 180 $X=24825 $Y=82085
+X16522 286 295 948 949 1008 2623 2653 AND2_X1 $T=25700 76600 1 0 $X=25585 $Y=75085
+X16523 562 568 948 949 556 2635 2670 AND2_X1 $T=59710 73800 0 180 $X=58835 $Y=72285
+X16524 562 573 948 949 561 2635 2670 AND2_X1 $T=60470 73800 0 180 $X=59595 $Y=72285
+X16525 562 586 948 949 581 2640 2670 AND2_X1 $T=61420 71000 1 180 $X=60545 $Y=70885
+X16526 562 597 948 949 602 2640 2658 AND2_X1 $T=61610 71000 1 0 $X=61495 $Y=69485
+X16527 1115 B[23] 948 949 1523 2625 2672 AND2_X1 $T=61990 82200 0 0 $X=61875 $Y=82085
+X16528 562 613 948 949 595 2643 2674 AND2_X1 $T=63510 65400 1 180 $X=62635 $Y=65285
+X16529 1115 B[19] 948 949 1527 2623 2653 AND2_X1 $T=62750 76600 1 0 $X=62635 $Y=75085
+X16530 562 618 948 949 591 2624 2673 AND2_X1 $T=63890 62600 1 180 $X=63015 $Y=62485
+X16531 1115 A[17] 948 949 2517 2640 2658 AND2_X1 $T=63510 71000 1 0 $X=63395 $Y=69485
+X16532 1115 A[19] 948 949 1534 2635 2653 AND2_X1 $T=63700 73800 0 0 $X=63585 $Y=73685
+X16533 1115 B[20] 948 949 1546 2623 2653 AND2_X1 $T=65220 76600 1 0 $X=65105 $Y=75085
+X16534 562 647 948 949 585 2621 2651 AND2_X1 $T=65790 57000 0 0 $X=65675 $Y=56885
+X16535 562 650 948 949 565 2621 2650 AND2_X1 $T=65980 57000 1 0 $X=65865 $Y=55485
+X16536 1115 A[21] 948 949 1929 2640 2670 AND2_X1 $T=67120 71000 1 180 $X=66245 $Y=70885
+X16537 562 661 948 949 1933 2620 2650 AND2_X1 $T=68260 54200 1 180 $X=67385 $Y=54085
+X16538 562 669 948 949 634 2643 2673 AND2_X1 $T=68260 65400 1 0 $X=68145 $Y=63885
+X16539 1115 A[20] 948 949 2271 2640 2670 AND2_X1 $T=68260 71000 0 0 $X=68145 $Y=70885
+X16540 562 680 948 949 660 2619 2657 AND2_X1 $T=69590 48600 0 180 $X=68715 $Y=47085
+X16541 562 685 948 949 663 2629 2657 AND2_X1 $T=69780 45800 1 180 $X=68905 $Y=45685
+X16542 562 686 948 949 652 2634 2663 AND2_X1 $T=69970 51400 1 180 $X=69095 $Y=51285
+X16543 562 691 948 949 2530 2634 2663 AND2_X1 $T=69970 51400 0 0 $X=69855 $Y=51285
+X16544 562 692 948 949 578 2620 2650 AND2_X1 $T=69970 54200 0 0 $X=69855 $Y=54085
+X16545 562 2288 948 949 633 2624 2652 AND2_X1 $T=70730 62600 0 180 $X=69855 $Y=61085
+X16546 562 702 948 949 678 2624 2652 AND2_X1 $T=71490 62600 0 180 $X=70615 $Y=61085
+X16547 562 709 948 949 728 2624 2673 AND2_X1 $T=71490 62600 0 0 $X=71375 $Y=62485
+X16548 562 713 948 949 711 2627 2656 AND2_X1 $T=71870 37400 1 0 $X=71755 $Y=35885
+X16549 562 719 948 949 708 2634 2649 AND2_X1 $T=72630 51400 0 180 $X=71755 $Y=49885
+X16550 562 1561 948 949 700 2643 2674 AND2_X1 $T=72630 65400 1 180 $X=71755 $Y=65285
+X16551 562 721 948 949 699 2629 2657 AND2_X1 $T=72820 45800 1 180 $X=71945 $Y=45685
+X16552 562 725 948 949 734 2620 2663 AND2_X1 $T=72440 54200 1 0 $X=72325 $Y=52685
+X16553 562 726 948 949 704 2621 2651 AND2_X1 $T=72630 57000 0 0 $X=72515 $Y=56885
+X16554 562 729 948 949 724 2629 2646 AND2_X1 $T=73580 45800 0 180 $X=72705 $Y=44285
+X16555 562 735 948 949 714 2621 2651 AND2_X1 $T=74150 57000 1 180 $X=73275 $Y=56885
+X16556 562 738 948 949 743 2627 2669 AND2_X1 $T=74340 37400 1 180 $X=73465 $Y=37285
+X16557 562 733 948 949 767 2617 2646 AND2_X1 $T=73580 43000 0 0 $X=73465 $Y=42885
+X16558 562 740 948 949 745 2632 2655 AND2_X1 $T=73960 34600 1 0 $X=73845 $Y=33085
+X16559 1584 741 948 949 749 2635 2670 AND2_X1 $T=73960 73800 1 0 $X=73845 $Y=72285
+X16560 1142 B[8] 948 949 771 2629 2657 AND2_X1 $T=75290 45800 1 180 $X=74415 $Y=45685
+X16561 562 764 948 949 737 2627 2656 AND2_X1 $T=76050 37400 0 180 $X=75175 $Y=35885
+X16562 1142 B[11] 948 949 2297 2629 2657 AND2_X1 $T=75290 45800 0 0 $X=75175 $Y=45685
+X16563 562 768 948 949 707 2617 2646 AND2_X1 $T=75670 43000 0 0 $X=75555 $Y=42885
+X16564 1115 B[25] 948 949 1971 2625 2672 AND2_X1 $T=77190 82200 1 180 $X=76315 $Y=82085
+X16565 1142 B[7] 948 949 1973 2619 2657 AND2_X1 $T=76620 48600 1 0 $X=76505 $Y=47085
+X16566 1115 A[22] 948 949 1600 2643 2674 AND2_X1 $T=77000 65400 0 0 $X=76885 $Y=65285
+X16567 1142 B[13] 948 949 2467 2619 2657 AND2_X1 $T=77380 48600 1 0 $X=77265 $Y=47085
+X16568 1142 B[14] 948 949 2462 2617 2646 AND2_X1 $T=78520 43000 1 180 $X=77645 $Y=42885
+X16569 1115 A[13] 948 949 1984 2624 2673 AND2_X1 $T=78330 62600 0 0 $X=78215 $Y=62485
+X16570 1115 A[14] 948 949 1985 2643 2673 AND2_X1 $T=78330 65400 1 0 $X=78215 $Y=63885
+X16571 1115 B[24] 948 949 1604 2625 2672 AND2_X1 $T=79090 82200 1 180 $X=78215 $Y=82085
+X16572 1115 B[29] 948 949 1987 2640 2670 AND2_X1 $T=79850 71000 1 180 $X=78975 $Y=70885
+X16573 562 821 948 949 850 2630 2669 AND2_X1 $T=79280 40200 1 0 $X=79165 $Y=38685
+X16574 1142 B[9] 948 949 1610 2619 2657 AND2_X1 $T=79280 48600 1 0 $X=79165 $Y=47085
+X16575 1115 A[27] 948 949 1988 2635 2653 AND2_X1 $T=80040 73800 1 180 $X=79165 $Y=73685
+X16576 562 833 948 949 820 2632 2656 AND2_X1 $T=79660 34600 0 0 $X=79545 $Y=34485
+X16577 1115 A[24] 948 949 2475 2623 2647 AND2_X1 $T=79660 76600 0 0 $X=79545 $Y=76485
+X16578 1142 A[3] 948 949 1609 2617 2659 AND2_X1 $T=80610 43000 0 180 $X=79735 $Y=41485
+X16579 1142 B[15] 948 949 2471 2620 2650 AND2_X1 $T=79850 54200 0 0 $X=79735 $Y=54085
+X16580 1142 B[1] 948 949 2308 2629 2646 AND2_X1 $T=80800 45800 0 180 $X=79925 $Y=44285
+X16581 1142 A[16] 948 949 1994 2622 2651 AND2_X1 $T=80040 59800 1 0 $X=79925 $Y=58285
+X16582 1142 A[2] 948 949 1618 2617 2646 AND2_X1 $T=81370 43000 1 180 $X=80495 $Y=42885
+X16583 1115 A[30] 948 949 2473 2628 2658 AND2_X1 $T=80610 68200 0 0 $X=80495 $Y=68085
+X16584 1115 A[23] 948 949 1622 2635 2653 AND2_X1 $T=80610 73800 0 0 $X=80495 $Y=73685
+X16585 1142 B[12] 948 949 1999 2634 2649 AND2_X1 $T=81750 51400 0 180 $X=80875 $Y=49885
+X16586 1142 B[17] 948 949 857 2620 2663 AND2_X1 $T=80990 54200 1 0 $X=80875 $Y=52685
+X16587 1142 A[12] 948 949 848 2624 2652 AND2_X1 $T=81750 62600 0 180 $X=80875 $Y=61085
+X16588 1115 B[26] 948 949 2000 2625 2672 AND2_X1 $T=81750 82200 1 180 $X=80875 $Y=82085
+X16589 1142 A[15] 948 949 2004 2621 2651 AND2_X1 $T=81940 57000 1 180 $X=81065 $Y=56885
+X16590 1142 A[11] 948 949 883 2622 2652 AND2_X1 $T=81180 59800 0 0 $X=81065 $Y=59685
+X16591 562 881 948 949 913 2632 2655 AND2_X1 $T=81750 34600 1 0 $X=81635 $Y=33085
+X16592 1142 A[6] 948 949 838 2619 2649 AND2_X1 $T=82510 48600 1 180 $X=81635 $Y=48485
+X16593 1115 A[25] 948 949 1628 2625 2654 AND2_X1 $T=82510 82200 0 180 $X=81635 $Y=80685
+X16594 1115 A[10] 948 949 830 2643 2673 AND2_X1 $T=82700 65400 0 180 $X=81825 $Y=63885
+X16595 912 894 948 949 2314 2631 2661 AND2_X1 $T=82890 26200 0 180 $X=82015 $Y=24685
+X16596 1142 A[0] 948 949 2007 2619 2657 AND2_X1 $T=83080 48600 0 180 $X=82205 $Y=47085
+X16597 1142 A[5] 948 949 2315 2621 2650 AND2_X1 $T=83080 57000 0 180 $X=82205 $Y=55485
+X16598 1142 B[3] 948 949 2009 2617 2646 AND2_X1 $T=83270 43000 1 180 $X=82395 $Y=42885
+X16599 1142 B[18] 948 949 1634 2620 2650 AND2_X1 $T=83270 54200 1 180 $X=82395 $Y=54085
+X16600 1115 A[29] 948 949 1635 2628 2674 AND2_X1 $T=83270 68200 0 180 $X=82395 $Y=66685
+X16601 1115 A[28] 948 949 2012 2635 2653 AND2_X1 $T=83270 73800 1 180 $X=82395 $Y=73685
+X16602 1115 B[30] 948 949 2017 2635 2670 AND2_X1 $T=83840 73800 0 180 $X=82965 $Y=72285
+X16603 1115 B[28] 948 949 885 2623 2647 AND2_X1 $T=83840 76600 1 180 $X=82965 $Y=76485
+X16604 1142 B[6] 948 949 909 2629 2646 AND2_X1 $T=83650 45800 1 0 $X=83535 $Y=44285
+X16605 1142 B[2] 948 949 859 2629 2657 AND2_X1 $T=84410 45800 1 180 $X=83535 $Y=45685
+X16606 1142 B[0] 948 949 2020 2619 2657 AND2_X1 $T=84410 48600 0 180 $X=83535 $Y=47085
+X16607 1142 B[5] 948 949 1647 2619 2649 AND2_X1 $T=84410 48600 1 180 $X=83535 $Y=48485
+X16608 1142 A[1] 948 949 888 2634 2649 AND2_X1 $T=84410 51400 0 180 $X=83535 $Y=49885
+X16609 1142 A[4] 948 949 910 2620 2663 AND2_X1 $T=84410 54200 0 180 $X=83535 $Y=52685
+X16610 1142 B[16] 948 949 2030 2621 2650 AND2_X1 $T=83650 57000 1 0 $X=83535 $Y=55485
+X16611 1142 A[7] 948 949 1652 2621 2651 AND2_X1 $T=83650 57000 0 0 $X=83535 $Y=56885
+X16612 1142 A[9] 948 949 895 2622 2652 AND2_X1 $T=84410 59800 1 180 $X=83535 $Y=59685
+X16613 1142 A[18] 948 949 2031 2624 2652 AND2_X1 $T=83650 62600 1 0 $X=83535 $Y=61085
+X16614 1115 A[8] 948 949 852 2624 2673 AND2_X1 $T=84410 62600 1 180 $X=83535 $Y=62485
+X16615 1115 B[31] 948 949 2319 2643 2674 AND2_X1 $T=84410 65400 1 180 $X=83535 $Y=65285
+X16616 1115 A[31] 948 949 2021 2640 2670 AND2_X1 $T=84410 71000 1 180 $X=83535 $Y=70885
+X16617 1115 B[27] 948 949 902 2625 2654 AND2_X1 $T=84410 82200 0 180 $X=83535 $Y=80685
+X16618 1115 A[26] 948 949 2023 2625 2672 AND2_X1 $T=84410 82200 1 180 $X=83535 $Y=82085
+X16619 1190 27 1149 1173 948 949 2626 2660 AOI21_X1 $T=1950 31800 1 0 $X=1835 $Y=30285
+X16620 2341 48 2485 63 948 949 2632 2656 AOI21_X1 $T=3850 34600 0 0 $X=3735 $Y=34485
+X16621 2341 48 957 953 948 949 2632 2655 AOI21_X1 $T=6320 34600 0 180 $X=5445 $Y=33085
+X16622 77 73 110 2049 948 949 2617 2646 AOI21_X1 $T=6510 43000 1 180 $X=5635 $Y=42885
+X16623 1722 120 1201 2062 948 949 2634 2663 AOI21_X1 $T=10120 51400 1 180 $X=9245 $Y=51285
+X16624 1200 133 2491 2492 948 949 2629 2657 AOI21_X1 $T=9740 45800 0 0 $X=9625 $Y=45685
+X16625 967 149 1184 1227 948 949 2617 2646 AOI21_X1 $T=11450 43000 0 0 $X=11335 $Y=42885
+X16626 971 150 1705 199 948 949 2622 2652 AOI21_X1 $T=11450 59800 0 0 $X=11335 $Y=59685
+X16627 2072 166 2536 199 948 949 2622 2651 AOI21_X1 $T=12970 59800 1 0 $X=12855 $Y=58285
+X16628 1298 213 1267 999 948 949 2643 2674 AOI21_X1 $T=17530 65400 0 0 $X=17415 $Y=65285
+X16629 993 220 1272 1304 948 949 2628 2658 AOI21_X1 $T=18290 68200 0 0 $X=18175 $Y=68085
+X16630 1282 232 221 236 948 949 2635 2653 AOI21_X1 $T=19050 73800 0 0 $X=18935 $Y=73685
+X16631 1824 240 2326 1304 948 949 2628 2674 AOI21_X1 $T=20760 68200 1 0 $X=20645 $Y=66685
+X16632 1337 276 2498 2099 948 949 2618 2647 AOI21_X1 $T=24750 79400 0 180 $X=23875 $Y=77885
+X16633 2106 277 2107 2498 948 949 2618 2654 AOI21_X1 $T=24750 79400 1 180 $X=23875 $Y=79285
+X16634 1925 642 2558 1934 948 949 2641 2675 AOI21_X1 $T=67120 3800 1 0 $X=67005 $Y=2285
+X16635 1127 263 2559 reset 948 949 2634 2649 AOI21_X1 $T=67500 51400 1 0 $X=67385 $Y=49885
+X16636 2286 722 1478 2292 948 949 2640 2658 AOI21_X1 $T=72060 71000 1 0 $X=71945 $Y=69485
+X16637 930 935 929 2529 948 949 2636 2665 AOI21_X1 $T=83650 23400 1 0 $X=83535 $Y=21885
+X16638 1158 29 1660 73 948 949 2617 2659 OAI21_X1 $T=1950 43000 1 0 $X=1835 $Y=41485
+X16639 952 47 1172 1171 948 949 2629 2646 OAI21_X1 $T=3660 45800 1 0 $X=3545 $Y=44285
+X16640 1682 61 65 955 948 949 2629 2657 OAI21_X1 $T=4800 45800 0 0 $X=4685 $Y=45685
+X16641 951 63 953 2050 948 949 2626 2655 OAI21_X1 $T=4990 31800 0 0 $X=4875 $Y=31685
+X16642 2343 76 2050 2484 948 949 2626 2655 OAI21_X1 $T=5750 31800 0 0 $X=5635 $Y=31685
+X16643 1193 76 1190 83 948 949 2626 2660 OAI21_X1 $T=7270 31800 0 180 $X=6395 $Y=30285
+X16644 1191 87 1195 957 948 949 2632 2655 OAI21_X1 $T=6890 34600 1 0 $X=6775 $Y=33085
+X16645 1154 102 1203 133 948 949 2629 2657 OAI21_X1 $T=8030 45800 0 0 $X=7915 $Y=45685
+X16646 1199 106 1200 1180 948 949 2630 2669 OAI21_X1 $T=8220 40200 1 0 $X=8105 $Y=38685
+X16647 120 129 1688 1210 948 949 2634 2649 OAI21_X1 $T=9550 51400 1 0 $X=9435 $Y=49885
+X16648 2062 137 115 974 948 949 2634 2663 OAI21_X1 $T=10120 51400 0 0 $X=10005 $Y=51285
+X16649 1220 146 1700 141 948 949 2621 2650 OAI21_X1 $T=11260 57000 1 0 $X=11145 $Y=55485
+X16650 1726 156 137 1210 948 949 2634 2649 OAI21_X1 $T=11830 51400 1 0 $X=11715 $Y=49885
+X16651 1726 156 2066 974 948 949 2634 2663 OAI21_X1 $T=11830 51400 0 0 $X=11715 $Y=51285
+X16652 2068 163 96 1232 948 949 2629 2657 OAI21_X1 $T=12780 45800 0 0 $X=12665 $Y=45685
+X16653 1264 221 1269 995 948 949 2623 2653 OAI21_X1 $T=18290 76600 1 0 $X=18175 $Y=75085
+X16654 1291 242 1746 1298 948 949 2643 2673 OAI21_X1 $T=21140 65400 1 0 $X=21025 $Y=63885
+X16655 259 255 1305 1282 948 949 2635 2670 OAI21_X1 $T=22090 73800 1 0 $X=21975 $Y=72285
+X16656 295 286 1772 995 948 949 2623 2653 OAI21_X1 $T=25700 76600 0 180 $X=24825 $Y=75085
+X16657 2368 289 290 1319 948 949 2625 2654 OAI21_X1 $T=25890 82200 0 180 $X=25015 $Y=80685
+X16658 2368 289 270 1336 948 949 2625 2654 OAI21_X1 $T=26840 82200 1 0 $X=26725 $Y=80685
+X16659 1474 541 551 1478 948 949 2625 2654 OAI21_X1 $T=55720 82200 1 0 $X=55605 $Y=80685
+X16660 1494 541 566 1478 948 949 2625 2654 OAI21_X1 $T=58380 82200 1 0 $X=58265 $Y=80685
+X16661 1512 541 587 1478 948 949 2625 2654 OAI21_X1 $T=61610 82200 0 180 $X=60735 $Y=80685
+X16662 2256 541 641 1478 948 949 2618 2654 OAI21_X1 $T=65790 79400 0 0 $X=65675 $Y=79285
+X16663 1126 541 640 1478 948 949 2635 2670 OAI21_X1 $T=66930 73800 0 180 $X=66055 $Y=72285
+X16664 2263 541 648 1478 948 949 2623 2653 OAI21_X1 $T=67310 76600 0 180 $X=66435 $Y=75085
+X16665 2274 541 687 1478 948 949 2625 2654 OAI21_X1 $T=69020 82200 0 180 $X=68145 $Y=80685
+X16666 1567 541 710 1478 948 949 2625 2654 OAI21_X1 $T=71490 82200 0 180 $X=70615 $Y=80685
+X16667 1585 736 772 1579 948 949 2628 2674 OAI21_X1 $T=74340 68200 0 180 $X=73465 $Y=66685
+X16668 1649 929 925 1141 948 949 2638 2664 OAI21_X1 $T=84410 15000 1 180 $X=83535 $Y=14885
+X16708 1152 1162 949 1662 1661 57 948 2622 2651 AOI22_X1 $T=1950 59800 1 0 $X=1835 $Y=58285
+X16709 9 1162 949 2033 1155 57 948 2622 2652 AOI22_X1 $T=1950 59800 0 0 $X=1835 $Y=59685
+X16710 1656 1162 949 1666 1665 57 948 2622 2651 AOI22_X1 $T=2900 59800 1 0 $X=2785 $Y=58285
+X16711 55 1162 949 1667 950 57 948 2628 2674 AOI22_X1 $T=2900 68200 1 0 $X=2785 $Y=66685
+X16712 78 1162 949 1668 1164 57 948 2618 2654 AOI22_X1 $T=3090 79400 0 0 $X=2975 $Y=79285
+X16713 56 1162 949 959 1156 57 948 2640 2670 AOI22_X1 $T=4800 71000 1 180 $X=3735 $Y=70885
+X16714 68 1162 949 1675 1163 57 948 2635 2653 AOI22_X1 $T=3850 73800 0 0 $X=3735 $Y=73685
+X16715 45 1162 949 1673 2044 57 948 2624 2652 AOI22_X1 $T=4990 62600 0 180 $X=3925 $Y=61085
+X16716 91 1162 949 1679 49 57 948 2623 2653 AOI22_X1 $T=4040 76600 1 0 $X=3925 $Y=75085
+X16717 100 1162 949 1674 2571 57 948 2628 2674 AOI22_X1 $T=5180 68200 0 180 $X=4115 $Y=66685
+X16718 75 1162 949 1677 1176 57 948 2623 2647 AOI22_X1 $T=4230 76600 0 0 $X=4115 $Y=76485
+X16719 69 1162 949 1686 1676 57 948 2635 2670 AOI22_X1 $T=5370 73800 0 180 $X=4305 $Y=72285
+X16720 130 1162 949 1683 2052 57 948 2643 2674 AOI22_X1 $T=5750 65400 0 0 $X=5635 $Y=65285
+X16721 60 1162 949 1681 2056 57 948 2625 2654 AOI22_X1 $T=6320 82200 1 0 $X=6205 $Y=80685
+X16722 99 1162 949 1689 2058 57 948 2635 2670 AOI22_X1 $T=6890 73800 1 0 $X=6775 $Y=72285
+X16723 131 1162 949 1692 1695 57 948 2628 2658 AOI22_X1 $T=8600 68200 1 180 $X=7535 $Y=68085
+X16724 136 1162 949 2346 2573 57 948 2640 2670 AOI22_X1 $T=8980 71000 1 180 $X=7915 $Y=70885
+X16725 84 1162 949 1699 1213 57 948 2625 2654 AOI22_X1 $T=9170 82200 1 0 $X=9055 $Y=80685
+X16726 108 1162 949 1697 1701 57 948 2623 2653 AOI22_X1 $T=9930 76600 1 0 $X=9815 $Y=75085
+X16727 122 1162 949 1218 2064 57 948 2635 2653 AOI22_X1 $T=11640 73800 1 180 $X=10575 $Y=73685
+X16728 124 1162 949 1711 1230 57 948 2625 2654 AOI22_X1 $T=11640 82200 1 0 $X=11525 $Y=80685
+X16729 1718 1729 949 1238 1237 1225 948 2641 2671 AOI22_X1 $T=14300 3800 0 0 $X=14185 $Y=3685
+X16730 167 1162 949 1245 1723 57 948 2625 2654 AOI22_X1 $T=14680 82200 1 0 $X=14565 $Y=80685
+X16731 276 2106 949 1337 252 277 948 2623 2647 AOI22_X1 $T=25130 76600 1 180 $X=24065 $Y=76485
+X16732 2032 550 949 2109 706 1318 948 2640 2658 AOI22_X1 $T=24370 71000 1 0 $X=24255 $Y=69485
+X16733 473 476 949 1413 479 1870 948 2645 2675 AOI22_X1 $T=50020 1000 0 0 $X=49905 $Y=885
+X16734 472 467 949 504 1873 2214 948 2641 2671 AOI22_X1 $T=53060 3800 1 180 $X=51995 $Y=3685
+X16735 677 682 949 1570 1949 1590 948 2645 2675 AOI22_X1 $T=71680 1000 0 0 $X=71565 $Y=885
+X16736 1593 1135 949 1582 1969 2296 948 2631 2668 AOI22_X1 $T=75290 26200 0 0 $X=75175 $Y=26085
+X16737 928 2027 949 1964 689 1989 948 2645 2675 AOI22_X1 $T=77380 1000 0 0 $X=77265 $Y=885
+X16738 1644 1645 949 1651 1141 1648 948 2638 2667 AOI22_X1 $T=83460 15000 1 0 $X=83345 $Y=13485
+X16933 614 948 949 609 1521 614 2623 2647 ICV_14 $T=63130 76600 0 0 $X=63015 $Y=76485
+X16934 2019 948 949 2476 2024 2257 2627 2656 ICV_14 $T=65410 37400 1 0 $X=65295 $Y=35885
+X16935 2308 948 949 1992 1992 822 2629 2657 ICV_14 $T=79660 45800 0 0 $X=79545 $Y=45685
+X16936 1927 948 949 2472 1629 651 2628 2674 ICV_14 $T=80800 68200 1 0 $X=80685 $Y=66685
+X16937 1622 948 949 1146 1615 871 2635 2653 ICV_14 $T=81370 73800 0 0 $X=81255 $Y=73685
+X16938 2007 948 949 1639 1639 829 2619 2649 ICV_14 $T=82510 48600 0 0 $X=82395 $Y=48485
+X16939 2480 948 949 916 2482 915 2617 2646 ICV_14 $T=83270 43000 0 0 $X=83155 $Y=42885
+X16940 2017 948 949 2022 2022 901 2635 2653 ICV_14 $T=83270 73800 0 0 $X=83155 $Y=73685
+X16941 2469 948 949 1127 1607 781 2643 2673 ICV_15 $T=80230 65400 0 180 $X=79545 $Y=63885
+X16942 2474 948 949 1625 2472 1998 2643 2673 ICV_15 $T=81370 65400 0 180 $X=80685 $Y=63885
+X16943 1642 948 949 826 2006 739 2621 2651 ICV_15 $T=82510 57000 1 180 $X=81825 $Y=56885
+X16944 1627 948 949 2018 2478 2013 2643 2673 ICV_15 $T=83270 65400 0 180 $X=82585 $Y=63885
+X16945 2483 948 949 834 926 840 2620 2650 ICV_15 $T=83840 54200 1 180 $X=83155 $Y=54085
+X16946 2258 948 949 2320 2320 2019 2628 2674 ICV_15 $T=83840 68200 0 180 $X=83155 $Y=66685
+X16947 1145 948 949 2469 927 2440 2640 2658 ICV_15 $T=83840 71000 0 180 $X=83155 $Y=69485
+X16948 951 948 949 1153 2626 2655 INV_X1 $T=1190 31800 0 0 $X=1075 $Y=31685
+X16949 947 948 949 1187 2636 2665 INV_X1 $T=1570 23400 1 0 $X=1455 $Y=21885
+X16950 1155 948 949 18 2643 2673 INV_X1 $T=2520 65400 0 180 $X=2025 $Y=63885
+X16951 1156 948 949 22 2635 2670 INV_X1 $T=2900 73800 0 180 $X=2405 $Y=72285
+X16952 27 948 949 2343 2626 2660 INV_X1 $T=2710 31800 1 0 $X=2595 $Y=30285
+X16953 1665 948 949 16 2622 2652 INV_X1 $T=3280 59800 1 180 $X=2785 $Y=59685
+X16954 950 948 949 21 2640 2658 INV_X1 $T=3280 71000 0 180 $X=2785 $Y=69485
+X16955 1661 948 949 17 2622 2652 INV_X1 $T=3280 59800 0 0 $X=3165 $Y=59685
+X16956 1163 948 949 25 2618 2647 INV_X1 $T=3660 79400 0 180 $X=3165 $Y=77885
+X16957 1164 948 949 39 2625 2654 INV_X1 $T=3850 82200 0 180 $X=3355 $Y=80685
+X16958 49 948 949 23 2623 2653 INV_X1 $T=4040 76600 0 180 $X=3545 $Y=75085
+X16959 2571 948 949 19 2628 2674 INV_X1 $T=4230 68200 0 180 $X=3735 $Y=66685
+X16960 1676 948 949 24 2623 2647 INV_X1 $T=4230 76600 1 180 $X=3735 $Y=76485
+X16961 1166 948 949 2323 2616 2671 INV_X1 $T=4040 6600 1 0 $X=3925 $Y=5085
+X16962 2052 948 949 20 2628 2658 INV_X1 $T=4230 68200 0 0 $X=4115 $Y=68085
+X16963 1170 948 949 1171 2617 2659 INV_X1 $T=4420 43000 1 0 $X=4305 $Y=41485
+X16964 1172 948 949 1682 2629 2646 INV_X1 $T=4420 45800 1 0 $X=4305 $Y=44285
+X16965 2044 948 949 46 2624 2673 INV_X1 $T=4800 62600 1 180 $X=4305 $Y=62485
+X16966 1176 948 949 59 2625 2654 INV_X1 $T=4800 82200 1 0 $X=4685 $Y=80685
+X16967 77 948 949 47 2617 2659 INV_X1 $T=6320 43000 0 180 $X=5825 $Y=41485
+X16968 2058 948 949 71 2635 2670 INV_X1 $T=6890 73800 0 180 $X=6395 $Y=72285
+X16969 1192 948 949 955 2629 2646 INV_X1 $T=7080 45800 0 180 $X=6585 $Y=44285
+X16970 2573 948 949 70 2640 2670 INV_X1 $T=7080 71000 1 180 $X=6585 $Y=70885
+X16971 2059 948 949 1181 2644 2667 INV_X1 $T=7080 12200 0 0 $X=6965 $Y=12085
+X16972 1695 948 949 66 2628 2658 INV_X1 $T=7650 68200 1 180 $X=7155 $Y=68085
+X16973 2056 948 949 86 2625 2654 INV_X1 $T=7650 82200 0 180 $X=7155 $Y=80685
+X16974 957 948 949 106 2632 2656 INV_X1 $T=7460 34600 0 0 $X=7345 $Y=34485
+X16975 1193 948 949 1191 2626 2660 INV_X1 $T=7650 31800 1 0 $X=7535 $Y=30285
+X16976 1180 948 949 102 2629 2646 INV_X1 $T=8220 45800 1 0 $X=8105 $Y=44285
+X16977 1201 948 949 90 2620 2663 INV_X1 $T=8790 54200 0 180 $X=8295 $Y=52685
+X16978 1237 948 949 117 2641 2671 INV_X1 $T=9550 3800 1 180 $X=9055 $Y=3685
+X16979 1206 948 949 954 2641 2675 INV_X1 $T=10120 3800 0 180 $X=9625 $Y=2285
+X16980 1207 948 949 120 2619 2649 INV_X1 $T=10120 48600 1 180 $X=9625 $Y=48485
+X16981 1213 948 949 135 2625 2654 INV_X1 $T=10500 82200 0 180 $X=10005 $Y=80685
+X16982 1701 948 949 123 2623 2647 INV_X1 $T=11260 76600 1 180 $X=10765 $Y=76485
+X16983 2348 948 949 971 2622 2652 INV_X1 $T=11070 59800 0 0 $X=10955 $Y=59685
+X16984 2064 948 949 152 2635 2653 INV_X1 $T=12400 73800 1 180 $X=11905 $Y=73685
+X16985 1227 948 949 962 2629 2646 INV_X1 $T=12400 45800 1 0 $X=12285 $Y=44285
+X16986 980 948 949 1712 2621 2651 INV_X1 $T=12780 57000 1 180 $X=12285 $Y=56885
+X16987 1230 948 949 168 2625 2654 INV_X1 $T=12970 82200 1 0 $X=12855 $Y=80685
+X16988 1232 948 949 1221 2619 2657 INV_X1 $T=13540 48600 0 180 $X=13045 $Y=47085
+X16989 550 948 949 2109 2635 2653 INV_X1 $T=13160 73800 0 0 $X=13045 $Y=73685
+X16990 1233 948 949 160 2620 2663 INV_X1 $T=13730 54200 0 180 $X=13235 $Y=52685
+X16991 1236 948 949 1224 2624 2652 INV_X1 $T=13920 62600 0 180 $X=13425 $Y=61085
+X16992 1235 948 949 978 2620 2663 INV_X1 $T=14110 54200 0 180 $X=13615 $Y=52685
+X16993 1246 948 949 1210 2634 2649 INV_X1 $T=14490 51400 0 180 $X=13995 $Y=49885
+X16994 178 948 949 2568 2643 2673 INV_X1 $T=14680 65400 0 180 $X=14185 $Y=63885
+X16995 1723 948 949 208 2625 2672 INV_X1 $T=15820 82200 0 0 $X=15705 $Y=82085
+X16996 1267 948 949 993 2628 2674 INV_X1 $T=17910 68200 1 0 $X=17795 $Y=66685
+X16997 1263 948 949 1284 2618 2647 INV_X1 $T=20190 79400 1 0 $X=20075 $Y=77885
+X16998 1283 948 949 1264 2623 2653 INV_X1 $T=20760 76600 0 180 $X=20265 $Y=75085
+X16999 2095 948 949 1275 2640 2658 INV_X1 $T=21330 71000 0 180 $X=20835 $Y=69485
+X17000 1299 948 949 256 2623 2653 INV_X1 $T=21710 76600 1 0 $X=21595 $Y=75085
+X17001 1008 948 949 257 2623 2653 INV_X1 $T=24560 76600 0 180 $X=24065 $Y=75085
+X17002 276 948 949 277 2623 2647 INV_X1 $T=25510 76600 1 180 $X=25015 $Y=76485
+X17003 1337 948 949 2106 2618 2654 INV_X1 $T=26270 79400 1 180 $X=25775 $Y=79285
+X17004 1770 948 949 2368 2618 2654 INV_X1 $T=26270 79400 0 0 $X=26155 $Y=79285
+X17005 reset 948 949 563 2640 2670 INV_X1 $T=42230 71000 0 0 $X=42115 $Y=70885
+X17006 2196 948 949 1455 2641 2671 INV_X1 $T=50210 3800 0 0 $X=50095 $Y=3685
+X17007 1480 948 949 1474 2618 2647 INV_X1 $T=56670 79400 1 0 $X=56555 $Y=77885
+X17008 1495 948 949 546 2622 2652 INV_X1 $T=57430 59800 1 180 $X=56935 $Y=59685
+X17009 2234 948 949 1494 2618 2654 INV_X1 $T=59710 79400 1 180 $X=59215 $Y=79285
+X17010 1924 948 949 1512 2618 2654 INV_X1 $T=62750 79400 1 180 $X=62255 $Y=79285
+X17011 1945 948 949 2263 2623 2647 INV_X1 $T=67310 76600 1 180 $X=66815 $Y=76485
+X17012 1553 948 949 2256 2625 2654 INV_X1 $T=67500 82200 0 180 $X=67005 $Y=80685
+X17013 1563 948 949 2274 2625 2654 INV_X1 $T=69400 82200 0 180 $X=68905 $Y=80685
+X17014 1958 948 949 1567 2618 2647 INV_X1 $T=71300 79400 0 180 $X=70805 $Y=77885
+X17015 enable 948 949 1122 2628 2674 INV_X1 $T=71490 68200 0 180 $X=70995 $Y=66685
+X17016 1568 948 949 736 2628 2658 INV_X1 $T=72440 68200 0 0 $X=72325 $Y=68085
+X17017 2292 948 949 1579 2628 2658 INV_X1 $T=73770 68200 0 0 $X=73655 $Y=68085
+X17018 2296 948 949 1136 2631 2668 INV_X1 $T=76240 26200 0 0 $X=76125 $Y=26085
+X17019 1597 948 949 2572 2628 2658 INV_X1 $T=76810 68200 1 180 $X=76315 $Y=68085
+X17020 reset 948 949 803 2628 2674 INV_X1 $T=79470 68200 0 180 $X=78975 $Y=66685
+X17021 1650 948 949 2529 2636 2665 INV_X1 $T=83270 23400 1 0 $X=83155 $Y=21885
+X17022 1236 989 948 178 179 949 991 979 2624 2652 OAI221_X1 $T=13920 62600 1 0 $X=13805 $Y=61085
+X17023 1263 1306 948 257 256 949 1772 2099 2623 2653 OAI221_X1 $T=23230 76600 0 180 $X=21975 $Y=75085
+X17024 1873 2196 948 484 479 949 2208 2201 2641 2671 OAI221_X1 $T=50210 3800 1 180 $X=48955 $Y=3685
+X17025 750 786 948 749 744 949 695 2284 2640 2670 OAI221_X1 $T=75100 71000 1 180 $X=73845 $Y=70885
+X17026 1966 2285 948 722 748 949 712 1585 2640 2658 OAI221_X1 $T=75290 71000 0 180 $X=74035 $Y=69485
+X17027 1644 1645 948 925 928 949 2027 2025 2616 2648 OAI221_X1 $T=83270 6600 0 0 $X=83155 $Y=6485
+X17212 1870 1413 948 476 473 472 949 467 2196 2645 2675 OAI222_X1 $T=50020 1000 1 180 $X=48385 $Y=885
+X17213 1925 642 948 670 672 677 949 682 657 2645 2675 OAI222_X1 $T=68070 1000 0 0 $X=67955 $Y=885
+X17214 2477 2314 948 912 894 930 949 935 1650 2631 2661 OAI222_X1 $T=82890 26200 1 0 $X=82775 $Y=24685
+X17254 1534 948 949 1540 1540 639 2635 2653 ICV_21 $T=64460 73800 0 0 $X=64345 $Y=73685
+X17255 2440 948 949 1542 2312 1927 2630 2669 ICV_21 $T=64840 40200 1 0 $X=64725 $Y=38685
+X17256 1929 948 949 2449 2449 665 2640 2670 ICV_21 $T=67120 71000 0 0 $X=67005 $Y=70885
+X17257 2271 948 949 1937 1937 690 2640 2670 ICV_21 $T=69020 71000 0 0 $X=68905 $Y=70885
+X17258 1987 948 949 1983 1983 845 2640 2658 ICV_21 $T=78140 71000 1 0 $X=78025 $Y=69485
+X17259 2319 948 949 2304 2018 1145 2643 2674 ICV_21 $T=78520 65400 0 0 $X=78405 $Y=65285
+X17260 824 948 949 839 838 2309 2619 2649 ICV_21 $T=79470 48600 0 0 $X=79355 $Y=48485
+X17261 1635 948 949 2479 2304 900 2628 2674 ICV_21 $T=79660 68200 1 0 $X=79545 $Y=66685
+X17262 1618 948 949 892 2009 2480 2629 2646 ICV_21 $T=80800 45800 1 0 $X=80685 $Y=44285
+X17263 852 948 949 2311 2311 899 2624 2673 ICV_21 $T=80800 62600 0 0 $X=80685 $Y=62485
+X17264 859 948 949 1140 1140 917 2619 2657 ICV_21 $T=81180 48600 1 0 $X=81065 $Y=47085
+X17265 2473 948 949 2313 2021 2317 2640 2658 ICV_21 $T=81560 71000 1 0 $X=81445 $Y=69485
+X17266 1631 948 949 2015 2015 918 2629 2657 ICV_21 $T=82510 45800 0 0 $X=82395 $Y=45685
+X17267 895 948 949 1640 1640 919 2622 2652 ICV_21 $T=82510 59800 0 0 $X=82395 $Y=59685
+X17268 902 948 949 1643 1643 924 2618 2654 ICV_21 $T=82700 79400 0 0 $X=82585 $Y=79285
+X17269 1604 948 949 1978 1972 763 2625 2672 ICV_22 $T=77760 82200 1 180 $X=77075 $Y=82085
+X17270 1609 948 949 874 818 778 2617 2659 ICV_22 $T=79280 43000 0 180 $X=78595 $Y=41485
+X17271 848 948 949 1997 1984 1991 2624 2652 ICV_22 $T=80420 62600 0 180 $X=79735 $Y=61085
+X17272 860 948 949 868 2309 794 2619 2649 ICV_22 $T=81180 48600 1 180 $X=80495 $Y=48485
+X17273 883 948 949 2008 1997 802 2622 2651 ICV_22 $T=81940 59800 0 180 $X=81255 $Y=58285
+X17274 885 948 949 2316 2475 2468 2618 2647 ICV_22 $T=81940 79400 0 180 $X=81255 $Y=77885
+X17275 888 948 949 2010 1624 754 2634 2663 ICV_22 $T=82130 51400 1 180 $X=81445 $Y=51285
+X17276 909 948 949 2482 905 810 2629 2646 ICV_22 $T=83080 45800 0 180 $X=82395 $Y=44285
+X17277 910 948 949 1143 1990 864 2634 2663 ICV_22 $T=83270 51400 1 180 $X=82585 $Y=51285
+X17325 965 1318 12 948 949 2630 2669 DLH_X1 $T=1000 40200 1 0 $X=885 $Y=38685
+X17326 965 1152 13 948 949 2630 2659 DLH_X1 $T=1000 40200 0 0 $X=885 $Y=40085
+X17327 965 9 14 948 949 2619 2649 DLH_X1 $T=1000 48600 0 0 $X=885 $Y=48485
+X17328 1013 Res[3] 16 948 949 2624 2652 DLH_X1 $T=1000 62600 1 0 $X=885 $Y=61085
+X17329 1013 Res[11] 19 948 949 2628 2674 DLH_X1 $T=1000 68200 1 0 $X=885 $Y=66685
+X17330 1013 Res[10] 20 948 949 2640 2658 DLH_X1 $T=1000 71000 1 0 $X=885 $Y=69485
+X17331 1013 Res[5] 21 948 949 2640 2670 DLH_X1 $T=1000 71000 0 0 $X=885 $Y=70885
+X17332 1013 Res[6] 22 948 949 2635 2653 DLH_X1 $T=1000 73800 0 0 $X=885 $Y=73685
+X17333 1013 Res[8] 24 948 949 2618 2647 DLH_X1 $T=1000 79400 1 0 $X=885 $Y=77885
+X17334 1013 Res[7] 25 948 949 2618 2654 DLH_X1 $T=1000 79400 0 0 $X=885 $Y=79285
+X17335 1013 Res[13] 70 948 949 2640 2670 DLH_X1 $T=4800 71000 0 0 $X=4685 $Y=70885
+X17336 1013 Res[9] 71 948 949 2635 2653 DLH_X1 $T=4800 73800 0 0 $X=4685 $Y=73685
+X17337 965 68 74 948 949 2621 2650 DLH_X1 $T=7080 57000 0 180 $X=5065 $Y=55485
+X17338 965 56 85 948 949 2619 2649 DLH_X1 $T=6130 48600 0 0 $X=6015 $Y=48485
+X17339 965 130 92 948 949 2621 2651 DLH_X1 $T=6700 57000 0 0 $X=6585 $Y=56885
+X17340 965 99 98 948 949 2621 2650 DLH_X1 $T=7080 57000 1 0 $X=6965 $Y=55485
+X17341 965 100 103 948 949 2622 2652 DLH_X1 $T=9550 59800 1 180 $X=7535 $Y=59685
+X17342 1013 Res[15] 123 948 949 2623 2647 DLH_X1 $T=10880 76600 1 180 $X=8865 $Y=76485
+X17343 1013 Res[20] 135 948 949 2625 2672 DLH_X1 $T=9170 82200 0 0 $X=9055 $Y=82085
+X17344 965 136 151 948 949 2643 2674 DLH_X1 $T=10880 65400 0 0 $X=10765 $Y=65285
+X17345 1013 Res[14] 152 948 949 2623 2653 DLH_X1 $T=10880 76600 1 0 $X=10765 $Y=75085
+X17346 965 108 161 948 949 2628 2658 DLH_X1 $T=13920 68200 1 180 $X=11905 $Y=68085
+X17347 1013 Res[21] 168 948 949 2625 2672 DLH_X1 $T=14680 82200 1 180 $X=12665 $Y=82085
+X17348 965 84 200 948 949 2625 2654 DLH_X1 $T=15630 82200 1 0 $X=15515 $Y=80685
+X17349 965 75 203 948 949 2635 2670 DLH_X1 $T=15820 73800 1 0 $X=15705 $Y=72285
+X17350 1013 Res[22] 208 948 949 2625 2672 DLH_X1 $T=16200 82200 0 0 $X=16085 $Y=82085
+X17351 965 550 261 948 949 2625 2672 DLH_X1 $T=22090 82200 0 0 $X=21975 $Y=82085
+X17352 1013 Res[23] 551 948 949 2625 2672 DLH_X1 $T=58190 82200 1 180 $X=56175 $Y=82085
+X17353 1490 547 556 948 949 2640 2670 DLH_X1 $T=57050 71000 0 0 $X=56935 $Y=70885
+X17354 1490 1489 565 948 949 2622 2651 DLH_X1 $T=58190 59800 1 0 $X=58075 $Y=58285
+X17355 1490 1511 578 948 949 2620 2650 DLH_X1 $T=61420 54200 1 180 $X=59405 $Y=54085
+X17356 1490 2232 581 948 949 2640 2658 DLH_X1 $T=61610 71000 0 180 $X=59595 $Y=69485
+X17357 1490 1510 595 948 949 2643 2673 DLH_X1 $T=60660 65400 1 0 $X=60545 $Y=63885
+X17358 1530 568 596 948 949 2623 2653 DLH_X1 $T=62750 76600 0 180 $X=60735 $Y=75085
+X17359 1490 2241 602 948 949 2628 2658 DLH_X1 $T=61230 68200 0 0 $X=61115 $Y=68085
+X17360 1530 618 628 948 949 2643 2674 DLH_X1 $T=63510 65400 0 0 $X=63395 $Y=65285
+X17361 1490 1921 632 948 949 2621 2651 DLH_X1 $T=63890 57000 0 0 $X=63775 $Y=56885
+X17362 1490 1922 634 948 949 2624 2673 DLH_X1 $T=63890 62600 0 0 $X=63775 $Y=62485
+X17363 1530 613 639 948 949 2640 2658 DLH_X1 $T=64270 71000 1 0 $X=64155 $Y=69485
+X17364 1490 1536 2530 948 949 2620 2663 DLH_X1 $T=64650 54200 1 0 $X=64535 $Y=52685
+X17365 1490 2439 646 948 949 2628 2674 DLH_X1 $T=64650 68200 1 0 $X=64535 $Y=66685
+X17366 1013 Res[29] 648 948 949 2623 2647 DLH_X1 $T=65030 76600 0 0 $X=64915 $Y=76485
+X17367 1530 765 649 948 949 2625 2654 DLH_X1 $T=67120 82200 0 180 $X=65105 $Y=80685
+X17368 1490 2445 660 948 949 2619 2657 DLH_X1 $T=66930 48600 1 0 $X=66815 $Y=47085
+X17369 1490 2520 663 948 949 2629 2657 DLH_X1 $T=67120 45800 0 0 $X=67005 $Y=45685
+X17370 1490 2254 664 948 949 2643 2674 DLH_X1 $T=69400 65400 1 180 $X=67385 $Y=65285
+X17371 1530 659 665 948 949 2628 2658 DLH_X1 $T=69400 68200 1 180 $X=67385 $Y=68085
+X17372 1490 1556 678 948 949 2624 2652 DLH_X1 $T=68070 62600 1 0 $X=67955 $Y=61085
+X17373 1490 2269 681 948 949 2621 2651 DLH_X1 $T=68260 57000 0 0 $X=68145 $Y=56885
+X17374 1530 654 690 948 949 2640 2658 DLH_X1 $T=71110 71000 0 180 $X=69095 $Y=69485
+X17375 1490 1942 700 948 949 2643 2674 DLH_X1 $T=69970 65400 0 0 $X=69855 $Y=65285
+X17376 1490 2584 699 948 949 2629 2646 DLH_X1 $T=72060 45800 0 180 $X=70045 $Y=44285
+X17377 1490 2455 704 948 949 2620 2663 DLH_X1 $T=70540 54200 1 0 $X=70425 $Y=52685
+X17378 1490 2457 707 948 949 2630 2659 DLH_X1 $T=70730 40200 0 0 $X=70615 $Y=40085
+X17379 1490 1950 724 948 949 2617 2646 DLH_X1 $T=71680 43000 0 0 $X=71565 $Y=42885
+X17380 1530 647 739 948 949 2621 2650 DLH_X1 $T=73010 57000 1 0 $X=72895 $Y=55485
+X17381 1490 1573 743 948 949 2632 2656 DLH_X1 $T=75480 34600 1 180 $X=73465 $Y=34485
+X17382 1490 1135 745 948 949 2639 2660 DLH_X1 $T=75670 29000 1 180 $X=73655 $Y=28885
+X17383 1530 685 746 948 949 2619 2657 DLH_X1 $T=75670 48600 0 180 $X=73655 $Y=47085
+X17384 1530 661 754 948 949 2620 2650 DLH_X1 $T=73770 54200 0 0 $X=73655 $Y=54085
+X17385 1530 742 763 948 949 2625 2672 DLH_X1 $T=74530 82200 0 0 $X=74415 $Y=82085
+X17386 1530 713 770 948 949 2630 2669 DLH_X1 $T=77190 40200 0 180 $X=75175 $Y=38685
+X17387 1530 733 790 948 949 2619 2649 DLH_X1 $T=76620 48600 0 0 $X=76505 $Y=48485
+X17388 1530 738 794 948 949 2617 2659 DLH_X1 $T=76810 43000 1 0 $X=76695 $Y=41485
+X17389 1530 720 797 948 949 2625 2654 DLH_X1 $T=76810 82200 1 0 $X=76695 $Y=80685
+X17390 1490 1981 800 948 949 2626 2655 DLH_X1 $T=79090 31800 1 180 $X=77075 $Y=31685
+X17391 1530 693 802 948 949 2622 2651 DLH_X1 $T=77190 59800 1 0 $X=77075 $Y=58285
+X17392 1530 721 810 948 949 2629 2657 DLH_X1 $T=77760 45800 0 0 $X=77645 $Y=45685
+X17393 1530 715 811 948 949 2624 2652 DLH_X1 $T=77760 62600 1 0 $X=77645 $Y=61085
+X17394 1490 1605 820 948 949 2626 2660 DLH_X1 $T=78520 31800 1 0 $X=78405 $Y=30285
+X17395 1530 806 822 948 949 2617 2646 DLH_X1 $T=78520 43000 0 0 $X=78405 $Y=42885
+X17396 1530 785 825 948 949 2634 2663 DLH_X1 $T=78520 51400 0 0 $X=78405 $Y=51285
+X17397 1530 705 827 948 949 2622 2652 DLH_X1 $T=78520 59800 0 0 $X=78405 $Y=59685
+X17398 1530 786 831 948 949 2628 2658 DLH_X1 $T=78710 68200 0 0 $X=78595 $Y=68085
+X17399 1530 692 834 948 949 2621 2650 DLH_X1 $T=78900 57000 1 0 $X=78785 $Y=55485
+X17400 1530 768 840 948 949 2620 2663 DLH_X1 $T=79090 54200 1 0 $X=78975 $Y=52685
+X17401 1530 732 836 948 949 2625 2672 DLH_X1 $T=80990 82200 1 180 $X=78975 $Y=82085
+X17402 1530 695 845 948 949 2640 2658 DLH_X1 $T=79280 71000 1 0 $X=79165 $Y=69485
+X17403 1490 1611 850 948 949 2627 2669 DLH_X1 $T=79660 37400 0 0 $X=79545 $Y=37285
+X17404 1490 2306 851 948 949 2632 2655 DLH_X1 $T=79850 34600 1 0 $X=79735 $Y=33085
+X17405 1530 792 858 948 949 2618 2654 DLH_X1 $T=80040 79400 0 0 $X=79925 $Y=79285
+X17406 1530 650 864 948 949 2620 2650 DLH_X1 $T=82510 54200 1 180 $X=80495 $Y=54085
+X17407 1530 791 871 948 949 2635 2670 DLH_X1 $T=80610 73800 1 0 $X=80495 $Y=72285
+X17408 1530 795 872 948 949 2623 2653 DLH_X1 $T=80610 76600 1 0 $X=80495 $Y=75085
+X17409 1530 796 884 948 949 2623 2647 DLH_X1 $T=80990 76600 0 0 $X=80875 $Y=76485
+X17410 1530 776 897 948 949 2620 2663 DLH_X1 $T=81750 54200 1 0 $X=81635 $Y=52685
+X17411 1530 726 899 948 949 2624 2652 DLH_X1 $T=81750 62600 1 0 $X=81635 $Y=61085
+X17412 1530 842 900 948 949 2643 2674 DLH_X1 $T=81750 65400 0 0 $X=81635 $Y=65285
+X17413 1530 2291 903 948 949 2625 2672 DLH_X1 $T=81750 82200 0 0 $X=81635 $Y=82085
+X17414 1490 1638 913 948 949 2639 2660 DLH_X1 $T=82510 29000 0 0 $X=82395 $Y=28885
+X17415 1490 2014 914 948 949 2626 2655 DLH_X1 $T=82510 31800 0 0 $X=82395 $Y=31685
+X17416 1530 891 915 948 949 2627 2656 DLH_X1 $T=82510 37400 1 0 $X=82395 $Y=35885
+X17417 1530 881 916 948 949 2627 2669 DLH_X1 $T=82510 37400 0 0 $X=82395 $Y=37285
+X17418 1530 873 917 948 949 2630 2659 DLH_X1 $T=82510 40200 0 0 $X=82395 $Y=40085
+X17419 1530 735 919 948 949 2622 2651 DLH_X1 $T=82510 59800 1 0 $X=82395 $Y=58285
+X17420 1530 2016 920 948 949 2628 2658 DLH_X1 $T=82510 68200 0 0 $X=82395 $Y=68085
+X17421 1530 574 922 948 949 2623 2653 DLH_X1 $T=82510 76600 1 0 $X=82395 $Y=75085
+X17422 1530 717 924 948 949 2618 2647 DLH_X1 $T=82510 79400 1 0 $X=82395 $Y=77885
+X17456 947 1655 10 948 949 1663 2642 2665 HA_X1 $T=1000 20600 0 0 $X=885 $Y=20485
+X17457 1148 1151 11 948 949 34 2639 2668 HA_X1 $T=1000 29000 1 0 $X=885 $Y=27485
+X17458 2032 1152 1318 948 949 2038 2620 2663 HA_X1 $T=1000 54200 1 0 $X=885 $Y=52685
+X17459 1662 2038 9 948 949 2037 2620 2650 HA_X1 $T=2900 54200 1 180 $X=885 $Y=54085
+X17460 2033 2037 1656 948 949 1664 2621 2651 HA_X1 $T=1000 57000 0 0 $X=885 $Y=56885
+X17461 32 2042 44 948 949 48 2639 2660 HA_X1 $T=2900 29000 0 0 $X=2785 $Y=28885
+X17462 1666 1664 45 948 949 1175 2621 2651 HA_X1 $T=2900 57000 0 0 $X=2785 $Y=56885
+X17463 1667 2043 56 948 949 1186 2622 2652 HA_X1 $T=3660 59800 0 0 $X=3545 $Y=59685
+X17464 1673 1175 55 948 949 2043 2622 2651 HA_X1 $T=5750 59800 0 180 $X=3735 $Y=58285
+X17465 1166 1669 58 948 949 1189 2645 2675 HA_X1 $T=4040 1000 0 0 $X=3925 $Y=885
+X17466 1668 2045 60 948 949 2055 2618 2654 HA_X1 $T=4040 79400 0 0 $X=3925 $Y=79285
+X17467 2341 1179 64 948 949 29 2627 2656 HA_X1 $T=4610 37400 1 0 $X=4495 $Y=35885
+X17468 1675 1678 69 948 949 1196 2624 2673 HA_X1 $T=4800 62600 0 0 $X=4685 $Y=62485
+X17469 959 1186 68 948 949 1678 2624 2652 HA_X1 $T=6890 62600 0 180 $X=4875 $Y=61085
+X17470 1679 1183 75 948 949 2051 2623 2653 HA_X1 $T=4990 76600 1 0 $X=4875 $Y=75085
+X17471 1677 2051 78 948 949 2045 2623 2647 HA_X1 $T=5180 76600 0 0 $X=5065 $Y=76485
+X17472 1681 2055 84 948 949 1691 2618 2654 HA_X1 $T=5940 79400 0 0 $X=5825 $Y=79285
+X17473 958 1189 2322 948 949 2059 2641 2675 HA_X1 $T=6130 3800 1 0 $X=6015 $Y=2285
+X17474 1697 94 91 948 949 1183 2635 2653 HA_X1 $T=8600 73800 1 180 $X=6585 $Y=73685
+X17475 1686 1196 99 948 949 1204 2643 2673 HA_X1 $T=7080 65400 1 0 $X=6965 $Y=63885
+X17476 1683 1197 100 948 949 1205 2628 2674 HA_X1 $T=7080 68200 1 0 $X=6965 $Y=66685
+X17477 1218 1202 108 948 949 94 2635 2670 HA_X1 $T=9740 73800 0 180 $X=7725 $Y=72285
+X17478 1699 1691 124 948 949 1214 2618 2654 HA_X1 $T=8790 79400 0 0 $X=8675 $Y=79285
+X17479 1689 1204 130 948 949 1197 2643 2673 HA_X1 $T=8980 65400 1 0 $X=8865 $Y=63885
+X17480 1674 1205 131 948 949 134 2628 2674 HA_X1 $T=8980 68200 1 0 $X=8865 $Y=66685
+X17481 2346 1707 122 948 949 1202 2640 2670 HA_X1 $T=10880 71000 1 180 $X=8865 $Y=70885
+X17482 1692 134 136 948 949 1707 2640 2658 HA_X1 $T=9360 71000 1 0 $X=9245 $Y=69485
+X17483 1711 1214 167 948 949 1719 2618 2654 HA_X1 $T=12590 79400 0 0 $X=12475 $Y=79285
+X17484 1729 2073 206 948 949 1206 2645 2675 HA_X1 $T=16200 1000 0 0 $X=16085 $Y=885
+X17485 1225 1462 222 948 949 1718 2645 2675 HA_X1 $T=18100 1000 0 0 $X=17985 $Y=885
+X17486 1870 1877 509 948 949 1462 2645 2675 HA_X1 $T=51540 1000 0 0 $X=51425 $Y=885
+X17487 473 2221 2515 948 949 1877 2645 2675 HA_X1 $T=55340 1000 1 180 $X=53325 $Y=885
+X17488 472 2516 539 948 949 2221 2641 2675 HA_X1 $T=55150 3800 1 0 $X=55035 $Y=2285
+X17489 2214 1531 1899 948 949 2516 2641 2671 HA_X1 $T=58950 3800 0 0 $X=58835 $Y=3685
+X17490 1480 2237 574 948 949 593 2623 2647 HA_X1 $T=59140 76600 0 0 $X=59025 $Y=76485
+X17491 1925 1939 629 948 949 1531 2641 2671 HA_X1 $T=65790 3800 1 180 $X=63775 $Y=3685
+X17492 672 1554 673 948 949 1939 2641 2675 HA_X1 $T=67880 3800 1 0 $X=67765 $Y=2285
+X17493 1938 786 695 948 949 1558 2635 2670 HA_X1 $T=69400 73800 1 0 $X=69285 $Y=72285
+X17494 1956 791 716 948 949 1947 2623 2653 HA_X1 $T=73200 76600 0 180 $X=71185 $Y=75085
+X17495 1576 795 717 948 949 2456 2623 2647 HA_X1 $T=73200 76600 1 180 $X=71185 $Y=76485
+X17496 1506 796 720 948 949 2290 2618 2647 HA_X1 $T=71300 79400 1 0 $X=71185 $Y=77885
+X17497 677 2339 1599 948 949 673 2645 2675 HA_X1 $T=72630 1000 0 0 $X=72515 $Y=885
+X17498 1952 2291 732 948 949 1962 2625 2672 HA_X1 $T=72630 82200 0 0 $X=72515 $Y=82085
+X17499 1539 792 742 948 949 1960 2618 2654 HA_X1 $T=75290 79400 1 180 $X=73275 $Y=79285
+X17500 2296 1593 773 948 949 783 2631 2661 HA_X1 $T=75290 26200 1 0 $X=75175 $Y=24685
+X17501 1590 2298 2001 948 949 1599 2645 2675 HA_X1 $T=75480 1000 0 0 $X=75365 $Y=885
+X17502 894 783 784 948 949 816 2636 2661 HA_X1 $T=76050 23400 0 0 $X=75935 $Y=23285
+X17503 928 2564 1996 948 949 812 2616 2648 HA_X1 $T=80610 6600 1 180 $X=78595 $Y=6485
+X17504 1989 1970 846 948 949 2001 2645 2675 HA_X1 $T=79470 1000 0 0 $X=79355 $Y=885
+X17505 930 1630 886 948 949 1623 2636 2665 HA_X1 $T=83270 23400 0 180 $X=81255 $Y=21885
+X17506 1644 1632 890 948 949 876 2638 2667 HA_X1 $T=83460 15000 0 180 $X=81445 $Y=13485
+X17507 1648 1623 911 948 949 890 2637 2666 HA_X1 $T=84410 17800 1 180 $X=82395 $Y=17685
+X17508 377 949 998 217 948 2637 2664 ICV_26 $T=19430 17800 1 0 $X=19315 $Y=16285
+X17509 1041 949 1114 145 948 2638 2664 ICV_26 $T=22090 15000 0 0 $X=21975 $Y=14885
+X17510 1073 949 1000 2365 948 2632 2656 ICV_26 $T=22660 34600 0 0 $X=22545 $Y=34485
+X17511 798 949 279 274 948 2631 2661 ICV_26 $T=24750 26200 1 0 $X=24635 $Y=24685
+X17512 1038 949 289 2374 948 2640 2670 ICV_26 $T=30640 71000 0 0 $X=30525 $Y=70885
+X17513 1024 949 998 350 948 2630 2659 ICV_26 $T=32920 40200 0 0 $X=32805 $Y=40085
+X17514 499 949 1071 1044 948 2633 2662 ICV_26 $T=35200 9400 0 0 $X=35085 $Y=9285
+X17515 1095 949 363 385 948 2618 2654 ICV_26 $T=37860 79400 0 0 $X=37745 $Y=79285
+X17516 1073 949 986 1061 948 2644 2662 ICV_26 $T=39190 12200 1 0 $X=39075 $Y=10685
+X17517 366 949 289 2392 948 2625 2672 ICV_26 $T=39190 82200 0 0 $X=39075 $Y=82085
+X17518 1057 949 1047 1828 948 2621 2650 ICV_26 $T=39760 57000 1 0 $X=39645 $Y=55485
+X17519 357 949 430 2505 948 2636 2665 ICV_26 $T=44510 23400 1 0 $X=44395 $Y=21885
+X17520 1065 949 1006 1445 948 2639 2660 ICV_26 $T=47930 29000 0 0 $X=47815 $Y=28885
+X17521 377 949 1114 501 948 2637 2666 ICV_26 $T=51730 17800 0 0 $X=51615 $Y=17685
+X17522 1041 949 1095 543 948 2624 2673 ICV_26 $T=52300 62600 0 0 $X=52185 $Y=62485
+X17523 1073 949 1095 534 948 2619 2649 ICV_26 $T=53630 48600 0 0 $X=53515 $Y=48485
+X17524 1065 949 1012 2222 948 2640 2658 ICV_26 $T=54390 71000 1 0 $X=54275 $Y=69485
+X17525 1031 949 1057 2225 948 2620 2650 ICV_26 $T=55340 54200 0 0 $X=55225 $Y=54085
+X17526 1001 949 1000 1475 948 2622 2651 ICV_26 $T=55720 59800 1 0 $X=55605 $Y=58285
+X17527 1038 949 430 529 948 2628 2674 ICV_26 $T=56480 68200 1 0 $X=56365 $Y=66685
+X17528 1073 949 1114 1524 948 2633 2662 ICV_26 $T=62560 9400 0 0 $X=62445 $Y=9285
+X17529 1003 949 1071 723 948 2638 2667 ICV_26 $T=71680 15000 1 0 $X=71565 $Y=13485
+X17530 370 949 1071 1608 948 2638 2667 ICV_26 $T=79660 15000 1 0 $X=79545 $Y=13485
+X17531 1030 949 1071 1139 948 2631 2661 ICV_26 $T=80800 26200 1 0 $X=80685 $Y=24685
+X17532 420 949 1018 1636 948 2633 2648 ICV_26 $T=82510 9400 1 0 $X=82395 $Y=7885
+X17533 948 949 1007 2575 430 2642 2665 ICV_27 $T=22090 20600 0 0 $X=21975 $Y=20485
+X17534 948 949 370 2108 1020 2626 2655 ICV_27 $T=24750 31800 0 0 $X=24635 $Y=31685
+X17535 948 949 1031 272 430 2628 2658 ICV_27 $T=26650 68200 0 0 $X=26535 $Y=68085
+X17536 948 949 366 2127 1071 2642 2665 ICV_27 $T=28550 20600 0 0 $X=28435 $Y=20485
+X17537 948 949 1000 2548 289 2643 2673 ICV_27 $T=42420 65400 1 0 $X=42305 $Y=63885
+X17538 948 949 1073 1079 1025 2644 2662 ICV_27 $T=45460 12200 1 0 $X=45345 $Y=10685
+X17539 948 949 1064 1077 986 2638 2667 ICV_27 $T=45460 15000 1 0 $X=45345 $Y=13485
+X17540 948 949 377 2550 1095 2619 2657 ICV_27 $T=46600 48600 1 0 $X=46485 $Y=47085
+X17541 948 949 1073 2405 1015 2636 2665 ICV_27 $T=46790 23400 1 0 $X=46675 $Y=21885
+X17542 948 949 1093 482 998 2636 2665 ICV_27 $T=48500 23400 1 0 $X=48385 $Y=21885
+X17543 948 949 548 2203 1047 2622 2652 ICV_27 $T=49070 59800 0 0 $X=48955 $Y=59685
+X17544 948 949 1024 1087 548 2636 2665 ICV_27 $T=50210 23400 1 0 $X=50095 $Y=21885
+X17545 948 949 1066 2217 1037 2625 2654 ICV_27 $T=51160 82200 1 0 $X=51045 $Y=80685
+X17546 948 949 366 523 998 2622 2651 ICV_27 $T=53250 59800 1 0 $X=53135 $Y=58285
+X17547 948 949 1038 1467 1015 2635 2670 ICV_27 $T=54010 73800 1 0 $X=53895 $Y=72285
+X17548 948 949 499 555 998 2631 2668 ICV_27 $T=57240 26200 0 0 $X=57125 $Y=26085
+X17549 948 949 1024 1500 1000 2631 2668 ICV_27 $T=58950 26200 0 0 $X=58835 $Y=26085
+X17550 948 949 377 605 1071 2636 2661 ICV_27 $T=59900 23400 0 0 $X=59785 $Y=23285
+X17551 948 949 988 2244 1012 2626 2660 ICV_27 $T=61990 31800 1 0 $X=61875 $Y=30285
+X17552 948 949 1047 698 1018 2617 2659 ICV_27 $T=66550 43000 1 0 $X=66435 $Y=41485
+X17553 948 949 1007 1588 1114 2642 2665 ICV_27 $T=74720 20600 0 0 $X=74605 $Y=20485
+X17554 948 949 1030 2565 1018 2644 2662 ICV_27 $T=82510 12200 1 0 $X=82395 $Y=10685
+X17555 948 949 1194 97 1192 2617 2659 ICV_28 $T=7080 43000 1 0 $X=6965 $Y=41485
+X17556 948 949 2068 163 2492 2629 2646 ICV_28 $T=11640 45800 1 0 $X=11525 $Y=44285
+X17557 948 949 1224 202 1703 2624 2652 ICV_28 $T=12210 62600 1 0 $X=12095 $Y=61085
+X17558 948 949 1024 986 174 2638 2664 ICV_28 $T=14300 15000 0 0 $X=14185 $Y=14885
+X17559 948 949 1001 1018 994 2639 2668 ICV_28 $T=19810 29000 1 0 $X=19695 $Y=27485
+X17560 948 949 1064 1012 1309 2617 2646 ICV_28 $T=22850 43000 0 0 $X=22735 $Y=42885
+X17561 948 949 366 1012 1303 2628 2658 ICV_28 $T=25890 68200 0 0 $X=25775 $Y=68085
+X17562 948 949 798 430 1332 2633 2662 ICV_28 $T=26650 9400 0 0 $X=26535 $Y=9285
+X17563 948 949 1030 1066 1782 2639 2660 ICV_28 $T=27600 29000 0 0 $X=27485 $Y=28885
+X17564 948 949 1066 289 1333 2618 2654 ICV_28 $T=28550 79400 0 0 $X=28435 $Y=79285
+X17565 948 949 1047 289 2130 2623 2647 ICV_28 $T=28740 76600 0 0 $X=28625 $Y=76485
+X17566 948 949 1001 1114 2137 2642 2665 ICV_28 $T=30260 20600 0 0 $X=30145 $Y=20485
+X17567 948 949 1031 1078 1801 2638 2664 ICV_28 $T=30830 15000 0 0 $X=30715 $Y=14885
+X17568 948 949 1038 1071 338 2639 2660 ICV_28 $T=31590 29000 0 0 $X=31475 $Y=28885
+X17569 948 949 1000 1031 2379 2621 2650 ICV_28 $T=32160 57000 1 0 $X=32045 $Y=55485
+X17570 948 949 377 430 1045 2627 2669 ICV_28 $T=36150 37400 0 0 $X=36035 $Y=37285
+X17571 948 949 1065 188 367 2634 2663 ICV_28 $T=36150 51400 0 0 $X=36035 $Y=51285
+X17572 948 949 370 1095 2177 2632 2655 ICV_28 $T=42990 34600 1 0 $X=42875 $Y=33085
+X17573 948 949 363 1015 1076 2643 2674 ICV_28 $T=45650 65400 0 0 $X=45535 $Y=65285
+X17574 948 949 1041 1078 455 2638 2664 ICV_28 $T=46030 15000 0 0 $X=45915 $Y=14885
+X17575 948 949 1000 1047 1086 2643 2673 ICV_28 $T=50590 65400 1 0 $X=50475 $Y=63885
+X17576 948 949 279 1038 483 2635 2653 ICV_28 $T=51160 73800 0 0 $X=51045 $Y=73685
+X17577 948 949 1001 289 2554 2625 2654 ICV_28 $T=52870 82200 1 0 $X=52755 $Y=80685
+X17578 948 949 1073 1018 1461 2637 2666 ICV_28 $T=53060 17800 0 0 $X=52945 $Y=17685
+X17579 948 949 370 1033 508 2638 2664 ICV_28 $T=54010 15000 0 0 $X=53895 $Y=14885
+X17580 948 949 988 1071 2335 2642 2666 ICV_28 $T=55910 20600 1 0 $X=55795 $Y=19085
+X17581 948 949 1001 1033 1117 2631 2661 ICV_28 $T=62940 26200 1 0 $X=62825 $Y=24685
+X17582 948 949 1007 481 1601 2638 2667 ICV_28 $T=77760 15000 1 0 $X=77645 $Y=13485
+X17583 948 949 420 1071 1637 2639 2668 ICV_28 $T=82320 29000 1 0 $X=82205 $Y=27485
+X17924 586 949 597 568 573 1915 948 2640 2670 NOR4_X1 $T=61420 71000 0 0 $X=61305 $Y=70885
+X17925 613 949 654 659 1561 1559 948 2628 2674 NOR4_X1 $T=68070 68200 1 0 $X=67955 $Y=66685
+X17926 697 949 702 618 709 1134 948 2624 2652 NOR4_X1 $T=71490 62600 1 0 $X=71375 $Y=61085
+X17927 693 949 2288 725 715 1955 948 2622 2652 NOR4_X1 $T=72440 59800 0 0 $X=72325 $Y=59685
+X17928 647 949 692 661 650 1959 948 2620 2650 NOR4_X1 $T=72820 54200 0 0 $X=72705 $Y=54085
+X17929 685 949 680 729 721 2293 948 2629 2657 NOR4_X1 $T=73580 45800 0 0 $X=73465 $Y=45685
+X17930 691 949 686 733 719 769 948 2634 2649 NOR4_X1 $T=74530 51400 0 180 $X=73465 $Y=49885
+X17931 713 949 738 740 764 1965 948 2630 2669 NOR4_X1 $T=74340 40200 1 0 $X=74225 $Y=38685
+X17932 705 949 669 726 735 2580 948 2622 2652 NOR4_X1 $T=74530 59800 0 0 $X=74415 $Y=59685
+X17933 2572 949 1966 748 reset 2292 948 2628 2658 NOR4_X1 $T=76430 68200 1 180 $X=75365 $Y=68085
+X17934 881 949 891 833 873 1626 948 2627 2669 NOR4_X1 $T=82510 37400 1 180 $X=81445 $Y=37285
+X17935 1489 279 948 949 2622 2651 INV_X4 $T=58190 59800 0 180 $X=57125 $Y=58285
+X17936 2232 1020 948 949 2628 2658 INV_X4 $T=57810 68200 0 0 $X=57695 $Y=68085
+X17937 1510 363 948 949 2643 2674 INV_X4 $T=61040 65400 1 180 $X=59975 $Y=65285
+X17938 2432 430 948 949 2622 2652 INV_X4 $T=60280 59800 0 0 $X=60165 $Y=59685
+X17939 1511 1012 948 949 2621 2650 INV_X4 $T=61230 57000 1 0 $X=61115 $Y=55485
+X17940 1921 1024 948 949 2621 2651 INV_X4 $T=63890 57000 1 180 $X=62825 $Y=56885
+X17941 1529 499 948 949 2624 2652 INV_X4 $T=63890 62600 0 180 $X=62825 $Y=61085
+X17942 2439 1038 948 949 2628 2658 INV_X4 $T=64080 68200 1 180 $X=63015 $Y=68085
+X17943 1536 998 948 949 2620 2663 INV_X4 $T=64650 54200 0 180 $X=63585 $Y=52685
+X17944 1537 1015 948 949 2621 2650 INV_X4 $T=64650 57000 0 180 $X=63585 $Y=55485
+X17945 1543 548 948 949 2634 2649 INV_X4 $T=65410 51400 0 180 $X=64345 $Y=49885
+X17946 2445 1000 948 949 2619 2649 INV_X4 $T=66740 48600 1 180 $X=65675 $Y=48485
+X17947 2520 1057 948 949 2629 2646 INV_X4 $T=66930 45800 0 180 $X=65865 $Y=44285
+X17948 1556 1037 948 949 2624 2652 INV_X4 $T=68070 62600 0 180 $X=67005 $Y=61085
+X17949 2269 988 948 949 2621 2651 INV_X4 $T=68260 57000 1 180 $X=67195 $Y=56885
+X17950 2287 1033 948 949 2619 2649 INV_X4 $T=67880 48600 0 0 $X=67765 $Y=48485
+X17951 2559 1490 948 949 2634 2649 INV_X4 $T=68260 51400 1 0 $X=68145 $Y=49885
+X17952 2270 357 948 949 2620 2650 INV_X4 $T=68260 54200 0 0 $X=68145 $Y=54085
+X17953 1572 1031 948 949 2643 2673 INV_X4 $T=69020 65400 1 0 $X=68905 $Y=63885
+X17954 2584 188 948 949 2629 2646 INV_X4 $T=70160 45800 0 180 $X=69095 $Y=44285
+X17955 1950 986 948 949 2617 2659 INV_X4 $T=70920 43000 0 180 $X=69855 $Y=41485
+X17956 2455 377 948 949 2634 2663 INV_X4 $T=70730 51400 0 0 $X=70615 $Y=51285
+X17957 2457 1003 948 949 2630 2669 INV_X4 $T=71110 40200 1 0 $X=70995 $Y=38685
+X17958 1574 1025 948 949 2617 2659 INV_X4 $T=72820 43000 1 0 $X=72705 $Y=41485
+X17959 1135 1030 948 949 2639 2668 INV_X4 $T=74340 29000 0 180 $X=73275 $Y=27485
+X17960 1582 798 948 949 2626 2660 INV_X4 $T=73770 31800 1 0 $X=73655 $Y=30285
+X17961 1981 420 948 949 2626 2660 INV_X4 $T=75860 31800 1 0 $X=75745 $Y=30285
+X17962 2014 1018 948 949 2626 2655 INV_X4 $T=82510 31800 1 180 $X=81445 $Y=31685
+X17963 1195 1154 948 949 2627 2656 INV_X2 $T=7840 37400 1 0 $X=7725 $Y=35885
+X17964 547 1095 948 949 2635 2670 INV_X2 $T=57050 73800 0 180 $X=56365 $Y=72285
+X17965 1491 1066 948 949 2623 2653 INV_X2 $T=58190 76600 0 180 $X=57505 $Y=75085
+X17966 1509 366 948 949 2624 2673 INV_X2 $T=60090 62600 1 180 $X=59405 $Y=62485
+X17967 2241 1090 948 949 2628 2674 INV_X2 $T=60660 68200 0 180 $X=59975 $Y=66685
+X17968 1538 1093 948 949 2622 2652 INV_X2 $T=62940 59800 1 180 $X=62255 $Y=59685
+X17969 1922 1041 948 949 2643 2673 INV_X2 $T=63130 65400 0 180 $X=62445 $Y=63885
+X17970 2254 1065 948 949 2643 2674 INV_X2 $T=65410 65400 0 0 $X=65295 $Y=65285
+X17971 1125 1001 948 949 2622 2652 INV_X2 $T=66740 59800 0 0 $X=66625 $Y=59685
+X17972 1942 1047 948 949 2643 2674 INV_X2 $T=69970 65400 1 180 $X=69285 $Y=65285
+X17973 2463 1043 948 949 2639 2668 INV_X2 $T=75860 29000 1 0 $X=75745 $Y=27485
+X17974 1605 1078 948 949 2631 2668 INV_X2 $T=78520 26200 0 0 $X=78405 $Y=26085
+X17975 2465 481 948 949 2639 2668 INV_X2 $T=79280 29000 0 180 $X=78595 $Y=27485
+X17976 1611 1114 948 949 2627 2669 INV_X2 $T=79280 37400 1 180 $X=78595 $Y=37285
+X17977 2306 1006 948 949 2626 2655 INV_X2 $T=79660 31800 1 180 $X=78975 $Y=31685
+X17978 1638 1071 948 949 2639 2660 INV_X2 $T=82130 29000 1 180 $X=81445 $Y=28885
+X18035 563 26 948 949 13 7 12 2627 2656 ICV_41 $T=1950 37400 0 180 $X=1075 $Y=35885
+X18036 1115 B[22] 948 949 1521 B[21] 1913 2623 2647 ICV_41 $T=61800 76600 1 180 $X=60925 $Y=76485
+X18037 562 659 948 949 664 654 646 2628 2674 ICV_41 $T=67310 68200 0 180 $X=66435 $Y=66685
+X18038 562 697 948 949 655 693 636 2622 2651 ICV_41 $T=70540 59800 0 180 $X=69665 $Y=58285
+X18039 562 715 948 949 681 705 632 2621 2651 ICV_41 $T=71870 57000 1 180 $X=70995 $Y=56885
+X18040 562 785 948 949 800 776 775 2627 2656 ICV_41 $T=76810 37400 0 180 $X=75935 $Y=35885
+X18041 562 819 948 949 851 806 777 2632 2656 ICV_41 $T=78900 34600 1 180 $X=78025 $Y=34485
+X18042 1142 B[4] 948 949 1631 B[10] 2470 2629 2657 ICV_41 $T=81750 45800 1 180 $X=80875 $Y=45685
+X18043 562 891 948 949 914 873 849 2632 2656 ICV_41 $T=82130 34600 1 180 $X=81255 $Y=34485
+X18044 2322 2 2321 1208 949 948 1669 2645 2675 FA_X1 $T=1000 1000 0 0 $X=885 $Y=885
+X18045 10 35 1165 2340 949 948 963 2616 2671 FA_X1 $T=4040 6600 0 180 $X=885 $Y=5085
+X18046 1670 1654 1687 2566 949 948 35 2633 2648 FA_X1 $T=4040 9400 0 180 $X=885 $Y=7885
+X18047 1653 5 1159 1750 949 948 4 2644 2662 FA_X1 $T=1000 12200 1 0 $X=885 $Y=10685
+X18048 1161 6 1160 1698 949 948 1165 2638 2667 FA_X1 $T=1000 15000 1 0 $X=885 $Y=13485
+X18049 1147 1710 1161 1671 949 948 37 2637 2664 FA_X1 $T=1000 17800 1 0 $X=885 $Y=16285
+X18050 1672 1748 1659 1725 949 948 38 2636 2661 FA_X1 $T=4040 23400 1 180 $X=885 $Y=23285
+X18051 44 38 1147 1219 949 948 1151 2631 2661 FA_X1 $T=4040 26200 0 180 $X=885 $Y=24685
+X18052 41 8 1680 1690 949 948 1179 2627 2669 FA_X1 $T=1000 37400 0 0 $X=885 $Y=37285
+X18053 2347 40 2046 1185 949 948 1169 2642 2665 FA_X1 $T=2900 20600 0 0 $X=2785 $Y=20485
+X18054 2534 41 1178 2065 949 948 1158 2630 2669 FA_X1 $T=2900 40200 1 0 $X=2785 $Y=38685
+X18055 2342 51 1188 1215 949 948 1160 2638 2667 FA_X1 $T=4040 15000 1 0 $X=3925 $Y=13485
+X18056 1684 79 1217 1767 949 948 52 2637 2664 FA_X1 $T=7080 17800 0 180 $X=3925 $Y=16285
+X18057 1680 72 1696 1685 949 948 62 2631 2668 FA_X1 $T=5370 26200 0 0 $X=5255 $Y=26085
+X18058 2321 80 2060 1715 949 948 169 2645 2675 FA_X1 $T=5940 1000 0 0 $X=5825 $Y=885
+X18059 1185 81 961 1791 949 948 1698 2642 2665 FA_X1 $T=5940 20600 0 0 $X=5825 $Y=20485
+X18060 97 107 2057 1821 949 948 1182 2630 2659 FA_X1 $T=9360 40200 1 180 $X=6205 $Y=40085
+X18061 1198 118 960 1693 949 948 1685 2626 2655 FA_X1 $T=10120 31800 1 180 $X=6965 $Y=31685
+X18062 112 127 1198 1694 949 948 1690 2632 2655 FA_X1 $T=10690 34600 0 180 $X=7535 $Y=33085
+X18063 105 1734 1211 1684 949 948 126 2636 2665 FA_X1 $T=8030 23400 1 0 $X=7915 $Y=21885
+X18064 1693 105 1212 1249 949 948 1704 2626 2660 FA_X1 $T=8030 31800 1 0 $X=7915 $Y=30285
+X18065 2490 109 1830 1867 949 948 107 2627 2669 FA_X1 $T=8220 37400 0 0 $X=8105 $Y=37285
+X18066 2357 119 2324 972 949 948 1709 2642 2665 FA_X1 $T=8980 20600 0 0 $X=8865 $Y=20485
+X18067 2535 126 1222 1257 949 948 1710 2631 2661 FA_X1 $T=9360 26200 1 0 $X=9245 $Y=24685
+X18068 2324 140 1724 1732 949 948 81 2637 2666 FA_X1 $T=10500 17800 0 0 $X=10385 $Y=17685
+X18069 1215 143 1228 1717 949 948 1716 2638 2667 FA_X1 $T=10690 15000 1 0 $X=10575 $Y=13485
+X18070 1217 145 1231 2074 949 948 1717 2637 2664 FA_X1 $T=10880 17800 1 0 $X=10765 $Y=16285
+X18071 50 2537 2077 1708 949 948 1706 2644 2662 FA_X1 $T=14110 12200 0 180 $X=10955 $Y=10685
+X18072 1239 165 992 1709 949 948 31 2636 2665 FA_X1 $T=14110 23400 0 180 $X=10955 $Y=21885
+X18073 58 169 1731 2112 949 948 2073 2645 2675 FA_X1 $T=13160 1000 0 0 $X=13045 $Y=885
+X18074 250 171 2070 2071 949 948 1249 2639 2660 FA_X1 $T=13160 29000 0 0 $X=13045 $Y=28885
+X18075 972 175 1248 1733 949 948 961 2642 2666 FA_X1 $T=13730 20600 1 0 $X=13615 $Y=19085
+X18076 1254 1757 996 2351 949 948 2053 2636 2665 FA_X1 $T=17150 23400 0 180 $X=13995 $Y=21885
+X18077 2070 201 1241 1261 949 948 1720 2632 2655 FA_X1 $T=17530 34600 0 180 $X=14375 $Y=33085
+X18078 1260 205 1243 1790 949 948 1721 2643 2673 FA_X1 $T=17720 65400 0 180 $X=14565 $Y=63885
+X18079 1240 211 1021 1737 949 948 182 2634 2663 FA_X1 $T=18480 51400 1 180 $X=15325 $Y=51285
+X18080 1728 198 1270 2090 949 948 1274 2619 2657 FA_X1 $T=16010 48600 1 0 $X=15895 $Y=47085
+X18081 1741 219 1768 1787 949 948 1731 2641 2671 FA_X1 $T=19430 3800 1 180 $X=16275 $Y=3685
+X18082 960 207 1273 1776 949 948 997 2626 2660 FA_X1 $T=16580 31800 1 0 $X=16465 $Y=30285
+X18083 1223 223 1256 1754 949 948 219 2616 2671 FA_X1 $T=19810 6600 0 180 $X=16655 $Y=5085
+X18084 1255 218 1280 1309 949 948 1279 2629 2646 FA_X1 $T=17910 45800 1 0 $X=17795 $Y=44285
+X18085 2356 238 1775 1029 949 948 1737 2634 2663 FA_X1 $T=21520 51400 1 180 $X=18365 $Y=51285
+X18086 996 234 2575 2362 949 948 1750 2642 2665 FA_X1 $T=19050 20600 0 0 $X=18935 $Y=20485
+X18087 269 235 1300 2111 949 948 1004 2619 2657 FA_X1 $T=19620 48600 1 0 $X=19505 $Y=47085
+X18088 2537 2494 1302 2363 949 948 172 2638 2667 FA_X1 $T=19810 15000 1 0 $X=19695 $Y=13485
+X18089 2101 1799 1747 1784 949 948 1758 2643 2674 FA_X1 $T=20380 65400 0 0 $X=20265 $Y=65285
+X18090 1286 241 2101 1752 949 948 1258 2624 2673 FA_X1 $T=20760 62600 0 0 $X=20645 $Y=62485
+X18091 187 262 1294 2108 949 948 1287 2617 2659 FA_X1 $T=23990 43000 0 180 $X=20835 $Y=41485
+X18092 241 244 2100 1764 949 948 229 2620 2650 FA_X1 $T=21140 54200 0 0 $X=21025 $Y=54085
+X18093 283 272 1303 2115 949 948 1747 2628 2674 FA_X1 $T=24560 68200 0 180 $X=21405 $Y=66685
+X18094 381 250 1756 2497 949 948 2103 2626 2655 FA_X1 $T=21710 31800 0 0 $X=21595 $Y=31685
+X18095 2081 274 1331 1335 949 948 230 2636 2661 FA_X1 $T=24940 23400 1 180 $X=21785 $Y=23285
+X18096 2110 1313 1307 2364 949 948 247 2629 2646 FA_X1 $T=25510 45800 0 180 $X=22355 $Y=44285
+X18097 1322 283 1308 258 949 948 1752 2643 2673 FA_X1 $T=25510 65400 0 180 $X=22355 $Y=63885
+X18098 95 264 1324 2500 949 948 80 2641 2675 FA_X1 $T=22850 3800 1 0 $X=22735 $Y=2285
+X18099 2060 265 1730 1374 949 948 1773 2641 2671 FA_X1 $T=22850 3800 0 0 $X=22735 $Y=3685
+X18100 2497 271 1327 1782 949 948 1776 2639 2660 FA_X1 $T=23230 29000 0 0 $X=23115 $Y=28885
+X18101 1010 280 1325 2120 949 948 312 2633 2648 FA_X1 $T=24180 9400 1 0 $X=24065 $Y=7885
+X18102 1027 303 1316 2366 949 948 1769 2617 2659 FA_X1 $T=27600 43000 0 180 $X=24445 $Y=41485
+X18103 2105 2540 2119 2110 949 948 1029 2619 2649 FA_X1 $T=24750 48600 0 0 $X=24635 $Y=48485
+X18104 1770 288 1333 2130 949 948 1337 2618 2647 FA_X1 $T=24750 79400 1 0 $X=24635 $Y=77885
+X18105 1771 291 2121 306 949 948 992 2636 2661 FA_X1 $T=24940 23400 0 0 $X=24825 $Y=23285
+X18106 288 294 2123 1344 949 948 1326 2640 2670 FA_X1 $T=25130 71000 0 0 $X=25015 $Y=70885
+X18107 264 1808 1339 1802 949 948 1786 2641 2675 FA_X1 $T=25890 3800 1 0 $X=25775 $Y=2285
+X18108 1787 312 1388 1780 949 948 1774 2641 2671 FA_X1 $T=28930 3800 1 180 $X=25775 $Y=3685
+X18109 282 302 2122 2125 949 948 1789 2622 2652 FA_X1 $T=26080 59800 0 0 $X=25965 $Y=59685
+X18110 286 304 1340 1792 949 948 1346 2623 2653 FA_X1 $T=26460 76600 1 0 $X=26345 $Y=75085
+X18111 2355 322 2328 1831 949 948 1021 2620 2663 FA_X1 $T=29690 54200 0 180 $X=26535 $Y=52685
+X18112 291 2127 1341 2137 949 948 1791 2636 2665 FA_X1 $T=26840 23400 1 0 $X=26725 $Y=21885
+X18113 1334 310 1348 1801 949 948 1794 2637 2664 FA_X1 $T=27410 17800 1 0 $X=27295 $Y=16285
+X18114 2124 315 1350 1825 949 948 1351 2625 2654 FA_X1 $T=27600 82200 1 0 $X=27485 $Y=80685
+X18115 304 319 1035 2376 949 948 315 2618 2647 FA_X1 $T=27790 79400 1 0 $X=27675 $Y=77885
+X18116 2330 336 1345 2372 949 948 1209 2639 2668 FA_X1 $T=31780 29000 0 180 $X=28625 $Y=27485
+X18117 2369 324 2139 2379 949 948 341 2621 2651 FA_X1 $T=28740 57000 0 0 $X=28625 $Y=56885
+X18118 2375 338 2147 2145 949 948 336 2626 2660 FA_X1 $T=32160 31800 0 180 $X=29005 $Y=30285
+X18119 1342 328 2105 1797 949 948 2574 2622 2652 FA_X1 $T=29120 59800 0 0 $X=29005 $Y=59685
+X18120 1288 341 1373 2542 949 948 1317 2620 2650 FA_X1 $T=32350 54200 1 180 $X=29195 $Y=54085
+X18121 384 343 1286 1411 949 948 1790 2624 2673 FA_X1 $T=32540 62600 1 180 $X=29385 $Y=62485
+X18122 1349 330 1358 2149 949 948 411 2620 2663 FA_X1 $T=29690 54200 1 0 $X=29575 $Y=52685
+X18123 1040 349 1354 2146 949 948 1797 2622 2651 FA_X1 $T=33490 59800 0 180 $X=30335 $Y=58285
+X18124 2121 340 1377 2153 949 948 89 2642 2665 FA_X1 $T=31020 20600 0 0 $X=30905 $Y=20485
+X18125 326 342 1381 2570 949 948 1211 2636 2661 FA_X1 $T=31210 23400 0 0 $X=31095 $Y=23285
+X18126 163 345 1366 1068 949 948 967 2617 2659 FA_X1 $T=31780 43000 1 0 $X=31665 $Y=41485
+X18127 2126 346 1367 1809 949 948 319 2623 2653 FA_X1 $T=31780 76600 1 0 $X=31665 $Y=75085
+X18128 299 356 2141 2143 949 948 1035 2635 2653 FA_X1 $T=35200 73800 1 180 $X=32045 $Y=73685
+X18129 1361 1045 1375 1817 949 948 1812 2627 2656 FA_X1 $T=33300 37400 1 0 $X=33185 $Y=35885
+X18130 2331 354 2586 1822 949 948 1050 2629 2657 FA_X1 $T=33300 45800 0 0 $X=33185 $Y=45685
+X18131 1808 355 1379 1048 949 948 1814 2641 2675 FA_X1 $T=33870 3800 1 0 $X=33755 $Y=2285
+X18132 1056 362 2155 1828 949 948 244 2621 2651 FA_X1 $T=34250 57000 0 0 $X=34135 $Y=56885
+X18133 344 1400 1387 1052 949 948 1048 2638 2667 FA_X1 $T=34630 15000 1 0 $X=34515 $Y=13485
+X18134 1350 365 1800 2389 949 948 383 2618 2654 FA_X1 $T=34820 79400 0 0 $X=34705 $Y=79285
+X18135 1374 1051 1386 2151 949 948 1819 2616 2671 FA_X1 $T=35390 6600 1 0 $X=35275 $Y=5085
+X18136 422 374 1835 2158 949 948 1392 2636 2665 FA_X1 $T=36150 23400 1 0 $X=36035 $Y=21885
+X18137 1292 376 1389 2391 949 948 1824 2640 2658 FA_X1 $T=36150 71000 1 0 $X=36035 $Y=69485
+X18138 1825 392 2545 2388 949 948 365 2625 2672 FA_X1 $T=39190 82200 1 180 $X=36035 $Y=82085
+X18139 390 393 2163 985 949 948 1813 2627 2656 FA_X1 $T=39380 37400 0 180 $X=36225 $Y=35885
+X18140 1815 381 1826 2195 949 948 2163 2626 2655 FA_X1 $T=36720 31800 0 0 $X=36605 $Y=31685
+X18141 2545 385 2162 2392 949 948 408 2625 2654 FA_X1 $T=37100 82200 1 0 $X=36985 $Y=80685
+X18142 156 391 1401 1849 949 948 1242 2619 2657 FA_X1 $T=37860 48600 1 0 $X=37745 $Y=47085
+X18143 1388 395 413 1427 949 948 1833 2616 2671 FA_X1 $T=38430 6600 1 0 $X=38315 $Y=5085
+X18144 405 410 1393 1403 949 948 1820 2631 2661 FA_X1 $T=41470 26200 0 180 $X=38315 $Y=24685
+X18145 1389 399 1408 2396 949 948 1836 2640 2658 FA_X1 $T=39190 71000 1 0 $X=39075 $Y=69485
+X18146 1049 400 1853 1848 949 948 1837 2640 2670 FA_X1 $T=39190 71000 0 0 $X=39075 $Y=70885
+X18147 1395 2508 1819 1814 949 948 438 2645 2675 FA_X1 $T=39380 1000 0 0 $X=39265 $Y=885
+X18148 1409 1383 1061 1405 949 948 1396 2633 2662 FA_X1 $T=42420 9400 1 180 $X=39265 $Y=9285
+X18149 2397 404 2171 2398 949 948 1372 2622 2652 FA_X1 $T=39570 59800 0 0 $X=39455 $Y=59685
+X18150 398 405 1840 1392 949 948 2393 2631 2668 FA_X1 $T=39760 26200 0 0 $X=39645 $Y=26085
+X18151 2173 2177 2166 1067 949 948 1826 2626 2655 FA_X1 $T=42800 31800 1 180 $X=39645 $Y=31685
+X18152 1835 419 1422 2174 949 948 1393 2636 2665 FA_X1 $T=41470 23400 1 0 $X=41355 $Y=21885
+X18153 185 415 2184 1862 949 948 2068 2629 2646 FA_X1 $T=41470 45800 1 0 $X=41355 $Y=44285
+X18154 1845 437 1417 2548 949 948 1838 2640 2658 FA_X1 $T=45270 71000 0 180 $X=42115 $Y=69485
+X18155 1427 1410 1415 1420 949 948 388 2633 2662 FA_X1 $T=45460 9400 1 180 $X=42305 $Y=9285
+X18156 2178 427 1418 1421 949 948 1429 2623 2647 FA_X1 $T=42800 76600 0 0 $X=42685 $Y=76485
+X18157 395 432 1432 2180 949 948 450 2637 2664 FA_X1 $T=43370 17800 1 0 $X=43255 $Y=16285
+X18158 451 446 1424 1096 949 948 391 2619 2657 FA_X1 $T=46600 48600 0 180 $X=43445 $Y=47085
+X18159 2167 2507 1434 1863 949 948 1853 2623 2653 FA_X1 $T=43750 76600 1 0 $X=43635 $Y=75085
+X18160 1401 454 1084 2513 949 948 415 2629 2646 FA_X1 $T=47550 45800 0 180 $X=44395 $Y=44285
+X18161 1357 1091 2192 1857 949 948 1440 2634 2663 FA_X1 $T=45460 51400 0 0 $X=45345 $Y=51285
+X18162 1434 1871 1855 1845 949 948 2585 2635 2653 FA_X1 $T=45460 73800 0 0 $X=45345 $Y=73685
+X18163 2197 2505 1436 2405 949 948 424 2642 2665 FA_X1 $T=48880 20600 1 180 $X=45725 $Y=20485
+X18164 2507 1884 2193 1878 949 948 452 2623 2647 FA_X1 $T=45840 76600 0 0 $X=45725 $Y=76485
+X18165 1432 455 2191 2204 949 948 1861 2637 2664 FA_X1 $T=46410 17800 1 0 $X=46295 $Y=16285
+X18166 446 457 486 1883 949 948 1862 2629 2657 FA_X1 $T=46410 45800 0 0 $X=46295 $Y=45685
+X18167 1851 458 2198 2552 949 948 1863 2618 2654 FA_X1 $T=46410 79400 0 0 $X=46295 $Y=79285
+X18168 418 460 2202 1868 949 948 1430 2620 2650 FA_X1 $T=46980 54200 0 0 $X=46865 $Y=54085
+X18169 2206 485 1445 2408 949 948 375 2626 2660 FA_X1 $T=50400 31800 0 180 $X=47245 $Y=30285
+X18170 439 474 1866 498 949 948 535 2639 2668 FA_X1 $T=48500 29000 1 0 $X=48385 $Y=27485
+X18171 1857 475 1456 2511 949 948 2414 2634 2663 FA_X1 $T=48500 51400 0 0 $X=48385 $Y=51285
+X18172 1858 478 2207 1874 949 948 463 2637 2666 FA_X1 $T=48690 17800 0 0 $X=48575 $Y=17685
+X18173 462 489 2203 1085 949 948 403 2624 2673 FA_X1 $T=49260 62600 0 0 $X=49145 $Y=62485
+X18174 2404 492 1880 1917 949 948 457 2629 2657 FA_X1 $T=49450 45800 0 0 $X=49335 $Y=45685
+X18175 490 497 1459 2418 949 948 503 2622 2651 FA_X1 $T=50210 59800 1 0 $X=50095 $Y=58285
+X18176 2207 501 1461 1876 949 948 1879 2637 2664 FA_X1 $T=50780 17800 1 0 $X=50665 $Y=16285
+X18177 458 505 1464 1882 949 948 1884 2618 2647 FA_X1 $T=51350 79400 1 0 $X=51235 $Y=77885
+X18178 1453 506 1099 1887 949 948 494 2643 2674 FA_X1 $T=51540 65400 0 0 $X=51425 $Y=65285
+X18179 2185 518 2334 2211 949 948 487 2633 2662 FA_X1 $T=54770 9400 1 180 $X=51615 $Y=9285
+X18180 2409 510 520 1888 949 948 507 2633 2648 FA_X1 $T=51920 9400 1 0 $X=51805 $Y=7885
+X18181 2213 515 1901 2547 949 948 1860 2632 2656 FA_X1 $T=52300 34600 0 0 $X=52185 $Y=34485
+X18182 471 1910 2223 2336 949 948 2417 2627 2669 FA_X1 $T=52490 37400 0 0 $X=52375 $Y=37285
+X18183 2416 522 1890 1912 949 948 387 2639 2660 FA_X1 $T=53630 29000 0 0 $X=53515 $Y=28885
+X18184 1102 538 1497 2419 949 948 1092 2624 2673 FA_X1 $T=56670 62600 1 180 $X=53515 $Y=62485
+X18185 506 543 1468 1881 949 948 538 2622 2652 FA_X1 $T=57050 59800 1 180 $X=53895 $Y=59685
+X18186 1882 524 2222 1467 949 948 1895 2640 2670 FA_X1 $T=54010 71000 0 0 $X=53895 $Y=70885
+X18187 1464 525 1477 1483 949 948 1482 2623 2653 FA_X1 $T=54010 76600 1 0 $X=53895 $Y=75085
+X18188 1100 526 1479 1484 949 948 514 2631 2661 FA_X1 $T=54390 26200 1 0 $X=54275 $Y=24685
+X18189 1887 529 1105 1505 949 948 2419 2643 2674 FA_X1 $T=54580 65400 0 0 $X=54465 $Y=65285
+X18190 1889 531 1481 2426 949 948 575 2638 2664 FA_X1 $T=54770 15000 0 0 $X=54655 $Y=14885
+X18191 2410 532 1482 1895 949 948 1408 2635 2653 FA_X1 $T=54770 73800 0 0 $X=54655 $Y=73685
+X18192 519 534 2226 2427 949 948 1898 2619 2649 FA_X1 $T=54960 48600 0 0 $X=54845 $Y=48485
+X18193 2336 540 1904 2240 949 948 577 2627 2669 FA_X1 $T=55530 37400 0 0 $X=55415 $Y=37285
+X18194 2515 557 1112 1885 949 948 467 2641 2671 FA_X1 $T=58950 3800 1 180 $X=55795 $Y=3685
+X18195 537 549 1499 2429 949 948 554 2620 2663 FA_X1 $T=56480 54200 1 0 $X=56365 $Y=52685
+X18196 1893 2577 2556 1100 949 948 567 2639 2660 FA_X1 $T=56670 29000 0 0 $X=56555 $Y=28885
+X18197 510 564 1486 2424 949 948 1481 2637 2666 FA_X1 $T=59900 17800 1 180 $X=56745 $Y=17685
+X18198 1902 559 2239 580 949 948 1470 2619 2649 FA_X1 $T=58000 48600 0 0 $X=57885 $Y=48485
+X18199 1513 583 1502 2430 949 948 1498 2616 2671 FA_X1 $T=61800 6600 0 180 $X=58645 $Y=5085
+X18200 1463 567 1578 2433 949 948 459 2632 2656 FA_X1 $T=58760 34600 0 0 $X=58645 $Y=34485
+X18201 539 569 1909 1498 949 948 504 2645 2675 FA_X1 $T=58950 1000 0 0 $X=58835 $Y=885
+X18202 1485 570 1493 1906 949 948 2242 2626 2655 FA_X1 $T=58950 31800 0 0 $X=58835 $Y=31685
+X18203 610 593 1506 1903 949 948 2234 2618 2647 FA_X1 $T=62180 79400 0 180 $X=59025 $Y=77885
+X18204 2239 1520 1920 2434 949 948 624 2619 2657 FA_X1 $T=59520 48600 1 0 $X=59405 $Y=47085
+X18205 1108 584 2235 611 949 948 2243 2617 2659 FA_X1 $T=60470 43000 1 0 $X=60355 $Y=41485
+X18206 1909 2251 2247 2437 949 948 606 2641 2671 FA_X1 $T=60850 3800 0 0 $X=60735 $Y=3685
+X18207 1911 594 1914 1526 949 948 2250 2638 2667 FA_X1 $T=61040 15000 1 0 $X=60925 $Y=13485
+X18208 569 606 2250 1918 949 948 642 2645 2675 FA_X1 $T=61990 1000 0 0 $X=61875 $Y=885
+X18209 2430 1535 2578 1120 949 948 1914 2638 2664 FA_X1 $T=65030 15000 1 180 $X=61875 $Y=14885
+X18210 1917 624 1545 2557 949 948 1098 2617 2659 FA_X1 $T=63510 43000 1 0 $X=63395 $Y=41485
+X18211 2437 627 1923 2444 949 948 1550 2642 2665 FA_X1 $T=63890 20600 0 0 $X=63775 $Y=20485
+X18212 2431 2246 1528 1121 949 948 600 2629 2657 FA_X1 $T=67120 45800 1 180 $X=63965 $Y=45685
+X18213 1120 631 2579 2260 949 948 2443 2637 2664 FA_X1 $T=64270 17800 1 0 $X=64155 $Y=16285
+X18214 2557 2561 1557 2262 949 948 2577 2626 2660 FA_X1 $T=65790 31800 1 0 $X=65675 $Y=30285
+X18215 2261 658 2275 1129 949 948 1565 2642 2665 FA_X1 $T=66930 20600 0 0 $X=66815 $Y=20485
+X18216 675 676 1956 2456 949 948 1563 2623 2647 FA_X1 $T=68260 76600 0 0 $X=68145 $Y=76485
+X18217 580 698 2276 1560 949 948 1545 2617 2646 FA_X1 $T=71680 43000 1 180 $X=68525 $Y=42885
+X18218 2259 683 2280 1132 949 948 658 2636 2661 FA_X1 $T=68830 23400 0 0 $X=68715 $Y=23285
+X18219 1936 684 1564 2458 949 948 1948 2627 2656 FA_X1 $T=68830 37400 1 0 $X=68715 $Y=35885
+X18220 2452 688 2283 1128 949 948 703 2644 2667 FA_X1 $T=69020 12200 0 0 $X=68905 $Y=12085
+X18221 1578 2282 1948 1943 949 948 469 2632 2656 FA_X1 $T=73580 34600 1 180 $X=70425 $Y=34485
+X18222 2561 727 2279 1562 949 948 1943 2639 2660 FA_X1 $T=73770 29000 1 180 $X=70615 $Y=28885
+X18223 1586 760 1963 2562 949 948 1974 2637 2666 FA_X1 $T=74720 17800 0 0 $X=74605 $Y=17685
+X18224 813 774 2302 1592 949 948 805 2633 2662 FA_X1 $T=75860 9400 0 0 $X=75745 $Y=9285
+X18225 2527 837 1979 1591 949 948 877 2638 2664 FA_X1 $T=80800 15000 1 180 $X=77645 $Y=14885
+X18226 1646 816 2303 1137 949 948 1630 2636 2665 FA_X1 $T=78330 23400 1 0 $X=78215 $Y=21885
+X18227 1616 875 1636 1954 949 948 2026 2645 2675 FA_X1 $T=81370 1000 0 0 $X=81255 $Y=885
+X18228 846 876 2026 2028 949 948 2027 2641 2671 FA_X1 $T=81370 3800 0 0 $X=81255 $Y=3685
+X18229 2564 877 2029 2003 949 948 1645 2644 2667 FA_X1 $T=81370 12200 0 0 $X=81255 $Y=12085
+X18230 886 879 1606 1139 949 948 912 2636 2661 FA_X1 $T=81370 23400 0 0 $X=81255 $Y=23285
+X18275 948 949 2046 89 2539 2061 51 2642 2666 ICV_44 $T=6700 20600 1 0 $X=6585 $Y=19085
+X18276 948 949 228 177 1250 2078 227 2629 2646 ICV_44 $T=13540 45800 1 0 $X=13425 $Y=44285
+X18277 948 949 119 217 2086 2091 2089 2638 2664 ICV_44 $T=17720 15000 0 0 $X=17605 $Y=14885
+X18278 948 949 1002 2496 1014 1766 1761 2637 2664 ICV_44 $T=20950 17800 1 0 $X=20835 $Y=16285
+X18279 948 949 2100 269 1016 1349 1775 2620 2663 ICV_44 $T=22850 54200 1 0 $X=22735 $Y=52685
+X18280 948 949 2378 358 2154 2387 2586 2617 2646 ICV_44 $T=33870 43000 0 0 $X=33755 $Y=42885
+X18281 948 949 1039 371 1062 1391 1822 2619 2649 ICV_44 $T=35770 48600 0 0 $X=35655 $Y=48485
+X18282 948 949 2388 380 2160 1402 1412 2623 2647 ICV_44 $T=36150 76600 0 0 $X=36035 $Y=76485
+X18283 948 949 1058 396 1407 2395 1834 2629 2646 ICV_44 $T=38240 45800 1 0 $X=38125 $Y=44285
+X18284 948 949 1051 423 1072 1858 1428 2638 2667 ICV_44 $T=42230 15000 1 0 $X=42115 $Y=13485
+X18285 948 949 428 433 1842 1851 394 2618 2654 ICV_44 $T=43180 79400 0 0 $X=43065 $Y=79285
+X18286 948 949 2182 447 1079 1077 461 2644 2667 ICV_44 $T=45270 12200 0 0 $X=45155 $Y=12085
+X18287 948 949 486 1094 2213 2417 465 2630 2659 ICV_44 $T=49260 40200 0 0 $X=49145 $Y=40085
+X18288 948 949 437 495 2510 1457 2216 2640 2658 ICV_44 $T=49830 71000 1 0 $X=49715 $Y=69485
+X18289 948 949 1890 535 1101 1492 1900 2639 2668 ICV_44 $T=54960 29000 1 0 $X=54845 $Y=27485
+X18290 948 949 2420 542 1097 1879 1496 2644 2667 ICV_44 $T=55530 12200 0 0 $X=55415 $Y=12085
+X18291 948 949 1099 544 1107 2428 1497 2643 2673 ICV_44 $T=55530 65400 1 0 $X=55415 $Y=63885
+X18292 948 949 560 589 1117 2438 1919 2631 2668 ICV_44 $T=60660 26200 0 0 $X=60545 $Y=26085
+X18293 948 949 1916 620 2255 2253 1118 2639 2668 ICV_44 $T=62940 29000 1 0 $X=62825 $Y=27485
+X18294 948 949 2453 730 1588 2587 760 2642 2666 ICV_44 $T=72630 20600 1 0 $X=72515 $Y=19085
+X18295 948 949 1138 2528 2318 2565 2029 2633 2662 ICV_44 $T=81180 9400 0 0 $X=81065 $Y=9285
+X18296 948 949 966 132 1223 1713 1226 2616 2671 ICV_45 $T=9170 6600 1 0 $X=9055 $Y=5085
+X18297 948 949 1234 2103 2094 1271 1751 2632 2656 ICV_45 $T=18670 34600 0 0 $X=18555 $Y=34485
+X18298 948 949 2136 337 2543 1363 354 2629 2646 ICV_45 $T=30070 45800 1 0 $X=29955 $Y=44285
+X18299 948 949 505 527 2229 2227 532 2618 2654 ICV_45 $T=54010 79400 0 0 $X=53895 $Y=79285
+X18300 948 949 1896 1108 1109 2431 2337 2617 2646 ICV_45 $T=56860 43000 0 0 $X=56745 $Y=42885
+X18301 948 949 666 675 1938 1947 1945 2623 2653 ICV_45 $T=67880 76600 1 0 $X=67765 $Y=75085
+X18302 948 949 774 814 1601 1608 2003 2644 2667 ICV_45 $T=77950 12200 0 0 $X=77835 $Y=12085
+X18303 948 949 2481 880 1637 1620 935 2631 2668 ICV_45 $T=80990 26200 0 0 $X=80875 $Y=26085
+X18335 1064 949 548 2360 948 2631 2661 ICV_47 $T=21900 26200 0 180 $X=21215 $Y=24685
+X18336 1837 949 1292 1278 948 2640 2658 ICV_47 $T=21900 71000 0 180 $X=21215 $Y=69485
+X18337 798 949 1012 278 948 2638 2667 ICV_47 $T=25320 15000 0 180 $X=24635 $Y=13485
+X18338 798 949 1090 271 948 2639 2660 ICV_47 $T=26840 29000 1 180 $X=26155 $Y=28885
+X18339 798 949 1000 297 948 2644 2667 ICV_47 $T=27410 12200 1 180 $X=26725 $Y=12085
+X18340 1041 949 188 303 948 2617 2646 ICV_47 $T=28170 43000 1 180 $X=27485 $Y=42885
+X18341 1041 949 1071 2501 948 2638 2667 ICV_47 $T=32730 15000 0 180 $X=32045 $Y=13485
+X18342 1065 949 1043 1370 948 2631 2661 ICV_47 $T=34630 26200 0 180 $X=33945 $Y=24685
+X18343 1038 949 1012 2183 948 2628 2674 ICV_47 $T=47170 68200 0 180 $X=46485 $Y=66685
+X18344 1000 949 1038 1443 948 2622 2651 ICV_47 $T=48120 59800 0 180 $X=47435 $Y=58285
+X18345 1030 949 1000 1083 948 2644 2667 ICV_47 $T=49070 12200 1 180 $X=48385 $Y=12085
+X18346 1093 949 481 2204 948 2637 2664 ICV_47 $T=50020 17800 0 180 $X=49335 $Y=16285
+X18347 988 949 1020 1456 948 2620 2663 ICV_47 $T=51730 54200 0 180 $X=51045 $Y=52685
+X18348 1001 949 1090 2428 948 2643 2673 ICV_47 $T=59330 65400 0 180 $X=58645 $Y=63885
+X18349 357 949 1020 1499 948 2620 2663 ICV_47 $T=60090 54200 0 180 $X=59405 $Y=52685
+X18350 798 949 1006 2528 948 2644 2662 ICV_47 $T=81370 12200 0 180 $X=80685 $Y=10685
+X18351 1013 Res[2] 18 948 949 1013 Res[4] 46 2643 2674 ICV_48 $T=1000 65400 0 0 $X=885 $Y=65285
+X18352 1013 Res[24] 566 948 949 1013 Res[25] 587 2625 2672 ICV_48 $T=58190 82200 0 0 $X=58075 $Y=82085
+X18353 1530 586 617 948 949 1013 Res[30] 640 2635 2670 ICV_48 $T=62370 73800 1 0 $X=62255 $Y=72285
+X18354 1530 702 757 948 949 1530 709 780 2624 2652 ICV_48 $T=73960 62600 1 0 $X=73845 $Y=61085
+X18355 1530 1561 758 948 949 1530 669 781 2643 2673 ICV_48 $T=73960 65400 1 0 $X=73845 $Y=63885
+X18356 1490 1574 767 948 949 1530 764 793 2630 2659 ICV_48 $T=74910 40200 0 0 $X=74795 $Y=40085
+X18357 1530 740 829 948 949 1530 833 868 2630 2659 ICV_48 $T=78710 40200 0 0 $X=78595 $Y=40085
+X18358 1530 1584 854 948 949 1530 741 901 2640 2670 ICV_48 $T=79850 71000 0 0 $X=79735 $Y=70885
+X18359 1530 821 869 948 949 1530 819 918 2617 2659 ICV_48 $T=80610 43000 1 0 $X=80495 $Y=41485
+X18691 1024 949 1057 198 948 2629 2657 ICV_56 $T=17530 45800 0 0 $X=17415 $Y=45685
+X18692 1073 949 998 2092 948 2636 2665 ICV_56 $T=20950 23400 1 0 $X=20835 $Y=21885
+X18693 420 949 1095 1327 948 2626 2660 ICV_56 $T=25890 31800 1 0 $X=25775 $Y=30285
+X18694 1030 949 546 2133 948 2639 2660 ICV_56 $T=29500 29000 0 0 $X=29385 $Y=28885
+X18695 1031 949 1114 2145 948 2639 2668 ICV_56 $T=33680 29000 1 0 $X=33565 $Y=27485
+X18696 1073 949 546 2395 948 2617 2646 ICV_56 $T=41470 43000 0 0 $X=41355 $Y=42885
+X18697 546 949 1018 443 948 2617 2659 ICV_56 $T=44320 43000 1 0 $X=44205 $Y=41485
+X18698 1003 949 1090 2421 948 2636 2661 ICV_56 $T=54200 23400 0 0 $X=54085 $Y=23285
+X18699 1073 949 1090 611 948 2617 2646 ICV_56 $T=60280 43000 0 0 $X=60165 $Y=42885
+X18700 1041 949 998 615 948 2632 2656 ICV_56 $T=61800 34600 0 0 $X=61685 $Y=34485
+X18701 357 949 1015 2435 948 2626 2660 ICV_56 $T=63700 31800 1 0 $X=63585 $Y=30285
+X18702 499 949 1000 1121 948 2629 2646 ICV_56 $T=63890 45800 1 0 $X=63775 $Y=44285
+X18703 1007 949 1025 2579 948 2638 2664 ICV_56 $T=65030 15000 0 0 $X=64915 $Y=14885
+X18704 1038 949 1025 2277 948 2630 2669 ICV_56 $T=68450 40200 1 0 $X=68335 $Y=38685
+X18705 370 949 1025 1132 948 2642 2665 ICV_56 $T=69970 20600 0 0 $X=69855 $Y=20485
+X18706 420 949 1025 1575 948 2636 2661 ICV_56 $T=73010 23400 0 0 $X=72895 $Y=23285
+X18707 370 949 481 2301 948 2637 2666 ICV_56 $T=77760 17800 0 0 $X=77645 $Y=17685
+X18708 798 949 1071 2526 948 2637 2666 ICV_56 $T=79850 17800 0 0 $X=79735 $Y=17685
+X18709 2025 689 1587 948 657 1934 949 2645 2675 AOI211_X1 $T=70540 1000 1 180 $X=69475 $Y=885
+X18710 1136 798 1969 948 1078 2477 949 2631 2668 AOI211_X1 $T=77570 26200 0 0 $X=77455 $Y=26085
+X18711 2016 842 1602 948 reset 804 949 2643 2674 AOI211_X1 $T=80610 65400 1 180 $X=79545 $Y=65285
+X18712 948 949 1013 Res[18] 39 2625 2672 ICV_57 $T=2140 82200 0 0 $X=2025 $Y=82085
+X18713 948 949 965 122 173 2628 2674 ICV_57 $T=12780 68200 1 0 $X=12665 $Y=66685
+X18714 948 949 1490 1495 562 2622 2652 ICV_57 $T=57810 59800 0 0 $X=57695 $Y=59685
+X18715 948 949 1530 573 609 2635 2653 ICV_57 $T=61610 73800 0 0 $X=61495 $Y=73685
+X18716 948 949 1490 1538 636 2622 2651 ICV_57 $T=63890 59800 1 0 $X=63775 $Y=58285
+X18717 948 949 1013 Res[26] 641 2625 2672 ICV_57 $T=64080 82200 0 0 $X=63965 $Y=82085
+X18718 948 949 1530 597 644 2640 2670 ICV_57 $T=64270 71000 0 0 $X=64155 $Y=70885
+X18719 948 949 1490 1543 652 2634 2649 ICV_57 $T=65410 51400 1 0 $X=65295 $Y=49885
+X18720 948 949 1490 2270 714 2621 2650 ICV_57 $T=70920 57000 1 0 $X=70805 $Y=55485
+X18721 948 949 1490 1572 728 2643 2673 ICV_57 $T=71870 65400 1 0 $X=71755 $Y=63885
+X18722 948 949 1530 2288 747 2624 2673 ICV_57 $T=73390 62600 0 0 $X=73275 $Y=62485
+X18723 948 949 1530 691 753 2634 2663 ICV_57 $T=73580 51400 0 0 $X=73465 $Y=51285
+X18724 948 949 1490 2465 849 2639 2660 ICV_57 $T=79470 29000 0 0 $X=79355 $Y=28885
+X18725 948 949 2341 48 63 2632 2655 ICV_58 $T=3850 34600 1 0 $X=3735 $Y=33085
+X18726 948 949 1024 1018 181 2644 2667 ICV_58 $T=13160 12200 0 0 $X=13045 $Y=12085
+X18727 948 949 1041 1018 175 2637 2666 ICV_58 $T=14490 17800 0 0 $X=14375 $Y=17685
+X18728 948 949 1073 430 1280 2629 2646 ICV_58 $T=21710 45800 1 0 $X=21595 $Y=44285
+X18729 948 949 370 1000 2363 2644 2667 ICV_58 $T=22470 12200 0 0 $X=22355 $Y=12085
+X18730 948 949 798 1015 2102 2642 2665 ICV_58 $T=23800 20600 0 0 $X=23685 $Y=20485
+X18731 948 949 289 1095 294 2640 2658 ICV_58 $T=26080 71000 1 0 $X=25965 $Y=69485
+X18732 948 949 1030 279 2116 2642 2665 ICV_58 $T=26460 20600 0 0 $X=26345 $Y=20485
+X18733 948 949 1073 188 2544 2633 2662 ICV_58 $T=32730 9400 0 0 $X=32615 $Y=9285
+X18734 948 949 1024 1114 347 2633 2648 ICV_58 $T=33300 9400 1 0 $X=33185 $Y=7885
+X18735 948 949 1001 430 358 2630 2659 ICV_58 $T=34250 40200 0 0 $X=34135 $Y=40085
+X18736 948 949 366 481 284 2642 2666 ICV_58 $T=35390 20600 1 0 $X=35275 $Y=19085
+X18737 948 949 1093 1006 2383 2633 2648 ICV_58 $T=35960 9400 1 0 $X=35845 $Y=7885
+X18738 948 949 279 1047 380 2623 2653 ICV_58 $T=35960 76600 1 0 $X=35845 $Y=75085
+X18739 948 949 1047 1043 1382 2639 2668 ICV_58 $T=36150 29000 1 0 $X=36035 $Y=27485
+X18740 948 949 1020 1065 2160 2623 2653 ICV_58 $T=37860 76600 1 0 $X=37745 $Y=75085
+X18741 948 949 420 546 1067 2639 2660 ICV_58 $T=44130 29000 0 0 $X=44015 $Y=28885
+X18742 948 949 363 430 449 2624 2652 ICV_58 $T=44510 62600 1 0 $X=44395 $Y=61085
+X18743 948 949 798 998 2576 2644 2662 ICV_58 $T=47170 12200 1 0 $X=47055 $Y=10685
+X18744 948 949 370 1057 2211 2644 2662 ICV_58 $T=50970 12200 1 0 $X=50855 $Y=10685
+X18745 948 949 1024 481 513 2642 2666 ICV_58 $T=52110 20600 1 0 $X=51995 $Y=19085
+X18746 948 949 499 1066 1468 2624 2652 ICV_58 $T=54200 62600 1 0 $X=54085 $Y=61085
+X18747 948 949 1037 548 1472 2622 2651 ICV_58 $T=54960 59800 1 0 $X=54845 $Y=58285
+X18748 948 949 1031 1020 1477 2635 2670 ICV_58 $T=55720 73800 1 0 $X=55605 $Y=72285
+X18749 948 949 988 279 549 2620 2650 ICV_58 $T=56670 54200 0 0 $X=56555 $Y=54085
+X18750 948 949 1064 1090 1906 2626 2660 ICV_58 $T=58950 31800 1 0 $X=58835 $Y=30285
+X18751 948 949 420 1057 1522 2644 2667 ICV_58 $T=61990 12200 0 0 $X=61875 $Y=12085
+X18752 948 949 1041 548 1528 2629 2657 ICV_58 $T=63320 45800 0 0 $X=63205 $Y=45685
+X18753 948 949 1065 1025 2276 2617 2659 ICV_58 $T=68260 43000 1 0 $X=68145 $Y=41485
+X18754 948 949 370 1043 1137 2642 2665 ICV_58 $T=76430 20600 0 0 $X=76315 $Y=20485
+X18755 948 949 420 481 1606 2631 2661 ICV_58 $T=78900 26200 1 0 $X=78785 $Y=24685
+X18756 1041 949 1025 201 948 499 986 1241 2632 2656 ICV_59 $T=14300 34600 0 0 $X=14185 $Y=34485
+X18757 1024 949 1025 170 948 988 986 1244 2633 2648 ICV_59 $T=14680 9400 1 0 $X=14565 $Y=7885
+X18758 377 949 1033 224 948 1064 1057 2083 2633 2662 ICV_59 $T=18480 9400 0 0 $X=18365 $Y=9285
+X18759 366 949 430 245 948 1037 1012 1310 2622 2652 ICV_59 $T=22280 59800 0 0 $X=22165 $Y=59685
+X18760 255 949 259 236 948 1306 1008 1727 2635 2653 ICV_59 $T=22470 73800 0 0 $X=22355 $Y=73685
+X18761 798 949 1095 308 948 363 1071 1026 2626 2660 ICV_59 $T=27980 31800 1 0 $X=27865 $Y=30285
+X18762 1001 949 279 318 948 1041 1020 1032 2628 2674 ICV_59 $T=28550 68200 1 0 $X=28435 $Y=66685
+X18763 1093 949 279 337 948 1024 1020 2543 2629 2657 ICV_59 $T=31590 45800 0 0 $X=31475 $Y=45685
+X18764 1064 949 1033 1365 948 988 1018 1368 2633 2662 ICV_59 $T=33490 9400 0 0 $X=33375 $Y=9285
+X18765 1047 949 1020 2503 948 1065 1090 2390 2635 2670 ICV_59 $T=36720 73800 1 0 $X=36605 $Y=72285
+X18766 1037 949 1043 1362 948 1037 1078 1387 2637 2666 ICV_59 $T=36910 17800 0 0 $X=36795 $Y=17685
+X18767 1031 949 1018 378 948 366 1025 2159 2642 2666 ICV_59 $T=37670 20600 1 0 $X=37555 $Y=19085
+X18768 370 949 998 1397 948 357 1018 2394 2638 2667 ICV_59 $T=39380 15000 1 0 $X=39265 $Y=13485
+X18769 1041 949 1043 409 948 499 481 1414 2642 2666 ICV_59 $T=41660 20600 1 0 $X=41545 $Y=19085
+X18770 1038 949 1006 1422 948 363 1114 2174 2642 2665 ICV_59 $T=42040 20600 0 0 $X=41925 $Y=20485
+X18771 1038 949 1020 1418 948 363 1090 1421 2623 2653 ICV_59 $T=42610 76600 1 0 $X=42495 $Y=75085
+X18772 430 949 1065 2179 948 1037 279 2506 2643 2674 ICV_59 $T=44510 65400 0 0 $X=44395 $Y=65285
+X18773 1037 949 289 2412 948 366 1066 2551 2625 2654 ICV_59 $T=47930 82200 1 0 $X=47815 $Y=80685
+X18774 1007 949 1095 474 948 370 1066 1866 2639 2660 ICV_59 $T=49830 29000 0 0 $X=49715 $Y=28885
+X18775 1041 949 1033 1088 948 499 1057 2212 2631 2661 ICV_59 $T=50590 26200 1 0 $X=50475 $Y=24685
+X18776 1007 949 1033 2334 948 1003 986 496 2644 2667 ICV_59 $T=50970 12200 0 0 $X=50855 $Y=12085
+X18777 1030 949 548 2425 948 1003 1025 558 2644 2662 ICV_59 $T=56670 12200 1 0 $X=56555 $Y=10685
+X18778 377 949 1006 588 948 1030 998 2436 2633 2662 ICV_59 $T=60850 9400 0 0 $X=60735 $Y=9285
+X18779 1003 949 1018 631 948 370 986 2260 2638 2667 ICV_59 $T=64080 15000 1 0 $X=63965 $Y=13485
+X18780 1031 949 188 638 948 366 1033 2252 2627 2656 ICV_59 $T=64270 37400 1 0 $X=64155 $Y=35885
+X18781 363 949 1018 620 948 366 986 2253 2631 2668 ICV_59 $T=64460 26200 0 0 $X=64345 $Y=26085
+X18782 1030 949 1033 2450 948 420 188 2521 2638 2664 ICV_59 $T=68070 15000 0 0 $X=67955 $Y=14885
+X18783 1065 949 1114 1562 948 1047 1006 2279 2626 2660 ICV_59 $T=68830 31800 1 0 $X=68715 $Y=30285
+X18784 377 949 1043 718 948 1064 1071 2461 2639 2668 ICV_59 $T=71300 29000 1 0 $X=71185 $Y=27485
+X18785 1030 949 986 1569 948 798 1018 752 2636 2661 ICV_59 $T=71870 23400 0 0 $X=71755 $Y=23285
+X18786 1007 949 1006 1581 948 1064 481 1961 2638 2667 ICV_59 $T=73580 15000 1 0 $X=73465 $Y=13485
+X18787 1064 949 1043 1592 948 1003 1043 814 2637 2664 ICV_59 $T=75480 17800 1 0 $X=75365 $Y=16285
+X18788 1007 949 1071 1986 948 420 1114 2318 2633 2662 ICV_59 $T=78900 9400 0 0 $X=78785 $Y=9285
+X18844 1003 949 1000 234 948 2642 2666 ICV_61 $T=18290 20600 1 0 $X=18175 $Y=19085
+X18845 1041 949 1015 2111 948 2629 2657 ICV_61 $T=23420 45800 0 0 $X=23305 $Y=45685
+X18846 1001 949 1025 1312 948 2630 2669 ICV_61 $T=24750 40200 1 0 $X=24635 $Y=38685
+X18847 1093 949 1020 1307 948 2617 2646 ICV_61 $T=25320 43000 0 0 $X=25205 $Y=42885
+X18848 289 949 279 368 948 2640 2670 ICV_61 $T=33110 71000 0 0 $X=32995 $Y=70885
+X18849 1047 949 1071 485 948 2639 2668 ICV_61 $T=45270 29000 1 0 $X=45155 $Y=27485
+X18850 1024 949 279 475 948 2634 2649 ICV_61 $T=47360 51400 1 0 $X=47245 $Y=49885
+X18851 363 949 1033 1476 948 2620 2650 ICV_61 $T=53060 54200 0 0 $X=52945 $Y=54085
+X18852 1007 949 1018 2280 948 2636 2665 ICV_61 $T=68450 23400 1 0 $X=68335 $Y=21885
+X18853 1584 949 741 2460 948 2635 2653 ICV_61 $T=72060 73800 0 0 $X=71945 $Y=73685
+X18854 370 949 1006 1614 948 2644 2662 ICV_61 $T=78520 12200 1 0 $X=78405 $Y=10685
+X18855 109 112 1216 1816 949 948 2065 1216 153 1234 1820 148 2627 2656 ICV_62 $T=8410 37400 1 0 $X=8295 $Y=35885
+X18856 2061 138 1714 2349 949 948 1713 1714 170 1244 1259 1256 2616 2648 ICV_62 $T=10120 6600 0 0 $X=10005 $Y=6485
+X18857 147 162 1239 2352 949 948 1725 2071 1755 2098 994 1734 2639 2668 ICV_62 $T=12590 29000 1 0 $X=12475 $Y=27485
+X18858 1233 164 451 1736 949 948 1726 211 196 2080 1763 1736 2619 2649 ICV_62 $T=12590 48600 0 0 $X=12475 $Y=48485
+X18859 166 1738 1240 1744 949 948 1220 2353 197 1266 2355 1738 2621 2650 ICV_62 $T=12590 57000 1 0 $X=12475 $Y=55485
+X18860 1212 176 1742 1720 949 948 1222 171 209 1743 2088 1742 2626 2655 ICV_62 $T=13730 31800 0 0 $X=13615 $Y=31685
+X18861 1708 181 2325 2075 949 948 1253 2077 210 2087 2083 1277 2644 2662 ICV_62 $T=14110 12200 1 0 $X=13995 $Y=10685
+X18862 982 187 1255 1728 949 948 1262 195 1287 1279 1274 2361 2617 2659 ICV_62 $T=14870 43000 1 0 $X=14755 $Y=41485
+X18863 2350 194 1265 1751 949 948 1735 1271 227 2327 1783 1290 2630 2669 ICV_62 $T=15630 40200 1 0 $X=15515 $Y=38685
+X18864 1273 1254 2081 1002 949 948 184 2351 231 2092 2360 143 2636 2661 ICV_62 $T=15820 23400 0 0 $X=15705 $Y=23285
+X18865 194 997 1290 2361 949 948 1748 2097 254 982 2118 285 2627 2656 ICV_62 $T=18860 37400 1 0 $X=18745 $Y=35885
+X18866 2349 237 1301 1297 949 948 1754 132 266 1314 2367 1324 2616 2671 ICV_62 $T=19810 6600 1 0 $X=19695 $Y=5085
+X18867 2093 245 1310 1011 949 948 1762 331 282 2093 2369 328 2624 2652 ICV_62 $T=21140 62600 1 0 $X=21025 $Y=61085
+X18868 238 247 1004 1778 949 948 1763 1016 2128 1023 1329 1778 2634 2649 ICV_62 $T=21330 51400 1 0 $X=21215 $Y=49885
+X18869 206 260 1773 1395 949 948 1238 2112 296 1786 1774 260 2645 2675 ICV_62 $T=22470 1000 0 0 $X=22355 $Y=885
+X18870 434 285 2330 1781 949 948 153 1781 313 1769 1034 2329 2627 2669 ICV_62 $T=24560 37400 0 0 $X=24445 $Y=37285
+X18871 1315 293 1026 1022 949 948 1783 360 321 1793 1805 1694 2632 2656 ICV_62 $T=25130 34600 0 0 $X=25015 $Y=34485
+X18872 2118 308 2131 2133 949 948 333 321 333 1378 1812 118 2626 2655 ICV_62 $T=27030 31800 0 0 $X=26915 $Y=31685
+X18873 1779 1027 2114 2375 949 948 1793 435 2144 1361 1360 1805 2627 2656 ICV_62 $T=27220 37400 1 0 $X=27105 $Y=35885
+X18874 2119 314 329 2140 949 948 1796 2542 1039 1364 2502 1807 2619 2657 ICV_62 $T=27600 48600 1 0 $X=27485 $Y=47085
+X18875 2381 318 1032 1036 949 948 1799 242 339 1380 1054 1042 2643 2674 ICV_62 $T=27790 65400 0 0 $X=27675 $Y=65285
+X18876 1314 325 1803 2380 949 948 1802 1803 347 1368 359 355 2641 2671 ICV_62 $T=28930 3800 0 0 $X=28815 $Y=3685
+X18877 322 327 1357 1796 949 948 2080 2328 348 2331 1807 196 2634 2649 ICV_62 $T=29120 51400 1 0 $X=29005 $Y=49885
+X18878 1053 331 1040 2381 949 948 352 343 352 1372 2385 1810 2624 2652 ICV_62 $T=29690 62600 1 0 $X=29575 $Y=61085
+X18879 240 1836 1818 2176 949 948 1291 1818 384 1060 1460 339 2628 2658 ICV_62 $T=34060 68200 0 0 $X=33945 $Y=68085
+X18880 1398 360 1823 1815 949 948 1816 2156 387 1398 1471 1830 2632 2655 ICV_62 $T=34250 34600 1 0 $X=34135 $Y=33085
+X18881 356 368 2503 2390 949 948 2389 259 394 2167 1841 275 2635 2653 ICV_62 $T=35200 73800 0 0 $X=35085 $Y=73685
+X18882 1811 375 2157 1779 949 948 1823 2199 398 2168 1811 1069 2639 2660 ICV_62 $T=36150 29000 0 0 $X=36035 $Y=28885
+X18883 1380 379 1390 1092 949 948 205 2546 403 1322 2397 1411 2643 2673 ICV_62 $T=36340 65400 1 0 $X=36225 $Y=63885
+X18884 348 397 1827 1902 949 948 421 2172 421 1050 2401 1424 2619 2649 ICV_62 $T=39000 48600 0 0 $X=38885 $Y=48485
+X18885 412 406 1433 1053 949 948 1390 1416 425 2181 2402 1433 2624 2673 ICV_62 $T=39760 62600 0 0 $X=39645 $Y=62485
+X18886 1831 411 1055 1080 949 948 2175 402 431 1430 2404 1849 2620 2663 ICV_62 $T=40140 54200 1 0 $X=40025 $Y=52685
+X18887 2391 1869 2332 1838 949 948 2176 1417 2179 2183 1076 416 2628 2658 ICV_62 $T=40140 68200 0 0 $X=40025 $Y=68085
+X18888 267 418 1843 2175 949 948 2170 1843 444 1440 1834 431 2621 2650 ICV_62 $T=41660 57000 1 0 $X=41545 $Y=55485
+X18889 2399 426 1425 2403 949 948 1846 400 452 2585 2410 376 2635 2670 ICV_62 $T=42800 73800 1 0 $X=42685 $Y=72285
+X18890 2549 434 608 1900 949 948 1850 1852 459 2199 2411 1864 2627 2669 ICV_62 $T=43560 37400 0 0 $X=43445 $Y=37285
+X18891 425 2506 1438 2406 949 948 2385 470 462 2200 1086 1074 2643 2673 ICV_62 $T=44130 65400 1 0 $X=44015 $Y=63885
+X18892 413 440 2185 2182 949 948 1444 2194 463 1082 487 1454 2616 2648 ICV_62 $T=44320 6600 0 0 $X=44205 $Y=6485
+X18893 386 443 2187 2407 949 948 502 454 465 2205 1907 1068 2617 2646 ICV_62 $T=44700 43000 0 0 $X=44585 $Y=42885
+X18894 1844 445 1442 2097 949 948 2165 1450 469 1452 1844 1867 2627 2656 ICV_62 $T=44890 37400 1 0 $X=44775 $Y=35885
+X18895 2192 2550 2189 488 949 948 1856 460 471 1856 2414 1089 2619 2649 ICV_62 $T=45080 48600 0 0 $X=44965 $Y=48485
+X18896 1431 450 1444 2409 949 948 429 1448 477 1454 1513 557 2616 2671 ICV_62 $T=45650 6600 1 0 $X=45535 $Y=5085
+X18897 1441 461 480 1861 949 948 477 478 496 2512 508 1097 2638 2667 ICV_62 $T=47170 15000 1 0 $X=47055 $Y=13485
+X18898 2190 464 2551 2412 949 948 1865 2198 500 2217 2554 1878 2625 2672 ICV_62 $T=47550 82200 0 0 $X=47435 $Y=82085
+X18899 2396 494 1473 2216 949 948 1460 2413 517 2224 2422 1473 2628 2658 ICV_62 $T=49830 68200 0 0 $X=49715 $Y=68085
+X18900 2553 514 1423 2220 949 948 1471 2223 536 1485 1123 1901 2632 2655 ICV_62 $T=52110 34600 1 0 $X=51995 $Y=33085
+X18901 1465 516 1476 2225 949 948 1894 2423 552 1501 572 1503 2621 2650 ICV_62 $T=53820 57000 1 0 $X=53705 $Y=55485
+X18902 1888 530 2228 2425 949 948 542 2514 558 1487 1507 604 2633 2662 ICV_62 $T=54770 9400 0 0 $X=54655 $Y=9285
+X18903 2433 2242 1516 1544 949 948 1452 2245 615 1541 2441 1544 2632 2655 ICV_62 $T=59710 34600 1 0 $X=59595 $Y=33085
+X18904 2236 577 2243 601 949 948 491 2218 616 1931 2442 553 2630 2659 ICV_62 $T=59710 40200 0 0 $X=59595 $Y=40085
+X18905 533 582 1522 2436 949 948 1526 2578 621 2518 1926 1928 2644 2662 ICV_62 $T=60280 12200 1 0 $X=60165 $Y=10685
+X18906 1106 588 1524 1517 949 948 623 1918 1547 2261 1552 643 2616 2648 ICV_62 $T=60660 6600 0 0 $X=60545 $Y=6485
+X18907 1469 600 1932 1940 949 948 2411 616 638 2252 2448 1932 2627 2669 ICV_62 $T=61610 37400 0 0 $X=61495 $Y=37285
+X18908 2247 2519 1928 2443 949 948 1548 2519 2452 1131 2453 2272 2633 2662 ICV_62 $T=63890 9400 0 0 $X=63775 $Y=9285
+X18909 701 662 1952 1960 949 948 1553 676 701 1576 1962 1958 2618 2654 ICV_62 $T=67310 79400 0 0 $X=67195 $Y=79285
+X18910 1131 696 1571 2459 949 948 1953 2523 731 1589 1951 1970 2633 2648 ICV_62 $T=69970 9400 1 0 $X=69855 $Y=7885
+X18911 2339 766 1974 2523 949 948 1570 2298 812 2525 2002 1964 2641 2671 ICV_62 $T=75290 3800 0 0 $X=75175 $Y=3685
+X18912 1577 813 1616 2005 949 948 2002 2005 1594 1986 1614 2028 2616 2671 ICV_62 $T=78330 6600 1 0 $X=78215 $Y=5085
+X18913 1979 815 1617 2301 949 948 878 1632 878 1646 2481 1651 2642 2666 ICV_62 $T=78330 20600 1 0 $X=78215 $Y=19085
+X18914 546 949 986 2502 948 2629 2646 ICV_63 $T=34630 45800 1 0 $X=34515 $Y=44285
+X18915 1073 949 1012 1375 948 2632 2656 ICV_63 $T=37860 34600 0 0 $X=37745 $Y=34485
+X18916 1031 949 1066 2162 948 2618 2654 ICV_63 $T=39190 79400 0 0 $X=39075 $Y=79285
+X18917 377 949 1066 1407 948 2629 2657 ICV_63 $T=40520 45800 0 0 $X=40405 $Y=45685
+X18918 1065 949 1071 419 948 2636 2661 ICV_63 $T=42230 23400 0 0 $X=42115 $Y=23285
+X18919 1007 949 1066 2219 948 2626 2660 ICV_63 $T=52680 31800 1 0 $X=52565 $Y=30285
+X18920 1093 949 1043 2424 948 2637 2664 ICV_63 $T=58380 17800 1 0 $X=58265 $Y=16285
+X18921 1001 949 998 2246 948 2617 2646 ICV_63 $T=62750 43000 0 0 $X=62635 $Y=42885
+X18922 798 949 188 621 948 2633 2648 ICV_63 $T=64080 9400 1 0 $X=63965 $Y=7885
+X18923 1047 949 1114 2262 948 2639 2660 ICV_63 $T=66740 29000 0 0 $X=66625 $Y=28885
+X18924 377 949 481 1130 948 2642 2666 ICV_63 $T=68640 20600 1 0 $X=68525 $Y=19085
+X18925 1007 949 1078 2303 948 2642 2665 ICV_63 $T=78140 20600 0 0 $X=78025 $Y=20485
+X18948 948 949 1013 Res[1] 17 2624 2673 ICV_64 $T=1000 62600 0 0 $X=885 $Y=62485
+X18949 948 949 965 55 42 2634 2649 ICV_64 $T=2710 51400 1 0 $X=2595 $Y=49885
+X18950 948 949 965 131 93 2624 2673 ICV_64 $T=6700 62600 0 0 $X=6585 $Y=62485
+X18951 948 949 965 91 157 2640 2658 ICV_64 $T=11260 71000 1 0 $X=11145 $Y=69485
+X18952 948 949 1490 1491 561 2635 2653 ICV_64 $T=57810 73800 0 0 $X=57695 $Y=73685
+X18953 948 949 1490 2432 585 2622 2651 ICV_64 $T=60090 59800 1 0 $X=59975 $Y=58285
+X18954 948 949 1490 1125 655 2622 2651 ICV_64 $T=65980 59800 1 0 $X=65865 $Y=58285
+X18955 948 949 1490 2524 775 2632 2655 ICV_64 $T=75480 34600 1 0 $X=75365 $Y=33085
+X18956 948 949 1490 2463 777 2639 2660 ICV_64 $T=75670 29000 0 0 $X=75555 $Y=28885
+X18957 948 949 1530 716 817 2618 2647 ICV_64 $T=77950 79400 1 0 $X=77835 $Y=77885
+X18970 357 949 1033 2076 948 79 174 1247 2076 1228 2638 2667 ICV_66 $T=13730 15000 1 0 $X=13615 $Y=13485
+X18971 1030 949 1020 292 948 1757 2102 1017 292 1159 2636 2665 ICV_66 $T=23230 23400 1 0 $X=23115 $Y=21885
+X18972 988 949 1066 2113 948 1764 281 2113 301 300 2620 2650 ICV_66 $T=24180 54200 0 0 $X=24065 $Y=54085
+X18973 377 949 546 2140 948 2540 1058 2136 2378 327 2629 2657 ICV_66 $T=27980 45800 0 0 $X=27865 $Y=45685
+X18974 988 949 548 1371 948 1360 350 1371 2384 313 2630 2669 ICV_66 $T=32350 40200 1 0 $X=32235 $Y=38685
+X18975 370 949 1090 2386 948 2144 353 2152 2386 1378 2626 2655 ICV_66 $T=33110 31800 0 0 $X=32995 $Y=31685
+X18976 1031 949 1090 1872 948 2552 483 2210 1872 1871 2623 2647 ICV_66 $T=48880 76600 0 0 $X=48765 $Y=76485
+X18977 357 949 1006 1891 948 1874 513 2335 1891 531 2642 2665 ICV_66 $T=52490 20600 0 0 $X=52375 $Y=20485
+X18978 1093 949 548 1504 948 1484 555 1504 1500 576 2631 2661 ICV_66 $T=57430 26200 1 0 $X=57315 $Y=24685
+X18979 798 949 1114 875 948 2525 805 2527 1138 1996 2633 2648 ICV_66 $T=77950 9400 1 0 $X=77835 $Y=7885
+X18980 1030 949 1114 2466 948 837 2526 1613 2466 911 2637 2664 ICV_66 $T=77950 17800 1 0 $X=77835 $Y=16285
+X19011 744 750 755 759 948 949 1967 2635 2653 OR4_X1 $T=74340 73800 0 0 $X=74225 $Y=73685
+X19012 1968 755 716 717 948 949 1595 2623 2653 OR4_X1 $T=75290 76600 1 0 $X=75175 $Y=75085
+X19013 732 742 720 765 948 949 1968 2618 2654 OR4_X1 $T=76430 79400 1 180 $X=75175 $Y=79285
+X19014 1603 759 791 795 948 949 1977 2635 2653 OR4_X1 $T=77190 73800 0 0 $X=77075 $Y=73685
+X19015 2291 792 796 574 948 949 1603 2623 2647 OR4_X1 $T=77380 76600 0 0 $X=77265 $Y=76485
+X19016 626 948 949 263 2618 2654 CLKBUF_X3 $T=7840 79400 0 0 $X=7725 $Y=79285
+X19017 563 948 949 562 2640 2670 CLKBUF_X3 $T=58950 71000 0 0 $X=58835 $Y=70885
+X19018 1124 948 949 1530 2622 2652 CLKBUF_X3 $T=76240 59800 0 0 $X=76125 $Y=59685
+X19019 803 948 949 1142 2624 2673 CLKBUF_X3 $T=78330 62600 1 180 $X=77265 $Y=62485
+X19020 965 69 67 948 949 45 43 2620 2663 ICV_68 $T=4800 54200 0 180 $X=2785 $Y=52685
+X19021 1013 Res[19] 86 948 949 Res[17] 59 2625 2672 ICV_68 $T=6130 82200 1 180 $X=4115 $Y=82085
+X19022 965 124 180 948 949 60 159 2618 2647 ICV_68 $T=13540 79400 0 180 $X=11525 $Y=77885
+X19023 1013 Res[27] 710 948 949 Res[28] 687 2625 2672 ICV_68 $T=70730 82200 1 180 $X=68715 $Y=82085
+X19024 1490 1957 734 948 949 2287 708 2619 2649 ICV_68 $T=72820 48600 1 180 $X=70805 $Y=48485
+X19025 1490 1582 737 948 949 2522 711 2626 2655 ICV_68 $T=73010 31800 1 180 $X=70995 $Y=31685
+X19026 1013 Res[31] 804 948 949 Res[0] 772 2628 2674 ICV_68 $T=77190 68200 0 180 $X=75175 $Y=66685
+X19027 1530 729 809 948 949 680 778 2629 2646 ICV_68 $T=77760 45800 0 180 $X=75745 $Y=44285
+X19028 1530 725 826 948 949 697 788 2621 2651 ICV_68 $T=78520 57000 1 180 $X=76505 $Y=56885
+X19029 1530 719 839 948 949 686 799 2634 2649 ICV_68 $T=79090 51400 0 180 $X=77075 $Y=49885
+X19078 791 795 2291 574 948 949 2294 2623 2653 AND4_X1 $T=73200 76600 1 0 $X=73085 $Y=75085
+X19079 1134 1559 1955 1965 948 949 2295 2622 2651 AND4_X1 $T=73580 59800 1 0 $X=73465 $Y=58285
+X19080 1959 1915 769 1626 948 949 761 2619 2649 AND4_X1 $T=75480 48600 0 0 $X=75365 $Y=48485
+X19081 716 717 732 765 948 949 1598 2618 2647 AND4_X1 $T=77950 79400 0 180 $X=76695 $Y=77885
+X19082 1246 129 948 949 1722 2634 2649 OR2_X1 $T=14490 51400 1 0 $X=14375 $Y=49885
+X19083 1281 248 948 949 1753 2640 2670 OR2_X1 $T=21900 71000 0 0 $X=21785 $Y=70885
+X19084 765 550 948 949 1903 2618 2654 OR2_X1 $T=57430 79400 0 0 $X=57315 $Y=79285
+X19085 741 695 948 949 755 2635 2670 OR2_X1 $T=76810 73800 0 180 $X=75935 $Y=72285
+X19086 1584 786 948 949 759 2635 2670 OR2_X1 $T=76810 73800 1 0 $X=76695 $Y=72285
+X19119 1171 948 955 962 949 2049 2629 2646 NAND3_X1 $T=4800 45800 1 0 $X=4685 $Y=44285
+X19120 2284 948 712 2285 949 2286 2640 2670 NAND3_X1 $T=71490 71000 0 0 $X=71375 $Y=70885
+X19121 761 948 2563 2293 949 1966 2619 2649 NAND3_X1 $T=75480 48600 1 180 $X=74605 $Y=48485
+X19122 2295 948 2300 2580 949 748 2622 2651 NAND3_X1 $T=74720 59800 1 0 $X=74605 $Y=58285
+X19123 786 948 750 1584 949 712 2640 2670 NAND3_X1 $T=75100 71000 0 0 $X=74985 $Y=70885
+X19124 695 948 744 741 949 2285 2640 2670 NAND3_X1 $T=76240 71000 0 0 $X=76125 $Y=70885
+X19125 1149 1153 948 28 32 34 949 2632 2655 OAI22_X1 $T=1950 34600 1 0 $X=1835 $Y=33085
+X19126 1203 1221 948 1207 163 2068 949 2619 2657 OAI22_X1 $T=9550 48600 1 0 $X=9435 $Y=47085
+X19127 1705 1224 948 144 2067 1721 949 2624 2673 OAI22_X1 $T=11640 62600 0 0 $X=11525 $Y=62485
+X19128 978 160 948 1229 1233 1235 949 2634 2663 OAI22_X1 $T=12590 51400 0 0 $X=12475 $Y=51285
+X19129 221 1264 948 216 1296 1351 949 2623 2647 OAI22_X1 $T=17530 76600 0 0 $X=17415 $Y=76485
+X19130 1272 1275 948 1740 1837 1292 949 2640 2658 OAI22_X1 $T=18670 71000 1 0 $X=18555 $Y=69485
+X19131 1989 1964 948 1587 1570 1590 949 2645 2675 OAI22_X1 $T=74530 1000 0 0 $X=74415 $Y=885
+X19132 748 1977 948 1580 1595 1966 949 2640 2658 OAI22_X1 $T=75290 71000 1 0 $X=75175 $Y=69485
+X19133 1595 712 948 1597 2285 1977 949 2640 2658 OAI22_X1 $T=76240 71000 1 0 $X=76125 $Y=69485
+X19134 1173 949 63 1168 948 2484 2626 2660 NOR3_X1 $T=4800 31800 0 180 $X=3925 $Y=30285
+X19135 954 949 1177 2323 948 125 2616 2671 NOR3_X1 $T=5180 6600 0 180 $X=4305 $Y=5085
+X19136 2491 949 129 1221 948 154 2619 2657 NOR3_X1 $T=11070 48600 1 0 $X=10955 $Y=47085
+X19137 1304 949 1278 1281 948 2085 2640 2658 NOR3_X1 $T=20950 71000 0 180 $X=20075 $Y=69485
+X19138 806 949 819 821 948 2563 2617 2659 NOR3_X1 $T=76810 43000 0 180 $X=75935 $Y=41485
+X19139 785 949 776 768 948 2300 2620 2663 NOR3_X1 $T=76050 54200 1 0 $X=75935 $Y=52685
+X19140 792 796 2294 948 949 750 2623 2653 AND3_X1 $T=75290 76600 0 180 $X=74225 $Y=75085
+X19141 742 720 1598 948 949 744 2618 2647 AND3_X1 $T=75860 79400 1 0 $X=75745 $Y=77885
+X19196 146 949 1220 2069 948 2620 2650 ICV_71 $T=13730 54200 0 0 $X=13615 $Y=54085
+X19197 998 949 1038 324 948 2622 2651 ICV_71 $T=29500 59800 1 0 $X=29385 $Y=58285
+X19198 370 949 548 1359 948 2644 2662 ICV_71 $T=31780 12200 1 0 $X=31665 $Y=10685
+X19199 1041 949 481 373 948 2644 2667 ICV_71 $T=35200 12200 0 0 $X=35085 $Y=12085
+X19200 377 949 1012 1436 948 2636 2665 ICV_71 $T=45840 23400 1 0 $X=45725 $Y=21885
+X19201 1012 949 1047 2186 948 2640 2658 ICV_71 $T=46030 71000 1 0 $X=45915 $Y=69485
+X19202 1038 949 1114 2408 948 2626 2655 ICV_71 $T=47360 31800 0 0 $X=47245 $Y=31685
+X19203 1064 949 546 488 948 2629 2646 ICV_71 $T=49260 45800 1 0 $X=49145 $Y=44285
+X19204 357 949 1078 1128 948 2644 2667 ICV_71 $T=67310 12200 0 0 $X=67195 $Y=12085
+X19205 1073 949 1043 2289 948 2637 2664 ICV_71 $T=72250 17800 1 0 $X=72135 $Y=16285
+X19206 1003 949 481 1594 948 2638 2667 ICV_71 $T=75670 15000 1 0 $X=75555 $Y=13485
+X19207 1957 1073 948 949 2619 2657 INV_X8 $T=70730 48600 1 0 $X=70615 $Y=47085
+X19208 2522 370 948 949 2626 2660 INV_X8 $T=72630 31800 0 180 $X=70805 $Y=30285
+X19209 1573 1064 948 949 2627 2656 INV_X8 $T=72630 37400 1 0 $X=72515 $Y=35885
+X19210 2524 1007 948 949 2632 2656 INV_X8 $T=75480 34600 0 0 $X=75365 $Y=34485
+X19251 948 949 1093 1057 2366 2617 2659 ICV_76 $T=30640 43000 1 0 $X=30525 $Y=41485
+X19252 948 949 1001 1078 2180 2638 2664 ICV_76 $T=44130 15000 0 0 $X=44015 $Y=14885
+X19253 948 949 1047 1015 2403 2635 2653 ICV_76 $T=44320 73800 0 0 $X=44205 $Y=73685
+X19254 948 949 1065 986 2407 2617 2659 ICV_76 $T=46410 43000 1 0 $X=46295 $Y=41485
+X19255 948 949 420 998 2228 2644 2662 ICV_76 $T=55530 12200 1 0 $X=55415 $Y=10685
+X19256 948 949 370 188 1507 2644 2662 ICV_76 $T=59140 12200 1 0 $X=59025 $Y=10685
+X19257 948 949 1037 998 571 2620 2663 ICV_76 $T=60850 54200 1 0 $X=60735 $Y=52685
+X19258 948 949 988 1043 637 2636 2661 ICV_76 $T=64460 23400 0 0 $X=64345 $Y=23285
+X19259 948 949 1003 1006 730 2642 2665 ICV_76 $T=72060 20600 0 0 $X=71945 $Y=20485
+X19260 948 949 370 1114 1583 2633 2662 ICV_76 $T=73200 9400 0 0 $X=73085 $Y=9285
+X19261 948 949 370 1018 2587 2637 2666 ICV_76 $T=73580 17800 0 0 $X=73465 $Y=17685
+X19262 499 949 1020 2122 948 1777 300 1789 1762 1765 2621 2651 ICV_77 $T=27220 57000 1 180 $X=24065 $Y=56885
+X19263 377 949 1018 447 948 1070 417 1406 1397 2164 2644 2667 ICV_77 $T=42990 12200 1 180 $X=39835 $Y=12085
+X19264 1003 949 546 2427 948 2513 528 1463 1098 1875 2617 2659 ICV_77 $T=55910 43000 0 180 $X=52755 $Y=41485
+X19265 1024 949 1078 656 948 2426 607 1935 1905 594 2642 2665 ICV_77 $T=63320 20600 1 180 $X=60165 $Y=20485
+X19266 366 949 188 671 948 1123 625 2244 2435 1516 2626 2655 ICV_77 $T=65030 31800 1 180 $X=61875 $Y=31685
+X19267 1003 949 1114 683 948 1935 656 637 2338 1923 2636 2665 ICV_77 $T=67880 23400 0 180 $X=64725 $Y=21885
+X19268 1073 949 481 2560 948 2444 1133 1555 2451 1129 2631 2661 ICV_77 $T=71300 26200 0 180 $X=68145 $Y=24685
+X19269 370 949 1078 784 948 2562 752 1575 1569 731 2636 2665 ICV_77 $T=75480 23400 0 180 $X=72325 $Y=21885
+X19270 948 949 127 147 1209 2329 72 2639 2668 ICV_78 $T=9360 29000 1 0 $X=9245 $Y=27485
+X19271 948 949 1756 253 1745 2495 207 2639 2660 ICV_78 $T=20000 29000 0 0 $X=19885 $Y=28885
+X19272 948 949 2184 441 1875 1852 345 2630 2659 ICV_78 $T=42610 40200 0 0 $X=42495 $Y=40085
+X19273 948 949 1096 512 1089 2555 1084 2619 2657 ICV_78 $T=50020 48600 1 0 $X=49905 $Y=47085
+X19274 948 949 1112 575 1496 1911 1899 2638 2667 ICV_78 $T=57810 15000 1 0 $X=57695 $Y=13485
+X19275 948 949 1479 579 1897 1488 1492 2636 2665 ICV_78 $T=58000 23400 1 0 $X=57885 $Y=21885
+X19276 948 949 635 694 2521 2450 679 2638 2667 ICV_78 $T=67880 15000 1 0 $X=67765 $Y=13485
+X19277 948 949 2283 751 2289 1961 1951 2638 2664 ICV_78 $T=72250 15000 0 0 $X=72135 $Y=14885
+X19278 1093 949 1018 1297 948 138 224 1285 2359 223 2633 2648 ICV_79 $T=18480 9400 1 0 $X=18365 $Y=7885
+X19279 1003 949 430 2496 948 165 230 1761 2089 36 2637 2666 ICV_79 $T=18860 17800 0 0 $X=18745 $Y=17685
+X19280 1041 949 279 302 948 197 267 1317 1765 2354 2621 2650 ICV_79 $T=22850 57000 1 0 $X=22735 $Y=55485
+X19281 499 949 1095 404 948 379 382 1810 1342 1251 2622 2651 ICV_79 $T=36910 59800 1 0 $X=36795 $Y=58285
+X19282 998 949 1047 436 948 406 414 1854 1056 382 2621 2651 ICV_79 $T=41090 57000 0 0 $X=40975 $Y=56885
+X19283 1064 949 279 1439 948 1423 435 2173 2209 1442 2632 2656 ICV_79 $T=43750 34600 0 0 $X=43635 $Y=34485
+X19284 1031 949 1012 2509 948 2402 436 1435 1443 1854 2622 2651 ICV_79 $T=43940 59800 1 0 $X=43825 $Y=58285
+X19285 998 949 289 489 948 2181 449 2509 1437 414 2622 2652 ICV_79 $T=45460 59800 0 0 $X=45345 $Y=59685
+X19286 1001 949 188 493 948 1426 2197 466 468 445 2636 2661 ICV_79 $T=46030 23400 0 0 $X=45915 $Y=23285
+X19287 1073 949 279 511 948 466 482 1087 2415 1075 2642 2665 ICV_79 $T=48880 20600 0 0 $X=48765 $Y=20485
+X19288 1064 949 1020 521 948 468 493 1088 2212 2215 2636 2661 ICV_79 $T=49640 23400 0 0 $X=49525 $Y=23285
+X19289 499 949 430 552 948 1466 523 1472 1475 2230 2621 2651 ICV_79 $T=54010 57000 0 0 $X=53895 $Y=56885
+X19290 1024 949 1012 2238 948 2555 553 2337 1898 1907 2629 2657 ICV_79 $T=57050 45800 0 0 $X=56935 $Y=45685
+X19291 1037 949 188 589 948 2556 560 1916 2206 1912 2639 2668 ICV_79 $T=58190 29000 1 0 $X=58075 $Y=27485
+X19292 363 949 986 2281 948 1931 2268 2277 2281 1940 2630 2659 ICV_79 $T=67120 40200 0 0 $X=67005 $Y=40085
+X19293 420 949 1043 1593 948 1133 718 2560 2461 1963 2631 2668 ICV_79 $T=71680 26200 0 0 $X=71565 $Y=26085
+X19294 1073 949 1078 2302 948 688 723 1581 1583 1589 2644 2667 ICV_79 $T=72060 12200 0 0 $X=71945 $Y=12085
+X19295 1024 949 188 140 948 2637 2664 ICV_80 $T=13920 17800 1 0 $X=13805 $Y=16285
+X19296 377 949 1057 231 948 2631 2661 ICV_80 $T=18480 26200 1 0 $X=18365 $Y=24685
+X19297 2095 949 1281 1295 948 2640 2670 ICV_80 $T=20570 71000 0 0 $X=20455 $Y=70885
+X19298 1047 949 188 330 948 2634 2663 ICV_80 $T=32160 51400 0 0 $X=32045 $Y=51285
+X19299 1024 949 289 2398 948 2622 2651 ICV_80 $T=40520 59800 1 0 $X=40405 $Y=58285
+X19300 357 949 279 584 948 2617 2659 ICV_80 $T=56480 43000 1 0 $X=56365 $Y=41485
+X19301 499 949 1078 1486 948 2642 2666 ICV_80 $T=56670 20600 1 0 $X=56555 $Y=19085
+X19302 1024 949 430 625 948 2626 2660 ICV_80 $T=59710 31800 1 0 $X=59595 $Y=30285
+X19303 1093 949 1000 2441 948 2632 2656 ICV_80 $T=63890 34600 0 0 $X=63775 $Y=34485
+X19304 2460 949 749 2273 948 2635 2670 ICV_80 $T=71870 73800 1 0 $X=71755 $Y=72285
+X19305 1663 948 1148 27 949 2639 2660 NAND2_X1 $T=1760 29000 0 0 $X=1645 $Y=28885
+X19306 34 948 32 951 949 2626 2660 NAND2_X1 $T=3090 31800 1 0 $X=2975 $Y=30285
+X19307 1158 948 29 73 949 2617 2659 NAND2_X1 $T=3850 43000 0 180 $X=3165 $Y=41485
+X19308 1182 948 2534 77 949 2630 2659 NAND2_X1 $T=6320 40200 1 180 $X=5635 $Y=40085
+X19309 1181 948 1187 83 949 2636 2661 NAND2_X1 $T=5940 23400 0 0 $X=5825 $Y=23285
+X19310 2484 948 83 87 949 2626 2655 NAND2_X1 $T=6510 31800 0 0 $X=6395 $Y=31685
+X19311 101 948 104 1193 949 2631 2661 NAND2_X1 $T=6890 26200 1 0 $X=6775 $Y=24685
+X19312 146 948 1220 141 949 2621 2650 NAND2_X1 $T=12590 57000 0 180 $X=11905 $Y=55485
+X19313 166 948 2072 150 949 2622 2652 NAND2_X1 $T=13540 59800 1 180 $X=12855 $Y=59685
+X19314 2068 948 163 1232 949 2629 2657 NAND2_X1 $T=14110 45800 1 180 $X=13425 $Y=45685
+X19315 156 948 1726 974 949 2634 2663 NAND2_X1 $T=14110 51400 1 180 $X=13425 $Y=51285
+X19316 2067 948 1721 1236 949 2624 2673 NAND2_X1 $T=14490 62600 1 180 $X=13805 $Y=62485
+X19317 1260 948 1042 178 949 2624 2673 NAND2_X1 $T=16390 62600 1 180 $X=15705 $Y=62485
+X19318 1263 948 1269 1268 949 2623 2653 NAND2_X1 $T=17720 76600 1 0 $X=17605 $Y=75085
+X19319 240 948 1824 220 949 2628 2658 NAND2_X1 $T=21900 68200 1 180 $X=21215 $Y=68085
+X19320 1296 948 1351 1283 949 2623 2647 NAND2_X1 $T=22090 76600 1 180 $X=21405 $Y=76485
+X19321 242 948 1291 1298 949 2643 2673 NAND2_X1 $T=22470 65400 0 180 $X=21785 $Y=63885
+X19322 259 948 255 1282 949 2635 2670 NAND2_X1 $T=23420 73800 0 180 $X=22735 $Y=72285
+X19323 1292 948 1837 2095 949 2640 2658 NAND2_X1 $T=23610 71000 0 180 $X=22925 $Y=69485
+X19324 2107 948 1336 1319 949 2618 2654 NAND2_X1 $T=24750 79400 0 0 $X=24635 $Y=79285
+X19325 2368 948 289 1336 949 2625 2672 NAND2_X1 $T=27220 82200 0 0 $X=27105 $Y=82085
+X19326 2124 948 1346 1263 949 2623 2647 NAND2_X1 $T=27410 76600 0 0 $X=27295 $Y=76485
+X19327 1967 948 2284 1566 949 2640 2670 NAND2_X1 $T=70920 71000 0 0 $X=70805 $Y=70885
+X19328 1967 948 722 541 949 2635 2670 NAND2_X1 $T=71870 73800 0 180 $X=71185 $Y=72285
+X19329 232 236 1282 949 1283 1299 948 2635 2653 OAI211_X1 $T=19810 73800 0 0 $X=19695 $Y=73685
+X19330 2214 504 1455 949 2266 484 948 2641 2671 OAI211_X1 $T=52110 3800 1 180 $X=51045 $Y=3685
+X19331 1925 642 670 949 672 1551 948 2645 2675 OAI211_X1 $T=65030 1000 0 0 $X=64915 $Y=885
+X19332 1949 657 1551 949 2558 2266 948 2645 2675 OAI211_X1 $T=68070 1000 1 180 $X=67005 $Y=885
+X19333 1566 706 2285 949 712 1568 948 2640 2658 OAI211_X1 $T=71110 71000 1 0 $X=70995 $Y=69485
+X19334 2566 4 2040 2096 949 948 3 2616 2648 ICV_81 $T=1000 6600 0 0 $X=885 $Y=6485
+X19335 1659 31 1169 2342 949 948 1174 2636 2665 ICV_81 $T=1950 23400 1 0 $X=1835 $Y=21885
+X19336 64 62 1672 1735 949 948 2042 2639 2660 ICV_81 $T=4800 29000 0 0 $X=4685 $Y=28885
+X19337 1696 2535 1704 2347 949 948 1219 2631 2668 ICV_81 $T=8410 26200 0 0 $X=8295 $Y=26085
+X19338 149 114 2490 1451 949 948 1194 2617 2659 ICV_81 $T=8600 43000 1 0 $X=8485 $Y=41485
+X19339 2057 128 1832 1850 949 948 1178 2630 2659 ICV_81 $T=9360 40200 0 0 $X=9245 $Y=40085
+X19340 146 182 1252 2354 949 948 1235 2620 2663 ICV_81 $T=14110 54200 1 0 $X=13995 $Y=52685
+X19341 1243 189 1258 1739 949 948 212 2624 2652 ICV_81 $T=15060 62600 1 0 $X=14945 $Y=61085
+X19342 1188 287 1795 1334 949 948 1028 2638 2664 ICV_81 $T=24750 15000 0 0 $X=24635 $Y=14885
+X19343 1325 297 2499 1788 949 948 323 2644 2662 ICV_81 $T=25700 12200 1 0 $X=25585 $Y=10685
+X19344 273 299 2126 2134 949 948 1340 2635 2653 ICV_81 $T=25700 73800 0 0 $X=25585 $Y=73685
+X19345 2120 309 1347 1359 949 948 2138 2633 2648 ICV_81 $T=27220 9400 1 0 $X=27105 $Y=7885
+X19346 2376 320 2135 2377 949 948 1800 2625 2672 ICV_81 $T=27790 82200 0 0 $X=27675 $Y=82085
+X19347 362 351 2150 361 949 948 1373 2620 2650 ICV_81 $T=32350 54200 0 0 $X=32235 $Y=54085
+X19348 280 1070 1409 1046 949 948 2151 2644 2662 ICV_81 $T=32730 12200 1 0 $X=32615 $Y=10685
+X19349 372 390 2165 2393 949 948 1832 2627 2669 ICV_81 $T=37480 37400 0 0 $X=37365 $Y=37285
+X19350 1046 1059 1399 2394 949 948 423 2638 2664 ICV_81 $T=38050 15000 0 0 $X=37935 $Y=14885
+X19351 1252 402 2170 2172 949 948 164 2634 2663 ICV_81 $T=39380 51400 0 0 $X=39265 $Y=51285
+X19352 1400 409 1414 1419 949 948 1072 2637 2666 ICV_81 $T=40140 17800 0 0 $X=40025 $Y=17685
+X19353 392 2190 2178 2400 949 948 1842 2625 2672 ICV_81 $T=41090 82200 0 0 $X=40975 $Y=82085
+X19354 1840 424 1075 2215 949 948 393 2631 2668 ICV_81 $T=42800 26200 0 0 $X=42685 $Y=26085
+X19355 440 2576 2588 1083 949 948 1082 2633 2662 ICV_81 $T=45460 9400 0 0 $X=45345 $Y=9285
+X19356 2202 502 2218 1896 949 948 1880 2617 2646 ICV_81 $T=50780 43000 0 0 $X=50665 $Y=42885
+X19357 1458 507 1889 2420 949 948 1885 2616 2671 ICV_81 $T=51730 6600 1 0 $X=51615 $Y=5085
+X19358 526 511 521 2421 949 948 1101 2636 2665 ICV_81 $T=51920 23400 1 0 $X=51805 $Y=21885
+X19359 522 576 1919 1118 949 948 608 2639 2660 ICV_81 $T=59710 29000 0 0 $X=59595 $Y=28885
+X19360 662 610 1539 2290 949 948 1924 2618 2647 ICV_81 $T=62180 79400 1 0 $X=62065 $Y=77885
+X19361 1944 703 1577 1953 949 948 766 2616 2671 ICV_81 $T=70920 6600 1 0 $X=70805 $Y=5085
+X19362 377 949 188 210 948 2638 2667 ICV_82 $T=17910 15000 0 180 $X=17225 $Y=13485
+X19363 1024 949 1095 281 948 2621 2650 ICV_82 $T=27030 57000 0 180 $X=26345 $Y=55485
+X19364 1037 949 1015 2115 948 2628 2674 ICV_82 $T=27030 68200 0 180 $X=26345 $Y=66685
+X19365 366 949 1018 305 948 2630 2669 ICV_82 $T=29310 40200 0 180 $X=28625 $Y=38685
+X19366 363 949 1066 2135 948 2618 2654 ICV_82 $T=32350 79400 1 180 $X=31665 $Y=79285
+X19367 366 949 1043 335 948 2642 2666 ICV_82 $T=33870 20600 0 180 $X=33185 $Y=19085
+X19368 1038 949 1033 1385 948 2620 2663 ICV_82 $T=38240 54200 0 180 $X=37555 $Y=52685
+X19369 420 949 548 2588 948 2644 2662 ICV_82 $T=48500 12200 0 180 $X=47815 $Y=10685
+X19370 357 949 1114 1449 948 2642 2666 ICV_82 $T=49070 20600 0 180 $X=48385 $Y=19085
+X19371 357 949 1090 2511 948 2634 2649 ICV_82 $T=51730 51400 0 180 $X=51045 $Y=49885
+X19372 1093 949 1015 2418 948 2622 2652 ICV_82 $T=51920 59800 1 180 $X=51235 $Y=59685
+X19373 798 949 1057 530 948 2644 2662 ICV_82 $T=54010 12200 0 180 $X=53325 $Y=10685
+X19374 1003 949 1066 1904 948 2627 2669 ICV_82 $T=59140 37400 1 180 $X=58455 $Y=37285
+X19375 1093 949 1078 1905 948 2642 2666 ICV_82 $T=59520 20600 0 180 $X=58835 $Y=19085
+X19376 363 949 188 1520 948 2634 2649 ICV_82 $T=62750 51400 0 180 $X=62065 $Y=49885
+X19377 1031 949 1033 1920 948 2619 2657 ICV_82 $T=64270 48600 0 180 $X=63585 $Y=47085
+X19378 366 949 1057 2434 948 2619 2649 ICV_82 $T=64270 48600 1 180 $X=63585 $Y=48485
+X19379 1030 949 1057 1926 948 2644 2667 ICV_82 $T=65790 12200 1 180 $X=65105 $Y=12085
+X19380 1031 949 1025 2255 948 2631 2668 ICV_82 $T=66170 26200 1 180 $X=65485 $Y=26085
+X19381 1064 949 1006 2454 948 2637 2664 ICV_82 $T=70730 17800 0 180 $X=70045 $Y=16285
+X19382 1024 949 1033 209 948 1093 188 1261 2632 2655 ICV_83 $T=18100 34600 0 180 $X=17415 $Y=33085
+X19383 1073 949 548 2086 948 1064 1000 2091 2638 2664 ICV_83 $T=21520 15000 1 180 $X=20835 $Y=14885
+X19384 370 949 430 1320 948 1007 1000 2104 2644 2662 ICV_83 $T=25130 12200 0 180 $X=24445 $Y=10685
+X19385 1030 949 1090 1335 948 420 1020 1331 2631 2661 ICV_83 $T=27220 26200 0 180 $X=26535 $Y=24685
+X19386 289 949 1090 2134 948 289 1065 1344 2640 2670 ICV_83 $T=29500 71000 1 180 $X=28815 $Y=70885
+X19387 377 949 986 317 948 1007 998 1347 2633 2662 ICV_83 $T=31780 9400 1 180 $X=31095 $Y=9285
+X19388 1038 949 1043 342 948 1038 1078 340 2636 2665 ICV_83 $T=33680 23400 0 180 $X=32995 $Y=21885
+X19389 366 949 1078 334 948 1037 481 2142 2637 2666 ICV_83 $T=35390 17800 1 180 $X=34705 $Y=17685
+X19390 363 949 481 1381 948 546 1078 364 2631 2661 ICV_83 $T=36340 26200 0 180 $X=35655 $Y=24685
+X19391 289 949 1015 2400 948 279 1065 427 2623 2653 ICV_83 $T=41090 76600 0 180 $X=40405 $Y=75085
+X19392 546 949 1025 1063 948 1047 986 2169 2630 2659 ICV_83 $T=41850 40200 1 180 $X=41165 $Y=40085
+X19393 546 949 1071 727 948 546 1006 1557 2639 2668 ICV_83 $T=68070 29000 0 180 $X=67385 $Y=27485
+X19394 1031 949 986 2458 948 363 1025 1564 2627 2669 ICV_83 $T=70160 37400 1 180 $X=69475 $Y=37285
+X19398 948 2485 26 28 949 2632 2656 XNOR2_X1 $T=3850 34600 1 180 $X=2595 $Y=34485
+X19399 948 1184 53 65 949 2619 2649 XNOR2_X1 $T=6130 48600 1 180 $X=4875 $Y=48485
+X19400 948 1203 82 96 949 2619 2657 XNOR2_X1 $T=8410 48600 0 180 $X=7155 $Y=47085
+X19401 948 1229 121 115 949 2620 2663 XNOR2_X1 $T=8790 54200 1 0 $X=8675 $Y=52685
+X19402 948 2063 158 144 949 2643 2673 XNOR2_X1 $T=10880 65400 1 0 $X=10765 $Y=63885
+X19403 948 2082 215 216 949 2618 2647 XNOR2_X1 $T=18860 79400 0 180 $X=17605 $Y=77885
+X19404 948 2099 243 252 949 2618 2647 XNOR2_X1 $T=22850 79400 0 180 $X=21595 $Y=77885
+X19405 948 2107 246 270 949 2625 2654 XNOR2_X1 $T=24180 82200 0 180 $X=22925 $Y=80685
+X19406 948 765 2237 550 949 2623 2647 XNOR2_X1 $T=56670 76600 0 0 $X=56555 $Y=76485
+X19407 948 1558 674 666 949 2635 2653 XNOR2_X1 $T=67880 73800 0 0 $X=67765 $Y=73685
+X19408 948 2273 1126 674 949 2635 2670 XNOR2_X1 $T=69400 73800 0 180 $X=68145 $Y=72285
+X19409 1041 949 1006 237 948 1760 278 1019 2116 1330 2644 2667 ICV_84 $T=23230 12200 0 0 $X=23115 $Y=12085
+X19410 420 949 1090 1338 948 2372 326 1356 1370 214 2631 2661 ICV_84 $T=28550 26200 1 0 $X=28435 $Y=24685
+X19411 420 949 430 2499 948 2500 332 1806 344 265 2644 2667 ICV_84 $T=29310 12200 0 0 $X=29195 $Y=12085
+X19412 1065 949 481 1384 948 2157 389 2161 401 1403 2639 2668 ICV_84 $T=36910 29000 1 0 $X=36795 $Y=27485
+X19413 1038 949 188 516 948 1091 519 537 2423 1892 2620 2663 ICV_84 $T=52870 54200 1 0 $X=52755 $Y=52685
+X19414 377 949 1090 2429 948 559 571 1519 1525 1111 2634 2663 ICV_84 $T=58570 51400 0 0 $X=58455 $Y=51285
+X19415 1007 949 546 2240 948 1910 2245 1116 1936 515 2627 2656 ICV_84 $T=60280 37400 1 0 $X=60165 $Y=35885
+X19416 988 949 1015 1508 948 1109 590 2238 1508 601 2629 2646 ICV_84 $T=60280 45800 1 0 $X=60165 $Y=44285
+X19417 1073 949 1006 1532 948 607 605 1532 1515 627 2636 2665 ICV_84 $T=61230 23400 1 0 $X=61115 $Y=21885
+X19418 1001 949 1057 2267 948 1116 671 2264 2267 2282 2626 2655 ICV_84 $T=67500 31800 0 0 $X=67385 $Y=31685
+X19419 128 148 1813 2350 949 948 8 2627 2669 ICV_85 $T=11260 37400 0 0 $X=11145 $Y=37285
+X19420 2495 2569 2365 2538 949 948 176 2632 2655 ICV_85 $T=20760 34600 1 0 $X=20645 $Y=33085
+X19421 276 273 1326 2117 949 948 295 2635 2670 ICV_85 $T=23420 73800 1 0 $X=23305 $Y=72285
+X19422 2117 307 1343 2374 949 948 1792 2640 2658 ICV_85 $T=26840 71000 1 0 $X=26725 $Y=69485
+X19423 1339 323 2138 1798 949 948 407 2645 2675 ICV_85 $T=28550 1000 0 0 $X=28435 $Y=885
+X19424 1364 367 1385 1394 949 948 397 2634 2649 ICV_85 $T=35200 51400 1 0 $X=35085 $Y=49885
+X19425 369 372 1069 2549 949 948 1821 2630 2669 ICV_85 $T=35960 40200 1 0 $X=35845 $Y=38685
+X19426 520 533 2514 1106 949 948 1502 2633 2648 ICV_85 $T=54960 9400 1 0 $X=54845 $Y=7885
+X19427 1547 1586 2272 679 949 948 667 2616 2648 ICV_85 $T=66740 6600 0 0 $X=66625 $Y=6485
+X19428 1093 949 1025 2074 948 2637 2664 ICV_86 $T=16390 17800 0 180 $X=15705 $Y=16285
+X19429 1031 949 289 2377 948 2625 2654 ICV_86 $T=32350 82200 0 180 $X=31665 $Y=80685
+X19430 1065 949 1095 346 948 2623 2647 ICV_86 $T=32730 76600 1 180 $X=32045 $Y=76485
+X19431 1001 949 1043 1052 948 2637 2664 ICV_86 $T=38050 17800 0 180 $X=37365 $Y=16285
+X19432 1047 949 1025 2187 948 2617 2659 ICV_86 $T=48120 43000 0 180 $X=47435 $Y=41485
+X19433 1041 949 289 2227 948 2640 2658 ICV_86 $T=56290 71000 0 180 $X=55605 $Y=69485
+X19434 1041 949 1057 2438 948 2631 2661 ICV_86 $T=64270 26200 0 180 $X=63585 $Y=24685
+X19435 499 949 548 1541 948 2632 2656 ICV_86 $T=65790 34600 1 180 $X=65105 $Y=34485
+X19436 948 949 965 1656 15 2634 2663 ICV_87 $T=1000 51400 0 0 $X=885 $Y=51285
+X19437 948 949 1013 Res[16] 23 2623 2653 ICV_87 $T=1000 76600 1 0 $X=885 $Y=75085
+X19438 948 949 1013 Res[12] 66 2628 2658 ICV_87 $T=4610 68200 0 0 $X=4495 $Y=68085
+X19439 948 949 965 78 204 2635 2653 ICV_87 $T=15820 73800 0 0 $X=15705 $Y=73685
+X19440 948 949 965 2493 226 2625 2672 ICV_87 $T=18100 82200 0 0 $X=17985 $Y=82085
+X19441 948 949 965 167 233 2618 2654 ICV_87 $T=18480 79400 0 0 $X=18365 $Y=79285
+X19442 948 949 1490 1509 591 2624 2673 ICV_87 $T=60470 62600 0 0 $X=60355 $Y=62485
+X19443 948 949 1490 1529 633 2624 2652 ICV_87 $T=63890 62600 1 0 $X=63775 $Y=61085
+X19444 948 949 1490 1537 1933 2620 2650 ICV_87 $T=64460 54200 0 0 $X=64345 $Y=54085
+X19455 139 172 1277 1253 949 948 1730 1687 95 1028 1716 1208 2040 139 1794 1706 1715 2633 2662 ICV_89 $T=7270 9400 0 0 $X=7155 $Y=9285
+X19456 1745 239 1005 1321 949 948 1759 162 184 1785 1759 1257 2094 214 1771 2357 2352 2631 2668 ICV_89 $T=14490 26200 0 0 $X=14375 $Y=26085
+X19457 1749 251 1328 1312 949 948 2327 985 195 2079 1262 1265 254 228 1749 1315 2079 2630 2659 ICV_89 $T=15630 40200 0 0 $X=15515 $Y=40085
+X19458 325 317 2544 1365 949 948 1798 2096 1010 1330 1311 1768 2367 1332 316 2541 1780 2616 2648 ICV_89 $T=21710 6600 0 0 $X=21595 $Y=6485
+X19459 311 335 2142 2382 949 948 266 1767 284 2371 1323 287 2539 311 1353 2148 1795 2637 2666 ICV_89 $T=24370 17800 0 0 $X=24255 $Y=17685
+X19460 433 1865 1429 1846 949 948 1848 1296 383 428 1829 255 1829 408 1412 2399 1841 2618 2647 ICV_89 $T=36910 79400 1 0 $X=36795 $Y=77885
+X19461 2508 453 2194 1441 949 948 1859 296 407 1431 1833 1839 2504 429 1458 1428 1847 2641 2671 ICV_89 $T=39950 3800 0 0 $X=39835 $Y=3685
+X19462 492 1893 1469 2236 949 948 528 441 456 1450 1860 1451 2205 491 2553 2416 456 2630 2669 ICV_89 $T=46410 40200 1 0 $X=46295 $Y=38685
+X19463 2446 1130 2278 2454 949 948 2275 564 598 1514 1518 2567 1535 635 2259 2446 1552 2637 2666 ICV_89 $T=61420 17800 0 0 $X=61305 $Y=17685
+X19464 1554 667 1565 1944 949 948 682 583 604 623 2567 2251 629 643 1550 1548 670 2616 2671 ICV_89 $T=61800 6600 1 0 $X=61685 $Y=5085
+X19465 1718 949 1729 2489 948 2641 2671 ICV_90 $T=12590 3800 0 0 $X=12475 $Y=3685
+X19466 988 949 1025 2325 948 2644 2667 ICV_90 $T=13920 12200 0 0 $X=13805 $Y=12085
+X19467 499 949 188 1250 948 2629 2657 ICV_90 $T=14110 45800 0 0 $X=13995 $Y=45685
+X19468 1037 949 1071 2371 948 2642 2666 ICV_90 $T=27410 20600 1 0 $X=27295 $Y=19085
+X19469 1003 949 1033 417 948 2638 2667 ICV_90 $T=37670 15000 1 0 $X=37555 $Y=13485
+X19470 357 949 1095 396 948 2617 2646 ICV_90 $T=37670 43000 0 0 $X=37555 $Y=42885
+X19471 499 949 289 2422 948 2628 2674 ICV_90 $T=53060 68200 1 0 $X=52945 $Y=66685
+X19472 1031 949 1015 1505 948 2628 2674 ICV_90 $T=58380 68200 1 0 $X=58265 $Y=66685
+X19473 357 949 1057 1732 948 2637 2666 ICV_91 $T=17340 17800 0 0 $X=17225 $Y=17685
+X19474 1064 949 998 2359 948 2633 2662 ICV_91 $T=19620 9400 0 0 $X=19505 $Y=9285
+X19475 1024 949 1006 1059 948 2637 2666 ICV_91 $T=38050 17800 0 0 $X=37935 $Y=17685
+X19476 1064 949 188 1405 948 2644 2662 ICV_91 $T=40520 12200 1 0 $X=40405 $Y=10685
+X19477 1031 949 279 495 948 2640 2670 ICV_91 $T=49070 71000 0 0 $X=48955 $Y=70885
+X19478 988 949 1000 2415 948 2642 2666 ICV_91 $T=50590 20600 1 0 $X=50475 $Y=19085
+X19479 1007 949 188 2512 948 2638 2664 ICV_91 $T=52300 15000 0 0 $X=52185 $Y=14885
+X19480 1073 949 1020 1493 948 2632 2655 ICV_91 $T=58190 34600 1 0 $X=58075 $Y=33085
+X19481 1167 50 1760 2344 949 948 5 1671 36 1653 966 1654 2644 2667 ICV_92 $T=4040 12200 1 180 $X=885 $Y=12085
+X19482 40 52 2053 1167 949 948 6 11 37 1174 1670 1655 2637 2666 ICV_92 $T=4040 17800 1 180 $X=885 $Y=17685
+X19483 1739 229 1288 1777 949 948 1266 2067 212 1251 2353 2072 2622 2651 ICV_92 $T=18670 59800 0 180 $X=15515 $Y=58285
+X19484 1386 388 2164 1396 949 948 453 2380 373 1044 2383 1379 2616 2648 ICV_92 $T=37480 6600 1 180 $X=34325 $Y=6485
+X19485 2332 416 1074 1416 949 948 1060 399 412 2546 1102 1054 2643 2674 ICV_92 $T=41470 65400 1 180 $X=38315 $Y=65285
+X19486 509 1847 1859 1448 949 948 476 222 438 2504 1839 1413 2645 2675 ICV_92 $T=45460 1000 1 180 $X=42305 $Y=885
+X19487 1868 503 2230 1894 949 948 512 1080 490 1466 1465 444 2621 2650 ICV_92 $T=50780 57000 0 180 $X=47625 $Y=55485
+X19488 536 2333 2219 1886 949 948 2220 2209 1439 1446 1447 2195 2626 2655 ICV_92 $T=51350 31800 1 180 $X=48195 $Y=31685
+X19489 545 554 1503 1111 949 948 1094 2401 545 1470 1892 1883 2634 2649 ICV_92 $T=57240 51400 0 180 $X=54085 $Y=49885
+X19494 948 949 2340 3 1741 1226 2 2641 2671 ICV_93 $T=1000 3800 0 0 $X=885 $Y=3685
+X19495 948 949 189 2574 1758 2356 1744 2622 2652 ICV_93 $T=17340 59800 0 0 $X=17225 $Y=59685
+X19496 948 949 2344 249 2104 1320 1311 2633 2662 ICV_93 $T=21710 9400 0 0 $X=21595 $Y=9285
+X19497 948 949 1308 2132 1352 2129 1784 2643 2673 ICV_93 $T=25510 65400 1 0 $X=25395 $Y=63885
+X19498 948 949 1348 334 1362 1376 1806 2637 2664 ICV_93 $T=30450 17800 1 0 $X=30335 $Y=16285
+X19499 948 949 389 364 1382 1384 1345 2631 2668 ICV_93 $T=34630 26200 0 0 $X=34515 $Y=26085
+X19500 948 949 426 442 2186 2188 1855 2640 2670 ICV_93 $T=44510 71000 0 0 $X=44395 $Y=70885
+X19501 948 949 2193 470 1453 2413 1869 2628 2674 ICV_93 $T=47930 68200 1 0 $X=47815 $Y=66685
+X19502 370 949 279 1321 948 253 298 1338 2370 1785 2639 2668 ICV_94 $T=25700 29000 0 180 $X=25015 $Y=27485
+X19503 1037 949 1018 1328 948 2114 305 1804 2373 1034 2630 2659 ICV_94 $T=26650 40200 1 180 $X=25965 $Y=40085
+X19504 1030 949 1015 2541 948 310 2501 1355 1369 332 2638 2667 ICV_94 $T=29120 15000 0 180 $X=28435 $Y=13485
+X19505 357 949 1000 2384 948 1366 369 1864 2156 114 2630 2659 ICV_94 $T=35580 40200 1 180 $X=34895 $Y=40085
+X19506 1031 949 481 2153 948 374 378 2159 1404 410 2642 2665 ICV_94 $T=36340 20600 1 180 $X=35655 $Y=20485
+X19507 499 949 1015 2387 948 1055 386 1063 2169 1827 2617 2659 ICV_94 $T=37100 43000 0 180 $X=36415 $Y=41485
+X19508 1047 949 481 401 948 2547 422 1426 439 2168 2639 2668 ICV_94 $T=42230 29000 0 180 $X=41545 $Y=27485
+X19509 1024 949 1071 448 948 432 448 1081 1449 480 2642 2666 ICV_94 $T=45460 20600 0 180 $X=44775 $Y=19085
+X19510 948 949 188 1247 988 2638 2664 ICV_95 $T=15060 15000 0 0 $X=14945 $Y=14885
+X19511 948 949 1033 2078 1093 2629 2646 ICV_95 $T=16770 45800 1 0 $X=16655 $Y=44285
+X19512 948 949 998 2494 1003 2644 2667 ICV_95 $T=20190 12200 0 0 $X=20075 $Y=12085
+X19513 948 949 430 235 1037 2629 2657 ICV_95 $T=21710 45800 0 0 $X=21595 $Y=45685
+X19514 948 949 1015 1005 1007 2631 2668 ICV_95 $T=23610 26200 0 0 $X=23495 $Y=26085
+X19515 948 949 998 2128 363 2634 2649 ICV_95 $T=27980 51400 1 0 $X=27865 $Y=49885
+X19516 948 949 1012 1788 1030 2644 2667 ICV_95 $T=28170 12200 0 0 $X=28055 $Y=12085
+X19517 948 949 363 2129 1000 2624 2673 ICV_95 $T=28360 62600 0 0 $X=28245 $Y=62485
+X19518 948 949 363 2139 548 2621 2651 ICV_95 $T=31780 57000 0 0 $X=31665 $Y=56885
+X19519 949 1154 33 1660 948 2629 2646 XOR2_X1 $T=1000 45800 1 0 $X=885 $Y=44285
+X19520 949 2066 88 1688 948 2634 2649 XOR2_X1 $T=6700 51400 1 0 $X=6585 $Y=49885
+X19521 949 1712 113 1700 948 2621 2651 XOR2_X1 $T=10500 57000 1 180 $X=9245 $Y=56885
+X19522 949 1705 116 1703 948 2624 2673 XOR2_X1 $T=11640 62600 1 180 $X=10385 $Y=62485
+X19523 949 213 192 1746 948 2643 2674 XOR2_X1 $T=14490 65400 0 0 $X=14375 $Y=65285
+X19524 949 2493 1245 1719 948 2618 2654 XOR2_X1 $T=14490 79400 0 0 $X=14375 $Y=79285
+X19525 949 1268 183 1727 948 2623 2653 XOR2_X1 $T=16390 76600 0 180 $X=15135 $Y=75085
+X19526 949 1267 190 2326 948 2628 2674 XOR2_X1 $T=17530 68200 0 180 $X=16275 $Y=66685
+X19527 949 1272 186 2358 948 2628 2658 XOR2_X1 $T=17530 68200 1 180 $X=16275 $Y=68085
+X19528 949 221 191 1276 948 2623 2647 XOR2_X1 $T=17530 76600 1 180 $X=16275 $Y=76485
+X19529 949 232 225 1305 948 2635 2670 XOR2_X1 $T=20570 73800 0 180 $X=19315 $Y=72285
+X19530 2489 949 1177 2323 142 954 948 2641 2671 AOI211_X2 $T=5940 3800 0 0 $X=5825 $Y=3685
+X19531 248 949 1295 2085 232 2084 948 2640 2670 AOI211_X2 $T=20570 71000 1 180 $X=18745 $Y=70885
+X19532 142 948 2201 1238 104 1225 949 2641 2671 OAI211_X2 $T=10880 3800 0 0 $X=10765 $Y=3685
+X19533 220 948 1298 999 2084 213 949 2643 2674 OAI211_X2 $T=18670 65400 0 0 $X=18555 $Y=65285
+X19534 7 2036 1149 948 949 2632 2656 XOR2_X2 $T=1000 34600 0 0 $X=885 $Y=34485
+X19535 30 1157 952 948 949 2629 2657 XOR2_X2 $T=3470 45800 1 180 $X=1645 $Y=45685
+X19536 54 2488 1682 948 949 2619 2657 XOR2_X2 $T=6510 48600 0 180 $X=4685 $Y=47085
+X19537 111 2536 2348 948 949 2622 2651 XOR2_X2 $T=10880 59800 0 180 $X=9055 $Y=58285
+X19538 193 1740 1753 948 949 2640 2658 XOR2_X2 $T=17720 71000 0 180 $X=15895 $Y=69485
+X19539 541 550 2286 1162 949 948 2640 2670 NOR3_X4 $T=12970 71000 0 0 $X=12855 $Y=70885
+X19540 2109 2286 541 57 949 948 2635 2670 NOR3_X4 $T=13160 73800 1 0 $X=13045 $Y=72285
+X19541 2047 949 73 952 1154 948 2617 2646 AOI21_X2 $T=3090 43000 1 180 $X=1645 $Y=42885
+X19542 87 949 101 1199 104 948 2631 2661 AOI21_X2 $T=9360 26200 0 180 $X=7915 $Y=24685
+X19543 2069 949 1712 2348 141 948 2621 2651 AOI21_X2 $T=10500 57000 0 0 $X=10385 $Y=56885
+X19544 34 1168 32 948 949 2626 2655 NOR2_X2 $T=2140 31800 0 0 $X=2025 $Y=31685
+X19545 2534 1170 1182 948 949 2617 2659 NOR2_X2 $T=4990 43000 1 0 $X=4875 $Y=41485
+X19546 963 1177 958 948 949 2641 2675 NOR2_X2 $T=5180 3800 1 0 $X=5065 $Y=2285
+.ENDS
+***************************************

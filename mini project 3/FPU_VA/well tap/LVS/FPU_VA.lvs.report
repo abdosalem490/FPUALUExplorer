@@ -1,0 +1,274 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         FPU_VA.lvs.report
+LAYOUT NAME:              /home/vlsi/mini-project31_nitro/work/LVS/FPU_VA.sp ('FPU_VA')
+SOURCE NAME:              _source.net_ ('FPU_VA')
+RULE FILE:                /home/vlsi/mini-project31_nitro/work/LVS/_calibre-lvs.rule_
+RULE FILE TITLE:          LVS Rule File for FreePDK45
+CREATION TIME:            Tue Jan  3 21:58:16 2023
+CURRENT DIRECTORY:        /home/vlsi/mini-project31_nitro/work/LVS
+USER NAME:                vlsi
+CALIBRE VERSION:          v2020.1_25.14    Mon Feb 3 16:40:25 PST 2020
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                 #   #         ########################  
+                  # #          #                      #  
+                   #           #     NOT COMPARED     #  
+                  # #          #                      #  
+                 #   #         ########################  
+
+
+  Error:    Different numbers of ports.
+  Error:    Power or ground net missing.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  NOT COMPARED   FPU_VA                        FPU_VA
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   LVS COMPONENT TYPE PROPERTY            element
+   LVS COMPONENT SUBTYPE PROPERTY         model
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "VDD"
+   LVS GROUND NAME                        "VSS"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   // LVS HCELL REPORT
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   NO
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            YES
+   SOURCE CASE                            YES
+   LVS COMPARE CASE                       NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        32
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+   LVS PREFER PORT NETS                   NO
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  YES
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             YES
+   LVS REDUCE SPLIT GATES                 YES
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  mn(nmos_vtl)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vtl)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtl)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtl)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vth)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vth)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vth)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vth)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vtg)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vtg)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtg)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtg)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_thkox)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_thkox)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_thkox)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_thkox)  w w 4e-09 ABSOLUTE
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                 #   #         ########################  
+                  # #          #                      #  
+                   #           #     NOT COMPARED     #  
+                  # #          #                      #  
+                 #   #         ########################  
+
+
+  Error:    Different numbers of ports (see below).
+  Error:    Power net missing in layout. Ground net missing in layout.
+
+LAYOUT CELL NAME:         FPU_VA
+SOURCE CELL NAME:         FPU_VA
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             96        98    *
+
+ Nets:            3175      3255    *
+
+ Instances:       3133      3133         MN (4 pins)
+                  3133      3133         MP (4 pins)
+                ------    ------
+ Total Inst:      6266      6266
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             96        98    *
+
+ Nets:            1186      1187    *
+
+ Instances:         83        83         MN (4 pins)
+                   137       137         MP (4 pins)
+                     0       123    *    SPDW_2_1 (4 pins)
+                     0         6    *    SPDW_2_1_1 (5 pins)
+                     0       160    *    SPDW_2_2 (5 pins)
+                     0        54    *    SPDW_2_2_1 (6 pins)
+                     0         3    *    SPDW_2_2_2 (7 pins)
+                     0        40    *    SPDW_3_1 (5 pins)
+                     0         2    *    SPDW_3_3 (7 pins)
+                     0       121    *    SPUP_2_1 (4 pins)
+                     0         1    *    SPUP_2_1_1 (5 pins)
+                     0        67    *    SPUP_2_2 (5 pins)
+                     0         2    *    SPUP_2_2_1 (6 pins)
+                     0         1    *    SPUP_2_2_2 (7 pins)
+                     0        40    *    SPUP_3_1 (5 pins)
+                   123         0    *    SPMN_2_1 (5 pins)
+                     6         0    *    SPMN_2_1_1 (6 pins)
+                   160         0    *    SPMN_2_2 (6 pins)
+                    54         0    *    SPMN_2_2_1 (7 pins)
+                     3         0    *    SPMN_2_2_2 (8 pins)
+                    40         0    *    SPMN_3_1 (6 pins)
+                     2         0    *    SPMN_3_3 (8 pins)
+                   121         0    *    SPMP_2_1 (5 pins)
+                     1         0    *    SPMP_2_1_1 (6 pins)
+                    67         0    *    SPMP_2_2 (6 pins)
+                     2         0    *    SPMP_2_2_1 (7 pins)
+                     1         0    *    SPMP_2_2_2 (8 pins)
+                    40         0    *    SPMP_3_1 (6 pins)
+                     3         0    *    _invb (6 pins)
+                   325       330    *    _invv (4 pins)
+                     7         7         _invx2v (4 pins)
+                     1         1         _invx3v (4 pins)
+                     4         0    *    _nand2b (7 pins)
+                    73        77    *    _nand2v (5 pins)
+                     5         5         _nand3v (6 pins)
+                     7         7         _nand4v (7 pins)
+                     4         0    *    _nor2b (7 pins)
+                   125       129    *    _nor2v (5 pins)
+                    23        23         _nor3v (6 pins)
+                     2         2         _nor4v (7 pins)
+                     2         1    *    _pdw2v (4 pins)
+                     7         6    *    _pup2v (4 pins)
+                    40        40         _sdw3v (5 pins)
+                    11         0    *    _smn2b (5 pins)
+                   252       263    *    _smn2v (4 pins)
+                   566       566         _smp2v (4 pins)
+                    44        44         _sup3v (5 pins)
+                ------    ------
+ Total Inst:      2341      2341
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Statistics:
+
+   96 layout mos transistors were reduced to 36.  7 connecting nets were deleted.
+     46 mos transistors were deleted by parallel reduction.
+     14 mos transistors and 7 connecting nets were deleted by split-gate reduction.
+   96 source mos transistors were reduced to 36.  7 connecting nets were deleted.
+     46 mos transistors were deleted by parallel reduction.
+     14 mos transistors and 7 connecting nets were deleted by split-gate reduction.
+
+   79 source nets had all their pins removed and were deleted.
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec

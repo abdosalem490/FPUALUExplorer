@@ -1,0 +1,71 @@
+Report for group default
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: multiplier/accumulator_reg[15]/Q
+    (Clocked by sysclk R)
+Endpoint: Res_reg[30]/D
+    (Clocked by sysclk F)
+Path Group: default
+Data required time: 940.4
+    (Clock shift: 1000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 59.6)
+Data arrival time: 732.5
+Slack: 207.9
+Logic depth: 11
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0      5    52,    0                       
+multiplier/i_0_168/A2->ZN
+                         NAND3_X1                rf      0.0      0.0      0.0      0.0      0.0      0.0      0.0      3    52,   51  /PD_TOP        (1.10)
+multiplier/i_0_167/A2->ZN
+                         AND2_X2                 ff      0.0      0.0      0.0      0.0      0.0      0.0      0.0     34    52,   51  /PD_TOP        (1.10)
+multiplier/i_0_166/A->ZN INV_X1                  fr      0.0      0.0      0.0      0.0      0.0      0.0      0.0     31    52,   51  /PD_TOP        (1.10)
+multiplier/i_0_163/A1->ZN
+                         OR2_X2                  rr      0.0      0.0      0.0      0.0      0.0      0.0      0.0     70    52,   51  /PD_TOP        (1.10)
+multiplier/accumulator_reg[15]/G->Q
+                         DLH_X2*                 rf    108.7    108.7    108.7      0.0      0.0      6.7     87.4     10    52,   51  /PD_TOP        (1.10)
+i_0_1_13/B->ZN           XNOR2_X2                ff    150.8     42.1     41.9      0.2     15.3      0.7      4.1      1    52,   51  /PD_TOP        (1.10)
+i_0_1_6/B->CO            HA_X1                   ff    186.0     35.2     35.2      0.0     11.1      0.8      3.5      1    52,   51  /PD_TOP        (1.10)
+i_0_1_7/CI->CO           FA_X1                   ff    257.2     71.2     71.2      0.0      7.9      0.8      3.6      1    52,   51  /PD_TOP        (1.10)
+i_0_1_8/CI->CO           FA_X1                   ff    331.4     74.2     74.2      0.0     15.9      0.8      3.6      1    52,   51  /PD_TOP        (1.10)
+i_0_1_9/CI->CO           FA_X1                   ff    405.6     74.2     74.2      0.0     15.9      0.8      3.6      1    52,   51  /PD_TOP        (1.10)
+i_0_1_10/CI->CO          FA_X1                   ff    479.8     74.2     74.2      0.0     15.9      0.8      3.6      1    52,   51  /PD_TOP        (1.10)
+i_0_1_11/CI->CO          FA_X1                   ff    554.0     74.2     74.2      0.0     15.9      0.8      3.6      1    52,   51  /PD_TOP        (1.10)
+i_0_1_12/CI->CO          FA_X1                   ff    630.2     76.2     76.2      0.0     15.9      0.7      4.4      1    52,   51  /PD_TOP        (1.10)
+i_0_1_75/B->ZN           XNOR2_X2                fr    670.8     40.6     40.6      0.0     17.0      0.6      4.3      1    52,   51  /PD_TOP        (1.10)
+i_0_1_74/B->ZN           XNOR2_X2                rr    714.4     43.6     43.6      0.0     23.4      0.7      4.7      1    52,   51  /PD_TOP        (1.10)
+i_0_1_73/B2->ZN          OAI21_X2                rf    732.5     18.1     18.1      0.0     24.3      0.7      1.7      1    52,   51  /PD_TOP        (1.10)
+Res_reg[30]/D            DLH_X2                   f    732.5      0.0               0.0      8.0                             52,   51  /PD_TOP        (1.10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group I2R
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: enable
+    (Clocked by rtDefaultClock R)
+Endpoint: multiplier/accumulator_reg[31]/D
+    (Clocked by sysclk F)
+Path Group: I2R
+Data required time: 943.4
+    (Clock shift: 1000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 56.6)
+Data arrival time: 200.8
+Slack: 742.6
+Logic depth: 5
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+enable                   {set_input_delay}        r    200.0    200.0    200.0                        8.7     46.3      4    52,    0                       
+multiplier/i_0_168/A1->ZN
+                         NAND3_X1                rf    200.8      0.8      0.0      0.8    100.0      0.0      0.0      3    52,   51  /PD_TOP        (1.10)
+multiplier/i_0_167/A2->ZN
+                         AND2_X2                 ff    200.8      0.0      0.0      0.0      0.0      0.0      0.0     34    52,   51  /PD_TOP        (1.10)
+multiplier/i_0_136/A2->ZN
+                         AND2_X2                 ff    200.8      0.0      0.0      0.0      0.0      0.0      0.0     33    52,   51  /PD_TOP        (1.10)
+multiplier/i_0_78/B1->ZN AOI22_X1                fr    200.8      0.0      0.0      0.0      0.0      0.0      0.0      1    52,   51  /PD_TOP        (1.10)
+multiplier/i_0_77/A->ZN  INV_X1                  rf    200.8      0.0      0.0      0.0      0.0      0.0      0.0      1    52,   51  /PD_TOP        (1.10)
+multiplier/accumulator_reg[31]/D
+                         DLH_X2                   f    200.8      0.0               0.0      0.0                             52,   51  /PD_TOP        (1.10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group I2O
+Report for group R2O

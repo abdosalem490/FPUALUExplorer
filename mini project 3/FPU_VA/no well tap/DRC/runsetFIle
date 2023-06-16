@@ -1,0 +1,8 @@
+*drcRulesFile: /home/vlsi/mini-project31_nitro/calibre/calibre-drc-block.rule
+*drcRunDir: /home/vlsi/mini-project31_nitro/work/DRC
+*drcLayoutPaths: /home/vlsi/mini-project31_nitro/work/FPU_VA.gds
+*drcLayoutPrimary: FPU_VA
+*drcResultsFile: FPU_VA.drc.results
+*drcSummaryFile: FPU_VA.drc.summary
+*drcDFMDefaultsResultsFile: FPU_VA.dfmDefaults.db
+*cmnFDIDEFLayoutPath: FPU_VA.def

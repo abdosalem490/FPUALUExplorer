@@ -1,0 +1,146 @@
+{D:/cmp/3rd year/architecuture/mini-project-1/FPU_CSelA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/FPU_CSelA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FPU_CSelA
+
+Top level modules:
+	FPU_CSelA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/FPU_CLA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/FPU_CLA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FPU_CLA
+
+Top level modules:
+	FPU_CLA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/CSKA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/CSKA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CSKA
+-- Compiling module SkipLogicOR
+
+Top level modules:
+	CSKA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/FPU_CSKA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/FPU_CSKA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FPU_CSKA
+
+Top level modules:
+	FPU_CSKA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/CIA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/CIA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CIA
+-- Compiling module incrementByOne
+
+Top level modules:
+	CIA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/FPU_CIA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/FPU_CIA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FPU_CIA
+
+Top level modules:
+	FPU_CIA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/VA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/VA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module VA
+
+Top level modules:
+	VA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/FA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/FA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FA
+
+Top level modules:
+	FA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/testbench.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/testbench.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/FPU_VA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/FPU_VA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FPU_VA
+
+Top level modules:
+	FPU_VA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/HA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/HA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module HA
+
+Top level modules:
+	HA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/FPU_testbench.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/FPU_testbench.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FPU_testbench
+
+Top level modules:
+	FPU_testbench
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/RCA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/RCA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RCA
+
+Top level modules:
+	RCA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/CSA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/CSA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CSA
+
+Top level modules:
+	CSA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/CBYA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/CBYA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CBYA
+-- Compiling module SkipLogicMUX
+
+Top level modules:
+	CBYA
+	SkipLogicMUX
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/CSelA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/CSelA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CSelA
+-- Compiling module SelectLogic
+
+Top level modules:
+	CSelA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/CLA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/CLA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CLA
+
+Top level modules:
+	CLA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/FPU_RCA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/FPU_RCA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FPU_RCA
+
+Top level modules:
+	FPU_RCA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/FPU_CSA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/FPU_CSA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FPU_CSA
+
+Top level modules:
+	FPU_CSA
+
+} {} {}} {D:/cmp/3rd year/architecuture/mini-project-1/FPU_CBYA.v} {1 {vlog -work work -stats=none {D:/cmp/3rd year/architecuture/mini-project-1/FPU_CBYA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FPU_CBYA
+
+Top level modules:
+	FPU_CBYA
+
+} {} {}}

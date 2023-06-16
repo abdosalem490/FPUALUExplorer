@@ -1,0 +1,248 @@
+do sim1.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:38:31 on Dec 17,2022
+# vlog -reportprogress 300 ../verilog codes/testbench.v 
+# -- Compiling module VM
+# -- Compiling module multiplierTree
+# -- Compiling module multiplyAllBits
+# -- Compiling module addIntermedaiteWires
+# -- Compiling module CSAlike
+# -- Compiling module addResWithCarry
+# -- Compiling module FA
+# -- Compiling module sequentialMultiplier
+# -- Compiling module boothAlgoR4
+# -- Compiling module boothAlgo
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:38:31 on Dec 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ps testbench 
+# Start time: 12:38:31 on Dec 17,2022
+# Loading work.testbench
+# Loading work.VM
+# Loading work.multiplierTree
+# Loading work.multiplyAllBits
+# Loading work.addIntermedaiteWires
+# Loading work.addResWithCarry
+# Loading work.sequentialMultiplier
+# Loading work.boothAlgo
+# Loading work.boothAlgoR4
+# Loading work.CSAlike
+# Loading work.FA
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #1 Multiplication of positive and negative number.
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#1:success
+# Wallace_Tree_Multiplier_TestCase#1:success
+# Sequential_Multiplier_TestCase#1:success
+# BoothAlgo_Multiplier_TestCase#1:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#1:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #2 Multiplication of positive and positive number.
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#2:success
+# Wallace_Tree_Multiplier_TestCase#2:success
+# Sequential_Multiplier_TestCase#2:success
+# BoothAlgo_Multiplier_TestCase#2:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#2:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #3 Multiplication of negative and negative number
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#3:success
+# Wallace_Tree_Multiplier_TestCase#3:success
+# Sequential_Multiplier_TestCase#3:success
+# BoothAlgo_Multiplier_TestCase#3:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#3:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #4 Multiplication of negative and positive number
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#4:success
+# Wallace_Tree_Multiplier_TestCase#4:success
+# Sequential_Multiplier_TestCase#4:success
+# BoothAlgo_Multiplier_TestCase#4:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#4:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #5 Multiplication by zero
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#5:success
+# Wallace_Tree_Multiplier_TestCase#5:success
+# Sequential_Multiplier_TestCase#5:success
+# BoothAlgo_Multiplier_TestCase#5:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#5:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #6 Multiplication by 1
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#6:success
+# Wallace_Tree_Multiplier_TestCase#6:success
+# Sequential_Multiplier_TestCase#6:success
+# BoothAlgo_Multiplier_TestCase#6:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#6:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #7 multiplication of number by itself
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#7:success
+# Wallace_Tree_Multiplier_TestCase#7:success
+# Sequential_Multiplier_TestCase#7:success
+# BoothAlgo_Multiplier_TestCase#7:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#7:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #8 multiplication of double the negative of a random number
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#8:success
+# Wallace_Tree_Multiplier_TestCase#8:success
+# Sequential_Multiplier_TestCase#8:success
+# BoothAlgo_Multiplier_TestCase#8:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#8:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #9 multiplication of 2 big numbers
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#9:success
+# Wallace_Tree_Multiplier_TestCase#9:success
+# Sequential_Multiplier_TestCase#9:success
+# BoothAlgo_Multiplier_TestCase#9:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#9:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #10 multiplication of small numbers
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#10:success
+# Wallace_Tree_Multiplier_TestCase#10:success
+# Sequential_Multiplier_TestCase#10:success
+# BoothAlgo_Multiplier_TestCase#10:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#10:success
+# ===============================================================================================================================================
+# RESULTS
+# ===============================================================================================================================================
+# Verilog (*) version of multiplication -> Number of success:          10 , Number of Failure:           0
+# Multiplier Wallace Tree -> Number of success:          10 , Number of Failure:           0
+# Sequential Multiplier using shift & accumulate -> Number of success:          10 , Number of Failure:           0
+# Booth Algorithm -> Number of success:          10 , Number of Failure:           0
+# Radix-4 Booth Algorithm -> Number of success:          10 , Number of Failure:           0
+quit -sim
+# End time: 12:38:46 on Dec 17,2022, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 1
+do sim1.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:46:21 on Dec 17,2022
+# vlog -reportprogress 300 ../verilog codes/testbench.v 
+# -- Compiling module VM
+# -- Compiling module multiplierTree
+# -- Compiling module multiplyAllBits
+# -- Compiling module addIntermedaiteWires
+# -- Compiling module CSAlike
+# -- Compiling module addResWithCarry
+# -- Compiling module FA
+# -- Compiling module sequentialMultiplier
+# -- Compiling module boothAlgoR4
+# -- Compiling module boothAlgo
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:46:21 on Dec 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ps testbench 
+# Start time: 12:46:21 on Dec 17,2022
+# Loading work.testbench
+# Loading work.VM
+# Loading work.multiplierTree
+# Loading work.multiplyAllBits
+# Loading work.addIntermedaiteWires
+# Loading work.addResWithCarry
+# Loading work.sequentialMultiplier
+# Loading work.boothAlgo
+# Loading work.boothAlgoR4
+# Loading work.CSAlike
+# Loading work.FA
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #1 Multiplication of positive and negative number.
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#1:success
+# Wallace_Tree_Multiplier_TestCase#1:success
+# Sequential_Multiplier_TestCase#1:success
+# BoothAlgo_Multiplier_TestCase#1:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#1:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #2 Multiplication of positive and positive number.
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#2:success
+# Wallace_Tree_Multiplier_TestCase#2:success
+# Sequential_Multiplier_TestCase#2:success
+# BoothAlgo_Multiplier_TestCase#2:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#2:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #3 Multiplication of negative and negative number
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#3:success
+# Wallace_Tree_Multiplier_TestCase#3:success
+# Sequential_Multiplier_TestCase#3:success
+# BoothAlgo_Multiplier_TestCase#3:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#3:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #4 Multiplication of negative and positive number
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#4:success
+# Wallace_Tree_Multiplier_TestCase#4:success
+# Sequential_Multiplier_TestCase#4:success
+# BoothAlgo_Multiplier_TestCase#4:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#4:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #5 Multiplication by zero
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#5:success
+# Wallace_Tree_Multiplier_TestCase#5:success
+# Sequential_Multiplier_TestCase#5:success
+# BoothAlgo_Multiplier_TestCase#5:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#5:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #6 Multiplication by 1
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#6:success
+# Wallace_Tree_Multiplier_TestCase#6:success
+# Sequential_Multiplier_TestCase#6:success
+# BoothAlgo_Multiplier_TestCase#6:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#6:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #7 multiplication of number by itself
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#7:success
+# Wallace_Tree_Multiplier_TestCase#7:success
+# Sequential_Multiplier_TestCase#7:success
+# BoothAlgo_Multiplier_TestCase#7:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#7:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #8 multiplication of double the negative of a random number
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#8:success
+# Wallace_Tree_Multiplier_TestCase#8:success
+# Sequential_Multiplier_TestCase#8:success
+# BoothAlgo_Multiplier_TestCase#8:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#8:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #9 multiplication of 2 big numbers
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#9:success
+# Wallace_Tree_Multiplier_TestCase#9:success
+# Sequential_Multiplier_TestCase#9:success
+# BoothAlgo_Multiplier_TestCase#9:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#9:success
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #10 multiplication of small numbers
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# Verilog_Multiplier_TestCase#10:success
+# Wallace_Tree_Multiplier_TestCase#10:success
+# Sequential_Multiplier_TestCase#10:success
+# BoothAlgo_Multiplier_TestCase#10:success
+# BoothAlgo_Radix_4_Multiplier_TestCase#10:success
+# ===============================================================================================================================================
+# RESULTS
+# ===============================================================================================================================================
+# Verilog (*) version of multiplication -> Number of success:          10 , Number of Failure:           0
+# Multiplier Wallace Tree -> Number of success:          10 , Number of Failure:           0
+# Sequential Multiplier using shift & accumulate -> Number of success:          10 , Number of Failure:           0
+# Booth Algorithm -> Number of success:          10 , Number of Failure:           0
+# Radix-4 Booth Algorithm -> Number of success:          10 , Number of Failure:           0
+quit -sim
+# End time: 12:46:29 on Dec 17,2022, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 1

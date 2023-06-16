@@ -1,0 +1,13 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/vlsi/mini-project31_nitro/work/LVS
+lvs_LvsfVersion 4
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {5 1 5 0}
+lvs_SourceCase YES
+lvs_LayoutCase YES
+lvs_PowerName VDD
+lvs_GroundName VSS
+lvs_LvsOutFile LVS_REPORT FPU_VM.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST _source.net_
+lvs_LvsOutFile RULES_FILE /home/vlsi/mini-project31_nitro/work/LVS/_calibre-lvs.rule_
+lvs_LvsRunTimes 1672770776 1672770777

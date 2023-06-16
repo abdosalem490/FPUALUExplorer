@@ -1,0 +1,28 @@
+Report End Points: 
+-----+-------+------+-------+------+-----+-----+-----+----------------------------------+----------------------------------
+     |Group  |Launch|Capture|Shift |Delay|Depth|Slack|Begin Point                       |End Point                         
+-----+-------+------+-------+------+-----+-----+-----+----------------------------------+----------------------------------
+1    |default|sysclk|sysclk |1000.0|676.3|   23|164.8|multiplier/accumulator_A_reg[5]/Q |multiplier/accumulator_A_reg[29]/D
+2    |default|sysclk|sysclk |1000.0|623.8|   11|203.1|multiplier/accumulator_A_reg[15]/Q|Res_reg[30]/D                     
+3    |default|sysclk|sysclk |1000.0|611.5|   10|215.4|multiplier/accumulator_A_reg[15]/Q|Res_reg[29]/D                     
+-----+-------+------+-------+------+-----+-----+-----+----------------------------------+----------------------------------
+Report End Points: 
+-----+-----+--------------+-------+------+-----+-----+-----+-----------+----------------------------------
+     |Group|Launch        |Capture|Shift |Delay|Depth|Slack|Begin Point|End Point                         
+-----+-----+--------------+-------+------+-----+-----+-----+-----------+----------------------------------
+1    |I2R  |rtDefaultClock|sysclk |1000.0|  0.9|    6|742.5|enable     |multiplier/accumulator_A_reg[30]/D
+2    |I2R  |rtDefaultClock|sysclk |1000.0|  0.9|    6|742.5|enable     |multiplier/accumulator_A_reg[29]/D
+3    |I2R  |rtDefaultClock|sysclk |1000.0|  0.9|    6|742.5|enable     |multiplier/accumulator_A_reg[28]/D
+-----+-----+--------------+-------+------+-----+-----+-----+-----------+----------------------------------
+Report End Points: 
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+     |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+1    |I2O  |      |       |     |     |     |     |           |         
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+Report End Points: 
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+     |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+1    |R2O  |      |       |     |     |     |     |           |         
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------

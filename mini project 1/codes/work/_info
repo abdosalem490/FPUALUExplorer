@@ -1,0 +1,781 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/cmp/3rd year/architecuture/lab1
+vCBYA
+Z0 !s110 1667680804
+!i10b 1
+!s100 QmPk1XASTWIF>zbVg6XL]0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IQ@:c`jiO1gbfCXLk@K07n1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/cmp/3rd year/architecuture/mini-project-1
+Z4 w1667233545
+Z5 8D:/cmp/3rd year/architecuture/mini-project-1/CBYA.v
+Z6 FD:/cmp/3rd year/architecuture/mini-project-1/CBYA.v
+!i122 3086
+L0 1 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1667680804.000000
+Z9 !s107 D:/cmp/3rd year/architecuture/mini-project-1/CBYA.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/CBYA.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@c@b@y@a
+XCBYA_v_unit
+Z13 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1667060688
+VIIMChbbEJg43[Y5ki<R^G0
+r1
+!s85 0
+!i10b 1
+!s100 XWLN8:AlHOcIB2@N?DYB53
+IIIMChbbEJg43[Y5ki<R^G0
+!i103 1
+S1
+R3
+w1667059234
+R5
+R6
+!i122 489
+L0 33 0
+R7
+31
+!s108 1667060688.000000
+R9
+R10
+!i113 1
+R11
+R12
+n@c@b@y@a_v_unit
+vCIA
+Z14 !s110 1667680803
+!i10b 1
+!s100 ^oToiHD<Uk@WY=Q[6fB7N2
+R1
+IBEjJlbjoTh8Z9Xf0khaAz2
+R2
+R3
+Z15 w1667233507
+Z16 8D:/cmp/3rd year/architecuture/mini-project-1/CIA.v
+Z17 FD:/cmp/3rd year/architecuture/mini-project-1/CIA.v
+!i122 3083
+L0 2 52
+R7
+r1
+!s85 0
+31
+Z18 !s108 1667680803.000000
+Z19 !s107 D:/cmp/3rd year/architecuture/mini-project-1/CIA.v|
+Z20 !s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/CIA.v|
+!i113 1
+R11
+R12
+n@c@i@a
+vCLA
+Z21 !s110 1667680805
+!i10b 1
+!s100 gfL[U0jUM^SkXmlAL<e<m3
+R1
+Io<d6e7n2@J<8KJYDVc5AE3
+R2
+R3
+w1667232984
+8D:/cmp/3rd year/architecuture/mini-project-1/CLA.v
+FD:/cmp/3rd year/architecuture/mini-project-1/CLA.v
+!i122 3089
+L0 2 37
+R7
+r1
+!s85 0
+31
+Z22 !s108 1667680805.000000
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/CLA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/CLA.v|
+!i113 1
+R11
+R12
+n@c@l@a
+vCSA
+!s110 1667680802
+!i10b 1
+!s100 0LWjOZgIF_ohWR1SKJVWU1
+R1
+I3_FTZGoz[7XJZSNg_@>N40
+R2
+R3
+w1667233618
+8D:/cmp/3rd year/architecuture/mini-project-1/CSA.v
+FD:/cmp/3rd year/architecuture/mini-project-1/CSA.v
+!i122 3079
+L0 1 29
+R7
+r1
+!s85 0
+31
+Z23 !s108 1667680802.000000
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/CSA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/CSA.v|
+!i113 1
+R11
+R12
+n@c@s@a
+vCSelA
+R21
+!i10b 1
+!s100 VeNa=H]H8D<`b[GLLQPgo1
+R1
+I:ETUj5WVEC]5jX=F<>H5f1
+R2
+R3
+Z24 w1667233577
+Z25 8D:/cmp/3rd year/architecuture/mini-project-1/CSelA.v
+Z26 FD:/cmp/3rd year/architecuture/mini-project-1/CSelA.v
+!i122 3088
+L0 2 41
+R7
+r1
+!s85 0
+31
+R8
+Z27 !s107 D:/cmp/3rd year/architecuture/mini-project-1/CSelA.v|
+Z28 !s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/CSelA.v|
+!i113 1
+R11
+R12
+n@c@sel@a
+vCSKA
+R0
+!i10b 1
+!s100 7_TISb0F?8:>9f44Ehjf00
+R1
+IFOZf>SI@NYK?HSVaIO>MV2
+R2
+R3
+Z29 w1667233526
+Z30 8D:/cmp/3rd year/architecuture/mini-project-1/CSKA.v
+Z31 FD:/cmp/3rd year/architecuture/mini-project-1/CSKA.v
+!i122 3085
+L0 1 35
+R7
+r1
+!s85 0
+31
+R8
+Z32 !s107 D:/cmp/3rd year/architecuture/mini-project-1/CSKA.v|
+Z33 !s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/CSKA.v|
+!i113 1
+R11
+R12
+n@c@s@k@a
+vFA
+R14
+!i10b 1
+!s100 o4jl;G[76R1TmFKN:X?m73
+R1
+IbkK<<Q=_Cz6NG8g6`loS92
+R2
+R3
+w1666897918
+8D:/cmp/3rd year/architecuture/mini-project-1/FA.v
+FD:/cmp/3rd year/architecuture/mini-project-1/FA.v
+!i122 3080
+L0 1 19
+R7
+r1
+!s85 0
+31
+R23
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/FA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/FA.v|
+!i113 1
+R11
+R12
+n@f@a
+vFPU_CBYA
+Z34 !s110 1667680807
+!i10b 1
+!s100 Rg7egHd8HYO52G?Hg[;Sz2
+R1
+IeO`1i?dz@[ZkRM:OCjoJ41
+R2
+R3
+w1667680232
+8D:/cmp/3rd year/architecuture/mini-project-1/FPU_CBYA.v
+FD:/cmp/3rd year/architecuture/mini-project-1/FPU_CBYA.v
+!i122 3097
+Z35 L0 2 110
+R7
+r1
+!s85 0
+31
+Z36 !s108 1667680807.000000
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/FPU_CBYA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/FPU_CBYA.v|
+!i113 1
+R11
+R12
+n@f@p@u_@c@b@y@a
+vFPU_CIA
+R34
+!i10b 1
+!s100 U2f:XDP[XGYzRQNKIlokD2
+R1
+IOnMMV2zja4RDH5CkPbc^c2
+R2
+R3
+w1667680235
+8D:/cmp/3rd year/architecuture/mini-project-1/FPU_CIA.v
+FD:/cmp/3rd year/architecuture/mini-project-1/FPU_CIA.v
+!i122 3095
+L0 2 108
+R7
+r1
+!s85 0
+31
+Z37 !s108 1667680806.000000
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/FPU_CIA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/FPU_CIA.v|
+!i113 1
+R11
+R12
+n@f@p@u_@c@i@a
+vFPU_CLA
+Z38 !s110 1667680806
+!i10b 1
+!s100 144enAgYzG0`EfYTGY><40
+R1
+IanhR@]nKOmg?P9^RM4F9g2
+R2
+R3
+w1667680244
+8D:/cmp/3rd year/architecuture/mini-project-1/FPU_CLA.v
+FD:/cmp/3rd year/architecuture/mini-project-1/FPU_CLA.v
+!i122 3094
+Z39 L0 2 109
+R7
+r1
+!s85 0
+31
+R37
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/FPU_CLA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/FPU_CLA.v|
+!i113 1
+R11
+R12
+n@f@p@u_@c@l@a
+vFPU_CSA
+R38
+!i10b 1
+!s100 2@c<k>[WSmR_TD^_UJ_WD1
+R1
+I`Cf`dhB]kNff<c[:@bm><3
+R2
+R3
+w1667680248
+8D:/cmp/3rd year/architecuture/mini-project-1/FPU_CSA.v
+FD:/cmp/3rd year/architecuture/mini-project-1/FPU_CSA.v
+!i122 3093
+R35
+R7
+r1
+!s85 0
+31
+R37
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/FPU_CSA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/FPU_CSA.v|
+!i113 1
+R11
+R12
+n@f@p@u_@c@s@a
+vFPU_CSelA
+R34
+!i10b 1
+!s100 D5nbJ8b6@onINFXWZ_fkS0
+R1
+IVRKz1JkM@F;]MBRDdOXK<3
+R2
+R3
+w1667680238
+8D:/cmp/3rd year/architecuture/mini-project-1/FPU_CSelA.v
+FD:/cmp/3rd year/architecuture/mini-project-1/FPU_CSelA.v
+!i122 3098
+R39
+R7
+r1
+!s85 0
+31
+R36
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/FPU_CSelA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/FPU_CSelA.v|
+!i113 1
+R11
+R12
+n@f@p@u_@c@sel@a
+vFPU_CSKA
+R34
+!i10b 1
+!s100 X;Y@];=MjnM=U<=:jKJ0c1
+R1
+I_DM>h>2865LNG7?T5_Y5D0
+R2
+R3
+w1667680241
+8D:/cmp/3rd year/architecuture/mini-project-1/FPU_CSKA.v
+FD:/cmp/3rd year/architecuture/mini-project-1/FPU_CSKA.v
+!i122 3096
+R39
+R7
+r1
+!s85 0
+31
+R36
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/FPU_CSKA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/FPU_CSKA.v|
+!i113 1
+R11
+R12
+n@f@p@u_@c@s@k@a
+vFPU_RCA
+R38
+!i10b 1
+!s100 XjZ:J]Y8BZ@deH8QH29F?0
+R1
+ILDKAcB<]Z560UZ8@T16I^3
+R2
+R3
+w1667680302
+8D:/cmp/3rd year/architecuture/mini-project-1/FPU_RCA.v
+FD:/cmp/3rd year/architecuture/mini-project-1/FPU_RCA.v
+!i122 3092
+R39
+R7
+r1
+!s85 0
+31
+R37
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/FPU_RCA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/FPU_RCA.v|
+!i113 1
+R11
+R12
+n@f@p@u_@r@c@a
+vFPU_testbench
+R21
+!i10b 1
+!s100 ALT^R<znimzjP:RJ2oR8;3
+R1
+I`64S8CbTQT1@^ZmlgeEQh3
+R2
+R3
+w1667657175
+8D:/cmp/3rd year/architecuture/mini-project-1/FPU_testbench.v
+FD:/cmp/3rd year/architecuture/mini-project-1/FPU_testbench.v
+!i122 3091
+L0 1 1125
+R7
+r1
+!s85 0
+31
+R22
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/FPU_testbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/FPU_testbench.v|
+!i113 1
+R11
+R12
+n@f@p@u_testbench
+vFPU_VA
+R21
+!i10b 1
+!s100 H^@_:B90`UY1OGNB`3i?P1
+R1
+I69W?QDPXE`eUmeOWmWnW`1
+R2
+R3
+w1667680533
+Z40 8D:/cmp/3rd year/architecuture/mini-project-1/FPU_VA.v
+Z41 FD:/cmp/3rd year/architecuture/mini-project-1/FPU_VA.v
+!i122 3090
+R39
+R7
+r1
+!s85 0
+31
+R22
+Z42 !s107 D:/cmp/3rd year/architecuture/mini-project-1/FPU_VA.v|
+Z43 !s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/FPU_VA.v|
+!i113 1
+R11
+R12
+n@f@p@u_@v@a
+vgetBitPos
+!s110 1667674905
+!i10b 1
+!s100 JJUY5okK>HYACP8gZi4bH3
+R1
+IMB@_]XVaQdH1=Xn1hnn980
+R2
+R3
+w1667674896
+8D:/shared_with_vmware/test.v
+FD:/shared_with_vmware/test.v
+!i122 2724
+L0 96 22
+R7
+r1
+!s85 0
+31
+!s108 1667674905.000000
+!s107 D:/shared_with_vmware/test.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/shared_with_vmware/test.v|
+!i113 1
+R11
+R12
+nget@bit@pos
+vHA
+R0
+!i10b 1
+!s100 XWlcWXH`VAWK^h@nS:L<Y3
+R1
+IW_[XBFGm>mWPKeNBYBk:G1
+R2
+R3
+w1666991614
+8D:/cmp/3rd year/architecuture/mini-project-1/HA.v
+FD:/cmp/3rd year/architecuture/mini-project-1/HA.v
+!i122 3084
+L0 1 13
+R7
+r1
+!s85 0
+31
+R18
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/HA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/HA.v|
+!i113 1
+R11
+R12
+n@h@a
+vincrementByOne
+R14
+!i10b 1
+!s100 iiWO>PNhY?:f:`7TSa2a93
+R1
+II0:kd22W<iC1_YnZDfW@90
+R2
+R3
+R15
+R16
+R17
+!i122 3083
+L0 59 25
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R11
+R12
+nincrement@by@one
+vMux
+Z44 !s110 1667558369
+!i10b 1
+!s100 0Bam>`hS3KmbAQDhdQ=VQ2
+R1
+I`f[[fAlK29JJC0c]8F=SY2
+R2
+R3
+Z45 w1667558365
+R40
+R41
+!i122 1027
+L0 64 13
+R7
+r1
+!s85 0
+31
+Z46 !s108 1667558369.000000
+R42
+R43
+!i113 1
+R11
+R12
+n@mux
+vRCA
+R14
+!i10b 1
+!s100 `Pgc@83GIi3F??SmdWSbf1
+R1
+IZNN4hkbP3KGd^zYVdT=i30
+R2
+R3
+w1667233043
+8D:/cmp/3rd year/architecuture/mini-project-1/RCA.v
+FD:/cmp/3rd year/architecuture/mini-project-1/RCA.v
+!i122 3081
+L0 1 26
+R7
+r1
+!s85 0
+31
+R18
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/RCA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/RCA.v|
+!i113 1
+R11
+R12
+n@r@c@a
+vSelectLogic
+R21
+!i10b 1
+!s100 Tb4WMKg_`Nm;C=nBJ4N3h3
+R1
+IKNWLz?l@ncWI=03edjn@g1
+R2
+R3
+R24
+R25
+R26
+!i122 3088
+L0 44 15
+R7
+r1
+!s85 0
+31
+R8
+R27
+R28
+!i113 1
+R11
+R12
+n@select@logic
+vShifRight
+R44
+!i10b 1
+!s100 OekjFF^10ESH=B<cR`O_B2
+R1
+IOBiEeF]3IQPKR3LYdzhB_3
+R2
+R3
+R45
+R40
+R41
+!i122 1027
+L0 79 13
+R7
+r1
+!s85 0
+31
+R46
+R42
+R43
+!i113 1
+R11
+R12
+n@shif@right
+vSkipLogic
+!s110 1667055286
+!i10b 1
+!s100 nMe0P;nC;mzMY?FXlEcdX0
+R1
+IR11jn5kT]WoIMAkG3P5La3
+R2
+R3
+w1667055279
+R30
+R31
+!i122 473
+L0 42 18
+R7
+r1
+!s85 0
+31
+!s108 1667055286.000000
+R32
+R33
+!i113 1
+R11
+R12
+n@skip@logic
+vSkipLogicMUX
+R0
+!i10b 1
+!s100 ;Vc7EnBUoY2@QBSP_[`[?1
+R1
+I@m[aR5d[cIR;l8_2i=LFn0
+R2
+R3
+R4
+R5
+R6
+!i122 3086
+L0 36 20
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@skip@logic@m@u@x
+vSkipLogicOR
+R0
+!i10b 1
+!s100 TAWXKCGdX=VA7V3Ro[fG=3
+R1
+IP05Q?1PJ0`KA[I@5DWf=M0
+R2
+R3
+R29
+R30
+R31
+!i122 3085
+L0 39 18
+R7
+r1
+!s85 0
+31
+R8
+R32
+R33
+!i113 1
+R11
+R12
+n@skip@logic@o@r
+vtb_CSA
+Z47 !s110 1667043384
+!i10b 1
+!s100 IDJeTk[Hh@R?f1SN_0D>h3
+R1
+ISS`P;g^I?KIbal2^CTlY13
+R2
+R3
+w1666984997
+8D:/cmp/3rd year/architecuture/mini-project-1/CSA_tb.v
+FD:/cmp/3rd year/architecuture/mini-project-1/CSA_tb.v
+!i122 419
+L0 1 63
+R7
+r1
+!s85 0
+31
+Z48 !s108 1667043384.000000
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/CSA_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/CSA_tb.v|
+!i113 1
+R11
+R12
+ntb_@c@s@a
+vtb_RCA
+R47
+!i10b 1
+!s100 f@lQBmhX56Jh?:UfC:U5H3
+R1
+I5K@]WZ9zTXm1@A=WHb7C21
+R2
+R3
+w1666908252
+8D:/cmp/3rd year/architecuture/mini-project-1/RCA_tb.v
+FD:/cmp/3rd year/architecuture/mini-project-1/RCA_tb.v
+!i122 422
+L0 1 189
+R7
+r1
+!s85 0
+31
+R48
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/RCA_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/RCA_tb.v|
+!i113 1
+R11
+R12
+ntb_@r@c@a
+vtestbench
+R14
+!i10b 1
+!s100 BaTg^3diWXa3`do9onlkM0
+R1
+I:>B0`FGdBH_z>YOnMgZbC3
+R2
+R3
+w1667648707
+Z49 8D:/cmp/3rd year/architecuture/mini-project-1/testbench.v
+Z50 FD:/cmp/3rd year/architecuture/mini-project-1/testbench.v
+!i122 3082
+L0 1 1126
+R7
+r1
+!s85 0
+31
+R18
+Z51 !s107 D:/cmp/3rd year/architecuture/mini-project-1/testbench.v|
+Z52 !s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/testbench.v|
+!i113 1
+R11
+R12
+Xtestbench_v_unit
+R13
+!s110 1667060735
+V3=@@h3YDgDCXJc@3oWoBN1
+r1
+!s85 0
+!i10b 1
+!s100 Cd?h5EXHMRE2Qa7zRA7T91
+I3=@@h3YDgDCXJc@3oWoBN1
+!i103 1
+S1
+R3
+w1667059915
+R49
+R50
+!i122 493
+L0 765 0
+R7
+31
+!s108 1667060735.000000
+R51
+R52
+!i113 1
+R11
+R12
+vVA
+R0
+!i10b 1
+!s100 0zi8Ehfgn<R<@zV931P^z3
+R1
+IYS;]QhfbB@<:^g?P766530
+R2
+R3
+w1667233019
+8D:/cmp/3rd year/architecuture/mini-project-1/VA.v
+FD:/cmp/3rd year/architecuture/mini-project-1/VA.v
+!i122 3087
+L0 1 16
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/cmp/3rd year/architecuture/mini-project-1/VA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/cmp/3rd year/architecuture/mini-project-1/VA.v|
+!i113 1
+R11
+R12
+n@v@a

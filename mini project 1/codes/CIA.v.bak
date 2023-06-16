@@ -1,0 +1,39 @@
+module CIA #(parameter size = 32)(A, B, CIN, SUM, COUT);
+
+//inputs
+input [size-1:0] A, B;
+input CIN;
+
+//outputs
+output [size-1:0] SUM;
+output COUT;
+
+//temp wire
+genvar i;
+wire [size-1:0] tempSum;
+wire [size<<2-1:0] tempCOUT;
+
+
+/*creating blocks of ripple adder*/
+RCA (4) rippleAdderSt(A[3:0], B[3:0], CIN, tempSum[3:0], tempCOUT[0]);
+generate
+for (i = 1; i < (size >> 2); i = i + 1)
+	RCA (4) rippleAdder(A[(i+1)<<2-1:i<<2], B[(i+1)<<2-1:i<<2], 1'b0, tempSum[(i+1)<<2-1:i<<2], tempCOUT[i+1]);
+endgenerate	
+
+
+
+endmodule
+
+/*the block size is of 4 bits*/
+module incrementByOne(A, B, CIN, SUM, COUT);
+//inputs
+input [3:0] A, B;
+input CIN;
+
+//outputs
+output [3:0] SUM;
+output COUT;
+
+
+endmodule

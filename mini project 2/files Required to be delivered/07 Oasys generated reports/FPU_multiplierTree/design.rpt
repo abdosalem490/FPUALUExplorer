@@ -1,0 +1,36 @@
+Report Physical info: 
+------------------------+------------------+-----------+------------
+                        |                  |Area (squm)|Leakage (uW)
+------------------------+------------------+-----------+------------
+Design Name             |FPU_multiplierTree|           |            
+  Total Instances       |              3604|       4465|     102.673
+    Macros              |                 0|          0|       0.000
+    Pads                |                 0|          0|       0.000
+    Phys                |                 0|          0|       0.000
+    Blackboxes          |                 0|          0|       0.000
+    Cells               |              3604|       4465|     102.673
+      Buffers           |                 0|          0|       0.000
+      Inverters         |               602|        320|       8.641
+      Clock-Gates       |                 0|          0|       0.000
+      Combinational     |              2834|       3698|      87.167
+      Latches           |               168|        447|       6.865
+      FlipFlops         |                 0|          0|       0.000
+       Single-Bit FF    |                 0|          0|       0.000
+       Multi-Bit FF     |                 0|          0|       0.000
+       Clock-Gated      |                 0|           |            
+       Bits             |                 0|          0|       0.000
+         Load-Enabled   |                 0|           |            
+         Clock-Gated    |                 0|           |            
+  Tristate Pin Count    |                 0|           |            
+Physical Info           |Placed            |           |            
+  Chip Size (mm x mm)   |0.146 x 0.146     |      21393|            
+  Fixed Cell Area       |                  |          0|            
+    Phys Only           |                 0|          0|            
+  Placeable Area        |                  |       7367|            
+  Movable Cell Area     |                  |       4465|            
+  Utilization (%)       |                60|           |            
+  Chip Utilization (%)  |                60|           |            
+  Total Wire Length (mm)|            77.187|           |            
+  Longest Wire (mm)     |             0.149|           |            
+  Average Wire (mm)     |             0.047|           |            
+------------------------+------------------+-----------+------------

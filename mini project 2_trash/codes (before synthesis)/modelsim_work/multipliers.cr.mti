@@ -1,0 +1,121 @@
+{D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/FPU_testbench.v} {1 {vlog -work work -stats=none {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/FPU_testbench.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module VM
+-- Compiling module FPU_VM
+-- Compiling module multiplierTree
+-- Compiling module multiplyAllBits
+-- Compiling module addIntermedaiteWires
+-- Compiling module CSAlike
+-- Compiling module addResWithCarry
+-- Compiling module FPU_multiplierTree
+-- Compiling module FA
+-- Compiling module sequentialMultiplier
+-- Compiling module FPU_sequentialMultiplier
+-- Compiling module boothAlgoR4
+-- Compiling module FPU_boothAlgoR4
+-- Compiling module boothAlgo
+-- Compiling module FPU_boothAlgo
+-- Compiling module FPU_testbench
+
+Top level modules:
+	FPU_testbench
+
+} {} {}} {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/boothAlogR4.v} {1 {vlog -work work -stats=none {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/boothAlogR4.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module boothAlgoR4
+
+Top level modules:
+	boothAlgoR4
+
+} {} {}} {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/FPU_squentialMultiplier.v} {1 {vlog -work work -stats=none {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/FPU_squentialMultiplier.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FA
+-- Compiling module sequentialMultiplier
+-- Compiling module FPU_sequentialMultiplier
+
+Top level modules:
+	FA
+	FPU_sequentialMultiplier
+
+} {} {}} {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/FPU_boothAlogR4.v} {1 {vlog -work work -stats=none {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/FPU_boothAlogR4.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module boothAlgoR4
+-- Compiling module FPU_boothAlgoR4
+
+Top level modules:
+	FPU_boothAlgoR4
+
+} {} {}} {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/VM.v} {1 {vlog -work work -stats=none {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/VM.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module VM
+
+Top level modules:
+	VM
+
+} {} {}} {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/FPU_VM.v} {1 {vlog -work work -stats=none {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/FPU_VM.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module VM
+-- Compiling module FPU_VM
+
+Top level modules:
+	FPU_VM
+
+} {} {}} {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/boothAlgo.v} {1 {vlog -work work -stats=none {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/boothAlgo.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module boothAlgo
+
+Top level modules:
+	boothAlgo
+
+} {} {}} {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/FA.v} {1 {vlog -work work -stats=none {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/FA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FA
+
+Top level modules:
+	FA
+
+} {} {}} {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/testbench.v} {1 {vlog -work work -stats=none {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/testbench.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module VM
+-- Compiling module multiplierTree
+-- Compiling module multiplyAllBits
+-- Compiling module addIntermedaiteWires
+-- Compiling module CSAlike
+-- Compiling module addResWithCarry
+-- Compiling module FA
+-- Compiling module sequentialMultiplier
+-- Compiling module boothAlgoR4
+-- Compiling module boothAlgo
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}} {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/HA.v} {1 {vlog -work work -stats=none {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/HA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module HA
+
+Top level modules:
+	HA
+
+} {} {}} {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/FPU_boothAlgo.v} {1 {vlog -work work -stats=none {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/FPU_boothAlgo.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module boothAlgo
+-- Compiling module FPU_boothAlgo
+
+Top level modules:
+	FPU_boothAlgo
+
+} {} {}} {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/FPU_multiplierTree.v} {1 {vlog -work work -stats=none {D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (before synthesis)/verilog codes/FPU_multiplierTree.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module multiplierTree
+-- Compiling module multiplyAllBits
+-- Compiling module addIntermedaiteWires
+-- Compiling module CSAlike
+-- Compiling module addResWithCarry
+-- Compiling module FPU_multiplierTree
+
+Top level modules:
+	FPU_multiplierTree
+
+} {} {}}

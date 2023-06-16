@@ -1,0 +1,23 @@
+module RCA #(parameter size = 32)(A,B,CIN,SUM,COUT);
+
+/*inputs*/
+input [size-1:0] A,B;
+input CIN;
+
+/*outputs*/
+output [size-1:0] SUM;
+output COUT;
+
+/*temp data for propagating carry*/
+wire [size:0] C;
+
+assign C[0] = CIN;
+assign COUT = C[size];
+
+genvar i;
+generate
+for (i=0;i<size;i=i+1)
+	FA FullAdder (A[i],B[i],C[i],SUM[i],C[i+1]);
+endgenerate
+
+endmodule

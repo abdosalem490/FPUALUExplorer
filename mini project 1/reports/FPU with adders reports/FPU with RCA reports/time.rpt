@@ -1,0 +1,230 @@
+Report for group default
+Report for group I2R
+Report for group I2O
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: B[24]
+    (Clocked by rtDefaultClock R)
+Endpoint: SUM[1]
+    (Clocked by vsysclk R)
+Path Group: I2O
+Data required time: 19500.0
+    (Clock shift: 20000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data arrival time: 6593.5
+Slack: 12906.5
+Logic depth: 131
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+B[24]                    {set_input_delay}        f   1000.0   1000.0   1000.0                        7.2     42.0      3    48,  104                       
+i_0_0_665/B1->ZN         OAI22_X4*               fr   1113.7    113.7    112.8      0.9    100.0      1.5     31.0      2    52,   52  /PD_TOP        (1.10)
+i_0_0_664/A->ZN          INV_X8                  rf   1120.7      7.0      7.0      0.0     15.3      0.6      4.6      1    52,   52  /PD_TOP        (1.10)
+i_0_0_661/A->ZN          OAI21_X4                fr   1141.3     20.6     20.6      0.0      3.5      1.5      9.7      2    52,   52  /PD_TOP        (1.10)
+i_0_0_491/B1->ZN         OAI21_X4                rf   1159.3     18.0     18.0      0.0     24.6      0.8      4.9      1    52,   52  /PD_TOP        (1.10)
+i_0_0_490/B2->ZN         AOI22_X4                fr   1206.5     47.2     47.2      0.0      9.7      0.8      4.8      1    52,   52  /PD_TOP        (1.10)
+i_0_0_489/B2->ZN         OAI21_X4                rf   1240.6     34.1     34.1      0.0     25.5      0.6     26.1      1    52,   52  /PD_TOP        (1.10)
+i_0_0_488/A->ZN          INV_X8                  fr   1254.4     13.8     13.8      0.0     18.8      0.7      4.8      1    52,   52  /PD_TOP        (1.10)
+i_0_0_487/B2->ZN         OAI22_X4*               rf   1302.9     48.5     48.5      0.0      5.4      6.5     60.3      8    52,   52  /PD_TOP        (1.10)
+i_0_0_486/A->ZN          INV_X8                  fr   1326.4     23.5     23.3      0.2     15.3      5.7     34.1      7    52,   52  /PD_TOP        (1.10)
+i_0_0_484/A2->ZN         OAI22_X4                rf   1349.8     23.4     23.2      0.2     12.7      1.5      9.8      2    52,   52  /PD_TOP        (1.10)
+i_0_0_483/A2->ZN         NOR2_X4*                fr   1411.2     61.4     61.4      0.0     13.3      1.3     30.6      2    52,   52  /PD_TOP        (1.10)
+i_0_0_461/A->ZN          AOI21_X4                rf   1427.7     16.5     16.5      0.0     15.3      1.5      9.2      2    52,   52  /PD_TOP        (1.10)
+add1/genblk1_1_FullAdder/i_0_0/B->Z
+                         XOR2_X2                 ff   1489.8     62.1     62.1      0.0      9.6      1.4      8.5      2    52,   52  /PD_TOP        (1.10)
+add1/genblk1_1_FullAdder/i_0_2/B1->ZN
+                         AOI22_X4                fr   1561.9     72.1     72.1      0.0     14.8      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add1/genblk1_1_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1570.5      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add1/genblk1_2_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1642.5     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add1/genblk1_2_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1651.1      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add1/genblk1_3_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1723.1     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add1/genblk1_3_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1731.7      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add1/genblk1_4_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1803.7     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add1/genblk1_4_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1812.3      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add1/genblk1_5_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1884.3     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add1/genblk1_5_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1892.9      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add1/genblk1_6_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1964.9     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add1/genblk1_6_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1971.0      6.1      6.1      0.0     50.8      0.6      4.0      1    52,   52  /PD_TOP        (1.10)
+add1/genblk1_7_FullAdder/i_0_1/B->Z
+                         XOR2_X2                 ff   2025.4     54.4     54.4      0.0      3.4      0.7      2.8      1    52,   52  /PD_TOP        (1.10)
+i_0_0_641/A1->ZN         OR3_X4                  ff   2086.4     61.0     61.0      0.0     11.8      1.9      8.5      3    52,   52  /PD_TOP        (1.10)
+i_0_0_627/A2->ZN         OR2_X4*                 ff   2171.0     84.6     84.6      0.0     13.1     17.9    102.1     21    52,   52  /PD_TOP        (1.10)
+i_0_0_496/A->ZN          AOI211_X4               fr   2299.3    128.3    127.6      0.7     15.3      0.7     26.1      1    52,   52  /PD_TOP        (1.10)
+i_0_0_495/A->ZN          INV_X8                  rf   2306.5      7.2      7.2      0.0     18.4      0.6      4.6      1    52,   52  /PD_TOP        (1.10)
+i_0_0_494/A->ZN          OAI21_X4                fr   2332.6     26.1     26.1      0.0      3.5      3.3     18.5      5    52,   52  /PD_TOP        (1.10)
+i_0_16/i_0/B->Z          XOR2_X2                 rf   2356.3     23.7     23.6      0.1     34.9      0.7      5.0      1    52,   52  /PD_TOP        (1.10)
+i_0_0_102/A2->ZN         AOI22_X4                fr   2422.3     66.0     66.0      0.0     13.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+i_0_0_101/A->ZN          INV_X8                  rf   2430.8      8.5      8.5      0.0     50.8      1.4      8.7      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_1_FullAdder/i_0_0/A->Z
+                         XOR2_X2                 ff   2485.6     54.8     54.8      0.0      3.9      1.4      8.5      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_1_FullAdder/i_0_2/B1->ZN
+                         AOI22_X4                fr   2557.7     72.1     72.1      0.0     14.8      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_1_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2566.3      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_2_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2638.3     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_2_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2646.9      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_3_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2718.9     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_3_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2727.5      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_4_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2799.5     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_4_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2808.1      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_5_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2880.1     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_5_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2888.7      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_6_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2960.7     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_6_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2969.3      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_7_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3041.3     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_7_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3049.9      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_8_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3121.9     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_8_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3130.5      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_9_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3202.5     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_9_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3211.1      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_10_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3283.1     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_10_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3291.7      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_11_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3363.7     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_11_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3372.3      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_12_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3444.3     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_12_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3452.9      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_13_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3524.9     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_13_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3533.5      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_14_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3605.5     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_14_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3614.1      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_15_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3686.1     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_15_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3694.7      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_16_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3766.7     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_16_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3775.3      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_17_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3847.3     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_17_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3855.9      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_18_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3927.9     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_18_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3936.5      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_19_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   4008.5     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_19_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   4017.1      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_20_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   4089.1     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_20_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   4097.7      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_21_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   4169.7     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_21_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   4178.3      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_22_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   4250.3     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_22_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   4258.9      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_23_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   4330.9     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_23_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   4339.5      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_24_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   4411.5     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_24_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   4420.1      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_25_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   4492.1     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_25_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   4500.7      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_26_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   4572.7     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_26_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   4581.3      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_27_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   4653.3     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_27_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   4661.9      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_28_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   4733.9     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_28_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   4742.5      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_29_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   4814.5     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_29_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   4823.1      8.6      8.6      0.0     50.8      1.4      8.9      2    52,   52  /PD_TOP        (1.10)
+add2/genblk1_30_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   4895.1     72.0     72.0      0.0      4.0      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_30_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   4901.2      6.1      6.1      0.0     50.8      0.6      4.0      1    52,   52  /PD_TOP        (1.10)
+add2/genblk1_31_FullAdder/i_0_1/B->Z
+                         XOR2_X2*                fr   5031.5    130.3    130.3      0.0      3.4     28.7    193.9     34    52,   52  /PD_TOP        (1.10)
+i_0_0_672/A->ZN          INV_X32                 rf   5048.6     17.1     16.0      1.1     15.3     27.1    152.7     31    52,   52  /PD_TOP        (1.10)
+i_0_0_387/A1->ZN         OAI22_X4*               fr   5115.8     67.2     66.2      1.0      8.0      4.0     44.0      5    52,   52  /PD_TOP        (1.10)
+i_0_0_386/A->ZN          INV_X8                  rf   5126.7     10.9     10.8      0.1     15.3      3.0     17.7      4    52,   52  /PD_TOP        (1.10)
+i_0_0_369/A->ZN          AOI21_X4                fr   5164.5     37.8     37.7      0.1      5.0      0.7      4.8      1    52,   52  /PD_TOP        (1.10)
+i_0_0_368/B2->ZN         OAI21_X4                rf   5185.1     20.6     20.6      0.0     22.2      0.7      4.9      1    52,   52  /PD_TOP        (1.10)
+i_0_0_367/B2->ZN         AOI21_X4                fr   5217.1     32.0     32.0      0.0      9.7      0.7      4.8      1    52,   52  /PD_TOP        (1.10)
+i_0_0_366/B2->ZN         OAI21_X4                rf   5237.7     20.6     20.6      0.0     22.2      0.7      4.9      1    52,   52  /PD_TOP        (1.10)
+i_0_0_365/B2->ZN         AOI21_X4                fr   5269.7     32.0     32.0      0.0      9.7      0.7      4.8      1    52,   52  /PD_TOP        (1.10)
+i_0_0_364/B2->ZN         OAI21_X4                rf   5290.3     20.6     20.6      0.0     22.2      0.7      4.9      1    52,   52  /PD_TOP        (1.10)
+i_0_0_363/B2->ZN         AOI21_X4                fr   5322.1     31.8     31.8      0.0      9.7      0.8      4.6      1    52,   52  /PD_TOP        (1.10)
+i_0_0_361/A4->ZN         NOR4_X4                 rf   5337.2     15.1     15.1      0.0     22.0      0.8      3.4      1    52,   52  /PD_TOP        (1.10)
+i_0_0_358/B->ZN          AOI211_X2               fr   5408.9     71.7     71.7      0.0      7.0      0.8      4.8      1    52,   52  /PD_TOP        (1.10)
+i_0_0_357/B2->ZN         OAI21_X4                rf   5432.5     23.6     23.6      0.0     45.3      0.8      3.1      1    52,   52  /PD_TOP        (1.10)
+i_0_0_356/A4->ZN         AND4_X4                 ff   5467.5     35.0     35.0      0.0      8.9      0.9      3.5      1    52,   52  /PD_TOP        (1.10)
+i_0_0_354/A->ZN          AOI221_X4               fr   5599.1    131.6    131.6      0.0      6.3      1.4     31.0      2    52,   52  /PD_TOP        (1.10)
+i_0_0_353/A->ZN          INV_X8                  rf   5608.0      8.9      8.9      0.0     21.1      1.2      9.5      2    52,   52  /PD_TOP        (1.10)
+i_0_0_316/A2->ZN         NOR2_X4*                fr   5686.5     78.5     78.5      0.0      4.0     14.4     89.8     17    52,   52  /PD_TOP        (1.10)
+i_0_0_315/A->ZN          INV_X32                 rf   5698.8     12.3     11.8      0.5     15.3     15.3     70.0     18    52,   52  /PD_TOP        (1.10)
+i_0_0_314/A2->ZN         OR2_X4                  ff   5745.7     46.9     46.3      0.6      5.6      1.5      8.2      2    52,   52  /PD_TOP        (1.10)
+i_0_0_1/CI->CO           FA_X1                   ff   5817.4     71.7     71.7      0.0      9.4      0.8      3.6      1    52,   52  /PD_TOP        (1.10)
+i_0_0_2/CI->CO           FA_X1                   ff   5891.6     74.2     74.2      0.0     15.9      0.8      3.6      1    52,   52  /PD_TOP        (1.10)
+i_0_0_3/CI->CO           FA_X1                   ff   5965.8     74.2     74.2      0.0     15.9      0.8      3.6      1    52,   52  /PD_TOP        (1.10)
+i_0_0_4/CI->CO           FA_X1                   ff   6040.0     74.2     74.2      0.0     15.9      0.8      3.6      1    52,   52  /PD_TOP        (1.10)
+i_0_0_5/CI->CO           FA_X1                   ff   6114.2     74.2     74.2      0.0     15.9      0.8      3.6      1    52,   52  /PD_TOP        (1.10)
+i_0_0_6/CI->CO           FA_X1                   ff   6189.0     74.8     74.8      0.0     15.9      0.7      3.8      1    52,   52  /PD_TOP        (1.10)
+i_0_0_340/A->ZN          XNOR2_X2                ff   6230.3     41.3     41.3      0.0     16.2      0.6      4.3      1    52,   52  /PD_TOP        (1.10)
+i_0_0_339/B->ZN          XNOR2_X2                ff   6270.9     40.6     40.6      0.0     11.2      0.7      4.8      1    52,   52  /PD_TOP        (1.10)
+i_0_0_337/A2->ZN         OAI22_X4                fr   6332.8     61.9     61.9      0.0     11.7      0.7     26.2      1    52,   52  /PD_TOP        (1.10)
+i_0_0_336/A->ZN          INV_X8                  rf   6340.2      7.4      7.4      0.0     56.9      1.3      7.3      2    52,   52  /PD_TOP        (1.10)
+i_0_0_308/A1->ZN         OR4_X4                  ff   6413.1     72.9     72.9      0.0      3.8      0.7      4.9      1    52,   52  /PD_TOP        (1.10)
+i_0_0_307/A2->ZN         NOR2_X4                 fr   6445.2     32.1     32.1      0.0     16.0      1.4      5.2      2    52,   52  /PD_TOP        (1.10)
+i_0_0_306/A2->ZN         OR2_X4                  rr   6476.3     31.1     31.1      0.0     16.5      3.0     12.6      4    52,   52  /PD_TOP        (1.10)
+i_0_0_302/A1->ZN         NOR2_X4*                rf   6513.7     37.4     37.3      0.1     11.2     11.8     76.4     14    52,   52  /PD_TOP        (1.10)
+i_0_0_301/A->ZN          INV_X32                 fr   6531.6     17.9     17.5      0.4     15.3      7.4     41.8      9    52,   52  /PD_TOP        (1.10)
+i_0_0_150/B3->ZN         OAI33_X1                rf   6592.6     61.0     60.8      0.2      8.4      7.1     17.1      1    52,   52  /PD_TOP        (1.10)
+SUM[1]                                            f   6593.5      0.9               0.9     42.6                             48,    0                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group R2O

@@ -1,0 +1,887 @@
+# Compile of NangateOpenCellLibrary.v was successful.
+# Compile of FPU_testbench.v was successful.
+# Compile of sequential.syn.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -t 1ps testbench
+# vsim -t 1ps testbench 
+# Start time: 12:53:42 on Dec 17,2022
+# Loading work.testbench
+# Loading work.boothAlgoR4
+# Loading work.datapath__0_0
+# Loading work.AOI21_X1
+# Loading work.INV_X1
+# Loading work.NOR2_X1
+# Loading work.NOR3_X1
+# Loading work.OAI21_X1
+# Loading work.OR3_X1
+# Loading work.NAND3_X1
+# Loading work.NAND2_X1
+# Loading work.AOI22_X1
+# Loading work.NAND4_X1
+# Loading work.OR2_X1
+# Loading work.datapath__0_67
+# Loading work.FA_X1
+# Loading work.XOR2_X1
+# Loading work.OAI222_X1
+# Loading work.XNOR2_X1
+# Loading work.OAI22_X1
+# Loading work.AND2_X1
+# Loading work.HA_X1
+# Loading work.OAI211_X1
+# Loading work.AOI211_X1
+# Loading work.OAI221_X1
+# Loading work.AOI221_X1
+# Loading work.AND3_X1
+# Loading work.DLH_X1
+# ** Error: (vsim-3063) Port 'A_imm' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut5/i_2 File: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/FPU_boothAlgoR4.syn.v Line: 1166
+# ** Error: (vsim-3063) Port 'A_imm_2s_complement' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut5/i_2 File: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/FPU_boothAlgoR4.syn.v Line: 1166
+# Loading work.seq_DLH_X1
+# Error loading design
+# End time: 12:53:42 on Dec 17,2022, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 4
+# Compile of NangateOpenCellLibrary.v was successful.
+# Compile of sequential.syn.v was successful.
+# Compile of testbench.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -t 1ps testbench
+# vsim -t 1ps testbench 
+# Start time: 12:54:20 on Dec 17,2022
+# Loading work.testbench
+# Loading work.sequentialMultiplier
+# Loading work.datapath
+# Loading work.AOI21_X1
+# Loading work.INV_X1
+# Loading work.NOR2_X1
+# Loading work.NOR3_X1
+# Loading work.OAI21_X1
+# Loading work.OR3_X1
+# Loading work.NAND3_X1
+# Loading work.NAND2_X1
+# Loading work.AOI22_X1
+# Loading work.NAND4_X1
+# Loading work.OR2_X1
+# Loading work.datapath__0_0
+# Loading work.datapath__0_16
+# Loading work.XOR2_X1
+# Loading work.AND2_X1
+# Loading work.XNOR2_X1
+# Loading work.NOR4_X1
+# Loading work.DLH_X1
+# Loading work.datapath__0_4
+# Loading work.OAI22_X1
+# Loading work.AOI221_X1
+# Loading work.OAI221_X1
+# Loading work.OAI211_X1
+# Loading work.AOI222_X1
+# Loading work.MUX2_X1
+# Loading work.OR4_X1
+# Loading work.seq_DLH_X1
+add wave -position insertpoint  \
+sim:/testbench/smallDelay \
+sim:/testbench/reset \
+sim:/testbench/RES \
+sim:/testbench/OVFs \
+sim:/testbench/NumOfSuccess \
+sim:/testbench/NumOfFailure \
+sim:/testbench/largeDelay \
+sim:/testbench/i \
+sim:/testbench/enable \
+sim:/testbench/clockDelay \
+sim:/testbench/clk \
+sim:/testbench/B \
+sim:/testbench/A
+run
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #1 Multiplication of positive and negative number.
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 25 ps ###############
+#       Signal: /testbench/uut3/i_0_1_208/#implicit-wire#0 @ sub-iteration 0 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:3021)
+#   Active process: /testbench/uut3/i_0_1_88/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_84/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_82/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_80/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_28/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_24/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_22/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_18/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_16/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_210/#OR#2779 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2779
+#   Active process: /testbench/uut3/i_0_1_308/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_140/#OR#2825 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2825
+#   Active process: /testbench/uut3/i_0_1_12/#OR#2826 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2826
+#   Active process: /testbench/uut3/i_0_1_208/#OR#3018 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:3018
+#   Active process: /testbench/uut3/i_0_1_213/#OR#2779 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2779
+#   Active process: /testbench/uut3/i_0_1_206/#AND#2617 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2617
+#   Active process: /testbench/uut3/i_0_1_81/#OR#471 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:471
+#   Active process: /testbench/uut3/i_0_1_85/#OR#471 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:471
+#   Active process: /testbench/uut3/i_0_1_87/#OR#471 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:471
+#   Active process: /testbench/uut3/i_0_1_89/#OR#471 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:471
+#   Active process: /testbench/uut3/i_0_1_93/#OR#471 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:471
+#   Active process: /testbench/uut3/i_0_1_210/#NOT#2778 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2778
+#   Active process: /testbench/uut3/i_0_1_87/#OR#470 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:470
+#   Active process: /testbench/uut3/i_0_1_93/#OR#470 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:470
+#   Active process: /testbench/uut3/i_0_1_17/#NOT#694 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:694
+#   Active process: /testbench/uut3/i_0_1_19/#NOT#694 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:694
+#   Active process: /testbench/uut3/i_0_1_23/#NOT#694 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:694
+#   Active process: /testbench/uut3/i_0_1_25/#NOT#694 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:694
+#   Active process: /testbench/uut3/i_0_1_29/#NOT#694 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:694
+#   Active process: /testbench/uut3/i_0_1_81/#NOT#469 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:469
+#   Active process: /testbench/uut3/i_0_1_83/#NOT#469 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:469
+#   Active process: /testbench/uut3/i_0_1_85/#NOT#469 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:469
+#   Active process: /testbench/uut3/i_0_1_89/#NOT#469 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:469
+#   Active process: /testbench/uut3/\multiplicand_reg[7] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\multiplicand_reg[2] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\multiplicand_reg[3] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\counter_reg[1] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/i_0_1_208/#NOT#3016 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:3016
+#   Active process: /testbench/uut3/\accumulator_reg[1] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\accumulator_reg[2] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\accumulator_reg[4] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\accumulator_reg[5] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\accumulator_reg[7] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\multiplicand_reg[1] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\multiplicand_reg[4] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\multiplicand_reg[5] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\multiplicand_reg[6] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\counter_reg[2] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\counter_reg[4] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\multiplicand_reg[0] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\counter_reg[3] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/i_0_1_211/#NOT#284 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:284
+#   Active process: /testbench/uut3/\counter_reg[0] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#       Signal: /testbench/uut3/i_0_1_89/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:467)
+#       Signal: /testbench/uut3/i_0_1_85/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:467)
+#       Signal: /testbench/uut3/i_0_1_83/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:467)
+#       Signal: /testbench/uut3/i_0_1_81/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:467)
+#       Signal: /testbench/uut3/i_0_1_29/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:692)
+#       Signal: /testbench/uut3/i_0_1_25/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:692)
+#       Signal: /testbench/uut3/i_0_1_23/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:692)
+#       Signal: /testbench/uut3/i_0_1_19/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:692)
+#       Signal: /testbench/uut3/i_0_1_17/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:692)
+#       Signal: /testbench/uut3/i_0_1_93/i_20 @ sub-iteration 2 at Value St1 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:469)
+#       Signal: /testbench/uut3/i_0_1_87/i_20 @ sub-iteration 2 at Value St1 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:469)
+#       Signal: /testbench/uut3/i_0_1_210/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2776)
+#       Signal: /testbench/uut3/i_0_1_93/i_21 @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:470)
+#       Signal: /testbench/uut3/i_0_1_87/i_21 @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:470)
+#       Signal: /testbench/uut3/i_0_1_206/i_10 @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2616)
+#       Signal: /testbench/uut3/i_0_1_213/i_10 @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2778)
+#       Signal: /testbench/uut3/i_0_1_208/i_9 @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:3017)
+#       Signal: /testbench/uut3/i_0_1_12/i_9 @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2825)
+#       Signal: /testbench/uut3/i_0_1_308/ZN @ sub-iteration 2 at Value St1 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_210/i_10 @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2778)
+#       Signal: /testbench/uut3/i_0_1_16/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_18/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_22/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_24/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_28/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_80/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_82/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_84/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_88/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#   Active process: /testbench/uut3/i_0_1_210/#NOT#2778 @ sub-iteration 3
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2778
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+quit -sim
+# End time: 12:56:15 on Dec 17,2022, Elapsed time: 0:01:55
+# Errors: 5, Warnings: 4
+vsim -t 1ps testbench
+# vsim -t 1ps testbench 
+# Start time: 18:21:47 on Dec 17,2022
+# Loading work.testbench
+# Loading work.sequentialMultiplier
+# Loading work.datapath
+# Loading work.AOI21_X1
+# Loading work.INV_X1
+# Loading work.NOR2_X1
+# Loading work.NOR3_X1
+# Loading work.OAI21_X1
+# Loading work.OR3_X1
+# Loading work.NAND3_X1
+# Loading work.NAND2_X1
+# Loading work.AOI22_X1
+# Loading work.NAND4_X1
+# Loading work.OR2_X1
+# Loading work.datapath__0_0
+# Loading work.datapath__0_16
+# Loading work.XOR2_X1
+# Loading work.AND2_X1
+# Loading work.XNOR2_X1
+# Loading work.NOR4_X1
+# Loading work.DLH_X1
+# Loading work.datapath__0_4
+# Loading work.OAI22_X1
+# Loading work.AOI221_X1
+# Loading work.OAI221_X1
+# Loading work.OAI211_X1
+# Loading work.AOI222_X1
+# Loading work.MUX2_X1
+# Loading work.OR4_X1
+# Loading work.seq_DLH_X1
+add wave -position insertpoint  \
+sim:/testbench/uut3/uc_2 \
+sim:/testbench/uut3/uc_1 \
+sim:/testbench/uut3/uc_0 \
+sim:/testbench/uut3/reset \
+sim:/testbench/uut3/Res \
+sim:/testbench/uut3/OVF \
+sim:/testbench/uut3/n_0_264 \
+sim:/testbench/uut3/n_0_263 \
+sim:/testbench/uut3/n_0_262 \
+sim:/testbench/uut3/n_0_261 \
+sim:/testbench/uut3/n_0_260 \
+sim:/testbench/uut3/n_0_259 \
+sim:/testbench/uut3/n_0_258 \
+sim:/testbench/uut3/n_0_257 \
+sim:/testbench/uut3/n_0_256 \
+sim:/testbench/uut3/n_0_255 \
+sim:/testbench/uut3/n_0_254 \
+sim:/testbench/uut3/n_0_253 \
+sim:/testbench/uut3/n_0_252 \
+sim:/testbench/uut3/n_0_251 \
+sim:/testbench/uut3/n_0_250 \
+sim:/testbench/uut3/n_0_249 \
+sim:/testbench/uut3/n_0_248 \
+sim:/testbench/uut3/n_0_247 \
+sim:/testbench/uut3/n_0_246 \
+sim:/testbench/uut3/n_0_245 \
+sim:/testbench/uut3/n_0_244 \
+sim:/testbench/uut3/n_0_243 \
+sim:/testbench/uut3/n_0_242 \
+sim:/testbench/uut3/n_0_241 \
+sim:/testbench/uut3/n_0_240 \
+sim:/testbench/uut3/n_0_239 \
+sim:/testbench/uut3/n_0_238 \
+sim:/testbench/uut3/n_0_237 \
+sim:/testbench/uut3/n_0_236 \
+sim:/testbench/uut3/n_0_235 \
+sim:/testbench/uut3/n_0_234 \
+sim:/testbench/uut3/n_0_233 \
+sim:/testbench/uut3/n_0_232 \
+sim:/testbench/uut3/n_0_231 \
+sim:/testbench/uut3/n_0_230 \
+sim:/testbench/uut3/n_0_229 \
+sim:/testbench/uut3/n_0_228 \
+sim:/testbench/uut3/n_0_227 \
+sim:/testbench/uut3/n_0_226 \
+sim:/testbench/uut3/n_0_225 \
+sim:/testbench/uut3/n_0_224 \
+sim:/testbench/uut3/n_0_223 \
+sim:/testbench/uut3/n_0_222 \
+sim:/testbench/uut3/n_0_221 \
+sim:/testbench/uut3/n_0_220 \
+sim:/testbench/uut3/n_0_219 \
+sim:/testbench/uut3/n_0_218 \
+sim:/testbench/uut3/n_0_217 \
+sim:/testbench/uut3/n_0_216 \
+sim:/testbench/uut3/n_0_215 \
+sim:/testbench/uut3/n_0_214 \
+sim:/testbench/uut3/n_0_213 \
+sim:/testbench/uut3/n_0_212 \
+sim:/testbench/uut3/n_0_211 \
+sim:/testbench/uut3/n_0_210 \
+sim:/testbench/uut3/n_0_209 \
+sim:/testbench/uut3/n_0_208 \
+sim:/testbench/uut3/n_0_207 \
+sim:/testbench/uut3/n_0_206 \
+sim:/testbench/uut3/n_0_205 \
+sim:/testbench/uut3/n_0_204 \
+sim:/testbench/uut3/n_0_203 \
+sim:/testbench/uut3/n_0_202 \
+sim:/testbench/uut3/n_0_201 \
+sim:/testbench/uut3/n_0_200 \
+sim:/testbench/uut3/n_0_199 \
+sim:/testbench/uut3/n_0_198 \
+sim:/testbench/uut3/n_0_197 \
+sim:/testbench/uut3/n_0_196 \
+sim:/testbench/uut3/n_0_195 \
+sim:/testbench/uut3/n_0_194 \
+sim:/testbench/uut3/n_0_193 \
+sim:/testbench/uut3/n_0_192 \
+sim:/testbench/uut3/n_0_191 \
+sim:/testbench/uut3/n_0_190 \
+sim:/testbench/uut3/n_0_189 \
+sim:/testbench/uut3/n_0_188 \
+sim:/testbench/uut3/n_0_187 \
+sim:/testbench/uut3/n_0_186 \
+sim:/testbench/uut3/n_0_185 \
+sim:/testbench/uut3/n_0_184 \
+sim:/testbench/uut3/n_0_183 \
+sim:/testbench/uut3/n_0_182 \
+sim:/testbench/uut3/n_0_181 \
+sim:/testbench/uut3/n_0_180 \
+sim:/testbench/uut3/n_0_179 \
+sim:/testbench/uut3/n_0_178 \
+sim:/testbench/uut3/n_0_177 \
+sim:/testbench/uut3/n_0_176 \
+sim:/testbench/uut3/n_0_175 \
+sim:/testbench/uut3/n_0_174 \
+sim:/testbench/uut3/n_0_173 \
+sim:/testbench/uut3/n_0_172 \
+sim:/testbench/uut3/n_0_171 \
+sim:/testbench/uut3/n_0_170 \
+sim:/testbench/uut3/n_0_169 \
+sim:/testbench/uut3/n_0_168 \
+sim:/testbench/uut3/n_0_167 \
+sim:/testbench/uut3/n_0_166 \
+sim:/testbench/uut3/n_0_165 \
+sim:/testbench/uut3/n_0_164 \
+sim:/testbench/uut3/n_0_163 \
+sim:/testbench/uut3/n_0_162 \
+sim:/testbench/uut3/n_0_161 \
+sim:/testbench/uut3/n_0_160 \
+sim:/testbench/uut3/n_0_159 \
+sim:/testbench/uut3/n_0_158 \
+sim:/testbench/uut3/n_0_157 \
+sim:/testbench/uut3/n_0_156 \
+sim:/testbench/uut3/n_0_155 \
+sim:/testbench/uut3/n_0_154 \
+sim:/testbench/uut3/n_0_153 \
+sim:/testbench/uut3/n_0_152 \
+sim:/testbench/uut3/n_0_151 \
+sim:/testbench/uut3/n_0_150 \
+sim:/testbench/uut3/n_0_149 \
+sim:/testbench/uut3/n_0_148 \
+sim:/testbench/uut3/n_0_147 \
+sim:/testbench/uut3/n_0_146 \
+sim:/testbench/uut3/n_0_145 \
+sim:/testbench/uut3/n_0_144 \
+sim:/testbench/uut3/n_0_143 \
+sim:/testbench/uut3/n_0_142 \
+sim:/testbench/uut3/n_0_141 \
+sim:/testbench/uut3/n_0_140 \
+sim:/testbench/uut3/n_0_139 \
+sim:/testbench/uut3/n_0_138 \
+sim:/testbench/uut3/n_0_137 \
+sim:/testbench/uut3/n_0_136 \
+sim:/testbench/uut3/n_0_135 \
+sim:/testbench/uut3/n_0_134 \
+sim:/testbench/uut3/n_0_133 \
+sim:/testbench/uut3/n_0_132 \
+sim:/testbench/uut3/n_0_131 \
+sim:/testbench/uut3/n_0_130 \
+sim:/testbench/uut3/n_0_129 \
+sim:/testbench/uut3/n_0_128 \
+sim:/testbench/uut3/n_0_127 \
+sim:/testbench/uut3/n_0_126 \
+sim:/testbench/uut3/n_0_125 \
+sim:/testbench/uut3/n_0_124 \
+sim:/testbench/uut3/n_0_123 \
+sim:/testbench/uut3/n_0_122 \
+sim:/testbench/uut3/n_0_121 \
+sim:/testbench/uut3/n_0_120 \
+sim:/testbench/uut3/n_0_119 \
+sim:/testbench/uut3/n_0_118 \
+sim:/testbench/uut3/n_0_117 \
+sim:/testbench/uut3/n_0_116 \
+sim:/testbench/uut3/n_0_115 \
+sim:/testbench/uut3/n_0_114 \
+sim:/testbench/uut3/n_0_113 \
+sim:/testbench/uut3/n_0_112 \
+sim:/testbench/uut3/n_0_111 \
+sim:/testbench/uut3/n_0_110 \
+sim:/testbench/uut3/n_0_109 \
+sim:/testbench/uut3/n_0_108 \
+sim:/testbench/uut3/n_0_107 \
+sim:/testbench/uut3/n_0_106 \
+sim:/testbench/uut3/n_0_105 \
+sim:/testbench/uut3/n_0_104 \
+sim:/testbench/uut3/n_0_103 \
+sim:/testbench/uut3/n_0_102 \
+sim:/testbench/uut3/n_0_101 \
+sim:/testbench/uut3/n_0_100 \
+sim:/testbench/uut3/n_0_99 \
+sim:/testbench/uut3/n_0_98 \
+sim:/testbench/uut3/n_0_97 \
+sim:/testbench/uut3/n_0_96 \
+sim:/testbench/uut3/n_0_95 \
+sim:/testbench/uut3/n_0_94 \
+sim:/testbench/uut3/n_0_93 \
+sim:/testbench/uut3/n_0_92 \
+sim:/testbench/uut3/n_0_91 \
+sim:/testbench/uut3/n_0_90 \
+sim:/testbench/uut3/n_0_89 \
+sim:/testbench/uut3/n_0_88 \
+sim:/testbench/uut3/n_0_87 \
+sim:/testbench/uut3/n_0_86 \
+sim:/testbench/uut3/n_0_85 \
+sim:/testbench/uut3/n_0_84 \
+sim:/testbench/uut3/n_0_83 \
+sim:/testbench/uut3/n_0_82 \
+sim:/testbench/uut3/n_0_81 \
+sim:/testbench/uut3/n_0_80 \
+sim:/testbench/uut3/n_0_79 \
+sim:/testbench/uut3/n_0_78 \
+sim:/testbench/uut3/n_0_77 \
+sim:/testbench/uut3/n_0_76 \
+sim:/testbench/uut3/n_0_75 \
+sim:/testbench/uut3/n_0_74 \
+sim:/testbench/uut3/n_0_73 \
+sim:/testbench/uut3/n_0_72 \
+sim:/testbench/uut3/n_0_71 \
+sim:/testbench/uut3/n_0_70 \
+sim:/testbench/uut3/n_0_69 \
+sim:/testbench/uut3/n_0_68 \
+sim:/testbench/uut3/n_0_67 \
+sim:/testbench/uut3/n_0_66 \
+sim:/testbench/uut3/n_0_65 \
+sim:/testbench/uut3/n_0_64 \
+sim:/testbench/uut3/n_0_63 \
+sim:/testbench/uut3/n_0_62 \
+sim:/testbench/uut3/n_0_61 \
+sim:/testbench/uut3/n_0_60 \
+sim:/testbench/uut3/n_0_59 \
+sim:/testbench/uut3/n_0_58 \
+sim:/testbench/uut3/n_0_57 \
+sim:/testbench/uut3/n_0_56 \
+sim:/testbench/uut3/n_0_55 \
+sim:/testbench/uut3/n_0_54 \
+sim:/testbench/uut3/n_0_53 \
+sim:/testbench/uut3/n_0_52 \
+sim:/testbench/uut3/n_0_51 \
+sim:/testbench/uut3/n_0_50 \
+sim:/testbench/uut3/n_0_49 \
+sim:/testbench/uut3/n_0_48 \
+sim:/testbench/uut3/n_0_47 \
+sim:/testbench/uut3/n_0_46 \
+sim:/testbench/uut3/n_0_45 \
+sim:/testbench/uut3/n_0_44 \
+sim:/testbench/uut3/n_0_43 \
+sim:/testbench/uut3/n_0_42 \
+sim:/testbench/uut3/n_0_41 \
+sim:/testbench/uut3/n_0_40 \
+sim:/testbench/uut3/n_0_39 \
+sim:/testbench/uut3/n_0_38 \
+sim:/testbench/uut3/n_0_37 \
+sim:/testbench/uut3/n_0_36 \
+sim:/testbench/uut3/n_0_35 \
+sim:/testbench/uut3/n_0_34 \
+sim:/testbench/uut3/n_0_33 \
+sim:/testbench/uut3/n_0_32 \
+sim:/testbench/uut3/n_0_31 \
+sim:/testbench/uut3/n_0_30 \
+sim:/testbench/uut3/n_0_29 \
+sim:/testbench/uut3/n_0_28 \
+sim:/testbench/uut3/n_0_27 \
+sim:/testbench/uut3/n_0_26 \
+sim:/testbench/uut3/n_0_25 \
+sim:/testbench/uut3/n_0_24 \
+sim:/testbench/uut3/n_0_23 \
+sim:/testbench/uut3/n_0_22 \
+sim:/testbench/uut3/n_0_21 \
+sim:/testbench/uut3/n_0_20 \
+sim:/testbench/uut3/n_0_19 \
+sim:/testbench/uut3/n_0_18 \
+sim:/testbench/uut3/n_0_17 \
+sim:/testbench/uut3/n_0_16 \
+sim:/testbench/uut3/n_0_15 \
+sim:/testbench/uut3/n_0_14 \
+sim:/testbench/uut3/n_0_13 \
+sim:/testbench/uut3/n_0_12 \
+sim:/testbench/uut3/n_0_11 \
+sim:/testbench/uut3/n_0_10 \
+sim:/testbench/uut3/n_0_9 \
+sim:/testbench/uut3/n_0_8 \
+sim:/testbench/uut3/n_0_7 \
+sim:/testbench/uut3/n_0_6 \
+sim:/testbench/uut3/n_0_5 \
+sim:/testbench/uut3/n_0_4 \
+sim:/testbench/uut3/n_0_3 \
+sim:/testbench/uut3/n_0_2 \
+sim:/testbench/uut3/n_0_1_140 \
+sim:/testbench/uut3/n_0_1_139 \
+sim:/testbench/uut3/n_0_1_138 \
+sim:/testbench/uut3/n_0_1_137 \
+sim:/testbench/uut3/n_0_1_136 \
+sim:/testbench/uut3/n_0_1_135 \
+sim:/testbench/uut3/n_0_1_134 \
+sim:/testbench/uut3/n_0_1_133 \
+sim:/testbench/uut3/n_0_1_132 \
+sim:/testbench/uut3/n_0_1_131 \
+sim:/testbench/uut3/n_0_1_130 \
+sim:/testbench/uut3/n_0_1_129 \
+sim:/testbench/uut3/n_0_1_128 \
+sim:/testbench/uut3/n_0_1_127 \
+sim:/testbench/uut3/n_0_1_126 \
+sim:/testbench/uut3/n_0_1_125 \
+sim:/testbench/uut3/n_0_1_124 \
+sim:/testbench/uut3/n_0_1_123 \
+sim:/testbench/uut3/n_0_1_122 \
+sim:/testbench/uut3/n_0_1_121 \
+sim:/testbench/uut3/n_0_1_120 \
+sim:/testbench/uut3/n_0_1_119 \
+sim:/testbench/uut3/n_0_1_118 \
+sim:/testbench/uut3/n_0_1_117 \
+sim:/testbench/uut3/n_0_1_116 \
+sim:/testbench/uut3/n_0_1_115 \
+sim:/testbench/uut3/n_0_1_114 \
+sim:/testbench/uut3/n_0_1_113 \
+sim:/testbench/uut3/n_0_1_112 \
+sim:/testbench/uut3/n_0_1_111 \
+sim:/testbench/uut3/n_0_1_110 \
+sim:/testbench/uut3/n_0_1_109 \
+sim:/testbench/uut3/n_0_1_108 \
+sim:/testbench/uut3/n_0_1_107 \
+sim:/testbench/uut3/n_0_1_106 \
+sim:/testbench/uut3/n_0_1_105 \
+sim:/testbench/uut3/n_0_1_104 \
+sim:/testbench/uut3/n_0_1_103 \
+sim:/testbench/uut3/n_0_1_102 \
+sim:/testbench/uut3/n_0_1_101 \
+sim:/testbench/uut3/n_0_1_100 \
+sim:/testbench/uut3/n_0_1_99 \
+sim:/testbench/uut3/n_0_1_98 \
+sim:/testbench/uut3/n_0_1_97 \
+sim:/testbench/uut3/n_0_1_96 \
+sim:/testbench/uut3/n_0_1_95 \
+sim:/testbench/uut3/n_0_1_94 \
+sim:/testbench/uut3/n_0_1_93 \
+sim:/testbench/uut3/n_0_1_92 \
+sim:/testbench/uut3/n_0_1_91 \
+sim:/testbench/uut3/n_0_1_90 \
+sim:/testbench/uut3/n_0_1_89 \
+sim:/testbench/uut3/n_0_1_88 \
+sim:/testbench/uut3/n_0_1_87 \
+sim:/testbench/uut3/n_0_1_86 \
+sim:/testbench/uut3/n_0_1_85 \
+sim:/testbench/uut3/n_0_1_84 \
+sim:/testbench/uut3/n_0_1_83 \
+sim:/testbench/uut3/n_0_1_82 \
+sim:/testbench/uut3/n_0_1_81 \
+sim:/testbench/uut3/n_0_1_80 \
+sim:/testbench/uut3/n_0_1_79 \
+sim:/testbench/uut3/n_0_1_78 \
+sim:/testbench/uut3/n_0_1_77 \
+sim:/testbench/uut3/n_0_1_76 \
+sim:/testbench/uut3/n_0_1_75 \
+sim:/testbench/uut3/n_0_1_74 \
+sim:/testbench/uut3/n_0_1_73 \
+sim:/testbench/uut3/n_0_1_72 \
+sim:/testbench/uut3/n_0_1_71 \
+sim:/testbench/uut3/n_0_1_70 \
+sim:/testbench/uut3/n_0_1_69 \
+sim:/testbench/uut3/n_0_1_68 \
+sim:/testbench/uut3/n_0_1_67 \
+sim:/testbench/uut3/n_0_1_66 \
+sim:/testbench/uut3/n_0_1_65 \
+sim:/testbench/uut3/n_0_1_64 \
+sim:/testbench/uut3/n_0_1_63 \
+sim:/testbench/uut3/n_0_1_62 \
+sim:/testbench/uut3/n_0_1_61 \
+sim:/testbench/uut3/n_0_1_60 \
+sim:/testbench/uut3/n_0_1_59 \
+sim:/testbench/uut3/n_0_1_58 \
+sim:/testbench/uut3/n_0_1_57 \
+sim:/testbench/uut3/n_0_1_56 \
+sim:/testbench/uut3/n_0_1_55 \
+sim:/testbench/uut3/n_0_1_54 \
+sim:/testbench/uut3/n_0_1_53 \
+sim:/testbench/uut3/n_0_1_52 \
+sim:/testbench/uut3/n_0_1_51 \
+sim:/testbench/uut3/n_0_1_50 \
+sim:/testbench/uut3/n_0_1_49 \
+sim:/testbench/uut3/n_0_1_48 \
+sim:/testbench/uut3/n_0_1_47 \
+sim:/testbench/uut3/n_0_1_46 \
+sim:/testbench/uut3/n_0_1_45 \
+sim:/testbench/uut3/n_0_1_44 \
+sim:/testbench/uut3/n_0_1_43 \
+sim:/testbench/uut3/n_0_1_42 \
+sim:/testbench/uut3/n_0_1_41 \
+sim:/testbench/uut3/n_0_1_40 \
+sim:/testbench/uut3/n_0_1_39 \
+sim:/testbench/uut3/n_0_1_38 \
+sim:/testbench/uut3/n_0_1_37 \
+sim:/testbench/uut3/n_0_1_36 \
+sim:/testbench/uut3/n_0_1_35 \
+sim:/testbench/uut3/n_0_1_34 \
+sim:/testbench/uut3/n_0_1_33 \
+sim:/testbench/uut3/n_0_1_32 \
+sim:/testbench/uut3/n_0_1_31 \
+sim:/testbench/uut3/n_0_1_30 \
+sim:/testbench/uut3/n_0_1_29 \
+sim:/testbench/uut3/n_0_1_28 \
+sim:/testbench/uut3/n_0_1_27 \
+sim:/testbench/uut3/n_0_1_26 \
+sim:/testbench/uut3/n_0_1_25 \
+sim:/testbench/uut3/n_0_1_24 \
+sim:/testbench/uut3/n_0_1_23 \
+sim:/testbench/uut3/n_0_1_22 \
+sim:/testbench/uut3/n_0_1_21 \
+sim:/testbench/uut3/n_0_1_20 \
+sim:/testbench/uut3/n_0_1_19 \
+sim:/testbench/uut3/n_0_1_18 \
+sim:/testbench/uut3/n_0_1_17 \
+sim:/testbench/uut3/n_0_1_16 \
+sim:/testbench/uut3/n_0_1_15 \
+sim:/testbench/uut3/n_0_1_14 \
+sim:/testbench/uut3/n_0_1_13 \
+sim:/testbench/uut3/n_0_1_12 \
+sim:/testbench/uut3/n_0_1_11 \
+sim:/testbench/uut3/n_0_1_10 \
+sim:/testbench/uut3/n_0_1_9 \
+sim:/testbench/uut3/n_0_1_8 \
+sim:/testbench/uut3/n_0_1_7 \
+sim:/testbench/uut3/n_0_1_6 \
+sim:/testbench/uut3/n_0_1_5 \
+sim:/testbench/uut3/n_0_1_4 \
+sim:/testbench/uut3/n_0_1_3 \
+sim:/testbench/uut3/n_0_1_2 \
+sim:/testbench/uut3/n_0_1_1 \
+sim:/testbench/uut3/n_0_1_0 \
+sim:/testbench/uut3/n_0_1 \
+sim:/testbench/uut3/n_0_0 \
+sim:/testbench/uut3/multiplier \
+sim:/testbench/uut3/multiplicand \
+sim:/testbench/uut3/isNeg \
+sim:/testbench/uut3/enable \
+sim:/testbench/uut3/counter \
+sim:/testbench/uut3/clk \
+sim:/testbench/uut3/carry \
+sim:/testbench/uut3/B \
+sim:/testbench/uut3/accumulator \
+sim:/testbench/uut3/A
+run
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# test case #1 Multiplication of positive and negative number.
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 25 ps ###############
+#       Signal: /testbench/uut3/i_0_1_208/#implicit-wire#0 @ sub-iteration 0 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:3021)
+#   Active process: /testbench/uut3/i_0_1_88/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_84/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_82/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_80/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_28/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_24/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_22/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_18/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_16/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_210/#OR#2779 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2779
+#   Active process: /testbench/uut3/i_0_1_308/#NOT#2487 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2487
+#   Active process: /testbench/uut3/i_0_1_140/#OR#2825 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2825
+#   Active process: /testbench/uut3/i_0_1_12/#OR#2826 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2826
+#   Active process: /testbench/uut3/i_0_1_208/#OR#3018 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:3018
+#   Active process: /testbench/uut3/i_0_1_213/#OR#2779 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2779
+#   Active process: /testbench/uut3/i_0_1_206/#AND#2617 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2617
+#   Active process: /testbench/uut3/i_0_1_81/#OR#471 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:471
+#   Active process: /testbench/uut3/i_0_1_85/#OR#471 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:471
+#   Active process: /testbench/uut3/i_0_1_87/#OR#471 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:471
+#   Active process: /testbench/uut3/i_0_1_89/#OR#471 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:471
+#   Active process: /testbench/uut3/i_0_1_93/#OR#471 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:471
+#   Active process: /testbench/uut3/i_0_1_210/#NOT#2778 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2778
+#   Active process: /testbench/uut3/i_0_1_87/#OR#470 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:470
+#   Active process: /testbench/uut3/i_0_1_93/#OR#470 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:470
+#   Active process: /testbench/uut3/i_0_1_17/#NOT#694 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:694
+#   Active process: /testbench/uut3/i_0_1_19/#NOT#694 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:694
+#   Active process: /testbench/uut3/i_0_1_23/#NOT#694 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:694
+#   Active process: /testbench/uut3/i_0_1_25/#NOT#694 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:694
+#   Active process: /testbench/uut3/i_0_1_29/#NOT#694 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:694
+#   Active process: /testbench/uut3/i_0_1_81/#NOT#469 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:469
+#   Active process: /testbench/uut3/i_0_1_83/#NOT#469 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:469
+#   Active process: /testbench/uut3/i_0_1_85/#NOT#469 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:469
+#   Active process: /testbench/uut3/i_0_1_89/#NOT#469 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:469
+#   Active process: /testbench/uut3/\multiplicand_reg[7] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\multiplicand_reg[2] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\multiplicand_reg[3] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\counter_reg[1] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/i_0_1_208/#NOT#3016 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:3016
+#   Active process: /testbench/uut3/\accumulator_reg[1] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\accumulator_reg[2] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\accumulator_reg[4] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\accumulator_reg[5] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\accumulator_reg[7] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\multiplicand_reg[1] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\multiplicand_reg[4] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\multiplicand_reg[5] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\multiplicand_reg[6] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\counter_reg[2] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\counter_reg[4] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\multiplicand_reg[0] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/\counter_reg[3] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#   Active process: /testbench/uut3/i_0_1_211/#NOT#284 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:284
+#   Active process: /testbench/uut3/\counter_reg[0] /#BUF#2223 @ sub-iteration 1
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2223
+#       Signal: /testbench/uut3/i_0_1_89/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:467)
+#       Signal: /testbench/uut3/i_0_1_85/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:467)
+#       Signal: /testbench/uut3/i_0_1_83/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:467)
+#       Signal: /testbench/uut3/i_0_1_81/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:467)
+#       Signal: /testbench/uut3/i_0_1_29/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:692)
+#       Signal: /testbench/uut3/i_0_1_25/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:692)
+#       Signal: /testbench/uut3/i_0_1_23/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:692)
+#       Signal: /testbench/uut3/i_0_1_19/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:692)
+#       Signal: /testbench/uut3/i_0_1_17/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:692)
+#       Signal: /testbench/uut3/i_0_1_93/i_20 @ sub-iteration 2 at Value St1 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:469)
+#       Signal: /testbench/uut3/i_0_1_87/i_20 @ sub-iteration 2 at Value St1 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:469)
+#       Signal: /testbench/uut3/i_0_1_210/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2776)
+#       Signal: /testbench/uut3/i_0_1_93/i_21 @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:470)
+#       Signal: /testbench/uut3/i_0_1_87/i_21 @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:470)
+#       Signal: /testbench/uut3/i_0_1_206/i_10 @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2616)
+#       Signal: /testbench/uut3/i_0_1_213/i_10 @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2778)
+#       Signal: /testbench/uut3/i_0_1_208/i_9 @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:3017)
+#       Signal: /testbench/uut3/i_0_1_12/i_9 @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2825)
+#       Signal: /testbench/uut3/i_0_1_308/ZN @ sub-iteration 2 at Value St1 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_210/i_10 @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2778)
+#       Signal: /testbench/uut3/i_0_1_16/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_18/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_22/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_24/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_28/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_80/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_82/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_84/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#       Signal: /testbench/uut3/i_0_1_88/ZN @ sub-iteration 2 at Value St0 (D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2485)
+#   Active process: /testbench/uut3/i_0_1_210/#NOT#2778 @ sub-iteration 3
+#     Source: D:/PROJECTS/third year/first term/VLSI/mini project 2/codes (after synthesis)/verilog codes/NangateOpenCellLibrary.v:2778
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+# A time value could not be extracted from the current line
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+# Break key hit
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 25 ps.
+quit -sim
+quit -sim
+# End time: 18:22:24 on Dec 17,2022, Elapsed time: 0:00:37
+# Errors: 12, Warnings: 1

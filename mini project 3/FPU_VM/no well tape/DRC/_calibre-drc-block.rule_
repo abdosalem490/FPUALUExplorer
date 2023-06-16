@@ -1,0 +1,27 @@
+//
+//  Rule file generated on Tue Jan 03 19:34:44 EET 2023
+//     by Calibre Interactive - DRC (v2020.1_25.14)
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH  "/home/vlsi/mini-project31_nitro/work/FPU_VM.gds"
+LAYOUT PRIMARY "FPU_VM"
+LAYOUT SYSTEM GDSII
+
+DRC RESULTS DATABASE "FPU_VM.drc.results" ASCII 
+DRC MAXIMUM RESULTS 1000
+DRC MAXIMUM VERTEX 4096
+
+DRC CELL NAME YES CELL SPACE XFORM
+DRC SUMMARY REPORT "FPU_VM.drc.summary" REPLACE HIER
+
+VIRTUAL CONNECT COLON NO
+VIRTUAL CONNECT REPORT NO
+
+DRC ICSTATION YES
+
+
+INCLUDE "/home/vlsi/mini-project31_nitro/calibre/calibre-drc-block.rule"
+

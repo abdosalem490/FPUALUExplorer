@@ -1,0 +1,36 @@
+Report Physical info: 
+------------------------+---------------+-----------+------------
+                        |               |Area (squm)|Leakage (uW)
+------------------------+---------------+-----------+------------
+Design Name             |FPU_boothAlgoR4|           |            
+  Total Instances       |           1883|       3229|      65.932
+    Macros              |              0|          0|       0.000
+    Pads                |              0|          0|       0.000
+    Phys                |              0|          0|       0.000
+    Blackboxes          |              0|          0|       0.000
+    Cells               |           1883|       3229|      65.932
+      Buffers           |              0|          0|       0.000
+      Inverters         |            239|        127|       3.430
+      Clock-Gates       |              0|          0|       0.000
+      Combinational     |           1476|       2655|      55.636
+      Latches           |            168|        447|       6.865
+      FlipFlops         |              0|          0|       0.000
+       Single-Bit FF    |              0|          0|       0.000
+       Multi-Bit FF     |              0|          0|       0.000
+       Clock-Gated      |              0|           |            
+       Bits             |              0|          0|       0.000
+         Load-Enabled   |              0|           |            
+         Clock-Gated    |              0|           |            
+  Tristate Pin Count    |              0|           |            
+Physical Info           |Placed         |           |            
+  Chip Size (mm x mm)   |0.142 x 0.142  |      20065|            
+  Fixed Cell Area       |               |          0|            
+    Phys Only           |              0|          0|            
+  Placeable Area        |               |       6619|            
+  Movable Cell Area     |               |       3229|            
+  Utilization (%)       |             48|           |            
+  Chip Utilization (%)  |             48|           |            
+  Total Wire Length (mm)|          7.177|           |            
+  Longest Wire (mm)     |          0.075|           |            
+  Average Wire (mm)     |          0.072|           |            
+------------------------+---------------+-----------+------------

@@ -1,0 +1,844 @@
+ Timing Path to multiplier/i_0_0_49/B2 
+  
+ Path Start Point : enable 
+ Path End Point   : multiplier/i_0_0_49 (AOI21_X1) 
+                       (falling gating latch clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : **clock_gating** 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+| Pin                       Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------|
+|    enable                          Rise  0.2000 0.0000 0.1000 2.57621  2.95929 5.53549           2       44.9107  c             | 
+|    multiplier/enable               Rise  0.2000 0.0000                                                                          | 
+|    multiplier/i_0_0_49/B2 AOI21_X1 Rise  0.2000 0.0000 0.1000          1.67685                                                  | 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to multiplier/i_0_0_49/B1 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+| Pin                       Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------|
+|    clk                             Fall  1.0000 1.0000 0.1000 7.70329  10.1729 17.8762           4       49.7227  c    K        | 
+|    multiplier/clk                  Fall  1.0000 0.0000                                                                          | 
+|    multiplier/i_0_0_49/B1 AOI21_X1 Fall  1.0060 0.0060 0.1000          1.44682                                    L             | 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  1.0000 1.0000 | 
+| target clock cycle shift                 |  0.0000 1.0000 | 
+| target clock ideal network latency       |  0.0060 1.0060 | 
+| data required time                       |  1.0060        | 
+|                                          |                | 
+| data arrival time                        |  0.2000        | 
+| data required time                       | -1.0060        | 
+| pessimism margin                         |  0.0000        | 
+|                                          |                | 
+| slack                                    | -0.8060        | 
+-------------------------------------------------------------
+
+
+ Timing Path to Res_reg[31]/D 
+  
+ Path Start Point : B_reg_reg[31] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode') 
+ Path End Point   : Res_reg[31] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+------------------------------------------------------------------------------------------------------------------------------
+| Pin                Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|----------------------------------------------------------------------------------------------------------------------------|
+|    clk                       Fall  1.0000 1.0000 0.1000 7.70329  9.31256  17.0158           4       49.7227  c    K        | 
+|    i_0_1_125/B2    OAI21_X2  Fall  1.0130 0.0130 0.1000          3.30778                                     L             | 
+|    i_0_1_125/ZN    OAI21_X2  Rise  1.0670 0.0540 0.1010 24.7237  57.2236  81.9474           64      53.6189  L    K        | 
+| Data Path:                                                                                                                 | 
+|    B_reg_reg[31]/G DLH_X1    Rise  1.1070 0.0400 0.2480          0.985498                                    L             | 
+|    B_reg_reg[31]/Q DLH_X1    Rise  1.1800 0.0730 0.0130 0.56652  2.81591  3.38243           2       53.6189                | 
+|    i_0_1_124/C1    AOI211_X1 Rise  1.1800 0.0000 0.0130          1.6552                                                    | 
+|    i_0_1_124/ZN    AOI211_X1 Fall  1.1960 0.0160 0.0080 0.755701 0.869621 1.62532           1       44.9107                | 
+|    Res_reg[31]/D   DLH_X1    Fall  1.1960 0.0000 0.0080          0.869621                                                  | 
+------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to Res_reg[31]/G 
+
+
+-------------------------------------------------------------------------------------------------------------------------
+| Pin              Cell   Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-----------------------------------------------------------------------------------------------------------------------|
+|    clk                  Fall  1.0000 1.0000 0.1000 7.70329  10.1729  17.8762           4       49.7227  c    K        | 
+|    i_0_1_189/A1  OR2_X2 Fall  1.0010 0.0010 0.1000          1.41515                                     L             | 
+|    i_0_1_189/ZN  OR2_X2 Fall  1.0720 0.0710 0.0320 16.8472  31.5359  48.3831           32      54.4582  L    K        | 
+|    Res_reg[31]/G DLH_X1 Fall  1.1070 0.0350 0.2480          0.894119                                    L             | 
+-------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  1.0000 1.0000 | 
+| target clock cycle shift                 |  0.0000 1.0000 | 
+| target clock ideal network latency       |  0.1070 1.1070 | 
+| library hold check                       |  0.0820 1.1890 | 
+| data required time                       |  1.1890        | 
+|                                          |                | 
+| data arrival time                        |  1.1960        | 
+| data required time                       | -1.1890        | 
+| pessimism margin                         |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0070        | 
+-------------------------------------------------------------
+
+
+ Timing Path to multiplier/B_in_reg[9]/D 
+  
+ Path Start Point : B_reg_reg[9] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode') 
+ Path End Point   : multiplier/B_in_reg[9] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                         Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Fall  1.0000 1.0000 0.1000 7.70329  9.31256  17.0158           4       49.7227  c    K        | 
+|    i_0_1_125/B2             OAI21_X2 Fall  1.0130 0.0130 0.1000          3.30778                                     L             | 
+|    i_0_1_125/ZN             OAI21_X2 Rise  1.0670 0.0540 0.1010 24.7237  57.2236  81.9474           64      53.6189  L    K        | 
+| Data Path:                                                                                                                         | 
+|    B_reg_reg[9]/G           DLH_X1   Rise  1.1070 0.0400 0.2480          0.985498                                    L             | 
+|    B_reg_reg[9]/Q           DLH_X1   Fall  1.1820 0.0750 0.0120 0.616474 2.23761  2.85409           2       53.6189                | 
+|    multiplier/B[9]                   Fall  1.1820 0.0000                                                                           | 
+|    multiplier/i_0_0_59/A2   AND2_X1  Fall  1.1820 0.0000 0.0120          0.894119                                                  | 
+|    multiplier/i_0_0_59/ZN   AND2_X1  Fall  1.2130 0.0310 0.0060 0.388227 0.869621 1.25785           1       53.6189                | 
+|    multiplier/B_in_reg[9]/D DLH_X1   Fall  1.2130 0.0000 0.0060          0.869621                                                  | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to multiplier/B_in_reg[9]/G 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                         Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Fall  1.0000 1.0000 0.1000 7.70329  10.1729  17.8762           4       49.7227  c    K        | 
+|    multiplier/clk                    Fall  1.0000 0.0000                                                                           | 
+|    multiplier/i_0_0_49/B1   AOI21_X1 Fall  1.0060 0.0060 0.1000          1.44682                                     L             | 
+|    multiplier/i_0_0_49/ZN   AOI21_X1 Rise  1.0520 0.0460 0.0420 0.298116 3.25089  3.54901           1       53.6189  L    K        | 
+|    multiplier/i_0_0_48/A    INV_X2   Rise  1.0520 0.0000 0.0420          3.25089                                                   | 
+|    multiplier/i_0_0_48/ZN   INV_X2   Fall  1.0690 0.0170 0.0410 26.6496  46.3184  72.968            47      53.6189  L    K        | 
+|    multiplier/B_in_reg[9]/G DLH_X1   Fall  1.1070 0.0380 0.2480          0.894119                                    L             | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  1.0000 1.0000 | 
+| target clock cycle shift                 |  0.0000 1.0000 | 
+| target clock ideal network latency       |  0.1070 1.1070 | 
+| library hold check                       |  0.0770 1.1840 | 
+| data required time                       |  1.1840        | 
+|                                          |                | 
+| data arrival time                        |  1.2130        | 
+| data required time                       | -1.1840        | 
+| pessimism margin                         |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0290        | 
+-------------------------------------------------------------
+
+
+ Timing Path to multiplier/A_in_reg[0]/D 
+  
+ Path Start Point : A_reg_reg[0] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode') 
+ Path End Point   : multiplier/A_in_reg[0] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                         Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Fall  1.0000 1.0000 0.1000 7.70329  9.31256  17.0158           4       49.7227  c    K        | 
+|    i_0_1_125/B2             OAI21_X2 Fall  1.0130 0.0130 0.1000          3.30778                                     L             | 
+|    i_0_1_125/ZN             OAI21_X2 Rise  1.0670 0.0540 0.1010 24.7237  57.2236  81.9474           64      53.6189  L    K        | 
+| Data Path:                                                                                                                         | 
+|    A_reg_reg[0]/G           DLH_X1   Rise  1.1070 0.0400 0.2480          0.985498                                    L             | 
+|    A_reg_reg[0]/Q           DLH_X1   Fall  1.1830 0.0760 0.0120 0.772821 2.34073  3.11355           2       46.2723                | 
+|    multiplier/A[0]                   Fall  1.1830 0.0000                                                                           | 
+|    multiplier/i_0_0_25/A2   AND2_X1  Fall  1.1830 0.0000 0.0120          0.894119                                                  | 
+|    multiplier/i_0_0_25/ZN   AND2_X1  Fall  1.2140 0.0310 0.0060 0.241839 0.869621 1.11146           1       52.2768                | 
+|    multiplier/A_in_reg[0]/D DLH_X1   Fall  1.2140 0.0000 0.0060          0.869621                                                  | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to multiplier/A_in_reg[0]/G 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                         Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Fall  1.0000 1.0000 0.1000 7.70329  10.1729  17.8762           4       49.7227  c    K        | 
+|    multiplier/clk                    Fall  1.0000 0.0000                                                                           | 
+|    multiplier/i_0_0_49/B1   AOI21_X1 Fall  1.0060 0.0060 0.1000          1.44682                                     L             | 
+|    multiplier/i_0_0_49/ZN   AOI21_X1 Rise  1.0520 0.0460 0.0420 0.298116 3.25089  3.54901           1       53.6189  L    K        | 
+|    multiplier/i_0_0_48/A    INV_X2   Rise  1.0520 0.0000 0.0420          3.25089                                                   | 
+|    multiplier/i_0_0_48/ZN   INV_X2   Fall  1.0690 0.0170 0.0410 26.6496  46.3184  72.968            47      53.6189  L    K        | 
+|    multiplier/A_in_reg[0]/G DLH_X1   Fall  1.1070 0.0380 0.2480          0.894119                                    L             | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  1.0000 1.0000 | 
+| target clock cycle shift                 |  0.0000 1.0000 | 
+| target clock ideal network latency       |  0.1070 1.1070 | 
+| library hold check                       |  0.0770 1.1840 | 
+| data required time                       |  1.1840        | 
+|                                          |                | 
+| data arrival time                        |  1.2140        | 
+| data required time                       | -1.1840        | 
+| pessimism margin                         |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0300        | 
+-------------------------------------------------------------
+
+
+ Timing Path to multiplier/A_in_reg[2]/D 
+  
+ Path Start Point : A_reg_reg[2] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode') 
+ Path End Point   : multiplier/A_in_reg[2] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                         Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Fall  1.0000 1.0000 0.1000 7.70329  9.31256  17.0158           4       49.7227  c    K        | 
+|    i_0_1_125/B2             OAI21_X2 Fall  1.0130 0.0130 0.1000          3.30778                                     L             | 
+|    i_0_1_125/ZN             OAI21_X2 Rise  1.0670 0.0540 0.1010 24.7237  57.2236  81.9474           64      53.6189  L    K        | 
+| Data Path:                                                                                                                         | 
+|    A_reg_reg[2]/G           DLH_X1   Rise  1.1070 0.0400 0.2480          0.985498                                    L             | 
+|    A_reg_reg[2]/Q           DLH_X1   Fall  1.1820 0.0750 0.0120 0.48838  2.23761  2.72599           2       46.2723                | 
+|    multiplier/A[2]                   Fall  1.1820 0.0000                                                                           | 
+|    multiplier/i_0_0_27/A2   AND2_X1  Fall  1.1820 0.0000 0.0120          0.894119                                                  | 
+|    multiplier/i_0_0_27/ZN   AND2_X1  Fall  1.2140 0.0320 0.0060 0.607721 0.869621 1.47734           1       52.2768                | 
+|    multiplier/A_in_reg[2]/D DLH_X1   Fall  1.2140 0.0000 0.0060          0.869621                                                  | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to multiplier/A_in_reg[2]/G 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                         Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Fall  1.0000 1.0000 0.1000 7.70329  10.1729  17.8762           4       49.7227  c    K        | 
+|    multiplier/clk                    Fall  1.0000 0.0000                                                                           | 
+|    multiplier/i_0_0_49/B1   AOI21_X1 Fall  1.0060 0.0060 0.1000          1.44682                                     L             | 
+|    multiplier/i_0_0_49/ZN   AOI21_X1 Rise  1.0520 0.0460 0.0420 0.298116 3.25089  3.54901           1       53.6189  L    K        | 
+|    multiplier/i_0_0_48/A    INV_X2   Rise  1.0520 0.0000 0.0420          3.25089                                                   | 
+|    multiplier/i_0_0_48/ZN   INV_X2   Fall  1.0690 0.0170 0.0410 26.6496  46.3184  72.968            47      53.6189  L    K        | 
+|    multiplier/A_in_reg[2]/G DLH_X1   Fall  1.1070 0.0380 0.2480          0.894119                                    L             | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  1.0000 1.0000 | 
+| target clock cycle shift                 |  0.0000 1.0000 | 
+| target clock ideal network latency       |  0.1070 1.1070 | 
+| library hold check                       |  0.0770 1.1840 | 
+| data required time                       |  1.1840        | 
+|                                          |                | 
+| data arrival time                        |  1.2140        | 
+| data required time                       | -1.1840        | 
+| pessimism margin                         |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0300        | 
+-------------------------------------------------------------
+
+
+ Timing Path to multiplier/B_in_reg[14]/D 
+  
+ Path Start Point : B_reg_reg[14] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode') 
+ Path End Point   : multiplier/B_in_reg[14] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+| Pin                          Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                Fall  1.0000 1.0000 0.1000 7.70329  9.31256  17.0158           4       49.7227  c    K        | 
+|    i_0_1_125/B2              OAI21_X2 Fall  1.0130 0.0130 0.1000          3.30778                                     L             | 
+|    i_0_1_125/ZN              OAI21_X2 Rise  1.0670 0.0540 0.1010 24.7237  57.2236  81.9474           64      53.6189  L    K        | 
+| Data Path:                                                                                                                          | 
+|    B_reg_reg[14]/G           DLH_X1   Rise  1.1070 0.0400 0.2480          0.985498                                    L             | 
+|    B_reg_reg[14]/Q           DLH_X1   Fall  1.1830 0.0760 0.0120 0.53936  2.38404  2.9234            2       53.6189                | 
+|    multiplier/B[14]                   Fall  1.1830 0.0000                                                                           | 
+|    multiplier/i_0_0_64/A2    AND2_X1  Fall  1.1830 0.0000 0.0120          0.894119                                                  | 
+|    multiplier/i_0_0_64/ZN    AND2_X1  Fall  1.2140 0.0310 0.0060 0.299637 0.869621 1.16926           1       53.6189                | 
+|    multiplier/B_in_reg[14]/D DLH_X1   Fall  1.2140 0.0000 0.0060          0.869621                                                  | 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to multiplier/B_in_reg[14]/G 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+| Pin                          Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                Fall  1.0000 1.0000 0.1000 7.70329  10.1729  17.8762           4       49.7227  c    K        | 
+|    multiplier/clk                     Fall  1.0000 0.0000                                                                           | 
+|    multiplier/i_0_0_49/B1    AOI21_X1 Fall  1.0060 0.0060 0.1000          1.44682                                     L             | 
+|    multiplier/i_0_0_49/ZN    AOI21_X1 Rise  1.0520 0.0460 0.0420 0.298116 3.25089  3.54901           1       53.6189  L    K        | 
+|    multiplier/i_0_0_48/A     INV_X2   Rise  1.0520 0.0000 0.0420          3.25089                                                   | 
+|    multiplier/i_0_0_48/ZN    INV_X2   Fall  1.0690 0.0170 0.0410 26.6496  46.3184  72.968            47      53.6189  L    K        | 
+|    multiplier/B_in_reg[14]/G DLH_X1   Fall  1.1070 0.0380 0.2480          0.894119                                    L             | 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  1.0000 1.0000 | 
+| target clock cycle shift                 |  0.0000 1.0000 | 
+| target clock ideal network latency       |  0.1070 1.1070 | 
+| library hold check                       |  0.0770 1.1840 | 
+| data required time                       |  1.1840        | 
+|                                          |                | 
+| data arrival time                        |  1.2140        | 
+| data required time                       | -1.1840        | 
+| pessimism margin                         |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0300        | 
+-------------------------------------------------------------
+
+
+ Timing Path to multiplier/A_in_reg[4]/D 
+  
+ Path Start Point : A_reg_reg[4] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode') 
+ Path End Point   : multiplier/A_in_reg[4] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                         Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Fall  1.0000 1.0000 0.1000 7.70329  9.31256  17.0158           4       49.7227  c    K        | 
+|    i_0_1_125/B2             OAI21_X2 Fall  1.0130 0.0130 0.1000          3.30778                                     L             | 
+|    i_0_1_125/ZN             OAI21_X2 Rise  1.0670 0.0540 0.1010 24.7237  57.2236  81.9474           64      53.6189  L    K        | 
+| Data Path:                                                                                                                         | 
+|    A_reg_reg[4]/G           DLH_X1   Rise  1.1070 0.0400 0.2480          0.985498                                    L             | 
+|    A_reg_reg[4]/Q           DLH_X1   Fall  1.1830 0.0760 0.0120 0.704223 2.37092  3.07515           2       52.2768                | 
+|    multiplier/A[4]                   Fall  1.1830 0.0000                                                                           | 
+|    multiplier/i_0_0_29/A2   AND2_X1  Fall  1.1830 0.0000 0.0120          0.894119                                                  | 
+|    multiplier/i_0_0_29/ZN   AND2_X1  Fall  1.2150 0.0320 0.0060 0.57869  0.869621 1.44831           1       52.2768                | 
+|    multiplier/A_in_reg[4]/D DLH_X1   Fall  1.2150 0.0000 0.0060          0.869621                                                  | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to multiplier/A_in_reg[4]/G 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                         Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Fall  1.0000 1.0000 0.1000 7.70329  10.1729  17.8762           4       49.7227  c    K        | 
+|    multiplier/clk                    Fall  1.0000 0.0000                                                                           | 
+|    multiplier/i_0_0_49/B1   AOI21_X1 Fall  1.0060 0.0060 0.1000          1.44682                                     L             | 
+|    multiplier/i_0_0_49/ZN   AOI21_X1 Rise  1.0520 0.0460 0.0420 0.298116 3.25089  3.54901           1       53.6189  L    K        | 
+|    multiplier/i_0_0_48/A    INV_X2   Rise  1.0520 0.0000 0.0420          3.25089                                                   | 
+|    multiplier/i_0_0_48/ZN   INV_X2   Fall  1.0690 0.0170 0.0410 26.6496  46.3184  72.968            47      53.6189  L    K        | 
+|    multiplier/A_in_reg[4]/G DLH_X1   Fall  1.1070 0.0380 0.2480          0.894119                                    L             | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  1.0000 1.0000 | 
+| target clock cycle shift                 |  0.0000 1.0000 | 
+| target clock ideal network latency       |  0.1070 1.1070 | 
+| library hold check                       |  0.0770 1.1840 | 
+| data required time                       |  1.1840        | 
+|                                          |                | 
+| data arrival time                        |  1.2150        | 
+| data required time                       | -1.1840        | 
+| pessimism margin                         |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0310        | 
+-------------------------------------------------------------
+
+
+ Timing Path to multiplier/A_in_reg[11]/D 
+  
+ Path Start Point : A_reg_reg[11] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode') 
+ Path End Point   : multiplier/A_in_reg[11] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+| Pin                          Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                Fall  1.0000 1.0000 0.1000 7.70329  9.31256  17.0158           4       49.7227  c    K        | 
+|    i_0_1_125/B2              OAI21_X2 Fall  1.0130 0.0130 0.1000          3.30778                                     L             | 
+|    i_0_1_125/ZN              OAI21_X2 Rise  1.0670 0.0540 0.1010 24.7237  57.2236  81.9474           64      53.6189  L    K        | 
+| Data Path:                                                                                                                          | 
+|    A_reg_reg[11]/G           DLH_X1   Rise  1.1070 0.0400 0.2480          0.985498                                    L             | 
+|    A_reg_reg[11]/Q           DLH_X1   Fall  1.1830 0.0760 0.0130 0.79092  2.44835  3.23927           2       52.2768                | 
+|    multiplier/A[11]                   Fall  1.1830 0.0000                                                                           | 
+|    multiplier/i_0_0_36/A2    AND2_X1  Fall  1.1830 0.0000 0.0130          0.894119                                                  | 
+|    multiplier/i_0_0_36/ZN    AND2_X1  Fall  1.2150 0.0320 0.0060 0.402633 0.869621 1.27225           1       52.2768                | 
+|    multiplier/A_in_reg[11]/D DLH_X1   Fall  1.2150 0.0000 0.0060          0.869621                                                  | 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to multiplier/A_in_reg[11]/G 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+| Pin                          Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                Fall  1.0000 1.0000 0.1000 7.70329  10.1729  17.8762           4       49.7227  c    K        | 
+|    multiplier/clk                     Fall  1.0000 0.0000                                                                           | 
+|    multiplier/i_0_0_49/B1    AOI21_X1 Fall  1.0060 0.0060 0.1000          1.44682                                     L             | 
+|    multiplier/i_0_0_49/ZN    AOI21_X1 Rise  1.0520 0.0460 0.0420 0.298116 3.25089  3.54901           1       53.6189  L    K        | 
+|    multiplier/i_0_0_48/A     INV_X2   Rise  1.0520 0.0000 0.0420          3.25089                                                   | 
+|    multiplier/i_0_0_48/ZN    INV_X2   Fall  1.0690 0.0170 0.0410 26.6496  46.3184  72.968            47      53.6189  L    K        | 
+|    multiplier/A_in_reg[11]/G DLH_X1   Fall  1.1070 0.0380 0.2480          0.894119                                    L             | 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  1.0000 1.0000 | 
+| target clock cycle shift                 |  0.0000 1.0000 | 
+| target clock ideal network latency       |  0.1070 1.1070 | 
+| library hold check                       |  0.0770 1.1840 | 
+| data required time                       |  1.1840        | 
+|                                          |                | 
+| data arrival time                        |  1.2150        | 
+| data required time                       | -1.1840        | 
+| pessimism margin                         |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0310        | 
+-------------------------------------------------------------
+
+
+ Timing Path to multiplier/A_in_reg[16]/D 
+  
+ Path Start Point : A_reg_reg[16] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode') 
+ Path End Point   : multiplier/A_in_reg[16] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+| Pin                          Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                Fall  1.0000 1.0000 0.1000 7.70329  9.31256  17.0158           4       49.7227  c    K        | 
+|    i_0_1_125/B2              OAI21_X2 Fall  1.0130 0.0130 0.1000          3.30778                                     L             | 
+|    i_0_1_125/ZN              OAI21_X2 Rise  1.0670 0.0540 0.1010 24.7237  57.2236  81.9474           64      53.6189  L    K        | 
+| Data Path:                                                                                                                          | 
+|    A_reg_reg[16]/G           DLH_X1   Rise  1.1070 0.0400 0.2480          0.985498                                    L             | 
+|    A_reg_reg[16]/Q           DLH_X1   Fall  1.1830 0.0760 0.0130 0.908323 2.38404  3.29236           2       52.2768                | 
+|    multiplier/A[16]                   Fall  1.1830 0.0000                                                                           | 
+|    multiplier/i_0_0_41/A2    AND2_X1  Fall  1.1830 0.0000 0.0130          0.894119                                                  | 
+|    multiplier/i_0_0_41/ZN    AND2_X1  Fall  1.2150 0.0320 0.0060 0.42273  0.869621 1.29235           1       52.2768                | 
+|    multiplier/A_in_reg[16]/D DLH_X1   Fall  1.2150 0.0000 0.0060          0.869621                                                  | 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to multiplier/A_in_reg[16]/G 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+| Pin                          Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                Fall  1.0000 1.0000 0.1000 7.70329  10.1729  17.8762           4       49.7227  c    K        | 
+|    multiplier/clk                     Fall  1.0000 0.0000                                                                           | 
+|    multiplier/i_0_0_49/B1    AOI21_X1 Fall  1.0060 0.0060 0.1000          1.44682                                     L             | 
+|    multiplier/i_0_0_49/ZN    AOI21_X1 Rise  1.0520 0.0460 0.0420 0.298116 3.25089  3.54901           1       53.6189  L    K        | 
+|    multiplier/i_0_0_48/A     INV_X2   Rise  1.0520 0.0000 0.0420          3.25089                                                   | 
+|    multiplier/i_0_0_48/ZN    INV_X2   Fall  1.0690 0.0170 0.0410 26.6496  46.3184  72.968            47      53.6189  L    K        | 
+|    multiplier/A_in_reg[16]/G DLH_X1   Fall  1.1070 0.0380 0.2480          0.894119                                    L             | 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  1.0000 1.0000 | 
+| target clock cycle shift                 |  0.0000 1.0000 | 
+| target clock ideal network latency       |  0.1070 1.1070 | 
+| library hold check                       |  0.0770 1.1840 | 
+| data required time                       |  1.1840        | 
+|                                          |                | 
+| data arrival time                        |  1.2150        | 
+| data required time                       | -1.1840        | 
+| pessimism margin                         |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0310        | 
+-------------------------------------------------------------
+
+
+ Timing Path to multiplier/B_in_reg[4]/D 
+  
+ Path Start Point : B_reg_reg[4] (DLH_X1) 
+                       (positive level-sensitive latch clocked by sysclk_new_mode') 
+ Path End Point   : multiplier/B_in_reg[4] (DLH_X1) 
+                       (negative level-sensitive latch clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : min 
+ Path Group       : sysclk_new_mode 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                         Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Fall  1.0000 1.0000 0.1000 7.70329  9.31256  17.0158           4       49.7227  c    K        | 
+|    i_0_1_125/B2             OAI21_X2 Fall  1.0130 0.0130 0.1000          3.30778                                     L             | 
+|    i_0_1_125/ZN             OAI21_X2 Rise  1.0670 0.0540 0.1010 24.7237  57.2236  81.9474           64      53.6189  L    K        | 
+| Data Path:                                                                                                                         | 
+|    B_reg_reg[4]/G           DLH_X1   Rise  1.1070 0.0400 0.2480          0.985498                                    L             | 
+|    B_reg_reg[4]/Q           DLH_X1   Fall  1.1830 0.0760 0.0130 0.82918  2.37092  3.2001            2       52.2768                | 
+|    multiplier/B[4]                   Fall  1.1830 0.0000                                                                           | 
+|    multiplier/i_0_0_54/A2   AND2_X1  Fall  1.1830 0.0000 0.0130          0.894119                                                  | 
+|    multiplier/i_0_0_54/ZN   AND2_X1  Fall  1.2150 0.0320 0.0060 0.412831 0.869621 1.28245           1       52.2768                | 
+|    multiplier/B_in_reg[4]/D DLH_X1   Fall  1.2150 0.0000 0.0060          0.869621                                                  | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to multiplier/B_in_reg[4]/G 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Pin                         Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                               Fall  1.0000 1.0000 0.1000 7.70329  10.1729  17.8762           4       49.7227  c    K        | 
+|    multiplier/clk                    Fall  1.0000 0.0000                                                                           | 
+|    multiplier/i_0_0_49/B1   AOI21_X1 Fall  1.0060 0.0060 0.1000          1.44682                                     L             | 
+|    multiplier/i_0_0_49/ZN   AOI21_X1 Rise  1.0520 0.0460 0.0420 0.298116 3.25089  3.54901           1       53.6189  L    K        | 
+|    multiplier/i_0_0_48/A    INV_X2   Rise  1.0520 0.0000 0.0420          3.25089                                                   | 
+|    multiplier/i_0_0_48/ZN   INV_X2   Fall  1.0690 0.0170 0.0410 26.6496  46.3184  72.968            47      53.6189  L    K        | 
+|    multiplier/B_in_reg[4]/G DLH_X1   Fall  1.1070 0.0380 0.2480          0.894119                                    L             | 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  1.0000 1.0000 | 
+| target clock cycle shift                 |  0.0000 1.0000 | 
+| target clock ideal network latency       |  0.1070 1.1070 | 
+| library hold check                       |  0.0770 1.1840 | 
+| data required time                       |  1.1840        | 
+|                                          |                | 
+| data arrival time                        |  1.2150        | 
+| data required time                       | -1.1840        | 
+| pessimism margin                         |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.0310        | 
+-------------------------------------------------------------
+
+
+info UI33: performed report_timing for 0 sec (CPU time: 0 sec; MEM: RSS - 433M, CVMEM - 1814M, PVMEM - 2263M)

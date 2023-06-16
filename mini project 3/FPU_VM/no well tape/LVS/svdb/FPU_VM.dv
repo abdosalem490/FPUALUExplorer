@@ -1,0 +1,1398 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/FPU_VM.dv
+dv_start unmatched                                
+dv_cell {FPU_VM} {FPU_VM} unmatched
+dv_obj_count -transformed_nets {4742 8607} -transformed_inst {12756 8452} -transformed_port {99 99}
+dv_discrep 1 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {Res[7]} {                                                } -snet {Res[7]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X17334/M9} {} -lloc {(1.360,80.080)} {:}  {d} {                                 ** missing connection **}
+dv_discrep_line {} -ldev {X17334/M1} {} -lloc {(1.360,79.490)} {:}  {d} {                                 ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_invv):}  {out} {}
+dv_discrep_line {                                                            } -sdev {XRes_reg[7]/M_i_41_11} {:}  {s} {}
+dv_discrep_line {                                                            } -sdev {XRes_reg[7]/M_i_89_4} {:}  {s} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 2 {Incorrect Nets} -inst_count { 15 10}
+dv_discrep_line {Net } -lnet {reset} {                                                 } -snet {reset} {}
+dv_discrep_line {--- 15 Connections On This Net ---                        --- 10 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMP4):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X17933/M7} {} -lloc {(75.715,68.880)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(SMP2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16219/M3} {} -lloc {(73.930,70.320)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(SMP2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {M120} {} -lloc {(23.565,75.290)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X17020/M1} {} -lloc {(79.325,67.520)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {} -ldev {X17005/M1} {} -lloc {(42.375,71.680)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_pmn2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_124/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nor4v):}  {in4} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_92/M_i_0} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_92/M_i_4} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nor2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_89/M_i_0} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_89/M_i_2} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nor2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_189/M_i_3} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_189/M_i_5} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_invv):}  {in} {}
+dv_discrep_line {                                                            } -sdev {Xmultiplier/Xi_0_74/M_i_0} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xmultiplier/Xi_0_74/M_i_1} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_invv):}  {in} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_78/M_i_0} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_78/M_i_1} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X17020/M0} {} -lloc {(79.325,68.110)} {:}  {g} {                                ** unmatched connection **}
+dv_discrep_line {} -ldev {X17005/M0} {} -lloc {(42.375,71.090)} {:}  {g} {                                ** unmatched connection **}
+dv_discrep_line {} -ldev {M51} {} -lloc {(23.565,76.095)} {:}  {g} {                                      ** unmatched connection **}
+dv_discrep_line {} -ldev {X16219/M1} {} -lloc {(73.930,70.910)} {:}  {g} {                                ** unmatched connection **}
+dv_discrep_line {} -ldev {X17933/M3} {} -lloc {(75.715,68.290)} {:}  {g} {                                ** unmatched connection **}
+dv_discrep_line {} -ldev {X16635/M2} {} -lloc {(68.065,51.310)} {:}  {g} {                                ** unmatched connection **}
+dv_discrep_line {} -ldev {X18711/M3} {} -lloc {(79.855,65.490)} {:}  {g} {                                ** unmatched connection **}
+dv_discrep_line {}
+dv_discrep_line {** unmatched connection **                                } -sdev {Xmultiplier/Xi_0_49/M_i_2} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 3 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[21]} {                                                 } -snet {B[21]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X18036/X1/M1} {} -lloc {(61.465,76.690)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X18036/X1/M4} {} -lloc {(61.465,77.595)} {:}  {g} {                             ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_179/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_179/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 4 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[22]} {                                                 } -snet {B[22]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X18036/X0/M1} {} -lloc {(62.135,76.690)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X18036/X0/M4} {} -lloc {(62.135,77.595)} {:}  {g} {                             ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_180/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_180/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 5 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[23]} {                                                 } -snet {B[23]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16527/M1} {} -lloc {(62.325,82.290)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16527/M4} {} -lloc {(62.325,83.195)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_181/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_181/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 6 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[19]} {                                                 } -snet {B[19]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16529/M1} {} -lloc {(63.085,76.510)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16529/M4} {} -lloc {(63.085,75.605)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_177/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_177/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 7 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[17]} {                                                 } -snet {A[17]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16531/M1} {} -lloc {(63.845,70.910)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16531/M4} {} -lloc {(63.845,70.005)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_144/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_144/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 8 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[19]} {                                                 } -snet {A[19]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16532/M1} {} -lloc {(64.035,73.890)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16532/M4} {} -lloc {(64.035,74.795)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_146/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_146/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 9 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {Res[30]} {                                               } -snet {Res[30]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X18353/X1/M9} {} -lloc {(64.630,73.120)} {:}  {d} {                             ** missing connection **}
+dv_discrep_line {} -ldev {X18353/X1/M1} {} -lloc {(64.630,73.710)} {:}  {d} {                             ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_invv):}  {out} {}
+dv_discrep_line {                                                            } -sdev {XRes_reg[30]/M_i_41_11} {:}  {s} {}
+dv_discrep_line {                                                            } -sdev {XRes_reg[30]/M_i_89_4} {:}  {s} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 10 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[20]} {                                                 } -snet {B[20]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16533/M1} {} -lloc {(65.555,76.510)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16533/M4} {} -lloc {(65.555,75.605)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_178/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_178/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 11 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[21]} {                                                 } -snet {A[21]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16536/M1} {} -lloc {(66.785,71.090)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16536/M4} {} -lloc {(66.785,71.995)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_148/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_148/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 12 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[20]} {                                                 } -snet {A[20]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16539/M1} {} -lloc {(68.595,71.090)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16539/M4} {} -lloc {(68.595,71.995)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_147/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_147/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 13 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[8]} {                                                  } -snet {B[8]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16560/M1} {} -lloc {(74.955,45.890)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16560/M4} {} -lloc {(74.955,46.795)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_166/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_166/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 14 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[11]} {                                                 } -snet {B[11]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16562/M1} {} -lloc {(75.625,45.890)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16562/M4} {} -lloc {(75.625,46.795)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_169/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_169/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 15 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[7]} {                                                  } -snet {B[7]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16565/M1} {} -lloc {(76.955,48.510)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16565/M4} {} -lloc {(76.955,47.605)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_165/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_165/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 16 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[25]} {                                                 } -snet {B[25]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16564/M1} {} -lloc {(76.855,82.290)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16564/M4} {} -lloc {(76.855,83.195)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_183/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_183/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 17 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[22]} {                                                 } -snet {A[22]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16566/M1} {} -lloc {(77.335,65.490)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16566/M4} {} -lloc {(77.335,66.395)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_149/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_149/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 18 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[13]} {                                                 } -snet {B[13]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16567/M1} {} -lloc {(77.715,48.510)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16567/M4} {} -lloc {(77.715,47.605)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_171/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_171/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 19 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[14]} {                                                 } -snet {B[14]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16568/M1} {} -lloc {(78.185,43.090)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16568/M4} {} -lloc {(78.185,43.995)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_172/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_172/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 20 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[13]} {                                                 } -snet {A[13]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16569/M1} {} -lloc {(78.665,62.690)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16569/M4} {} -lloc {(78.665,63.595)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_140/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_140/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 21 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[14]} {                                                 } -snet {A[14]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16570/M1} {} -lloc {(78.665,65.310)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16570/M4} {} -lloc {(78.665,64.405)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_141/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_141/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 22 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[9]} {                                                  } -snet {B[9]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16574/M1} {} -lloc {(79.615,48.510)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16574/M4} {} -lloc {(79.615,47.605)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_167/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_167/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 23 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[29]} {                                                 } -snet {B[29]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16572/M1} {} -lloc {(79.515,71.090)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16572/M4} {} -lloc {(79.515,71.995)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_187/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_187/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 24 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[27]} {                                                 } -snet {A[27]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16575/M1} {} -lloc {(79.705,73.890)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16575/M4} {} -lloc {(79.705,74.795)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_154/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_154/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 25 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[24]} {                                                 } -snet {A[24]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16577/M1} {} -lloc {(79.995,76.690)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16577/M4} {} -lloc {(79.995,77.595)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_151/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_151/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 26 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[15]} {                                                 } -snet {B[15]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16579/M1} {} -lloc {(80.185,54.290)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16579/M4} {} -lloc {(80.185,55.195)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_173/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_173/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 27 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[3]} {                                                  } -snet {A[3]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16578/M1} {} -lloc {(80.275,42.910)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16578/M4} {} -lloc {(80.275,42.005)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_130/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_130/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 28 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[16]} {                                                 } -snet {A[16]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16581/M1} {} -lloc {(80.375,59.710)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16581/M4} {} -lloc {(80.375,58.805)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_143/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_143/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 29 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[1]} {                                                  } -snet {B[1]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16580/M1} {} -lloc {(80.465,45.710)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16580/M4} {} -lloc {(80.465,44.805)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_159/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_159/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 30 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[30]} {                                                 } -snet {A[30]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16583/M1} {} -lloc {(80.945,68.290)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16583/M4} {} -lloc {(80.945,69.195)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_157/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_157/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 31 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[23]} {                                                 } -snet {A[23]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16584/M1} {} -lloc {(80.945,73.890)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16584/M4} {} -lloc {(80.945,74.795)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_150/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_150/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 32 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[2]} {                                                  } -snet {A[2]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16582/M1} {} -lloc {(81.035,43.090)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16582/M4} {} -lloc {(81.035,43.995)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_129/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_129/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 33 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[17]} {                                                 } -snet {B[17]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16586/M1} {} -lloc {(81.325,54.110)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16586/M4} {} -lloc {(81.325,53.205)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_175/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_175/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 34 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[10]} {                                                 } -snet {B[10]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X18042/X1/M1} {} -lloc {(81.415,45.890)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X18042/X1/M4} {} -lloc {(81.415,46.795)} {:}  {g} {                             ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_168/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_168/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 35 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[12]} {                                                 } -snet {B[12]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16585/M1} {} -lloc {(81.415,51.310)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16585/M4} {} -lloc {(81.415,50.405)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_170/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_170/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 36 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[11]} {                                                 } -snet {A[11]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16590/M1} {} -lloc {(81.515,59.890)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16590/M4} {} -lloc {(81.515,60.795)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_138/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_138/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 37 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[12]} {                                                 } -snet {A[12]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16587/M1} {} -lloc {(81.415,62.510)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16587/M4} {} -lloc {(81.415,61.605)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_139/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_139/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 38 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[26]} {                                                 } -snet {B[26]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16588/M1} {} -lloc {(81.415,82.290)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16588/M4} {} -lloc {(81.415,83.195)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_184/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_184/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 39 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[15]} {                                                 } -snet {A[15]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16589/M1} {} -lloc {(81.605,57.090)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16589/M4} {} -lloc {(81.605,57.995)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_142/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_142/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 40 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[4]} {                                                  } -snet {B[4]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X18042/X0/M1} {} -lloc {(82.085,45.890)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X18042/X0/M4} {} -lloc {(82.085,46.795)} {:}  {g} {                             ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_162/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_162/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 41 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[6]} {                                                  } -snet {A[6]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16592/M1} {} -lloc {(82.175,48.690)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16592/M4} {} -lloc {(82.175,49.595)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_133/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_133/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 42 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[25]} {                                                 } -snet {A[25]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16593/M1} {} -lloc {(82.175,82.110)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16593/M4} {} -lloc {(82.175,81.205)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_152/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_152/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 43 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[10]} {                                                 } -snet {A[10]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16594/M1} {} -lloc {(82.365,65.310)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16594/M4} {} -lloc {(82.365,64.405)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_137/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_137/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 44 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[0]} {                                                  } -snet {A[0]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16596/M1} {} -lloc {(82.745,48.510)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16596/M4} {} -lloc {(82.745,47.605)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_127/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_127/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 45 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[5]} {                                                  } -snet {A[5]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16597/M1} {} -lloc {(82.745,56.910)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16597/M4} {} -lloc {(82.745,56.005)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_132/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_132/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 46 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[3]} {                                                  } -snet {B[3]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16598/M1} {} -lloc {(82.935,43.090)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16598/M4} {} -lloc {(82.935,43.995)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_161/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_161/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 47 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[18]} {                                                 } -snet {B[18]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16599/M1} {} -lloc {(82.935,54.290)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16599/M4} {} -lloc {(82.935,55.195)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_176/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_176/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 48 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[29]} {                                                 } -snet {A[29]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16600/M1} {} -lloc {(82.935,68.110)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16600/M4} {} -lloc {(82.935,67.205)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_156/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_156/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 49 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A[28]} {                                                 } -snet {A[28]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16601/M1} {} -lloc {(82.935,73.890)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16601/M4} {} -lloc {(82.935,74.795)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_155/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_155/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 50 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {B[30]} {                                                 } -snet {B[30]} {}
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SMN2):}  {input} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {X16602/M1} {} -lloc {(83.505,73.710)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X16602/M4} {} -lloc {(83.505,72.805)} {:}  {g} {                                ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_nand2v):}  {in2} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_188/M_i_5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {Xi_0_1_188/M_i_3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 51 {Incorrect Instances}
+dv_discrep_line {} -ldev {X16635/M5} {} -lloc {(68.065,50.720)} {  MP(PMOS_VTL)                    } -sdev {Xmultiplier/Xi_0_49/M_i_5} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -lport {g} {: } -lnet {reset} {                                                  } -sport {g} {: } -snet {reset} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {2649} {                                                   ** no similar net **}
+dv_discrep_line {  ** no similar net **                                      } -sport {b} {: } -snet {Xmultiplier/Xi_0_49/VDD} {}
+dv_discrep_line {}
+dv_discrep 52 {Incorrect Instances}
+dv_discrep_line {} -ldev {X18711/M7} {} -lloc {(79.855,66.080)} {  MP(PMOS_VTL)                    } -sdev {Xi_0_1_124/M_i_7} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -lport {g} {: } -lnet {reset} {                                                  } -sport {g} {: } -snet {reset} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {2674} {                                                   ** no similar net **}
+dv_discrep_line {  ** no similar net **                                      } -sport {b} {: } -snet {Xi_0_1_124/VDD} {}
+dv_discrep_line {}
+dv_discrep 53 {Incorrect Instances}
+dv_discrep_line {(SMN2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {M7} {} -lloc {(8.770,78.895)} {  MN(NMOS_VTL)}
+dv_discrep_line {  } -ldev {M10} {} -lloc {(8.960,78.895)} {  MN(NMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 54 {Incorrect Instances}
+dv_discrep_line {(SMP3)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {M92} {} -lloc {(12.015,49.280)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {M94} {} -lloc {(12.205,49.280)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {M96} {} -lloc {(12.395,49.280)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 55 {Incorrect Instances}
+dv_discrep_line {(SMP3)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {M115} {} -lloc {(16.535,60.795)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {M116} {} -lloc {(16.725,60.795)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {M117} {} -lloc {(16.915,60.795)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 56 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {M119} {} -lloc {(23.375,75.290)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {M120} {} -lloc {(23.565,75.290)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 57 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16012/M2} {} -lloc {(1.730,32.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16012/M3} {} -lloc {(1.920,32.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 58 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16013/M2} {} -lloc {(2.490,29.680)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16013/M3} {} -lloc {(2.680,29.680)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 59 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16014/M2} {} -lloc {(3.120,42.320)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16014/M3} {} -lloc {(2.930,42.320)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 60 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16015/M2} {} -lloc {(4.010,42.320)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16015/M3} {} -lloc {(4.200,42.320)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 61 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16016/M2} {} -lloc {(5.340,43.680)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16016/M3} {} -lloc {(5.530,43.680)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 62 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16017/M2} {} -lloc {(5.910,25.520)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16017/M3} {} -lloc {(6.100,25.520)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 63 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16018/M2} {} -lloc {(6.860,46.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16018/M3} {} -lloc {(7.050,46.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 64 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16019/M2} {} -lloc {(10.720,50.720)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16019/M3} {} -lloc {(10.530,50.720)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 65 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16020/M2} {} -lloc {(12.620,43.680)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16020/M3} {} -lloc {(12.430,43.680)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 66 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16021/M2} {} -lloc {(14.140,64.720)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16021/M3} {} -lloc {(13.950,64.720)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 67 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16022/M2} {} -lloc {(14.650,43.680)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16022/M3} {} -lloc {(14.840,43.680)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 68 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16023/M2} {} -lloc {(14.900,63.280)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16023/M3} {} -lloc {(14.710,63.280)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 69 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16024/M2} {} -lloc {(15.030,52.080)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16024/M3} {} -lloc {(15.220,52.080)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 70 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16025/M2} {} -lloc {(15.470,59.120)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16025/M3} {} -lloc {(15.280,59.120)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 71 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16026/M2} {} -lloc {(15.660,17.120)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16026/M3} {} -lloc {(15.470,17.120)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 72 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16027/M2} {} -lloc {(15.660,18.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16027/M3} {} -lloc {(15.470,18.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 73 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16028/M2} {} -lloc {(15.600,47.920)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16028/M3} {} -lloc {(15.790,47.920)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 74 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16029/M2} {} -lloc {(16.420,57.680)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16029/M3} {} -lloc {(16.230,57.680)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 75 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16030/M2} {} -lloc {(16.610,21.280)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16030/M3} {} -lloc {(16.420,21.280)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 76 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16031/M2} {} -lloc {(16.550,10.080)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16031/M3} {} -lloc {(16.740,10.080)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 77 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16032/M2} {} -lloc {(16.800,63.280)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16032/M3} {} -lloc {(16.610,63.280)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 78 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16033/M2} {} -lloc {(17.500,10.080)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16033/M3} {} -lloc {(17.690,10.080)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 79 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16034/M2} {} -lloc {(18.130,19.920)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16034/M3} {} -lloc {(17.940,19.920)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 80 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16035/M2} {} -lloc {(19.460,47.920)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16035/M3} {} -lloc {(19.270,47.920)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 81 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16036/M2} {} -lloc {(19.650,77.280)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16036/M3} {} -lloc {(19.460,77.280)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 82 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16037/M2} {} -lloc {(19.780,70.320)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16037/M3} {} -lloc {(19.970,70.320)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 83 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16038/M2} {} -lloc {(20.220,32.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16038/M3} {} -lloc {(20.030,32.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 84 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16039/M2} {} -lloc {(20.600,11.520)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16039/M3} {} -lloc {(20.410,11.520)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 85 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16040/M2} {} -lloc {(20.600,67.520)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16040/M3} {} -lloc {(20.410,67.520)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 86 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16041/M2} {} -lloc {(20.790,32.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16041/M3} {} -lloc {(20.600,32.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 87 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16042/M2} {} -lloc {(20.980,46.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16042/M3} {} -lloc {(20.790,46.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 88 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16043/M2} {} -lloc {(20.730,78.720)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16043/M3} {} -lloc {(20.920,78.720)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 89 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16044/M2} {} -lloc {(21.110,77.280)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16044/M3} {} -lloc {(21.300,77.280)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 90 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16045/M2} {} -lloc {(21.550,10.080)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16045/M3} {} -lloc {(21.360,10.080)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 91 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16046/M2} {} -lloc {(21.550,46.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16046/M3} {} -lloc {(21.360,46.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 92 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16047/M2} {} -lloc {(21.550,78.720)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16047/M3} {} -lloc {(21.360,78.720)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 93 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16048/M2} {} -lloc {(22.310,68.880)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16048/M3} {} -lloc {(22.120,68.880)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 94 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16049/M2} {} -lloc {(22.500,8.720)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16049/M3} {} -lloc {(22.310,8.720)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 95 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16050/M2} {} -lloc {(22.250,28.320)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16050/M3} {} -lloc {(22.440,28.320)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 96 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16051/M2} {} -lloc {(22.250,35.280)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16051/M3} {} -lloc {(22.440,35.280)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 97 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16052/M2} {} -lloc {(22.440,11.520)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16052/M3} {} -lloc {(22.630,11.520)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 98 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16053/M2} {} -lloc {(22.820,28.320)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16053/M3} {} -lloc {(23.010,28.320)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 99 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16054/M2} {} -lloc {(23.260,14.320)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16054/M3} {} -lloc {(23.070,14.320)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep 100 {Incorrect Instances}
+dv_discrep_line {(SMP2)                                                    ** missing gate **}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X16055/M2} {} -lloc {(23.260,46.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {  } -ldev {X16055/M3} {} -lloc {(23.070,46.480)} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_discrep -3 {Unmatched Objects}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {X19543/M1} {} -lloc {(10.875,57.090)} {  MN(NMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19542/M1} {} -lloc {(8.985,26.110)} {  MN(NMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19541/M1} {} -lloc {(2.715,43.090)} {  MN(NMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19538/M7} {} -lloc {(16.215,70.910)} {  MN(NMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19537/M7} {} -lloc {(9.375,59.710)} {  MN(NMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19536/M7} {} -lloc {(5.005,48.510)} {  MN(NMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19535/M7} {} -lloc {(1.965,45.890)} {  MN(NMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19534/M7} {} -lloc {(2.505,34.690)} {  MN(NMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19533/M10} {} -lloc {(19.230,66.080)} {  MP(PMOS_VTL)                   ** unmatched instance **}
+dv_discrep_line {} -ldev {X19533/M11} {} -lloc {(19.425,66.080)} {  MP(PMOS_VTL)                   ** unmatched instance **}
+dv_discrep_line {} -ldev {X19532/M10} {} -lloc {(11.440,4.480)} {  MP(PMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19532/M11} {} -lloc {(11.635,4.480)} {  MP(PMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19531/M2} {} -lloc {(20.040,71.090)} {  MN(NMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19531/M3} {} -lloc {(19.850,71.090)} {  MN(NMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19530/M2} {} -lloc {(6.470,3.890)} {  MN(NMOS_VTL)                      ** unmatched instance **}
+dv_discrep_line {} -ldev {X19530/M3} {} -lloc {(6.660,3.890)} {  MN(NMOS_VTL)                      ** unmatched instance **}
+dv_discrep_line {} -ldev {X19529/M2} {} -lloc {(20.040,73.710)} {  MN(NMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19528/M2} {} -lloc {(17.000,76.690)} {  MN(NMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19527/M2} {} -lloc {(17.000,68.290)} {  MN(NMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19526/M2} {} -lloc {(17.000,68.110)} {  MN(NMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19525/M2} {} -lloc {(15.860,76.510)} {  MN(NMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19524/M2} {} -lloc {(15.020,79.490)} {  MN(NMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19523/M2} {} -lloc {(15.020,65.490)} {  MN(NMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19522/M2} {} -lloc {(11.110,62.690)} {  MN(NMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19521/M2} {} -lloc {(9.970,57.090)} {  MN(NMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19520/M2} {} -lloc {(7.230,51.310)} {  MN(NMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19519/M2} {} -lloc {(1.530,45.710)} {  MN(NMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19408/M7} {} -lloc {(68.860,73.120)} {  MP(PMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19407/M7} {} -lloc {(68.420,74.480)} {  MP(PMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19406/M7} {} -lloc {(57.210,77.280)} {  MP(PMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19405/M7} {} -lloc {(23.640,81.520)} {  MP(PMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19404/M7} {} -lloc {(22.310,78.720)} {  MP(PMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19403/M7} {} -lloc {(18.320,78.720)} {  MP(PMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19402/M7} {} -lloc {(11.420,64.720)} {  MP(PMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19401/M7} {} -lloc {(9.330,53.520)} {  MP(PMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19400/M7} {} -lloc {(7.870,47.920)} {  MP(PMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19399/M7} {} -lloc {(5.590,49.280)} {  MP(PMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19398/M7} {} -lloc {(3.310,35.280)} {  MP(PMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19333/M6} {} -lloc {(71.675,70.320)} {  MP(PMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19333/M7} {} -lloc {(71.865,70.320)} {  MP(PMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19332/M6} {} -lloc {(67.505,1.680)} {  MP(PMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19332/M7} {} -lloc {(67.315,1.680)} {  MP(PMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19331/M6} {} -lloc {(65.595,1.680)} {  MP(PMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19331/M7} {} -lloc {(65.785,1.680)} {  MP(PMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19330/M6} {} -lloc {(51.545,4.480)} {  MP(PMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19330/M7} {} -lloc {(51.355,4.480)} {  MP(PMOS_VTL)                     ** unmatched instance **}
+dv_discrep_line {} -ldev {X19329/M6} {} -lloc {(20.375,74.480)} {  MP(PMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X19329/M7} {} -lloc {(20.565,74.480)} {  MP(PMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X18711/M2} {} -lloc {(80.045,65.490)} {  MN(NMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {} -ldev {X18711/M3} {} -lloc {(79.855,65.490)} {  MN(NMOS_VTL)                    ** unmatched instance **}
+dv_discrep_line {}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_87/M_i_7} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_81/M_i_7} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_80/M_i_5} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_125/M_i_5_3} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_21/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_75/M_i_42} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_74/M_i_42} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_73/M_i_5} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_72/M_i_5} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_71/M_i_5} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_70/M_i_5} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_69/M_i_5} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_68/M_i_5} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_67/M_i_5} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_19/M_i_5} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_13/M_i_42} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_6/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_5/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_4/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_3/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_2/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_1/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_1_0/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_22/M_i_13} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_21/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_20/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_19/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_18/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_17/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_16/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_15/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_14/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_13/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_12/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_11/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_10/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_9/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_8/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_7/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_6/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_5/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_4/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_3/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_2/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_1/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xi_0_0/Xi_0/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xmultiplier/Xi_0_49/M_i_2} {  MN(NMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xmultiplier/Xi_4/Xi_1337/M_i_5} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xmultiplier/Xi_4/Xi_1334/M_i_7} {  MP(PMOS_VTL)}
+dv_discrep_line {** unmatched instance **                                  } -sdev {Xmultiplier/Xi_4/Xi_1332/M_i_42} {  MP(PMOS_VTL)}
+dv_discrep_line {}
+dv_end

@@ -1,0 +1,153 @@
+Report for group default
+Report for group I2R
+Report for group I2O
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: A[1]
+    (Clocked by rtDefaultClock R)
+Endpoint: COUT
+    (Clocked by vsysclk R)
+Path Group: I2O
+Data required time: 19500.0
+    (Clock shift: 20000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data arrival time: 3680.9
+Slack: 15819.1
+Logic depth: 65
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+A[1]                     {set_input_delay}        f   1000.0   1000.0   1000.0                        5.6     13.7      2    83,   38                       
+genblk1_1_FullAdder/i_0_0/A->Z
+                         XOR2_X2                 ff   1096.1     95.5     95.5      0.0    100.0      1.4      8.5      2    41,   40  /PD_TOP        (1.10)
+genblk1_1_FullAdder/i_0_2/B1->ZN
+                         AOI22_X4                fr   1168.2     72.1     72.1      0.0     14.8      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+genblk1_1_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1176.9      8.7      8.7      0.0     50.8      1.4      9.0      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_1_FullAdder/i_0_0/B->Z
+                         XOR2_X2                 ff   1236.7     59.8     59.8      0.0      4.0      1.4      8.5      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_1_FullAdder/i_0_2/B1->ZN
+                         AOI22_X4                fr   1308.8     72.1     72.1      0.0     14.8      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_1_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1317.4      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_2_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1389.4     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_2_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1398.0      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_3_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1470.0     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_3_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1478.6      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_4_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1550.6     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_4_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1559.2      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_5_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1631.2     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_5_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1639.8      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_6_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1711.8     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_6_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1720.4      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_7_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1792.4     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_7_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1801.0      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_8_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1873.0     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_8_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1881.6      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_9_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1953.6     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_9_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1962.2      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_10_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2034.2     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_10_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2042.8      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_11_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2114.8     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_11_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2123.4      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_12_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2195.4     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_12_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2204.0      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_13_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2276.0     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_13_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2284.6      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_14_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2356.6     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_14_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2365.2      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_15_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2437.2     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_15_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2445.8      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_16_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2517.8     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_16_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2526.4      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_17_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2598.4     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_17_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2607.0      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_18_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2679.0     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_18_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2687.6      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_19_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2759.6     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_19_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2768.2      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_20_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2840.2     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_20_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2848.8      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_21_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   2920.8     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_21_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   2929.4      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_22_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3001.4     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_22_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3010.0      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_23_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3082.0     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_23_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3090.6      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_24_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3162.6     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_24_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3171.2      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_25_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3243.2     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_25_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3251.8      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_26_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3323.8     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_26_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3332.4      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_27_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3404.4     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_27_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3413.0      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_28_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3485.0     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_28_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3493.6      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_29_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3565.6     72.0     72.0      0.0      4.0      0.7     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_29_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3574.2      8.6      8.6      0.0     50.8      1.4      8.9      2    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_30_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   3646.2     72.0     72.0      0.0      4.0      6.5     26.2      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_30_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   3651.6      5.4      5.4      0.0     50.8      6.4      2.6      1    41,   40  /PD_TOP        (1.10)
+RippleAdder/genblk1_31_FullAdder/i_0_0/A1->ZN
+                         AND2_X4                 ff   3680.3     28.7     28.7      0.0      3.3      5.8     15.8      1    41,   40  /PD_TOP        (1.10)
+COUT                                              f   3680.9      0.6               0.6      8.4                             37,    0                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group R2O

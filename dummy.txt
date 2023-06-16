@@ -1,0 +1,29 @@
+floor planning
+--------------
+-> nitro -log LOGs/nitro.log -journal LOGs/nitro.jou
+-> setup_nrf
+
+(in import_variables.tcl)
+-> set MGC_no_exit true 
+-> set MGC_physical_library_tech "NangateOpenCellLibrary.tech.lef"
+-> set MGC_physical_libraries	"NangateOpenCellLibrary.macro.lef"
+-> ......
+-> set MGC_importVerilogNetlist	"myRipple.syn.v"
+
+
+(in floorplan.tcl)
+-> set fp_top_partition "myRippleAdder"
+-> ...
+
+(in flow_variables.tcl)
+-> set MGC_cpus 2
+-> set MGC_no_exit true
+-> set MGC_MaxRouteLayer {metal8}
+
+
+in command line
+-> source flow_scripts/import_variables.tcl
+-> start 
+//then "check design" from the GUI then create P/G rings 
+-> source flow_scipts/3_route.tcl > Logs/routes.logs
+-> 

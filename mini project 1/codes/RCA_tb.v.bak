@@ -1,0 +1,114 @@
+module tb_RCA;
+
+//some consts
+localparam delay = 50;
+localparam size = 32;
+
+//stats
+integer NumOfSuccess;
+integer NumOfFailure;
+
+//regs for inputs
+reg signed [size-1:0] A_RCA, B_RCA;
+reg CIN_RCA;
+
+//wires for outputs
+wire signed [size-1:0] SUM_RCA;
+wire COUT_RCA;
+
+//instantiation
+RCA #(size) uut1(A_RCA, B_RCA, 1'b0, SUM_RCA, COUT_RCA);
+
+
+
+initial 
+begin
+
+//to print the addition information
+$monitor("evaluating: %d  + %d = %d, overflow = %b", A_RCA, B_RCA, SUM_RCA, SUM_RCA[size-1] ^ A_RCA[size-1] & SUM_RCA[size-1] ^ B_RCA[size-1]);
+
+
+//initialize
+CIN_RCA = 0;
+NumOfSuccess = 0;
+NumOfFailure = 0;
+
+//test case #1 Overflow of positive numbers.
+A_RCA = 32'b0111_1111_1111_1111_1111_1111_1111_1111; /*which is equivalent to 2147483647*/
+B_RCA = 5;
+#delay;
+if (SUM_RCA == 32'b1000_0000_0000_0000_0000_0000_0000_0100) /*which is equivalent to -2147483644*/
+begin
+	$display("TestCase#1:success");
+	NumOfSuccess = NumOfSuccess + 1;
+end
+else
+begin
+	$display("TestCase#1:failed with input %d and %d and Output %d and overflow status %b", A_RCA, B_RCA, SUM_RCA, SUM_RCA[size-1] ^ ((A_RCA > B_RCA)? A_RCA[size-1] : B_RCA[size-1]));
+	NumOfFailure = 	NumOfFailure +1; 
+end
+
+//test case #2 Overflow of negative numbers.
+A_RCA = 32'b1000_0000_0000_0000_0000_0000_0000_0100; /*which is equivalent to -2147483644*/
+B_RCA = -5;
+#delay;
+if (SUM_RCA == 32'b0111_1111_1111_1111_1111_1111_1111_1111) /*which is equivalent to 2147483647*/
+begin
+	$display("TestCase#2:success");
+	NumOfSuccess = NumOfSuccess + 1;
+end
+else
+begin
+	$display("TestCase#2:failed with input %d and %d and Output %d and overflow status %b", A_RCA, B_RCA, SUM_RCA, SUM_RCA[size-1] ^ ((A_RCA > B_RCA)? A_RCA[size-1] : B_RCA[size-1]));
+	NumOfFailure = 	NumOfFailure +1; 
+end
+
+//test case #3 Addition of positive and negative numbers
+A_RCA = 5;
+B_RCA = -10;
+#delay;
+if (SUM_RCA == -5)
+begin
+	$display("TestCase#3:success");
+	NumOfSuccess = NumOfSuccess + 1;
+end
+else
+begin
+	$display("TestCase#3:failed with input %d and %d and Output %d and overflow status %b", A_RCA, B_RCA, SUM_RCA, SUM_RCA[size-1] ^ ((A_RCA > B_RCA)? A_RCA[size-1] : B_RCA[size-1]));
+	NumOfFailure = 	NumOfFailure +1; 
+end
+
+//test case #4 Addition of positive and positive numbers
+A_RCA = 5;
+B_RCA = 10;
+#delay;
+if (SUM_RCA == 15)
+begin
+	$display("TestCase#4:success");
+	NumOfSuccess = NumOfSuccess + 1;
+end
+else
+begin
+	$display("TestCase#4:failed with input %d and %d and Output %d and overflow status %b", A_RCA, B_RCA, SUM_RCA, SUM_RCA[size-1] ^ ((A_RCA > B_RCA)? A_RCA[size-1] : B_RCA[size-1]));
+	NumOfFailure = 	NumOfFailure +1; 
+end
+
+//test case #5 Addition of negative and negative number
+A_RCA = -5;
+B_RCA = -10;
+#delay;
+if (SUM_RCA == -15)
+begin
+	$display("TestCase#5:success");
+	NumOfSuccess = NumOfSuccess + 1;
+end
+else
+begin
+	$display("TestCase#5:failed with input %d and %d and Output %d and overflow status %b", A_RCA, B_RCA, SUM_RCA, SUM_RCA[size-1] ^ ((A_RCA > B_RCA)? A_RCA[size-1] : B_RCA[size-1]));
+	NumOfFailure = 	NumOfFailure +1; 
+end
+
+//print stats
+$display ("Number of success: %d , Number of Failure: %d", NumOfSuccess, NumOfFailure);
+end
+endmodule

@@ -1,0 +1,2 @@
+.INCLUDE "/home/vlsi/mini-project31_nitro/calibre/NangateOpenCellLibrary.spi"
+.INCLUDE "/home/vlsi/mini-project31_nitro/work/LVS/_multiplier.route.v.sp"

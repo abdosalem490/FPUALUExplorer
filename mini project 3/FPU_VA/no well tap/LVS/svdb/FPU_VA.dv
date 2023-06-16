@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/FPU_VA.dv
+dv_start notcompared                              
+dv_cell {FPU_VA} {FPU_VA} notcompared
+dv_obj_count -transformed_nets {1228 1187} -transformed_inst {3060 2341} -transformed_port {96 98}
+dv_end

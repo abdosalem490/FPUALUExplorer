@@ -1,0 +1,111 @@
+Report for group default
+Report for group I2R
+Report for group I2O
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: A[0]
+    (Clocked by rtDefaultClock R)
+Endpoint: OVF
+    (Clocked by vsysclk R)
+Path Group: I2O
+Data required time: 19500.0
+    (Clock shift: 20000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data arrival time: 2571.7
+Slack: 16928.3
+Logic depth: 45
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+A[0]                     {set_input_delay}        f   1000.0   1000.0   1000.0                        5.3     13.3      2     0,   38                       
+genblk2_0_rippleAdder/genblk1_0_FullAdder/i_0_0/A->Z
+                         XOR2_X2                 ff   1096.0     95.5     95.5      0.0    100.0      1.4      8.5      2    40,   39  /PD_TOP        (1.10)
+genblk2_0_rippleAdder/genblk1_0_FullAdder/i_0_2/B1->ZN
+                         AOI22_X4                fr   1168.1     72.1     72.1      0.0     14.8      0.7     26.2      1    40,   39  /PD_TOP        (1.10)
+genblk2_0_rippleAdder/genblk1_0_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1176.7      8.6      8.6      0.0     50.8      1.4      8.9      2    40,   39  /PD_TOP        (1.10)
+genblk2_0_rippleAdder/genblk1_1_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1248.7     72.0     72.0      0.0      4.0      0.7     26.2      1    40,   39  /PD_TOP        (1.10)
+genblk2_0_rippleAdder/genblk1_1_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1257.3      8.6      8.6      0.0     50.8      1.4      8.9      2    40,   39  /PD_TOP        (1.10)
+genblk2_0_rippleAdder/genblk1_2_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1329.3     72.0     72.0      0.0      4.0      0.7     26.2      1    40,   39  /PD_TOP        (1.10)
+genblk2_0_rippleAdder/genblk1_2_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1337.9      8.6      8.6      0.0     50.8      1.4      8.9      2    40,   39  /PD_TOP        (1.10)
+genblk2_0_rippleAdder/genblk1_3_FullAdder/i_0_2/B2->ZN
+                         AOI22_X4                fr   1409.9     72.0     72.0      0.0      4.0      0.7     26.2      1    40,   39  /PD_TOP        (1.10)
+genblk2_0_rippleAdder/genblk1_3_FullAdder/i_0_3/A->ZN
+                         INV_X8                  rf   1417.4      7.5      7.5      0.0     50.8      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_1_incByOneSt/genblk1_0_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1444.8     27.4     27.4      0.0      3.7      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_1_incByOneSt/genblk1_1_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1473.4     28.6     28.6      0.0      6.3      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_1_incByOneSt/genblk1_2_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1502.0     28.6     28.6      0.0      6.3      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_1_incByOneSt/genblk1_3_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1528.3     26.3     26.3      0.0      6.3      0.6      2.8      1    40,   39  /PD_TOP        (1.10)
+genblk3_1_incByOneSt/i_0_0/A1->ZN
+                         OR2_X4                  ff   1568.8     40.5     40.5      0.0      5.2      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_2_incByOneSt/genblk1_0_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1598.8     30.0     30.0      0.0      9.0      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_2_incByOneSt/genblk1_1_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1627.4     28.6     28.6      0.0      6.3      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_2_incByOneSt/genblk1_2_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1656.0     28.6     28.6      0.0      6.3      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_2_incByOneSt/genblk1_3_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1682.3     26.3     26.3      0.0      6.3      0.6      2.8      1    40,   39  /PD_TOP        (1.10)
+genblk3_2_incByOneSt/i_0_0/A1->ZN
+                         OR2_X4                  ff   1722.8     40.5     40.5      0.0      5.2      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_3_incByOneSt/genblk1_0_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1752.8     30.0     30.0      0.0      9.0      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_3_incByOneSt/genblk1_1_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1781.4     28.6     28.6      0.0      6.3      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_3_incByOneSt/genblk1_2_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1810.0     28.6     28.6      0.0      6.3      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_3_incByOneSt/genblk1_3_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1836.3     26.3     26.3      0.0      6.3      0.6      2.8      1    40,   39  /PD_TOP        (1.10)
+genblk3_3_incByOneSt/i_0_0/A1->ZN
+                         OR2_X4                  ff   1876.8     40.5     40.5      0.0      5.2      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_4_incByOneSt/genblk1_0_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1906.8     30.0     30.0      0.0      9.0      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_4_incByOneSt/genblk1_1_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1935.4     28.6     28.6      0.0      6.3      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_4_incByOneSt/genblk1_2_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1964.0     28.6     28.6      0.0      6.3      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_4_incByOneSt/genblk1_3_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   1990.3     26.3     26.3      0.0      6.3      0.6      2.8      1    40,   39  /PD_TOP        (1.10)
+genblk3_4_incByOneSt/i_0_0/A1->ZN
+                         OR2_X4                  ff   2030.8     40.5     40.5      0.0      5.2      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_5_incByOneSt/genblk1_0_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   2060.8     30.0     30.0      0.0      9.0      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_5_incByOneSt/genblk1_1_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   2089.4     28.6     28.6      0.0      6.3      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_5_incByOneSt/genblk1_2_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   2118.0     28.6     28.6      0.0      6.3      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_5_incByOneSt/genblk1_3_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   2144.3     26.3     26.3      0.0      6.3      0.6      2.8      1    40,   39  /PD_TOP        (1.10)
+genblk3_5_incByOneSt/i_0_0/A1->ZN
+                         OR2_X4                  ff   2184.8     40.5     40.5      0.0      5.2      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_6_incByOneSt/genblk1_0_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   2214.8     30.0     30.0      0.0      9.0      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_6_incByOneSt/genblk1_1_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   2243.4     28.6     28.6      0.0      6.3      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_6_incByOneSt/genblk1_2_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   2272.0     28.6     28.6      0.0      6.3      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_6_incByOneSt/genblk1_3_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   2298.3     26.3     26.3      0.0      6.3      0.6      2.8      1    40,   39  /PD_TOP        (1.10)
+genblk3_6_incByOneSt/i_0_0/A1->ZN
+                         OR2_X4                  ff   2338.8     40.5     40.5      0.0      5.2      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_7_incByOneSt/genblk1_0_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   2368.8     30.0     30.0      0.0      9.0      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_7_incByOneSt/genblk1_1_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   2397.4     28.6     28.6      0.0      6.3      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_7_incByOneSt/genblk1_2_HalfAdder/i_0_1/A2->ZN
+                         AND2_X4                 ff   2426.0     28.6     28.6      0.0      6.3      1.2      6.9      2    40,   39  /PD_TOP        (1.10)
+genblk3_7_incByOneSt/genblk1_3_HalfAdder/i_0_0/B->Z
+                         XOR2_X2                 fr   2501.4     75.4     75.4      0.0      6.3      0.6     20.1      2    40,   39  /PD_TOP        (1.10)
+i_0_0_0/A2->ZN           NAND2_X4                rf   2521.3     19.9     19.9      0.0     63.1      0.6      4.3      1    40,   39  /PD_TOP        (1.10)
+i_0_0_2/B->ZN            XNOR2_X2                ff   2571.2     49.9     49.9      0.0      7.0      5.4     15.4      1    40,   39  /PD_TOP        (1.10)
+OVF                                               f   2571.7      0.5               0.5     21.0                              0,   37                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group R2O
